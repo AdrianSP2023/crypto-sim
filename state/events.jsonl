@@ -34,3 +34,10 @@
 {"type": "entry", "asset": "XDC", "strategy": "pullback_tendencia", "version": "P1-v1", "t": "2026-09-28 09:40", "ts": 1790588400, "price": 0.02988, "qty": 46.05, "spread": 0.00134}
 {"type": "entry", "asset": "NEAR", "strategy": "reversion_bb", "version": "P1-v1", "t": "2026-09-28 09:45", "ts": 1790588700, "price": 4.3506, "qty": 46.21, "spread": 0.00069}
 {"type": "exit", "asset": "BCH", "strategy": "c_banda_atr", "version": "P1-v1", "entry_t": "2026-09-28 09:10", "exit_t": "2026-09-28 09:45", "entry_ts": 1790586600, "exit_ts": 1790588700, "entry": 270.9, "exit": 269.58, "qty": 46.1, "gross_pct": -0.487, "net_pct": -1.587, "net_spread_pct": -1.693, "pnl_eur": -0.732, "reason": "cruce bajista", "candles": 7}
+{"type": "entry", "asset": "ETH", "strategy": "c_banda_atr", "version": "P1-v2", "t": "2026-09-28 10:05", "ts": 1790589900, "price": 2330.2, "qty": 45.9, "spread": 6e-05}
+{"type": "entry", "asset": "XRP", "strategy": "c_banda_atr", "version": "P1-v2", "t": "2026-09-28 10:05", "ts": 1790589900, "price": 1.30836, "qty": 45.9, "spread": 0.00016}
+{"type": "exit", "asset": "NEAR", "strategy": "reversion_bb", "version": "P1-v1", "entry_t": "2026-09-28 09:45", "exit_t": "2026-09-28 10:05", "entry_ts": 1790588700, "exit_ts": 1790589900, "entry": 4.3506, "exit": 4.415859, "qty": 46.21, "gross_pct": 1.5, "net_pct": 0.4, "net_spread_pct": 0.348, "pnl_eur": 0.185, "reason": "take-profit", "candles": 4}
+{"type": "entry", "asset": "ZEC", "strategy": "c_banda_atr", "version": "P1-v2", "t": "2026-09-28 10:05", "ts": 1790589900, "price": 1365.185, "qty": 45.9, "spread": 0.00037}
+{"type": "entry", "asset": "DOGE", "strategy": "c_banda_atr", "version": "P1-v2", "t": "2026-09-28 10:05", "ts": 1790589900, "price": 0.0817599, "qty": 45.9, "spread": 0.00037}
+{"type": "entry", "asset": "HYPE", "strategy": "ruptura_volumen", "version": "P1-v2", "t": "2026-09-28 10:05", "ts": 1790589900, "price": 78.95, "qty": 46.21, "spread": 0.00025}
+{"type": "entry", "asset": "JUP", "strategy": "c_banda_atr", "version": "P1-v2", "t": "2026-09-28 10:05", "ts": 1790589900, "price": 0.29984, "qty": 45.9, "spread": 0.00201}
