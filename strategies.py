@@ -181,6 +181,8 @@ def entry_macd(d, i, p):
 
 
 def exit_macd(d, i, p):
+    if not p.get("exit_on_momentum", True):
+        return None
     if d.mh.iat[i] < 0 and d.mh.iat[i - 1] < 0:
         return "momentum perdido"
     return None

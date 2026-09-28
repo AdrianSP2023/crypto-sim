@@ -98,3 +98,11 @@ pierden juntas.
   Motivo: ruptura_volumen lleva 57 cierres con bruto medio −0,41%: 39 por
   stop-loss (68%, 12 de ellos en ≤3 velas), 7 por TP y 11 por timeout. La
   mayoría de sus rupturas son falsas. La original sigue igual para comparar.
+
+## P1-v9 — 2026-09-28 19:10 UTC (ajuste in situ, variante A/B)
+
+- **Nueva: macd_sin_salida** (macd_momentum sin la salida por "momentum perdido";
+  sale solo por TP +2%, SL −1,5% o 3 h).
+  Motivo: 43 de 60 cierres de macd_momentum son por "momentum perdido", con bruto
+  medio −0,46% a las ~10 velas. Es el mismo patrón que tenía c_banda_atr en v1:
+  una salida por señal que corta por ruido y fija la comisión. La original sigue igual.

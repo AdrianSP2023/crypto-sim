@@ -1,5 +1,5 @@
 {
-  "version": "P1-v8",
+  "version": "P1-v9",
   "phase": "P1",
   "enabled": true,
   "phase_end_utc": "2026-09-29T09:00:00+00:00",
@@ -196,6 +196,18 @@
       "tp": 0.03,
       "sl": 0.02,
       "max_hold": 36
+    },
+    "macd_sin_salida": {
+      "enabled": true,
+      "fast": 12,
+      "slow": 26,
+      "signal": 9,
+      "ema_trend": 50,
+      "tp": 0.02,
+      "sl": 0.015,
+      "max_hold": 36,
+      "base": "macd_momentum",
+      "exit_on_momentum": false
     }
   },
   "breadth_ema": 50
