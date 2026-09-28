@@ -1,12 +1,12 @@
 # Simulación P1 (sin dinero real)
 
-Config `P1-v2` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 11:00 UTC · vueltas 28 · 35 activos · velas 5 min · comisión 1.1% ida+vuelta
+Config `P1-v2` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 11:05 UTC · vueltas 29 · 35 activos · velas 5 min · comisión 1.1% ida+vuelta
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 918.74 € (-0.60%) | 9 | 7 | 11% | -0.318% | -1.418% | -1.467% | -5.89 € |
-| reversion_bb | 925.22 € (+0.11%) | 2 | 2 | 100% | +1.500% | +0.400% | +0.331% | +0.37 € |
-| ruptura_volumen | 923.62 € (-0.07%) | 1 | 4 | 100% | +1.569% | +0.469% | +0.410% | +0.22 € |
+| c_banda_atr | 919.00 € (-0.57%) | 9 | 8 | 11% | -0.318% | -1.418% | -1.467% | -5.89 € |
+| reversion_bb | 925.33 € (+0.12%) | 2 | 2 | 100% | +1.500% | +0.400% | +0.331% | +0.37 € |
+| ruptura_volumen | 923.30 € (-0.10%) | 2 | 4 | 50% | +0.184% | -0.915% | -0.981% | -0.85 € |
 | rebote_extremo | 921.79 € (-0.26%) | 3 | 0 | 33% | -0.667% | -1.767% | -2.487% | -2.45 € |
 | pullback_tendencia | 921.42 € (-0.30%) | 4 | 0 | 25% | -0.423% | -1.523% | -1.736% | -2.82 € |
 
@@ -14,6 +14,7 @@ Config `P1-v2` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 11:00
 
 | Salida (UTC) | Estrategia | Activo | Motivo | Bruto | Neto | € |
 |---|---|---|---|---|---|---|
+| 2026-09-28 11:05 | ruptura_volumen | LTC | stop-loss | -1.20% | -2.30% | -1.06 |
 | 2026-09-28 10:55 | ruptura_volumen | XLM | timeout | +1.57% | +0.47% | +0.22 |
 | 2026-09-28 10:50 | reversion_bb | ENA | take-profit | +1.50% | +0.40% | +0.18 |
 | 2026-09-28 10:40 | pullback_tendencia | XDC | take-profit | +2.14% | +1.04% | +0.48 |
@@ -28,6 +29,11 @@ Config `P1-v2` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 11:00
 | 2026-09-28 09:30 | c_banda_atr | SUI | cruce bajista | -0.88% | -1.98% | -0.91 |
 | 2026-09-28 09:20 | pullback_tendencia | XDC | rotura de tendencia | -0.84% | -1.94% | -0.90 |
 | 2026-09-28 09:15 | rebote_extremo | QNT | take-profit | +2.00% | +0.90% | +0.41 |
-| 2026-09-28 09:10 | c_banda_atr | ETH | cruce bajista | -0.37% | -1.47% | -0.68 |
+
+## Eventos de la última vuelta
+
+- 2026-09-28 11:05 [ruptura_volumen] CIERRE LTC stop-loss bruto -1.20% neto -2.30%
+- 2026-09-28 11:05 [c_banda_atr] ENTRADA ENA @ 0.2309 (45.92 €)
+- 2026-09-28 11:05 [ruptura_volumen] ENTRADA WLD @ 0.4521 (46.17 €)
 
 Universo: BTC, QNT, SOL, ETH, XRP, SUI, NEAR, ZEC, ONDO, LINK, LTC, PUMP, TAO, ADA, UNI, AVAX, BCH, DOGE, ARB, ENA, HYPE, DOT, XLM, AAVE, W, PEPE, XPL, POL, XDC, DASH, MON, WLD, JUP, GRT, FET
