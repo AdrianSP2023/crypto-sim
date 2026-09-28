@@ -149,3 +149,9 @@
 {"type": "exit", "asset": "TON", "strategy": "macd_momentum", "version": "P1-v5", "entry_t": "2026-09-28 13:00", "exit_t": "2026-09-28 13:20", "entry_ts": 1790600400, "exit_ts": 1790601600, "entry": 1.465, "exit": 1.443025, "qty": 23.09, "gross_pct": -1.5, "net_pct": -2.6, "net_spread_pct": -2.91, "pnl_eur": -0.6, "reason": "stop-loss", "candles": 4}
 {"type": "exit", "asset": "TON", "strategy": "estocastico_rebote", "version": "P1-v4", "entry_t": "2026-09-28 12:40", "exit_t": "2026-09-28 13:20", "entry_ts": 1790599200, "exit_ts": 1790601600, "entry": 1.463, "exit": 1.441055, "qty": 46.21, "gross_pct": -1.5, "net_pct": -2.6, "net_spread_pct": -2.807, "pnl_eur": -1.202, "reason": "stop-loss", "candles": 8}
 {"type": "entry", "asset": "XDC", "strategy": "estocastico_rebote", "version": "P1-v5", "t": "2026-09-28 13:25", "ts": 1790601900, "price": 0.02966, "qty": 23.08, "spread": 0.00202}
+{"type": "entry", "asset": "ENA", "strategy": "macd_momentum", "version": "P1-v5", "t": "2026-09-28 13:30", "ts": 1790602200, "price": 0.2386, "qty": 23.06, "spread": 0.00084}
+{"type": "entry", "asset": "PEPE", "strategy": "c_banda_atr", "version": "P1-v5", "t": "2026-09-28 13:30", "ts": 1790602200, "price": 3.77e-06, "qty": 22.98, "spread": 0.00079}
+{"type": "entry", "asset": "ZRO", "strategy": "pullback_tendencia", "version": "P1-v5", "t": "2026-09-28 13:30", "ts": 1790602200, "price": 1.399, "qty": 23.03, "spread": 0.00143}
+{"type": "entry", "asset": "ZRO", "strategy": "estocastico_rebote", "version": "P1-v5", "t": "2026-09-28 13:30", "ts": 1790602200, "price": 1.399, "qty": 23.08, "spread": 0.00143}
+{"type": "entry", "asset": "TON", "strategy": "estocastico_rebote", "version": "P1-v5", "t": "2026-09-28 13:30", "ts": 1790602200, "price": 1.45, "qty": 23.08, "spread": 0.00275}
+{"type": "entry", "asset": "SHIB", "strategy": "c_banda_atr", "version": "P1-v5", "t": "2026-09-28 13:30", "ts": 1790602200, "price": 5.044e-06, "qty": 22.98, "spread": 0.0004}
