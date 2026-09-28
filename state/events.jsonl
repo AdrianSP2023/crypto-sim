@@ -336,3 +336,4 @@
 {"type": "entry", "asset": "XLM", "strategy": "estocastico_rebote", "version": "P1-v7", "t": "2026-09-28 15:30", "ts": 1790609400, "price": 0.190181, "qty": 22.68, "spread": 0.00065}
 {"type": "entry", "asset": "XDC", "strategy": "macd_momentum", "version": "P1-v7", "t": "2026-09-28 15:30", "ts": 1790609400, "price": 0.02995, "qty": 22.87, "spread": 0.00067}
 {"type": "entry", "asset": "CC", "strategy": "reversion_bb", "version": "P1-v7", "t": "2026-09-28 15:30", "ts": 1790609400, "price": 0.11139, "qty": 23.11, "spread": 0.0017}
+{"type": "entry", "asset": "MON", "strategy": "macd_momentum", "version": "P1-v7", "t": "2026-09-28 15:35", "ts": 1790609700, "price": 0.02507, "qty": 22.87, "spread": 0.0032}
