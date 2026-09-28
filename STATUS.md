@@ -1,14 +1,14 @@
 # Simulación P1 (sin dinero real)
 
-Config `P1-v1` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 09:50 UTC · vueltas 14 · 35 activos · velas 5 min · comisión 1.1% ida+vuelta
+Config `P1-v2` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 09:55 UTC · vueltas 15 · 35 activos · velas 5 min · comisión 1.1% ida+vuelta
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 917.90 € (-0.69%) | 8 | 1 | 0% | -0.608% | -1.708% | -1.753% | -6.30 € |
-| reversion_bb | 924.37 € (+0.01%) | 0 | 4 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
-| ruptura_volumen | 924.20 € (-0.00%) | 0 | 1 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
+| c_banda_atr | 918.09 € (-0.67%) | 8 | 1 | 0% | -0.608% | -1.708% | -1.753% | -6.30 € |
+| reversion_bb | 924.35 € (+0.01%) | 0 | 4 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
+| ruptura_volumen | 924.39 € (+0.02%) | 0 | 1 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
 | rebote_extremo | 921.79 € (-0.26%) | 3 | 0 | 33% | -0.667% | -1.767% | -2.487% | -2.45 € |
-| pullback_tendencia | 921.67 € (-0.28%) | 3 | 1 | 0% | -1.279% | -2.379% | -2.607% | -3.30 € |
+| pullback_tendencia | 921.62 € (-0.28%) | 3 | 1 | 0% | -1.279% | -2.379% | -2.607% | -3.30 € |
 
 ## Últimas 15 operaciones cerradas
 
