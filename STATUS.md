@@ -1,14 +1,14 @@
 # Simulación P1 (sin dinero real)
 
-Config `P1-v2` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 10:05 UTC · vueltas 17 · 35 activos · velas 5 min · comisión 1.1% ida+vuelta
+Config `P1-v2` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 10:10 UTC · vueltas 18 · 35 activos · velas 5 min · comisión 1.1% ida+vuelta
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 918.33 € (-0.64%) | 8 | 6 | 0% | -0.608% | -1.708% | -1.753% | -6.30 € |
-| reversion_bb | 924.88 € (+0.07%) | 1 | 3 | 100% | +1.500% | +0.400% | +0.348% | +0.18 € |
-| ruptura_volumen | 924.63 € (+0.04%) | 0 | 2 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
+| c_banda_atr | 917.45 € (-0.73%) | 8 | 6 | 0% | -0.608% | -1.708% | -1.753% | -6.30 € |
+| reversion_bb | 924.57 € (+0.04%) | 1 | 3 | 100% | +1.500% | +0.400% | +0.348% | +0.18 € |
+| ruptura_volumen | 924.38 € (+0.02%) | 0 | 2 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
 | rebote_extremo | 921.79 € (-0.26%) | 3 | 0 | 33% | -0.667% | -1.767% | -2.487% | -2.45 € |
-| pullback_tendencia | 921.56 € (-0.29%) | 3 | 1 | 0% | -1.279% | -2.379% | -2.607% | -3.30 € |
+| pullback_tendencia | 921.62 € (-0.28%) | 3 | 1 | 0% | -1.279% | -2.379% | -2.607% | -3.30 € |
 
 ## Últimas 15 operaciones cerradas
 
@@ -29,15 +29,5 @@ Config `P1-v2` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 10:05
 | 2026-09-28 09:05 | rebote_extremo | QNT | stop-loss | -2.00% | -3.10% | -1.43 |
 | 2026-09-28 09:05 | c_banda_atr | HYPE | cruce bajista | -0.52% | -1.62% | -0.75 |
 | 2026-09-28 09:05 | c_banda_atr | DOGE | cruce bajista | -0.68% | -1.77% | -0.82 |
-
-## Eventos de la última vuelta
-
-- 2026-09-28 10:05 [c_banda_atr] ENTRADA ETH @ 2330.2 (45.90 €)
-- 2026-09-28 10:05 [c_banda_atr] ENTRADA XRP @ 1.30836 (45.90 €)
-- 2026-09-28 10:05 [reversion_bb] CIERRE NEAR take-profit bruto +1.50% neto +0.40%
-- 2026-09-28 10:05 [c_banda_atr] ENTRADA ZEC @ 1365.18 (45.90 €)
-- 2026-09-28 10:05 [c_banda_atr] ENTRADA DOGE @ 0.0817599 (45.90 €)
-- 2026-09-28 10:05 [ruptura_volumen] ENTRADA HYPE @ 78.95 (46.21 €)
-- 2026-09-28 10:05 [c_banda_atr] ENTRADA JUP @ 0.29984 (45.90 €)
 
 Universo: BTC, QNT, SOL, ETH, XRP, SUI, NEAR, ZEC, ONDO, LINK, LTC, PUMP, TAO, ADA, UNI, AVAX, BCH, DOGE, ARB, ENA, HYPE, DOT, XLM, AAVE, W, PEPE, XPL, POL, XDC, DASH, MON, WLD, JUP, GRT, FET
