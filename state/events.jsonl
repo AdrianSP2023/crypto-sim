@@ -6,3 +6,4 @@
 {"type": "entry", "asset": "HYPE", "strategy": "c_banda_atr", "version": "P1-v1", "t": "2026-09-28 08:55", "ts": 1790585700, "price": 78.46, "qty": 46.21, "spread": 0.00026}
 {"type": "entry", "asset": "XLM", "strategy": "c_banda_atr", "version": "P1-v1", "t": "2026-09-28 08:55", "ts": 1790585700, "price": 0.184503, "qty": 46.21, "spread": 0.00072}
 {"type": "entry", "asset": "XLM", "strategy": "ruptura_volumen", "version": "P1-v1", "t": "2026-09-28 08:55", "ts": 1790585700, "price": 0.184503, "qty": 46.21, "spread": 0.00072}
+{"type": "entry", "asset": "QNT", "strategy": "rebote_extremo", "version": "P1-v1", "t": "2026-09-28 09:00", "ts": 1790586000, "price": 208.53, "qty": 46.21, "spread": 0.00581}
