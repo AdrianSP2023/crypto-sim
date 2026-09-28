@@ -1,19 +1,20 @@
 # Simulación P1 (sin dinero real)
 
-Config `P1-v1` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 09:40 UTC · vueltas 12 · 35 activos · velas 5 min · comisión 1.1% ida+vuelta
+Config `P1-v1` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 09:45 UTC · vueltas 13 · 35 activos · velas 5 min · comisión 1.1% ida+vuelta
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 918.70 € (-0.60%) | 7 | 2 | 0% | -0.625% | -1.725% | -1.761% | -5.57 € |
-| reversion_bb | 924.18 € (-0.01%) | 0 | 3 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
-| ruptura_volumen | 924.34 € (+0.01%) | 0 | 1 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
+| c_banda_atr | 917.97 € (-0.68%) | 8 | 1 | 0% | -0.608% | -1.708% | -1.753% | -6.30 € |
+| reversion_bb | 923.73 € (-0.05%) | 0 | 4 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
+| ruptura_volumen | 924.27 € (+0.00%) | 0 | 1 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
 | rebote_extremo | 921.79 € (-0.26%) | 3 | 0 | 33% | -0.667% | -1.767% | -2.487% | -2.45 € |
-| pullback_tendencia | 920.95 € (-0.36%) | 3 | 1 | 0% | -1.279% | -2.379% | -2.607% | -3.30 € |
+| pullback_tendencia | 921.24 € (-0.32%) | 3 | 1 | 0% | -1.279% | -2.379% | -2.607% | -3.30 € |
 
 ## Últimas 15 operaciones cerradas
 
 | Salida (UTC) | Estrategia | Activo | Motivo | Bruto | Neto | € |
 |---|---|---|---|---|---|---|
+| 2026-09-28 09:45 | c_banda_atr | BCH | cruce bajista | -0.49% | -1.59% | -0.73 |
 | 2026-09-28 09:40 | rebote_extremo | QNT | stop-loss | -2.00% | -3.10% | -1.43 |
 | 2026-09-28 09:40 | c_banda_atr | ADA | cruce bajista | -0.73% | -1.83% | -0.85 |
 | 2026-09-28 09:35 | c_banda_atr | HYPE | cruce bajista | -0.32% | -1.42% | -0.65 |
@@ -30,8 +31,7 @@ Config `P1-v1` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 09:40
 
 ## Eventos de la última vuelta
 
-- 2026-09-28 09:40 [rebote_extremo] CIERRE QNT stop-loss bruto -2.00% neto -3.10%
-- 2026-09-28 09:40 [c_banda_atr] CIERRE ADA cruce bajista bruto -0.73% neto -1.83%
-- 2026-09-28 09:40 [pullback_tendencia] ENTRADA XDC @ 0.02988 (46.05 €)
+- 2026-09-28 09:45 [reversion_bb] ENTRADA NEAR @ 4.3506 (46.21 €)
+- 2026-09-28 09:45 [c_banda_atr] CIERRE BCH cruce bajista bruto -0.49% neto -1.59%
 
 Universo: BTC, QNT, SOL, ETH, XRP, SUI, NEAR, ZEC, ONDO, LINK, LTC, PUMP, TAO, ADA, UNI, AVAX, BCH, DOGE, ARB, ENA, HYPE, DOT, XLM, AAVE, W, PEPE, XPL, POL, XDC, DASH, MON, WLD, JUP, GRT, FET
