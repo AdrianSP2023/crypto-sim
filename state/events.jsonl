@@ -132,3 +132,6 @@
 {"type": "entry", "asset": "ICP", "strategy": "ruptura_volumen", "version": "P1-v5", "t": "2026-09-28 13:00", "ts": 1790600400, "price": 2.657, "qty": 22.95, "spread": 0.00076}
 {"type": "entry", "asset": "TON", "strategy": "macd_momentum", "version": "P1-v5", "t": "2026-09-28 13:00", "ts": 1790600400, "price": 1.465, "qty": 23.09, "spread": 0.00343}
 {"type": "entry", "asset": "RAY", "strategy": "macd_momentum", "version": "P1-v5", "t": "2026-09-28 13:00", "ts": 1790600400, "price": 1.779, "qty": 23.09, "spread": 0.00339}
+{"type": "entry", "asset": "LTC", "strategy": "estocastico_rebote", "version": "P1-v5", "t": "2026-09-28 13:05", "ts": 1790600700, "price": 62.0, "qty": 23.11, "spread": 0.00048}
+{"type": "exit", "asset": "ONDO", "strategy": "ruptura_volumen", "version": "P1-v3", "entry_t": "2026-09-28 12:10", "exit_t": "2026-09-28 13:05", "entry_ts": 1790597400, "exit_ts": 1790600700, "entry": 0.47177, "exit": 0.46610876, "qty": 46.04, "gross_pct": -1.2, "net_pct": -2.3, "net_spread_pct": -2.459, "pnl_eur": -1.059, "reason": "stop-loss", "candles": 11}
+{"type": "entry", "asset": "ALGO", "strategy": "pullback_tendencia", "version": "P1-v5", "t": "2026-09-28 13:05", "ts": 1790600700, "price": 0.11486, "qty": 23.05, "spread": 0.00122}
