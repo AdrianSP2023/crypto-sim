@@ -1,5 +1,5 @@
 {
-  "version": "P1-v6",
+  "version": "P1-v7",
   "phase": "P1",
   "enabled": true,
   "phase_end_utc": "2026-09-29T09:00:00+00:00",
@@ -171,6 +171,20 @@
       "sl": 0.015,
       "max_hold": 48,
       "base": "pullback_tendencia",
+      "market_filter": 0.5
+    },
+    "estocastico_rebote_filtro": {
+      "enabled": true,
+      "k_n": 14,
+      "k_smooth": 3,
+      "d_n": 3,
+      "oversold": 20,
+      "ema_mid": 50,
+      "ema_slow": 100,
+      "tp": 0.018,
+      "sl": 0.015,
+      "max_hold": 36,
+      "base": "estocastico_rebote",
       "market_filter": 0.5
     }
   },

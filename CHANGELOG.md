@@ -79,3 +79,13 @@ pierden juntas.
   para comparar en P2 en las mismas condiciones de mercado. Cada variante nueva
   tiene su propia caja de 924,24 €.
 - report.py muestra cuántas entradas ha bloqueado el filtro ("filtradas").
+
+## P1-v7 — 2026-09-28 14:46 UTC (ajuste in situ)
+
+- **Nueva variante A/B: estocastico_rebote_filtro** (mismo filtro de amplitud ≥50%).
+  Motivo: en la bajada general, estocastico_rebote siguió comprando cada rebote
+  (15 posiciones abiertas; 5 de 5 cierres por stop-loss entre 14:13 y 14:43 UTC).
+  Su filtro EMA50>EMA100 reacciona tarde en una caída. La original no se toca.
+- Filtro P1-v6 sin datos todavía: desde las 14:11 UTC las 4 estrategias
+  originales no han abierto nada nuevo. Las pérdidas de estos 30 min (26 cierres,
+  −19,3 €) son posiciones abiertas antes de la bajada.
