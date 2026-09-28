@@ -1350,3 +1350,12 @@
 {"type": "entry", "asset": "CC", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-28 23:15", "ts": 1790637300, "price": 0.11463, "qty": 22.28, "spread": 0.00192}
 {"type": "entry", "asset": "CC", "strategy": "macd_momentum_filtro", "version": "P1-v9", "t": "2026-09-28 23:15", "ts": 1790637300, "price": 0.11463, "qty": 22.75, "spread": 0.00192}
 {"type": "entry", "asset": "CC", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-28 23:15", "ts": 1790637300, "price": 0.11463, "qty": 22.86, "spread": 0.00192}
+{"type": "entry", "asset": "ALGO", "strategy": "estocastico_rebote", "version": "P1-v9", "t": "2026-09-28 23:20", "ts": 1790637600, "price": 0.11871, "qty": 22.41, "spread": 0.00127}
+{"type": "entry", "asset": "ALGO", "strategy": "estocastico_rebote_filtro", "version": "P1-v9", "t": "2026-09-28 23:20", "ts": 1790637600, "price": 0.11871, "qty": 22.98, "spread": 0.00127}
+{"type": "exit", "asset": "POL", "strategy": "reversion_bb", "version": "P1-v9", "entry_t": "2026-09-28 22:05", "exit_t": "2026-09-28 23:20", "entry_ts": 1790633100, "exit_ts": 1790637600, "entry": 0.10065, "exit": 0.10229, "qty": 23.06, "gross_pct": 1.629, "net_pct": 0.529, "net_spread_pct": 0.392, "pnl_eur": 0.122, "reason": "take-profit", "candles": 15}
+{"type": "entry", "asset": "ZRO", "strategy": "ruptura_volumen", "version": "P1-v9", "t": "2026-09-28 23:20", "ts": 1790637600, "price": 1.368, "qty": 22.09, "spread": 0.00073}
+{"type": "entry", "asset": "ZRO", "strategy": "ruptura_volumen_filtro", "version": "P1-v9", "t": "2026-09-28 23:20", "ts": 1790637600, "price": 1.368, "qty": 22.72, "spread": 0.00073}
+{"type": "entry", "asset": "RENDER", "strategy": "ruptura_volumen", "version": "P1-v9", "t": "2026-09-28 23:20", "ts": 1790637600, "price": 1.705, "qty": 22.09, "spread": 0.00176}
+{"type": "entry", "asset": "RENDER", "strategy": "ruptura_volumen_filtro", "version": "P1-v9", "t": "2026-09-28 23:20", "ts": 1790637600, "price": 1.705, "qty": 22.72, "spread": 0.00176}
+{"type": "exit", "asset": "PENGU", "strategy": "reversion_bb", "version": "P1-v9", "entry_t": "2026-09-28 22:15", "exit_t": "2026-09-28 23:20", "entry_ts": 1790633700, "exit_ts": 1790637600, "entry": 0.008104, "exit": 0.008245, "qty": 23.06, "gross_pct": 1.74, "net_pct": 0.64, "net_spread_pct": 0.535, "pnl_eur": 0.148, "reason": "take-profit", "candles": 13}
+{"type": "entry", "asset": "CRV", "strategy": "ruptura_volumen_filtro", "version": "P1-v9", "t": "2026-09-28 23:20", "ts": 1790637600, "price": 0.33007, "qty": 22.72, "spread": 0.002}
