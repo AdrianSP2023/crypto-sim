@@ -1,0 +1,24 @@
+name: Verificación (manual)
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Pruebas del núcleo (datos sintéticos)
+        run: python tests/test_core.py
+      - name: Universo real de Kraken
+        run: python -c "import engine, json; [print(x) for x in engine.resolve_universe(json.load(open('config.json')))]"
+      - name: ¿Responde Bit2Me desde GitHub?
+        run: |
+          curl -sS -m 20 -o b2m.txt -w "HTTP %{http_code}, %{content_type}\n" "https://api.bit2me.com/v1/trading/candle?symbol=BTC/EUR&interval=5&limit=2" || true
+          head -c 300 b2m.txt; echo

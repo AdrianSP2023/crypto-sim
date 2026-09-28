@@ -1,0 +1,36 @@
+name: Motor P1
+
+# Bucle continuo: cada ejecución opera ~5 h 45 min y termina; la siguiente
+# (encolada por el cron) continúa desde el estado guardado en el repo.
+on:
+  push:
+    branches: [main]
+    paths: ["engine.py", "core.py", "strategies.py", "config.json", ".github/workflows/engine.yml"]
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: engine
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: |
+          git config user.name "motor-p1"
+          git config user.email "motor-p1@users.noreply.github.com"
+      - run: python -u engine.py
+        env:
+          RUN_MINUTES: "345"
