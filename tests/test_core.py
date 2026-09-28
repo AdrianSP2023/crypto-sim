@@ -33,7 +33,7 @@ def synth(seed, n=700, start=1_760_000_000):
 def test_no_lookahead():
     df = synth(1)
     for name, p in CFG["strategies"].items():
-        prep, entry, ex = REGISTRY[name]
+        prep, entry, ex = REGISTRY[p.get("base", name)]
         full = prep(df, p)
         for i in range(CFG["warmup"], len(df), 7):
             part = prep(df.iloc[: i + 1].reset_index(drop=True), p)
@@ -99,5 +99,19 @@ def test_incremental_equals_batch():
         assert a["closed"] == b["closed"] and a["positions"] == b["positions"] and abs(a["cash"] - b["cash"]) < 1e-9, k
     print("incremental == de golpe OK")
 
+def test_market_filter():
+    """Variante filtrada = misma estrategia base, pero solo entra con amplitud >= umbral."""
+    frames = {a: synth(60 + k) for k, a in enumerate("ABCDEF")}
+    st = run_batch(frames, CFG)
+    br = core.market_breadth(frames, CFG)
+    for base in ["c_banda_atr", "ruptura_volumen", "macd_momentum", "pullback_tendencia"]:
+        f = st["strategies"][base + "_filtro"]
+        thr = CFG["strategies"][base + "_filtro"]["market_filter"]
+        for t in f["closed"]:
+            assert br[t["entry_ts"] - 300] >= thr, (base, t)
+        assert f["blocked_filter"] > 0, base
+    print("filtro de mercado OK:", {b: st["strategies"][b]["blocked_filter"] for b in st["strategies"] if b.endswith("_filtro")})
+
 if __name__ == "__main__":
+    test_market_filter()
     test_no_lookahead(); test_reference_and_coverage(); test_incremental_equals_batch()

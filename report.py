@@ -79,12 +79,12 @@ def analyze(state, hours=None):
     if state.get("last_warnings"):
         head += f" · avisos: {state['last_warnings']}"
     out.append(head)
-    out.append(f"{'estrategia':22} {'n':>4} {'acierto':>7} {'bruto':>8} {'neto':>8} {'neto+sp':>8} {'PnL€':>8} {'abiertas':>8} {'sin caja':>8}")
+    out.append(f"{'estrategia':22} {'n':>4} {'acierto':>7} {'bruto':>8} {'neto':>8} {'neto+sp':>8} {'PnL€':>8} {'abiertas':>8} {'sin caja':>8} {'filtradas':>9}")
     for name, st in state["strategies"].items():
         tr = [t for t in st["closed"] if cut is None or t["exit_ts"] >= cut]
         s = stats(tr)
         out.append(f"{name:22} {s['n']:>4} {s['win']:>6.0f}% {s['gross']:>+7.3f}% {s['net']:>+7.3f}% "
-                   f"{s['net_sp']:>+7.3f}% {s['pnl']:>+8.2f} {len(st['positions']):>8} {st['skipped_no_cash']:>8}")
+                   f"{s['net_sp']:>+7.3f}% {s['pnl']:>+8.2f} {len(st['positions']):>8} {st['skipped_no_cash']:>8} {st.get('blocked_filter', 0):>9}")
     # desglose por motivo de salida y por versión (acumulado)
     out.append("")
     for name, st in state["strategies"].items():

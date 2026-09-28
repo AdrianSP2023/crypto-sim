@@ -16,7 +16,7 @@ cifras: bruto, neto (comisión) y neto_spread (comisión + spread).
 
 from datetime import datetime, timezone
 
-from strategies import REGISTRY
+from strategies import REGISTRY, ema
 
 
 def iso(ts):
@@ -43,6 +43,25 @@ def ensure_strategies(state, cfg):
             "closed": [],
             "skipped_no_cash": 0,
         })
+        state["strategies"][name].setdefault("blocked_filter", 0)
+
+
+def base_of(name, p):
+    return p.get("base", name)
+
+
+def market_breadth(frames, cfg):
+    """Fracción de activos con cierre > EMA(n) en cada vela (timestamp -> 0..1).
+    Solo usa datos hasta esa vela (la EMA es causal)."""
+    n = cfg.get("breadth_ema", 50)
+    up, tot = {}, {}
+    for df in frames.values():
+        above = (df.close > ema(df.close, n)).to_numpy()
+        for t, a in zip(df.time.to_numpy(), above):
+            t = int(t)
+            tot[t] = tot.get(t, 0) + 1
+            up[t] = up.get(t, 0) + int(a)
+    return {t: up[t] / tot[t] for t in tot}
 
 
 def prepare(frames, cfg):
@@ -51,7 +70,7 @@ def prepare(frames, cfg):
     for asset, df in frames.items():
         out[asset] = {}
         for name, p in cfg["strategies"].items():
-            prep, _, _ = REGISTRY[name]
+            prep, _, _ = REGISTRY[base_of(name, p)]
             out[asset][name] = prep(df, p).reset_index(drop=True)
     return out
 
@@ -62,6 +81,7 @@ def process_frames(state, frames, cfg, log, spreads=None, events=None):
     spreads = spreads or {}
     ensure_strategies(state, cfg)
     prepared = prepare(frames, cfg)
+    breadth = market_breadth(frames, cfg)
     evs = []
     for asset, df in frames.items():
         last = state["last_candle"].get(asset)
@@ -72,11 +92,11 @@ def process_frames(state, frames, cfg, log, spreads=None, events=None):
         evs += [(int(df.time.iat[i]), asset, i) for i in idx]
     order = list(frames)
     for ct, asset, i in sorted(evs, key=lambda e: (e[0], order.index(e[1]))):
-        step(state, cfg, asset, prepared[asset], i, log, spreads.get(asset, 0.0), events)
+        step(state, cfg, asset, prepared[asset], i, log, spreads.get(asset, 0.0), events, breadth.get(ct))
         state["last_candle"][asset] = ct
 
 
-def step(state, cfg, asset, prepared_asset, i, log, spread, events):
+def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadth=None):
     fee = cfg["fee_round_trip"]
     csec = cfg["candle_minutes"] * 60
     for name, p in cfg["strategies"].items():
@@ -84,7 +104,7 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events):
         d = prepared_asset[name]
         ct = int(d.time.iat[i])
         close_t = ct + csec
-        prep, entry, exit_signal = REGISTRY[name]
+        prep, entry, exit_signal = REGISTRY[base_of(name, p)]
         pos = st["positions"].get(asset)
 
         if pos is not None:
@@ -129,6 +149,10 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events):
         if not p.get("enabled", True) or i < cfg["warmup"]:
             continue
         if not entry(d, i, p):
+            continue
+        mf = p.get("market_filter")
+        if mf and (breadth is None or breadth < mf):
+            st["blocked_filter"] += 1
             continue
         equity_cost = st["cash"] + sum(x["qty"] for x in st["positions"].values())
         qty = min(st["cash"], cfg["position_pct"] * equity_cost)

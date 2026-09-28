@@ -63,3 +63,19 @@ revisión tenga más datos. Revisiones de Claude cada 30 min a partir de ahora.
   operaciones. No afecta a los % por operación (bruto/neto), solo a los €.
 - Confirmado el efecto de P1-v2 en c_banda_atr: sin la salida por cruce, 9 ops
   (v2+v3) con bruto medio +1,6% (frente a −0,32% en v1).
+
+## P1-v6 — 2026-09-28 14:12 UTC (ajuste in situ: filtro de mercado, prueba A/B)
+
+Motivo: entre las 13:35 y las 14:05 UTC se cerraron 46 operaciones, casi todas
+con pérdida (−23,7 €), en las 7 estrategias a la vez. Fue una bajada general del
+mercado. Todas las estrategias solo compran, así que en un mercado que cae
+pierden juntas.
+
+- **Filtro de amplitud de mercado:** solo se abren compras si al menos el 50%
+  de los 60 activos cierra por encima de su EMA50 (velas de 5 min).
+- **Prueba A/B:** se añaden 4 variantes con filtro (`*_filtro`) de las 4
+  estrategias más activas (c_banda_atr, ruptura_volumen, macd_momentum,
+  pullback_tendencia), con los mismos parámetros. Las originales siguen igual
+  para comparar en P2 en las mismas condiciones de mercado. Cada variante nueva
+  tiene su propia caja de 924,24 €.
+- report.py muestra cuántas entradas ha bloqueado el filtro ("filtradas").
