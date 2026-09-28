@@ -1396,3 +1396,11 @@
 {"type": "exit", "asset": "LINK", "strategy": "macd_sin_salida", "version": "P1-v9", "entry_t": "2026-09-28 22:50", "exit_t": "2026-09-28 23:45", "entry_ts": 1790635800, "exit_ts": 1790639100, "entry": 13.35168, "exit": 13.6187136, "qty": 22.87, "gross_pct": 2.0, "net_pct": 0.9, "net_spread_pct": 0.869, "pnl_eur": 0.206, "reason": "take-profit", "candles": 11}
 {"type": "entry", "asset": "AAVE", "strategy": "ruptura_volumen", "version": "P1-v9", "t": "2026-09-28 23:45", "ts": 1790639100, "price": 131.03, "qty": 22.09, "spread": 0.00053}
 {"type": "entry", "asset": "AAVE", "strategy": "ruptura_volumen_filtro", "version": "P1-v9", "t": "2026-09-28 23:45", "ts": 1790639100, "price": 131.03, "qty": 22.72, "spread": 0.00053}
+{"type": "entry", "asset": "HBAR", "strategy": "estocastico_rebote_filtro", "version": "P1-v9", "t": "2026-09-28 23:50", "ts": 1790639400, "price": 0.10714, "qty": 22.98, "spread": 0.00037}
+{"type": "entry", "asset": "ALGO", "strategy": "pullback_tendencia", "version": "P1-v9", "t": "2026-09-28 23:50", "ts": 1790639400, "price": 0.1187, "qty": 22.63, "spread": 0.00101}
+{"type": "entry", "asset": "ALGO", "strategy": "pullback_tendencia_filtro", "version": "P1-v9", "t": "2026-09-28 23:50", "ts": 1790639400, "price": 0.1187, "qty": 22.92, "spread": 0.00101}
+{"type": "entry", "asset": "KAS", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-28 23:50", "ts": 1790639400, "price": 0.03987, "qty": 22.28, "spread": 0.00251}
+{"type": "entry", "asset": "KAS", "strategy": "macd_momentum_filtro", "version": "P1-v9", "t": "2026-09-28 23:50", "ts": 1790639400, "price": 0.03987, "qty": 22.75, "spread": 0.00251}
+{"type": "entry", "asset": "KAS", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-28 23:50", "ts": 1790639400, "price": 0.03987, "qty": 22.87, "spread": 0.00251}
+{"type": "entry", "asset": "CC", "strategy": "ruptura_volumen", "version": "P1-v9", "t": "2026-09-28 23:50", "ts": 1790639400, "price": 0.11471, "qty": 22.09, "spread": 0.00522}
+{"type": "entry", "asset": "CC", "strategy": "ruptura_volumen_filtro", "version": "P1-v9", "t": "2026-09-28 23:50", "ts": 1790639400, "price": 0.11471, "qty": 22.72, "spread": 0.00522}
