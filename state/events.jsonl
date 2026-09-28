@@ -377,3 +377,13 @@
 {"type": "entry", "asset": "SEI", "strategy": "c_banda_atr", "version": "P1-v7", "t": "2026-09-28 16:15", "ts": 1790612100, "price": 0.06881, "qty": 22.59, "spread": 0.00131}
 {"type": "exit", "asset": "NIGHT", "strategy": "macd_momentum", "version": "P1-v7", "entry_t": "2026-09-28 15:10", "exit_t": "2026-09-28 16:15", "entry_ts": 1790608200, "exit_ts": 1790612100, "entry": 0.02421, "exit": 0.02429, "qty": 22.88, "gross_pct": 0.33, "net_pct": -0.77, "net_spread_pct": -0.995, "pnl_eur": -0.176, "reason": "momentum perdido", "candles": 13}
 {"type": "entry", "asset": "KAS", "strategy": "c_banda_atr", "version": "P1-v7", "t": "2026-09-28 16:15", "ts": 1790612100, "price": 0.04071, "qty": 22.59, "spread": 0.00147}
+{"type": "entry", "asset": "DOGE", "strategy": "ruptura_volumen", "version": "P1-v7", "t": "2026-09-28 16:20", "ts": 1790612400, "price": 0.0827674, "qty": 22.49, "spread": 0.0008}
+{"type": "entry", "asset": "DOGE", "strategy": "ruptura_volumen_filtro", "version": "P1-v7", "t": "2026-09-28 16:20", "ts": 1790612400, "price": 0.0827674, "qty": 23.11, "spread": 0.0008}
+{"type": "entry", "asset": "BCH", "strategy": "c_banda_atr", "version": "P1-v7", "t": "2026-09-28 16:20", "ts": 1790612400, "price": 273.45, "qty": 22.59, "spread": 0.00066}
+{"type": "entry", "asset": "BCH", "strategy": "c_banda_atr_filtro", "version": "P1-v7", "t": "2026-09-28 16:20", "ts": 1790612400, "price": 273.45, "qty": 23.11, "spread": 0.00066}
+{"type": "exit", "asset": "PEPE", "strategy": "estocastico_rebote", "version": "P1-v7", "entry_t": "2026-09-28 15:00", "exit_t": "2026-09-28 16:20", "entry_ts": 1790607600, "exit_ts": 1790612400, "entry": 3.655e-06, "exit": 3.7208e-06, "qty": 22.73, "gross_pct": 1.8, "net_pct": 0.7, "net_spread_pct": 0.673, "pnl_eur": 0.159, "reason": "take-profit", "candles": 16}
+{"type": "entry", "asset": "POL", "strategy": "estocastico_rebote_filtro", "version": "P1-v7", "t": "2026-09-28 16:20", "ts": 1790612400, "price": 0.10146, "qty": 23.11, "spread": 0.00157}
+{"type": "entry", "asset": "DASH", "strategy": "c_banda_atr", "version": "P1-v7", "t": "2026-09-28 16:20", "ts": 1790612400, "price": 56.757, "qty": 22.59, "spread": 0.00187}
+{"type": "entry", "asset": "DASH", "strategy": "c_banda_atr_filtro", "version": "P1-v7", "t": "2026-09-28 16:20", "ts": 1790612400, "price": 56.757, "qty": 23.11, "spread": 0.00187}
+{"type": "entry", "asset": "WLD", "strategy": "c_banda_atr", "version": "P1-v7", "t": "2026-09-28 16:20", "ts": 1790612400, "price": 0.4348, "qty": 22.59, "spread": 0.00184}
+{"type": "entry", "asset": "WLD", "strategy": "c_banda_atr_filtro", "version": "P1-v7", "t": "2026-09-28 16:20", "ts": 1790612400, "price": 0.4348, "qty": 23.11, "spread": 0.00184}
