@@ -1,2 +1,3 @@
 {"type": "universe", "t": "2026-09-28T08:49:26.648342+00:00", "assets": ["BTC", "QNT", "SOL", "ETH", "XRP", "SUI", "NEAR", "ZEC", "ONDO", "LINK", "LTC", "PUMP", "TAO", "ADA", "UNI", "AVAX", "BCH", "DOGE", "ARB", "ENA", "HYPE", "DOT", "XLM", "AAVE", "W", "PEPE", "XPL", "POL", "XDC", "DASH", "MON", "WLD", "JUP", "GRT", "FET"]}
 {"type": "entry", "asset": "MON", "strategy": "pullback_tendencia", "version": "P1-v1", "t": "2026-09-28 08:45", "ts": 1790585100, "price": 0.02498, "qty": 46.21, "spread": 0.0004}
+{"type": "entry", "asset": "XDC", "strategy": "pullback_tendencia", "version": "P1-v1", "t": "2026-09-28 08:50", "ts": 1790585400, "price": 0.02991, "qty": 46.21, "spread": 0.00234}
