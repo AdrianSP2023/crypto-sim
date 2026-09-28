@@ -322,3 +322,6 @@
 {"type": "exit", "asset": "TON", "strategy": "estocastico_rebote", "version": "P1-v7", "entry_t": "2026-09-28 14:45", "exit_t": "2026-09-28 15:00", "entry_ts": 1790606700, "exit_ts": 1790607600, "entry": 1.445, "exit": 1.418, "qty": 22.87, "gross_pct": -1.869, "net_pct": -2.969, "net_spread_pct": -3.109, "pnl_eur": -0.679, "reason": "stop-loss", "candles": 3}
 {"type": "entry", "asset": "VVV", "strategy": "rebote_extremo", "version": "P1-v7", "t": "2026-09-28 15:00", "ts": 1790607600, "price": 23.605, "qty": 23.04, "spread": 0.00144}
 {"type": "entry", "asset": "VIRTUAL", "strategy": "estocastico_rebote", "version": "P1-v7", "t": "2026-09-28 15:00", "ts": 1790607600, "price": 0.6884, "qty": 22.72, "spread": 0.00029}
+{"type": "entry", "asset": "ZEC", "strategy": "estocastico_rebote", "version": "P1-v7", "t": "2026-09-28 15:05", "ts": 1790607900, "price": 1345.859, "qty": 22.72, "spread": 0.0002}
+{"type": "entry", "asset": "ALGO", "strategy": "estocastico_rebote", "version": "P1-v7", "t": "2026-09-28 15:05", "ts": 1790607900, "price": 0.11454, "qty": 22.72, "spread": 0.0014}
+{"type": "entry", "asset": "TON", "strategy": "estocastico_rebote", "version": "P1-v7", "t": "2026-09-28 15:05", "ts": 1790607900, "price": 1.42, "qty": 22.72, "spread": 0.00282}
