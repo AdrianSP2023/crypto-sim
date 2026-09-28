@@ -835,3 +835,19 @@
 {"type": "entry", "asset": "VVV", "strategy": "ruptura_estricta", "version": "P1-v8", "t": "2026-09-28 18:55", "ts": 1790621700, "price": 24.485, "qty": 23.11, "spread": 0.00115}
 {"type": "exit", "asset": "SHIB", "strategy": "macd_momentum", "version": "P1-v7", "entry_t": "2026-09-28 17:15", "exit_t": "2026-09-28 18:55", "entry_ts": 1790615700, "exit_ts": 1790621700, "entry": 5.032e-06, "exit": 5.031e-06, "qty": 22.83, "gross_pct": -0.02, "net_pct": -1.12, "net_spread_pct": -1.189, "pnl_eur": -0.256, "reason": "momentum perdido", "candles": 20}
 {"type": "exit", "asset": "SHIB", "strategy": "macd_momentum_filtro", "version": "P1-v7", "entry_t": "2026-09-28 17:15", "exit_t": "2026-09-28 18:55", "entry_ts": 1790615700, "exit_ts": 1790621700, "entry": 5.032e-06, "exit": 5.031e-06, "qty": 23.09, "gross_pct": -0.02, "net_pct": -1.12, "net_spread_pct": -1.189, "pnl_eur": -0.259, "reason": "momentum perdido", "candles": 20}
+{"type": "entry", "asset": "SOL", "strategy": "macd_momentum", "version": "P1-v8", "t": "2026-09-28 19:00", "ts": 1790622000, "price": 105.53, "qty": 22.63, "spread": 9e-05}
+{"type": "entry", "asset": "SOL", "strategy": "macd_momentum_filtro", "version": "P1-v8", "t": "2026-09-28 19:00", "ts": 1790622000, "price": 105.53, "qty": 22.89, "spread": 9e-05}
+{"type": "entry", "asset": "SUI", "strategy": "macd_momentum", "version": "P1-v8", "t": "2026-09-28 19:00", "ts": 1790622000, "price": 1.0284, "qty": 22.63, "spread": 0.00039}
+{"type": "entry", "asset": "SUI", "strategy": "macd_momentum_filtro", "version": "P1-v8", "t": "2026-09-28 19:00", "ts": 1790622000, "price": 1.0284, "qty": 22.89, "spread": 0.00039}
+{"type": "entry", "asset": "HBAR", "strategy": "pullback_tendencia", "version": "P1-v8", "t": "2026-09-28 19:00", "ts": 1790622000, "price": 0.11215, "qty": 22.83, "spread": 0.00027}
+{"type": "entry", "asset": "HBAR", "strategy": "pullback_tendencia_filtro", "version": "P1-v8", "t": "2026-09-28 19:00", "ts": 1790622000, "price": 0.11215, "qty": 23.05, "spread": 0.00027}
+{"type": "entry", "asset": "ONDO", "strategy": "macd_momentum", "version": "P1-v8", "t": "2026-09-28 19:00", "ts": 1790622000, "price": 0.45765, "qty": 22.63, "spread": 0.00101}
+{"type": "entry", "asset": "ONDO", "strategy": "macd_momentum_filtro", "version": "P1-v8", "t": "2026-09-28 19:00", "ts": 1790622000, "price": 0.45765, "qty": 22.89, "spread": 0.00101}
+{"type": "entry", "asset": "UNI", "strategy": "c_banda_atr", "version": "P1-v8", "t": "2026-09-28 19:00", "ts": 1790622000, "price": 7.8437, "qty": 22.45, "spread": 0.00061}
+{"type": "entry", "asset": "UNI", "strategy": "c_banda_atr_filtro", "version": "P1-v8", "t": "2026-09-28 19:00", "ts": 1790622000, "price": 7.8437, "qty": 22.97, "spread": 0.00061}
+{"type": "entry", "asset": "ALGO", "strategy": "estocastico_rebote", "version": "P1-v8", "t": "2026-09-28 19:00", "ts": 1790622000, "price": 0.11799, "qty": 22.66, "spread": 0.00102}
+{"type": "entry", "asset": "ALGO", "strategy": "estocastico_rebote_filtro", "version": "P1-v8", "t": "2026-09-28 19:00", "ts": 1790622000, "price": 0.11799, "qty": 23.09, "spread": 0.00102}
+{"type": "entry", "asset": "ICP", "strategy": "c_banda_atr", "version": "P1-v8", "t": "2026-09-28 19:00", "ts": 1790622000, "price": 2.687, "qty": 22.45, "spread": 0.00112}
+{"type": "entry", "asset": "ICP", "strategy": "c_banda_atr_filtro", "version": "P1-v8", "t": "2026-09-28 19:00", "ts": 1790622000, "price": 2.687, "qty": 22.97, "spread": 0.00112}
+{"type": "entry", "asset": "VVV", "strategy": "macd_momentum", "version": "P1-v8", "t": "2026-09-28 19:00", "ts": 1790622000, "price": 24.394, "qty": 22.63, "spread": 0.00078}
+{"type": "entry", "asset": "VVV", "strategy": "macd_momentum_filtro", "version": "P1-v8", "t": "2026-09-28 19:00", "ts": 1790622000, "price": 24.394, "qty": 22.89, "spread": 0.00078}
