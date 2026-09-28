@@ -41,3 +41,4 @@
 {"type": "entry", "asset": "DOGE", "strategy": "c_banda_atr", "version": "P1-v2", "t": "2026-09-28 10:05", "ts": 1790589900, "price": 0.0817599, "qty": 45.9, "spread": 0.00037}
 {"type": "entry", "asset": "HYPE", "strategy": "ruptura_volumen", "version": "P1-v2", "t": "2026-09-28 10:05", "ts": 1790589900, "price": 78.95, "qty": 46.21, "spread": 0.00025}
 {"type": "entry", "asset": "JUP", "strategy": "c_banda_atr", "version": "P1-v2", "t": "2026-09-28 10:05", "ts": 1790589900, "price": 0.29984, "qty": 45.9, "spread": 0.00201}
+{"type": "entry", "asset": "GRT", "strategy": "c_banda_atr", "version": "P1-v2", "t": "2026-09-28 10:35", "ts": 1790591700, "price": 0.02812, "qty": 45.9, "spread": 0.00249}
