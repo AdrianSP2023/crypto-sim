@@ -1,12 +1,12 @@
 {
-  "version": "P1-v4",
+  "version": "P1-v5",
   "phase": "P1",
   "enabled": true,
   "phase_end_utc": "2026-09-29T09:00:00+00:00",
   "candle_minutes": 5,
   "fee_round_trip": 0.011,
   "initial_cash": 924.24,
-  "position_pct": 0.05,
+  "position_pct": 0.025,
   "warmup": 110,
   "universe": {
     "quote": "EUR",

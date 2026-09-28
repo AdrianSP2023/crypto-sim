@@ -53,3 +53,13 @@ revisión tenga más datos. Revisiones de Claude cada 30 min a partir de ahora.
   sobreventa (<20), con EMA50 > EMA100. Sale con TP +1,8%, SL −1,5%, 3 h.
 - Motor: pausa entre peticiones a Kraken 0,4 → 0,6 s (60 pares ≈ 55 s por vuelta,
   dentro del límite de la API pública).
+
+## P1-v5 — 2026-09-28 13:00 UTC (ajuste in situ)
+
+- **Tamaño por operación 5% → 2,5% del patrimonio** (hasta ~40 posiciones
+  simultáneas por estrategia en lugar de 20).
+  Motivo: con 60 pares, ruptura_volumen llegó a 20 posiciones abiertas y
+  descartó 9 entradas por falta de caja. El objetivo de P1 es el máximo de
+  operaciones. No afecta a los % por operación (bruto/neto), solo a los €.
+- Confirmado el efecto de P1-v2 en c_banda_atr: sin la salida por cruce, 9 ops
+  (v2+v3) con bruto medio +1,6% (frente a −0,32% en v1).
