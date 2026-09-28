@@ -182,7 +182,7 @@ def one_loop(state, cfg):
                 warnings.append(f"{x['asset']}: solo {len(df)} velas")
         except Exception as e:
             warnings.append(f"{x['asset']}: sin datos ({e})")
-        time.sleep(0.4)
+        time.sleep(0.6)  # ~1 petición/s: límite de la API pública de Kraken
     core.process_frames(state, frames, cfg, log, spreads, events)
     state["loops"] += 1
     state["last_loop"] = now().isoformat()

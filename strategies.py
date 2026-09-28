@@ -165,6 +165,49 @@ def exit_pb(d, i, p):
     return None
 
 
+
+# --------------------------- S6: momentum MACD (histograma cruza a positivo)
+
+def prep_macd(df, p):
+    d = df.copy()
+    macd = ema(d.close, p["fast"]) - ema(d.close, p["slow"])
+    d["mh"] = macd - ema(macd, p["signal"])
+    d["et"] = ema(d.close, p["ema_trend"])
+    return d
+
+
+def entry_macd(d, i, p):
+    return bool(d.mh.iat[i - 1] <= 0 < d.mh.iat[i] and d.close.iat[i] > d.et.iat[i])
+
+
+def exit_macd(d, i, p):
+    if d.mh.iat[i] < 0 and d.mh.iat[i - 1] < 0:
+        return "momentum perdido"
+    return None
+
+
+# ------------------- S7: estocástico sale de sobreventa con tendencia de fondo
+
+def prep_stoch(df, p):
+    d = df.copy()
+    n = p["k_n"]
+    lo = d.low.rolling(n).min()
+    hi = d.high.rolling(n).max()
+    k = 100 * (d.close - lo) / (hi - lo).replace(0, np.nan)
+    d["k"] = k.rolling(p["k_smooth"]).mean()
+    d["dd"] = d["k"].rolling(p["d_n"]).mean()
+    d["e1"] = ema(d.close, p["ema_mid"])
+    d["e2"] = ema(d.close, p["ema_slow"])
+    return d
+
+
+def entry_stoch(d, i, p):
+    k0, k1, d0, d1 = d.k.iat[i - 1], d.k.iat[i], d.dd.iat[i - 1], d.dd.iat[i]
+    if k0 != k0 or d0 != d0 or k1 != k1 or d1 != d1:
+        return False
+    return bool(k0 <= d0 and k1 > d1 and k0 < p["oversold"] and d.e1.iat[i] > d.e2.iat[i])
+
+
 # ------------------------------------------------------------------ registro
 
 REGISTRY = {
@@ -173,4 +216,6 @@ REGISTRY = {
     "ruptura_volumen": (prep_brk, entry_brk, exit_none),
     "rebote_extremo": (prep_reb, entry_reb, exit_none),
     "pullback_tendencia": (prep_pb, entry_pb, exit_pb),
+    "macd_momentum": (prep_macd, entry_macd, exit_macd),
+    "estocastico_rebote": (prep_stoch, entry_stoch, exit_none),
 }

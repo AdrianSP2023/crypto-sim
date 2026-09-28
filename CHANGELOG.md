@@ -40,3 +40,16 @@ las otras tres son nuevas.
 - Sin cambios en las demás: pocos cierres por hora (5), sin fallos mecánicos.
   pullback_tendencia no opera porque no hay tendencia alcista (EMA20>50>100);
   es el régimen de mercado, no un fallo.
+
+## P1-v4 — 2026-09-28 12:30 UTC (ampliación pedida por Maestro)
+
+Objetivo: más operaciones por hora (~5 cierres/h con v1-v3), para que cada
+revisión tenga más datos. Revisiones de Claude cada 30 min a partir de ahora.
+
+- **Universo 35 → 60 pares** en EUR (mismo filtro: sin stablecoins/fiat, spread ≤ 0,4%).
+- **Nueva: macd_momentum.** Histograma MACD(12,26,9) cruza a positivo con precio
+  sobre EMA50. Sale con TP +2%, SL −1,5%, 3 h, o si el histograma lleva 2 velas negativo.
+- **Nueva: estocastico_rebote.** Estocástico(14,3,3) %K cruza sobre %D desde
+  sobreventa (<20), con EMA50 > EMA100. Sale con TP +1,8%, SL −1,5%, 3 h.
+- Motor: pausa entre peticiones a Kraken 0,4 → 0,6 s (60 pares ≈ 55 s por vuelta,
+  dentro del límite de la API pública).
