@@ -1,14 +1,14 @@
 # Simulación P1 (sin dinero real)
 
-Config `P1-v1` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 09:45 UTC · vueltas 13 · 35 activos · velas 5 min · comisión 1.1% ida+vuelta
+Config `P1-v1` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 09:50 UTC · vueltas 14 · 35 activos · velas 5 min · comisión 1.1% ida+vuelta
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 917.97 € (-0.68%) | 8 | 1 | 0% | -0.608% | -1.708% | -1.753% | -6.30 € |
-| reversion_bb | 923.73 € (-0.05%) | 0 | 4 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
-| ruptura_volumen | 924.27 € (+0.00%) | 0 | 1 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
+| c_banda_atr | 917.90 € (-0.69%) | 8 | 1 | 0% | -0.608% | -1.708% | -1.753% | -6.30 € |
+| reversion_bb | 924.37 € (+0.01%) | 0 | 4 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
+| ruptura_volumen | 924.20 € (-0.00%) | 0 | 1 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
 | rebote_extremo | 921.79 € (-0.26%) | 3 | 0 | 33% | -0.667% | -1.767% | -2.487% | -2.45 € |
-| pullback_tendencia | 921.24 € (-0.32%) | 3 | 1 | 0% | -1.279% | -2.379% | -2.607% | -3.30 € |
+| pullback_tendencia | 921.67 € (-0.28%) | 3 | 1 | 0% | -1.279% | -2.379% | -2.607% | -3.30 € |
 
 ## Últimas 15 operaciones cerradas
 
@@ -28,10 +28,5 @@ Config `P1-v1` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 09:45
 | 2026-09-28 09:05 | rebote_extremo | QNT | stop-loss | -2.00% | -3.10% | -1.43 |
 | 2026-09-28 09:05 | c_banda_atr | HYPE | cruce bajista | -0.52% | -1.62% | -0.75 |
 | 2026-09-28 09:05 | c_banda_atr | DOGE | cruce bajista | -0.68% | -1.77% | -0.82 |
-
-## Eventos de la última vuelta
-
-- 2026-09-28 09:45 [reversion_bb] ENTRADA NEAR @ 4.3506 (46.21 €)
-- 2026-09-28 09:45 [c_banda_atr] CIERRE BCH cruce bajista bruto -0.49% neto -1.59%
 
 Universo: BTC, QNT, SOL, ETH, XRP, SUI, NEAR, ZEC, ONDO, LINK, LTC, PUMP, TAO, ADA, UNI, AVAX, BCH, DOGE, ARB, ENA, HYPE, DOT, XLM, AAVE, W, PEPE, XPL, POL, XDC, DASH, MON, WLD, JUP, GRT, FET
