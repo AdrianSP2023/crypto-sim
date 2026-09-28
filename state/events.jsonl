@@ -1100,3 +1100,4 @@
 {"type": "entry", "asset": "TAO", "strategy": "ruptura_volumen", "version": "P1-v9", "t": "2026-09-28 20:35", "ts": 1790627700, "price": 270.6194, "qty": 22.17, "spread": 0.00032}
 {"type": "entry", "asset": "NIGHT", "strategy": "c_banda_atr", "version": "P1-v9", "t": "2026-09-28 20:35", "ts": 1790627700, "price": 0.0249, "qty": 22.0, "spread": 0.00242}
 {"type": "entry", "asset": "NIGHT", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-28 20:35", "ts": 1790627700, "price": 0.0249, "qty": 22.48, "spread": 0.00242}
+{"type": "entry", "asset": "TRX", "strategy": "estocastico_rebote", "version": "P1-v9", "t": "2026-09-28 20:40", "ts": 1790628000, "price": 0.295356, "qty": 22.56, "spread": 3e-05}
