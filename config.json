@@ -1,5 +1,5 @@
 {
-  "version": "P1-v1",
+  "version": "P1-v2",
   "phase": "P1",
   "enabled": true,
   "phase_end_utc": "2026-09-29T09:00:00+00:00",
@@ -58,7 +58,8 @@
       "atr_mult": 0.3,
       "tp": 0.02,
       "sl": 0.015,
-      "max_hold": 48
+      "max_hold": 48,
+      "exit_on_cross": false
     },
     "reversion_bb": {
       "enabled": true,

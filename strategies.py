@@ -73,6 +73,8 @@ def entry_c(d, i, p):
 
 
 def exit_c(d, i, p):
+    if not p.get("exit_on_cross", True):
+        return None
     if d.ef.iat[i - 1] >= d.es.iat[i - 1] and d.ef.iat[i] < d.es.iat[i]:
         return "cruce bajista"
     return None

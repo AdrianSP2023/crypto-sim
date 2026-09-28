@@ -22,3 +22,11 @@ spread real de Kraken al entrar y salir.
 Take-profits por encima de la comisión (1,1%), para que una ganadora lo sea en
 neto. Las dos primeras vienen del backtest de la Fase 1.5 (adaptadas a 5 min);
 las otras tres son nuevas.
+
+## P1-v2 — 2026-09-28 09:55 UTC (ajuste in situ, check-in 1)
+
+- **c_banda_atr: desactivada la salida por cruce bajista** (`exit_on_cross: false`).
+  Motivo: 8 de 8 operaciones cerradas por cruce bajista a los 10-35 min, bruto
+  medio −0,61%, ninguna llegó al TP. En velas de 5 min, EMA3/8 se vuelve a
+  cruzar por ruido antes de que el precio pueda moverse +2%. Con comisión de
+  1,1%, esa salida garantiza pérdida. Ahora sale solo por TP +2%, SL −1,5% o 4 h.
