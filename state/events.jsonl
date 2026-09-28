@@ -1275,3 +1275,11 @@
 {"type": "entry", "asset": "NIGHT", "strategy": "c_banda_atr", "version": "P1-v9", "t": "2026-09-28 22:30", "ts": 1790634600, "price": 0.02474, "qty": 21.74, "spread": 0.00242}
 {"type": "entry", "asset": "NIGHT", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-28 22:30", "ts": 1790634600, "price": 0.02474, "qty": 22.27, "spread": 0.00242}
 {"type": "entry", "asset": "NIGHT", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-28 22:30", "ts": 1790634600, "price": 0.02474, "qty": 22.87, "spread": 0.00242}
+{"type": "exit", "asset": "ALGO", "strategy": "pullback_tendencia", "version": "P1-v9", "entry_t": "2026-09-28 22:05", "exit_t": "2026-09-28 22:35", "entry_ts": 1790633100, "exit_ts": 1790634900, "entry": 0.1189, "exit": 0.11778, "qty": 22.66, "gross_pct": -0.942, "net_pct": -2.042, "net_spread_pct": -2.164, "pnl_eur": -0.463, "reason": "rotura de tendencia", "candles": 6}
+{"type": "exit", "asset": "ALGO", "strategy": "estocastico_rebote", "version": "P1-v9", "entry_t": "2026-09-28 22:00", "exit_t": "2026-09-28 22:35", "entry_ts": 1790632800, "exit_ts": 1790634900, "entry": 0.11959, "exit": 0.11779615, "qty": 22.5, "gross_pct": -1.5, "net_pct": -2.6, "net_spread_pct": -2.973, "pnl_eur": -0.585, "reason": "stop-loss", "candles": 7}
+{"type": "entry", "asset": "DASH", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-28 22:35", "ts": 1790634900, "price": 56.65, "qty": 22.27, "spread": 0.00062}
+{"type": "entry", "asset": "DASH", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-28 22:35", "ts": 1790634900, "price": 56.65, "qty": 22.87, "spread": 0.00062}
+{"type": "entry", "asset": "ICP", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-28 22:35", "ts": 1790634900, "price": 2.664, "qty": 22.27, "spread": 0.00075}
+{"type": "entry", "asset": "ICP", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-28 22:35", "ts": 1790634900, "price": 2.664, "qty": 22.87, "spread": 0.00075}
+{"type": "entry", "asset": "TRX", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-28 22:35", "ts": 1790634900, "price": 0.295249, "qty": 22.27, "spread": 3e-05}
+{"type": "entry", "asset": "TRX", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-28 22:35", "ts": 1790634900, "price": 0.295249, "qty": 22.87, "spread": 3e-05}
