@@ -1,12 +1,12 @@
 # Simulación P1 (sin dinero real)
 
-Config `P1-v2` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 10:50 UTC · vueltas 26 · 35 activos · velas 5 min · comisión 1.1% ida+vuelta
+Config `P1-v2` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 10:55 UTC · vueltas 27 · 35 activos · velas 5 min · comisión 1.1% ida+vuelta
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 919.21 € (-0.54%) | 9 | 7 | 11% | -0.318% | -1.418% | -1.467% | -5.89 € |
-| reversion_bb | 924.93 € (+0.07%) | 2 | 2 | 100% | +1.500% | +0.400% | +0.331% | +0.37 € |
-| ruptura_volumen | 924.93 € (+0.07%) | 0 | 5 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
+| c_banda_atr | 919.19 € (-0.55%) | 9 | 7 | 11% | -0.318% | -1.418% | -1.467% | -5.89 € |
+| reversion_bb | 924.91 € (+0.07%) | 2 | 2 | 100% | +1.500% | +0.400% | +0.331% | +0.37 € |
+| ruptura_volumen | 924.13 € (-0.01%) | 1 | 4 | 100% | +1.569% | +0.469% | +0.410% | +0.22 € |
 | rebote_extremo | 921.79 € (-0.26%) | 3 | 0 | 33% | -0.667% | -1.767% | -2.487% | -2.45 € |
 | pullback_tendencia | 921.42 € (-0.30%) | 4 | 0 | 25% | -0.423% | -1.523% | -1.736% | -2.82 € |
 
@@ -14,6 +14,7 @@ Config `P1-v2` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 10:50
 
 | Salida (UTC) | Estrategia | Activo | Motivo | Bruto | Neto | € |
 |---|---|---|---|---|---|---|
+| 2026-09-28 10:55 | ruptura_volumen | XLM | timeout | +1.57% | +0.47% | +0.22 |
 | 2026-09-28 10:50 | reversion_bb | ENA | take-profit | +1.50% | +0.40% | +0.18 |
 | 2026-09-28 10:40 | pullback_tendencia | XDC | take-profit | +2.14% | +1.04% | +0.48 |
 | 2026-09-28 10:40 | c_banda_atr | XLM | take-profit | +2.00% | +0.90% | +0.42 |
@@ -28,10 +29,9 @@ Config `P1-v2` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 10:50
 | 2026-09-28 09:20 | pullback_tendencia | XDC | rotura de tendencia | -0.84% | -1.94% | -0.90 |
 | 2026-09-28 09:15 | rebote_extremo | QNT | take-profit | +2.00% | +0.90% | +0.41 |
 | 2026-09-28 09:10 | c_banda_atr | ETH | cruce bajista | -0.37% | -1.47% | -0.68 |
-| 2026-09-28 09:05 | pullback_tendencia | MON | stop-loss | -1.50% | -2.60% | -1.20 |
 
 ## Eventos de la última vuelta
 
-- 2026-09-28 10:50 [reversion_bb] CIERRE ENA take-profit bruto +1.50% neto +0.40%
+- 2026-09-28 10:55 [ruptura_volumen] CIERRE XLM timeout bruto +1.57% neto +0.47%
 
 Universo: BTC, QNT, SOL, ETH, XRP, SUI, NEAR, ZEC, ONDO, LINK, LTC, PUMP, TAO, ADA, UNI, AVAX, BCH, DOGE, ARB, ENA, HYPE, DOT, XLM, AAVE, W, PEPE, XPL, POL, XDC, DASH, MON, WLD, JUP, GRT, FET
