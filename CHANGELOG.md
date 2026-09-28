@@ -89,3 +89,12 @@ pierden juntas.
 - Filtro P1-v6 sin datos todavía: desde las 14:11 UTC las 4 estrategias
   originales no han abierto nada nuevo. Las pérdidas de estos 30 min (26 cierres,
   −19,3 €) son posiciones abiertas antes de la bajada.
+
+## P1-v8 — 2026-09-28 17:30 UTC (ajuste in situ, variante A/B)
+
+- **Nueva: ruptura_estricta** (misma lógica que ruptura_volumen, más exigente).
+  Rompe el máximo de 4 h (antes 2 h) con volumen > 3× la media (antes 2×).
+  Stop más holgado, −2% (antes −1,2%), TP +3% y tiempo máximo 3 h.
+  Motivo: ruptura_volumen lleva 57 cierres con bruto medio −0,41%: 39 por
+  stop-loss (68%, 12 de ellos en ≤3 velas), 7 por TP y 11 por timeout. La
+  mayoría de sus rupturas son falsas. La original sigue igual para comparar.

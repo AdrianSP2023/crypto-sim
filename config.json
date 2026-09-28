@@ -1,5 +1,5 @@
 {
-  "version": "P1-v7",
+  "version": "P1-v8",
   "phase": "P1",
   "enabled": true,
   "phase_end_utc": "2026-09-29T09:00:00+00:00",
@@ -186,6 +186,16 @@
       "max_hold": 36,
       "base": "estocastico_rebote",
       "market_filter": 0.5
+    },
+    "ruptura_estricta": {
+      "enabled": true,
+      "base": "ruptura_volumen",
+      "lookback": 48,
+      "vol_mult": 3.0,
+      "ema_trend": 50,
+      "tp": 0.03,
+      "sl": 0.02,
+      "max_hold": 36
     }
   },
   "breadth_ema": 50
