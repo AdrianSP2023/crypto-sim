@@ -18,3 +18,9 @@
 {"type": "entry", "asset": "BCH", "strategy": "c_banda_atr", "version": "P1-v1", "t": "2026-09-28 09:10", "ts": 1790586600, "price": 270.9, "qty": 46.1, "spread": 0.00111}
 {"type": "entry", "asset": "DASH", "strategy": "reversion_bb", "version": "P1-v1", "t": "2026-09-28 09:10", "ts": 1790586600, "price": 56.8, "qty": 46.21, "spread": 0.00194}
 {"type": "exit", "asset": "QNT", "strategy": "rebote_extremo", "version": "P1-v1", "entry_t": "2026-09-28 09:10", "exit_t": "2026-09-28 09:15", "entry_ts": 1790586600, "exit_ts": 1790586900, "entry": 197.44, "exit": 201.3888, "qty": 46.14, "gross_pct": 2.0, "net_pct": 0.9, "net_spread_pct": 0.392, "pnl_eur": 0.415, "reason": "take-profit", "candles": 1}
+{"type": "entry", "asset": "SUI", "strategy": "c_banda_atr", "version": "P1-v1", "t": "2026-09-28 09:20", "ts": 1790587200, "price": 1.0459, "qty": 46.1, "spread": 0.0001}
+{"type": "entry", "asset": "ADA", "strategy": "c_banda_atr", "version": "P1-v1", "t": "2026-09-28 09:20", "ts": 1790587200, "price": 0.215529, "qty": 46.1, "spread": 0.00148}
+{"type": "entry", "asset": "AVAX", "strategy": "c_banda_atr", "version": "P1-v1", "t": "2026-09-28 09:20", "ts": 1790587200, "price": 9.228, "qty": 46.1, "spread": 0.00065}
+{"type": "entry", "asset": "HYPE", "strategy": "c_banda_atr", "version": "P1-v1", "t": "2026-09-28 09:20", "ts": 1790587200, "price": 78.46, "qty": 46.1, "spread": 0.00025}
+{"type": "exit", "asset": "XDC", "strategy": "pullback_tendencia", "version": "P1-v1", "entry_t": "2026-09-28 08:50", "exit_t": "2026-09-28 09:20", "entry_ts": 1790585400, "exit_ts": 1790587200, "entry": 0.02991, "exit": 0.02966, "qty": 46.21, "gross_pct": -0.836, "net_pct": -1.936, "net_spread_pct": -2.137, "pnl_eur": -0.895, "reason": "rotura de tendencia", "candles": 6}
+{"type": "entry", "asset": "MON", "strategy": "pullback_tendencia", "version": "P1-v1", "t": "2026-09-28 09:20", "ts": 1790587200, "price": 0.02499, "qty": 46.11, "spread": 0.0032}
