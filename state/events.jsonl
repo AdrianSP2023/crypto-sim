@@ -1028,3 +1028,5 @@
 {"type": "entry", "asset": "XLM", "strategy": "estocastico_rebote", "version": "P1-v9", "t": "2026-09-28 19:55", "ts": 1790625300, "price": 0.200431, "qty": 22.57, "spread": 0.00039}
 {"type": "entry", "asset": "ALGO", "strategy": "estocastico_rebote", "version": "P1-v9", "t": "2026-09-28 19:55", "ts": 1790625300, "price": 0.11535, "qty": 22.57, "spread": 0.00112}
 {"type": "entry", "asset": "POL", "strategy": "estocastico_rebote", "version": "P1-v9", "t": "2026-09-28 19:55", "ts": 1790625300, "price": 0.10216, "qty": 22.57, "spread": 0.00137}
+{"type": "entry", "asset": "LINK", "strategy": "pullback_tendencia", "version": "P1-v9", "t": "2026-09-28 20:00", "ts": 1790625600, "price": 13.28385, "qty": 22.7, "spread": 0.00167}
+{"type": "entry", "asset": "XDC", "strategy": "estocastico_rebote", "version": "P1-v9", "t": "2026-09-28 20:00", "ts": 1790625600, "price": 0.03017, "qty": 22.57, "spread": 0.00232}
