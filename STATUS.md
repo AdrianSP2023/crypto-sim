@@ -1,16 +1,16 @@
 # Simulación P1 (sin dinero real)
 
-Config `P1-v5` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 13:31 UTC · vueltas 58 · 60 activos · velas 5 min · comisión 1.1% ida+vuelta
+Config `P1-v5` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 13:36 UTC · vueltas 59 · 60 activos · velas 5 min · comisión 1.1% ida+vuelta
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 921.22 € (-0.33%) | 19 | 13 | 47% | +0.530% | -0.570% | -0.672% | -5.00 € |
+| c_banda_atr | 920.06 € (-0.45%) | 19 | 13 | 47% | +0.530% | -0.570% | -0.672% | -5.00 € |
 | reversion_bb | 924.98 € (+0.08%) | 4 | 0 | 100% | +1.500% | +0.400% | +0.214% | +0.74 € |
-| ruptura_volumen | 915.93 € (-0.90%) | 20 | 15 | 30% | +0.016% | -1.084% | -1.190% | -10.00 € |
+| ruptura_volumen | 914.54 € (-1.05%) | 20 | 15 | 30% | +0.016% | -1.084% | -1.190% | -10.00 € |
 | rebote_extremo | 921.79 € (-0.26%) | 3 | 0 | 33% | -0.667% | -1.767% | -2.487% | -2.45 € |
-| pullback_tendencia | 921.97 € (-0.25%) | 6 | 6 | 33% | +0.005% | -1.095% | -1.257% | -3.04 € |
-| macd_momentum | 923.34 € (-0.10%) | 3 | 4 | 0% | -0.632% | -1.732% | -1.857% | -1.80 € |
-| estocastico_rebote | 922.97 € (-0.14%) | 1 | 5 | 0% | -1.500% | -2.600% | -2.807% | -1.20 € |
+| pullback_tendencia | 921.91 € (-0.25%) | 6 | 6 | 33% | +0.005% | -1.095% | -1.257% | -3.04 € |
+| macd_momentum | 922.76 € (-0.16%) | 3 | 6 | 0% | -0.632% | -1.732% | -1.857% | -1.80 € |
+| estocastico_rebote | 923.06 € (-0.13%) | 1 | 5 | 0% | -1.500% | -2.600% | -2.807% | -1.20 € |
 
 ## Últimas 15 operaciones cerradas
 
@@ -34,11 +34,7 @@ Config `P1-v5` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 13:31
 
 ## Eventos de la última vuelta
 
-- 2026-09-28 13:30 [macd_momentum] ENTRADA ENA @ 0.2386 (23.06 €)
-- 2026-09-28 13:30 [c_banda_atr] ENTRADA PEPE @ 3.77e-06 (22.98 €)
-- 2026-09-28 13:30 [pullback_tendencia] ENTRADA ZRO @ 1.399 (23.03 €)
-- 2026-09-28 13:30 [estocastico_rebote] ENTRADA ZRO @ 1.399 (23.08 €)
-- 2026-09-28 13:30 [estocastico_rebote] ENTRADA TON @ 1.45 (23.08 €)
-- 2026-09-28 13:30 [c_banda_atr] ENTRADA SHIB @ 5.044e-06 (22.98 €)
+- 2026-09-28 13:35 [macd_momentum] ENTRADA BTC @ 73554.4 (23.06 €)
+- 2026-09-28 13:35 [macd_momentum] ENTRADA XDC @ 0.02993 (23.06 €)
 
 Universo: BTC, SOL, ETH, XRP, SUI, NEAR, LINK, ZEC, LTC, HBAR, ONDO, ADA, UNI, PUMP, TAO, ARB, AVAX, DOGE, BCH, ENA, XLM, XDC, HYPE, DOT, AAVE, ALGO, PEPE, MON, POL, DASH, XPL, JUP, W, GRT, USELESS, FET, ZRO, SEI, ATOM, WLD, INJ, FIL, ICP, TRX, RENDER, PENGU, TON, VVV, RAY, SHIB, SKY, TRUMP, CRV, VIRTUAL, OP, NIGHT, KAS, CC, EIGEN, WLFI

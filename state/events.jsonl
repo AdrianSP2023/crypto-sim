@@ -155,3 +155,5 @@
 {"type": "entry", "asset": "ZRO", "strategy": "estocastico_rebote", "version": "P1-v5", "t": "2026-09-28 13:30", "ts": 1790602200, "price": 1.399, "qty": 23.08, "spread": 0.00143}
 {"type": "entry", "asset": "TON", "strategy": "estocastico_rebote", "version": "P1-v5", "t": "2026-09-28 13:30", "ts": 1790602200, "price": 1.45, "qty": 23.08, "spread": 0.00275}
 {"type": "entry", "asset": "SHIB", "strategy": "c_banda_atr", "version": "P1-v5", "t": "2026-09-28 13:30", "ts": 1790602200, "price": 5.044e-06, "qty": 22.98, "spread": 0.0004}
+{"type": "entry", "asset": "BTC", "strategy": "macd_momentum", "version": "P1-v5", "t": "2026-09-28 13:35", "ts": 1790602500, "price": 73554.4, "qty": 23.06, "spread": 0.0}
+{"type": "entry", "asset": "XDC", "strategy": "macd_momentum", "version": "P1-v5", "t": "2026-09-28 13:35", "ts": 1790602500, "price": 0.02993, "qty": 23.06, "spread": 0.00234}
