@@ -1404,3 +1404,6 @@
 {"type": "entry", "asset": "KAS", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-28 23:50", "ts": 1790639400, "price": 0.03987, "qty": 22.87, "spread": 0.00251}
 {"type": "entry", "asset": "CC", "strategy": "ruptura_volumen", "version": "P1-v9", "t": "2026-09-28 23:50", "ts": 1790639400, "price": 0.11471, "qty": 22.09, "spread": 0.00522}
 {"type": "entry", "asset": "CC", "strategy": "ruptura_volumen_filtro", "version": "P1-v9", "t": "2026-09-28 23:50", "ts": 1790639400, "price": 0.11471, "qty": 22.72, "spread": 0.00522}
+{"type": "entry", "asset": "INJ", "strategy": "ruptura_volumen", "version": "P1-v9", "t": "2026-09-28 23:55", "ts": 1790639700, "price": 6.475, "qty": 22.09, "spread": 0.00062}
+{"type": "entry", "asset": "INJ", "strategy": "ruptura_volumen_filtro", "version": "P1-v9", "t": "2026-09-28 23:55", "ts": 1790639700, "price": 6.475, "qty": 22.72, "spread": 0.00062}
+{"type": "entry", "asset": "TRX", "strategy": "estocastico_rebote", "version": "P1-v9", "t": "2026-09-28 23:55", "ts": 1790639700, "price": 0.29496, "qty": 22.42, "spread": 3e-05}
