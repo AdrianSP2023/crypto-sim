@@ -1334,3 +1334,7 @@
 {"type": "entry", "asset": "ICP", "strategy": "ruptura_volumen", "version": "P1-v9", "t": "2026-09-28 22:55", "ts": 1790636100, "price": 2.696, "qty": 22.09, "spread": 0.00037}
 {"type": "entry", "asset": "ICP", "strategy": "ruptura_estricta", "version": "P1-v9", "t": "2026-09-28 22:55", "ts": 1790636100, "price": 2.696, "qty": 23.01, "spread": 0.00037}
 {"type": "entry", "asset": "SHIB", "strategy": "c_banda_atr", "version": "P1-v9", "t": "2026-09-28 22:55", "ts": 1790636100, "price": 4.968e-06, "qty": 21.74, "spread": 0.0004}
+{"type": "entry", "asset": "DASH", "strategy": "ruptura_volumen_filtro", "version": "P1-v9", "t": "2026-09-28 23:00", "ts": 1790636400, "price": 57.074, "qty": 22.72, "spread": 0.00061}
+{"type": "exit", "asset": "ZRO", "strategy": "reversion_bb", "version": "P1-v9", "entry_t": "2026-09-28 21:25", "exit_t": "2026-09-28 23:00", "entry_ts": 1790630700, "exit_ts": 1790636400, "entry": 1.339, "exit": 1.359085, "qty": 23.1, "gross_pct": 1.5, "net_pct": 0.4, "net_spread_pct": 0.289, "pnl_eur": 0.092, "reason": "take-profit", "candles": 19}
+{"type": "entry", "asset": "VVV", "strategy": "ruptura_volumen", "version": "P1-v9", "t": "2026-09-28 23:00", "ts": 1790636400, "price": 24.231, "qty": 22.09, "spread": 0.00087}
+{"type": "entry", "asset": "VVV", "strategy": "ruptura_volumen_filtro", "version": "P1-v9", "t": "2026-09-28 23:00", "ts": 1790636400, "price": 24.231, "qty": 22.72, "spread": 0.00087}
