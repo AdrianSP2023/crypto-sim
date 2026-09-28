@@ -1072,3 +1072,11 @@
 {"type": "entry", "asset": "NIGHT", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-28 20:10", "ts": 1790626200, "price": 0.02475, "qty": 23.09, "spread": 0.00284}
 {"type": "entry", "asset": "EIGEN", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-28 20:10", "ts": 1790626200, "price": 0.2224, "qty": 22.5, "spread": 0.00136}
 {"type": "entry", "asset": "EIGEN", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-28 20:10", "ts": 1790626200, "price": 0.2224, "qty": 23.09, "spread": 0.00136}
+{"type": "entry", "asset": "ETH", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-28 20:15", "ts": 1790626500, "price": 2361.32, "qty": 22.5, "spread": 0.0}
+{"type": "entry", "asset": "ETH", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-28 20:15", "ts": 1790626500, "price": 2361.32, "qty": 23.09, "spread": 0.0}
+{"type": "exit", "asset": "PUMP", "strategy": "estocastico_rebote", "version": "P1-v9", "entry_t": "2026-09-28 20:05", "exit_t": "2026-09-28 20:15", "entry_ts": 1790625900, "exit_ts": 1790626500, "entry": 0.004519, "exit": 0.004600342, "qty": 22.55, "gross_pct": 1.8, "net_pct": 0.7, "net_spread_pct": 0.601, "pnl_eur": 0.158, "reason": "take-profit", "candles": 2}
+{"type": "entry", "asset": "XLM", "strategy": "pullback_tendencia", "version": "P1-v9", "t": "2026-09-28 20:15", "ts": 1790626500, "price": 0.201234, "qty": 22.7, "spread": 0.00048}
+{"type": "entry", "asset": "INJ", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-28 20:15", "ts": 1790626500, "price": 6.508, "qty": 22.5, "spread": 0.00077}
+{"type": "entry", "asset": "INJ", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-28 20:15", "ts": 1790626500, "price": 6.508, "qty": 23.09, "spread": 0.00077}
+{"type": "entry", "asset": "VVV", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-28 20:15", "ts": 1790626500, "price": 24.189, "qty": 22.5, "spread": 0.00112}
+{"type": "entry", "asset": "VVV", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-28 20:15", "ts": 1790626500, "price": 24.189, "qty": 23.09, "spread": 0.00112}
