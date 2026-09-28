@@ -1,28 +1,30 @@
 # Simulación P1 (sin dinero real)
 
-Config `P1-v9` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 23:06 UTC · vueltas 173 · 60 activos · velas 5 min · comisión 1.1% ida+vuelta
+Config `P1-v9` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 23:11 UTC · vueltas 174 · 60 activos · velas 5 min · comisión 1.1% ida+vuelta
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 871.96 € (-5.66%) | 103 | 25 | 16% | -0.902% | -2.002% | -2.125% | -54.62 € |
-| reversion_bb | 924.33 € (+0.01%) | 23 | 9 | 74% | +0.779% | -0.321% | -0.504% | -1.34 € |
-| ruptura_volumen | 883.57 € (-4.40%) | 85 | 4 | 13% | -0.499% | -1.599% | -1.720% | -40.80 € |
+| c_banda_atr | 872.23 € (-5.63%) | 103 | 25 | 16% | -0.902% | -2.002% | -2.125% | -54.62 € |
+| reversion_bb | 924.28 € (+0.00%) | 23 | 9 | 74% | +0.779% | -0.321% | -0.504% | -1.34 € |
+| ruptura_volumen | 883.58 € (-4.40%) | 85 | 4 | 13% | -0.499% | -1.599% | -1.720% | -40.80 € |
 | rebote_extremo | 922.00 € (-0.24%) | 10 | 0 | 50% | +0.661% | -0.439% | -0.790% | -2.24 € |
 | pullback_tendencia | 905.89 € (-1.98%) | 51 | 1 | 20% | -0.340% | -1.440% | -1.542% | -18.35 € |
-| macd_momentum | 892.99 € (-3.38%) | 94 | 15 | 12% | -0.388% | -1.488% | -1.600% | -33.05 € |
-| estocastico_rebote | 897.66 € (-2.88%) | 75 | 8 | 25% | -0.460% | -1.560% | -1.658% | -27.91 € |
-| c_banda_atr_filtro | 896.27 € (-3.03%) | 51 | 2 | 6% | -1.292% | -2.392% | -2.513% | -28.06 € |
+| macd_momentum | 892.94 € (-3.39%) | 94 | 15 | 12% | -0.388% | -1.488% | -1.600% | -33.05 € |
+| estocastico_rebote | 897.35 € (-2.91%) | 76 | 7 | 26% | -0.430% | -1.530% | -1.628% | -27.76 € |
+| c_banda_atr_filtro | 896.21 € (-3.03%) | 51 | 2 | 6% | -1.292% | -2.392% | -2.513% | -28.06 € |
 | ruptura_volumen_filtro | 908.88 € (-1.66%) | 37 | 2 | 8% | -0.713% | -1.813% | -1.935% | -15.42 € |
 | macd_momentum_filtro | 910.17 € (-1.52%) | 42 | 0 | 12% | -0.356% | -1.456% | -1.560% | -14.07 € |
 | pullback_tendencia_filtro | 917.41 € (-0.74%) | 19 | 1 | 16% | -0.459% | -1.559% | -1.628% | -6.83 € |
 | estocastico_rebote_filtro | 919.27 € (-0.54%) | 14 | 1 | 21% | -0.436% | -1.536% | -1.642% | -4.96 € |
-| ruptura_estricta | 920.24 € (-0.43%) | 7 | 1 | 14% | -1.333% | -2.433% | -2.561% | -3.93 € |
-| macd_sin_salida | 916.67 € (-0.82%) | 18 | 15 | 11% | -1.149% | -2.249% | -2.362% | -9.35 € |
+| ruptura_estricta | 920.18 € (-0.44%) | 7 | 1 | 14% | -1.333% | -2.433% | -2.561% | -3.93 € |
+| macd_sin_salida | 916.37 € (-0.85%) | 19 | 14 | 11% | -1.070% | -2.170% | -2.282% | -9.52 € |
 
 ## Últimas 15 operaciones cerradas
 
 | Salida (UTC) | Estrategia | Activo | Motivo | Bruto | Neto | € |
 |---|---|---|---|---|---|---|
+| 2026-09-28 23:10 | macd_sin_salida | RENDER | timeout | +0.35% | -0.75% | -0.17 |
+| 2026-09-28 23:10 | estocastico_rebote | TAO | take-profit | +1.80% | +0.70% | +0.16 |
 | 2026-09-28 23:05 | reversion_bb | PEPE | take-profit | +1.50% | +0.40% | +0.09 |
 | 2026-09-28 23:05 | reversion_bb | AAVE | take-profit | +1.50% | +0.40% | +0.09 |
 | 2026-09-28 23:00 | reversion_bb | ZRO | take-profit | +1.50% | +0.40% | +0.09 |
@@ -36,14 +38,10 @@ Config `P1-v9` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 23:06
 | 2026-09-28 22:45 | estocastico_rebote | ADA | timeout | +0.51% | -0.59% | -0.14 |
 | 2026-09-28 22:45 | reversion_bb | INJ | take-profit | +1.50% | +0.40% | +0.09 |
 | 2026-09-28 22:45 | reversion_bb | MON | take-profit | +1.50% | +0.40% | +0.09 |
-| 2026-09-28 22:35 | estocastico_rebote | ALGO | stop-loss | -1.50% | -2.60% | -0.58 |
-| 2026-09-28 22:35 | pullback_tendencia | ALGO | rotura de tendencia | -0.94% | -2.04% | -0.46 |
 
 ## Eventos de la última vuelta
 
-- 2026-09-28 23:05 [reversion_bb] CIERRE AAVE take-profit bruto +1.50% neto +0.40%
-- 2026-09-28 23:05 [reversion_bb] CIERRE PEPE take-profit bruto +1.50% neto +0.40%
-- 2026-09-28 23:05 [pullback_tendencia] ENTRADA TRX @ 0.2954 (22.65 €)
-- 2026-09-28 23:05 [pullback_tendencia_filtro] ENTRADA TRX @ 0.2954 (22.94 €)
+- 2026-09-28 23:10 [estocastico_rebote] CIERRE TAO take-profit bruto +1.80% neto +0.70%
+- 2026-09-28 23:10 [macd_sin_salida] CIERRE RENDER timeout bruto +0.35% neto -0.75%
 
 Universo: BTC, SOL, ETH, XRP, SUI, NEAR, LINK, ZEC, LTC, HBAR, ONDO, ADA, UNI, PUMP, TAO, ARB, AVAX, DOGE, BCH, ENA, XLM, XDC, HYPE, DOT, AAVE, ALGO, PEPE, MON, POL, DASH, XPL, JUP, W, GRT, USELESS, FET, ZRO, SEI, ATOM, WLD, INJ, FIL, ICP, TRX, RENDER, PENGU, TON, VVV, RAY, SHIB, SKY, TRUMP, CRV, VIRTUAL, OP, NIGHT, KAS, CC, EIGEN, WLFI
