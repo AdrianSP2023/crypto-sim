@@ -1,14 +1,14 @@
 # Simulación P1 (sin dinero real)
 
-Config `P1-v1` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 09:20 UTC · vueltas 8 · 35 activos · velas 5 min · comisión 1.1% ida+vuelta
+Config `P1-v1` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 09:25 UTC · vueltas 9 · 35 activos · velas 5 min · comisión 1.1% ida+vuelta
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 922.34 € (-0.21%) | 3 | 6 | 0% | -0.524% | -1.624% | -1.652% | -2.25 € |
-| reversion_bb | 925.56 € (+0.14%) | 0 | 3 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
-| ruptura_volumen | 924.34 € (+0.01%) | 0 | 1 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
-| rebote_extremo | 923.22 € (-0.11%) | 2 | 0 | 50% | +0.000% | -1.100% | -1.967% | -1.02 € |
-| pullback_tendencia | 922.14 € (-0.23%) | 2 | 1 | 0% | -1.168% | -2.268% | -2.399% | -2.10 € |
+| c_banda_atr | 921.82 € (-0.26%) | 3 | 6 | 0% | -0.524% | -1.624% | -1.652% | -2.25 € |
+| reversion_bb | 925.54 € (+0.14%) | 0 | 3 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
+| ruptura_volumen | 924.35 € (+0.01%) | 0 | 1 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
+| rebote_extremo | 923.22 € (-0.11%) | 2 | 1 | 50% | +0.000% | -1.100% | -1.967% | -1.02 € |
+| pullback_tendencia | 921.79 € (-0.26%) | 2 | 1 | 0% | -1.168% | -2.268% | -2.399% | -2.10 € |
 
 ## Últimas 15 operaciones cerradas
 
@@ -24,11 +24,6 @@ Config `P1-v1` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 09:20
 
 ## Eventos de la última vuelta
 
-- 2026-09-28 09:20 [c_banda_atr] ENTRADA SUI @ 1.0459 (46.10 €)
-- 2026-09-28 09:20 [c_banda_atr] ENTRADA ADA @ 0.215529 (46.10 €)
-- 2026-09-28 09:20 [c_banda_atr] ENTRADA AVAX @ 9.228 (46.10 €)
-- 2026-09-28 09:20 [c_banda_atr] ENTRADA HYPE @ 78.46 (46.10 €)
-- 2026-09-28 09:20 [pullback_tendencia] CIERRE XDC rotura de tendencia bruto -0.84% neto -1.94%
-- 2026-09-28 09:20 [pullback_tendencia] ENTRADA MON @ 0.02499 (46.11 €)
+- 2026-09-28 09:25 [rebote_extremo] ENTRADA QNT @ 193.45 (46.16 €)
 
 Universo: BTC, QNT, SOL, ETH, XRP, SUI, NEAR, ZEC, ONDO, LINK, LTC, PUMP, TAO, ADA, UNI, AVAX, BCH, DOGE, ARB, ENA, HYPE, DOT, XLM, AAVE, W, PEPE, XPL, POL, XDC, DASH, MON, WLD, JUP, GRT, FET

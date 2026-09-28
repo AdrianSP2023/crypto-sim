@@ -24,3 +24,4 @@
 {"type": "entry", "asset": "HYPE", "strategy": "c_banda_atr", "version": "P1-v1", "t": "2026-09-28 09:20", "ts": 1790587200, "price": 78.46, "qty": 46.1, "spread": 0.00025}
 {"type": "exit", "asset": "XDC", "strategy": "pullback_tendencia", "version": "P1-v1", "entry_t": "2026-09-28 08:50", "exit_t": "2026-09-28 09:20", "entry_ts": 1790585400, "exit_ts": 1790587200, "entry": 0.02991, "exit": 0.02966, "qty": 46.21, "gross_pct": -0.836, "net_pct": -1.936, "net_spread_pct": -2.137, "pnl_eur": -0.895, "reason": "rotura de tendencia", "candles": 6}
 {"type": "entry", "asset": "MON", "strategy": "pullback_tendencia", "version": "P1-v1", "t": "2026-09-28 09:20", "ts": 1790587200, "price": 0.02499, "qty": 46.11, "spread": 0.0032}
+{"type": "entry", "asset": "QNT", "strategy": "rebote_extremo", "version": "P1-v1", "t": "2026-09-28 09:25", "ts": 1790587500, "price": 193.45, "qty": 46.16, "spread": 0.0041}
