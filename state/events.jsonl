@@ -325,3 +325,6 @@
 {"type": "entry", "asset": "ZEC", "strategy": "estocastico_rebote", "version": "P1-v7", "t": "2026-09-28 15:05", "ts": 1790607900, "price": 1345.859, "qty": 22.72, "spread": 0.0002}
 {"type": "entry", "asset": "ALGO", "strategy": "estocastico_rebote", "version": "P1-v7", "t": "2026-09-28 15:05", "ts": 1790607900, "price": 0.11454, "qty": 22.72, "spread": 0.0014}
 {"type": "entry", "asset": "TON", "strategy": "estocastico_rebote", "version": "P1-v7", "t": "2026-09-28 15:05", "ts": 1790607900, "price": 1.42, "qty": 22.72, "spread": 0.00282}
+{"type": "entry", "asset": "LINK", "strategy": "estocastico_rebote", "version": "P1-v7", "t": "2026-09-28 15:10", "ts": 1790608200, "price": 12.57128, "qty": 22.72, "spread": 0.00094}
+{"type": "exit", "asset": "PUMP", "strategy": "estocastico_rebote", "version": "P1-v7", "entry_t": "2026-09-28 14:45", "exit_t": "2026-09-28 15:10", "entry_ts": 1790606700, "exit_ts": 1790608200, "entry": 0.004389, "exit": 0.004468002, "qty": 22.9, "gross_pct": 1.8, "net_pct": 0.7, "net_spread_pct": 0.564, "pnl_eur": 0.16, "reason": "take-profit", "candles": 5}
+{"type": "entry", "asset": "NIGHT", "strategy": "macd_momentum", "version": "P1-v7", "t": "2026-09-28 15:10", "ts": 1790608200, "price": 0.02421, "qty": 22.88, "spread": 0.00247}
