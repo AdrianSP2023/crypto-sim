@@ -1,19 +1,25 @@
 # Simulación P1 (sin dinero real)
 
-Config `P1-v3` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 12:20 UTC · vueltas 44 · 35 activos · velas 5 min · comisión 1.1% ida+vuelta
+Config `P1-v4` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 12:26 UTC · vueltas 45 · 60 activos · velas 5 min · comisión 1.1% ida+vuelta
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 924.59 € (+0.04%) | 13 | 12 | 31% | +0.126% | -0.974% | -1.055% | -5.84 € |
+| c_banda_atr | 923.37 € (-0.09%) | 16 | 12 | 44% | +0.486% | -0.614% | -0.706% | -4.54 € |
 | reversion_bb | 924.98 € (+0.08%) | 4 | 0 | 100% | +1.500% | +0.400% | +0.214% | +0.74 € |
-| ruptura_volumen | 926.83 € (+0.28%) | 7 | 20 | 43% | +0.428% | -0.672% | -0.791% | -2.18 € |
+| ruptura_volumen | 925.86 € (+0.18%) | 8 | 20 | 38% | +0.224% | -0.876% | -0.987% | -3.23 € |
 | rebote_extremo | 921.79 € (-0.26%) | 3 | 0 | 33% | -0.667% | -1.767% | -2.487% | -2.45 € |
-| pullback_tendencia | 921.84 € (-0.26%) | 5 | 1 | 40% | +0.061% | -1.039% | -1.228% | -2.40 € |
+| pullback_tendencia | 921.80 € (-0.26%) | 5 | 1 | 40% | +0.061% | -1.039% | -1.228% | -2.40 € |
+| macd_momentum | 924.24 € (+0.00%) | 0 | 1 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
+| estocastico_rebote | 924.24 € (+0.00%) | 0 | 0 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
 
 ## Últimas 15 operaciones cerradas
 
 | Salida (UTC) | Estrategia | Activo | Motivo | Bruto | Neto | € |
 |---|---|---|---|---|---|---|
+| 2026-09-28 12:25 | ruptura_volumen | NEAR | stop-loss | -1.20% | -2.30% | -1.06 |
+| 2026-09-28 12:25 | c_banda_atr | GRT | take-profit | +2.00% | +0.90% | +0.41 |
+| 2026-09-28 12:25 | c_banda_atr | POL | take-profit | +2.13% | +1.03% | +0.47 |
+| 2026-09-28 12:25 | c_banda_atr | XRP | take-profit | +2.00% | +0.90% | +0.41 |
 | 2026-09-28 12:20 | ruptura_volumen | LINK | take-profit | +2.50% | +1.40% | +0.65 |
 | 2026-09-28 12:15 | pullback_tendencia | XLM | take-profit | +2.00% | +0.90% | +0.41 |
 | 2026-09-28 12:10 | ruptura_volumen | MON | take-profit | +2.50% | +1.40% | +0.65 |
@@ -25,15 +31,17 @@ Config `P1-v3` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-28 12:20
 | 2026-09-28 11:45 | c_banda_atr | MON | take-profit | +2.00% | +0.90% | +0.41 |
 | 2026-09-28 11:30 | c_banda_atr | GRT | stop-loss | -1.50% | -2.60% | -1.19 |
 | 2026-09-28 11:25 | ruptura_volumen | WLD | stop-loss | -1.20% | -2.30% | -1.06 |
-| 2026-09-28 11:10 | reversion_bb | XPL | take-profit | +1.50% | +0.40% | +0.18 |
-| 2026-09-28 11:05 | ruptura_volumen | LTC | stop-loss | -1.20% | -2.30% | -1.06 |
-| 2026-09-28 10:55 | ruptura_volumen | XLM | timeout | +1.57% | +0.47% | +0.22 |
-| 2026-09-28 10:50 | reversion_bb | ENA | take-profit | +1.50% | +0.40% | +0.18 |
 
 ## Eventos de la última vuelta
 
-- 2026-09-28 12:20 [ruptura_volumen] CIERRE LINK take-profit bruto +2.50% neto +1.40%
-- 2026-09-28 12:20 [pullback_tendencia] ENTRADA HYPE @ 79.15 (46.09 €)
-- 2026-09-28 12:20 [ruptura_volumen] ENTRADA WLD @ 0.4559 (46.10 €)
+- 2026-09-28 12:25 [c_banda_atr] CIERRE XRP take-profit bruto +2.00% neto +0.90%
+- 2026-09-28 12:25 [ruptura_volumen] CIERRE NEAR stop-loss bruto -1.20% neto -2.30%
+- 2026-09-28 12:25 [c_banda_atr] CIERRE POL take-profit bruto +2.13% neto +1.03%
+- 2026-09-28 12:25 [ruptura_volumen] ENTRADA JUP @ 0.305 (45.57 €)
+- 2026-09-28 12:25 [c_banda_atr] CIERRE GRT take-profit bruto +2.00% neto +0.90%
+- 2026-09-28 12:25 [c_banda_atr] ENTRADA VVV @ 24.803 (45.99 €)
+- 2026-09-28 12:25 [macd_momentum] ENTRADA VVV @ 24.803 (46.21 €)
+- 2026-09-28 12:25 [c_banda_atr] ENTRADA SKY @ 0.07144 (45.99 €)
+- 2026-09-28 12:25 [c_banda_atr] ENTRADA CC @ 0.11649 (45.99 €)
 
-Universo: BTC, QNT, SOL, ETH, XRP, SUI, NEAR, ZEC, ONDO, LINK, LTC, PUMP, TAO, ADA, UNI, AVAX, BCH, DOGE, ARB, ENA, HYPE, DOT, XLM, AAVE, W, PEPE, XPL, POL, XDC, DASH, MON, WLD, JUP, GRT, FET
+Universo: BTC, SOL, ETH, XRP, SUI, NEAR, LINK, ZEC, LTC, HBAR, ONDO, ADA, UNI, PUMP, TAO, ARB, AVAX, DOGE, BCH, ENA, XLM, XDC, HYPE, DOT, AAVE, ALGO, PEPE, MON, POL, DASH, XPL, JUP, W, GRT, USELESS, FET, ZRO, SEI, ATOM, WLD, INJ, FIL, ICP, TRX, RENDER, PENGU, TON, VVV, RAY, SHIB, SKY, TRUMP, CRV, VIRTUAL, OP, NIGHT, KAS, CC, EIGEN, WLFI
