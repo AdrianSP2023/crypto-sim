@@ -1,5 +1,5 @@
 {
-  "version": "P1-v2",
+  "version": "P1-v3",
   "phase": "P1",
   "enabled": true,
   "phase_end_utc": "2026-09-29T09:00:00+00:00",
@@ -87,7 +87,7 @@
       "rsi_n": 14,
       "rsi_max": 20,
       "drop_lookback": 12,
-      "drop_min": 0.03,
+      "drop_min": 0.025,
       "tp": 0.02,
       "sl": 0.02,
       "max_hold": 36

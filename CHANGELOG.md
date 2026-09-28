@@ -30,3 +30,13 @@ las otras tres son nuevas.
   medio −0,61%, ninguna llegó al TP. En velas de 5 min, EMA3/8 se vuelve a
   cruzar por ruido antes de que el precio pueda moverse +2%. Con comisión de
   1,1%, esa salida garantiza pérdida. Ahora sale solo por TP +2%, SL −1,5% o 4 h.
+
+## P1-v3 — 2026-09-28 12:00 UTC (ajuste in situ, check-in 3)
+
+- **rebote_extremo: caída mínima 3% → 2,5% en 1 h** (`drop_min: 0.025`).
+  Motivo: 3 h sin ninguna señal (su última operación fue a las 09:xx y solo
+  con QNT). El objetivo de P1 es el máximo de operaciones y el mercado está
+  tranquilo. RSI<20 se mantiene como filtro de sobreventa extrema.
+- Sin cambios en las demás: pocos cierres por hora (5), sin fallos mecánicos.
+  pullback_tendencia no opera porque no hay tendencia alcista (EMA20>50>100);
+  es el régimen de mercado, no un fallo.
