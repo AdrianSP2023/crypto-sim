@@ -157,3 +157,25 @@
 {"type": "entry", "asset": "SHIB", "strategy": "c_banda_atr", "version": "P1-v5", "t": "2026-09-28 13:30", "ts": 1790602200, "price": 5.044e-06, "qty": 22.98, "spread": 0.0004}
 {"type": "entry", "asset": "BTC", "strategy": "macd_momentum", "version": "P1-v5", "t": "2026-09-28 13:35", "ts": 1790602500, "price": 73554.4, "qty": 23.06, "spread": 0.0}
 {"type": "entry", "asset": "XDC", "strategy": "macd_momentum", "version": "P1-v5", "t": "2026-09-28 13:35", "ts": 1790602500, "price": 0.02993, "qty": 23.06, "spread": 0.00234}
+{"type": "entry", "asset": "BTC", "strategy": "ruptura_volumen", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 73649.0, "qty": 22.86, "spread": 1e-05}
+{"type": "entry", "asset": "SOL", "strategy": "macd_momentum", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 105.8, "qty": 23.06, "spread": 9e-05}
+{"type": "entry", "asset": "ETH", "strategy": "macd_momentum", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 2371.36, "qty": 23.06, "spread": 0.00014}
+{"type": "entry", "asset": "XRP", "strategy": "macd_momentum", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 1.34529, "qty": 23.06, "spread": 0.00047}
+{"type": "exit", "asset": "LINK", "strategy": "pullback_tendencia", "version": "P1-v5", "entry_t": "2026-09-28 13:15", "exit_t": "2026-09-28 13:40", "entry_ts": 1790601300, "exit_ts": 1790602800, "entry": 12.79741, "exit": 13.0533582, "qty": 23.03, "gross_pct": 2.0, "net_pct": 0.9, "net_spread_pct": 0.833, "pnl_eur": 0.207, "reason": "take-profit", "candles": 5}
+{"type": "entry", "asset": "HBAR", "strategy": "c_banda_atr", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 0.10777, "qty": 22.98, "spread": 0.0013}
+{"type": "entry", "asset": "HBAR", "strategy": "pullback_tendencia", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 0.10777, "qty": 23.04, "spread": 0.0013}
+{"type": "entry", "asset": "ADA", "strategy": "estocastico_rebote", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 0.221122, "qty": 23.08, "spread": 0.00066}
+{"type": "entry", "asset": "TAO", "strategy": "macd_momentum", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 272.5895, "qty": 23.06, "spread": 0.00078}
+{"type": "entry", "asset": "AAVE", "strategy": "macd_momentum", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 132.72, "qty": 23.06, "spread": 0.00106}
+{"type": "entry", "asset": "PEPE", "strategy": "pullback_tendencia", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 3.776e-06, "qty": 23.04, "spread": 0.00027}
+{"type": "entry", "asset": "MON", "strategy": "pullback_tendencia", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 0.02566, "qty": 23.04, "spread": 0.00039}
+{"type": "exit", "asset": "USELESS", "strategy": "ruptura_volumen", "version": "P1-v4", "entry_t": "2026-09-28 12:55", "exit_t": "2026-09-28 13:40", "entry_ts": 1790600100, "exit_ts": 1790602800, "entry": 0.22912, "exit": 0.22637056, "qty": 44.95, "gross_pct": -1.2, "net_pct": -2.3, "net_spread_pct": -2.633, "pnl_eur": -1.034, "reason": "stop-loss", "candles": 9}
+{"type": "entry", "asset": "ZRO", "strategy": "c_banda_atr", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 1.413, "qty": 22.98, "spread": 0.00071}
+{"type": "entry", "asset": "PENGU", "strategy": "c_banda_atr", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 0.008805, "qty": 22.98, "spread": 0.00068}
+{"type": "entry", "asset": "SHIB", "strategy": "ruptura_volumen", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 5.066e-06, "qty": 22.83, "spread": 0.0004}
+{"type": "entry", "asset": "TRUMP", "strategy": "c_banda_atr", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 1.793, "qty": 22.98, "spread": 0.00056}
+{"type": "entry", "asset": "VIRTUAL", "strategy": "estocastico_rebote", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 0.7254, "qty": 23.08, "spread": 0.00041}
+{"type": "entry", "asset": "OP", "strategy": "c_banda_atr", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 0.123, "qty": 22.98, "spread": 0.00082}
+{"type": "entry", "asset": "KAS", "strategy": "pullback_tendencia", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 0.04201, "qty": 23.04, "spread": 0.0019}
+{"type": "exit", "asset": "EIGEN", "strategy": "c_banda_atr", "version": "P1-v4", "entry_t": "2026-09-28 12:55", "exit_t": "2026-09-28 13:40", "entry_ts": 1790600100, "exit_ts": 1790602800, "entry": 0.2307, "exit": 0.2272395, "qty": 46.03, "gross_pct": -1.5, "net_pct": -2.6, "net_spread_pct": -2.731, "pnl_eur": -1.197, "reason": "stop-loss", "candles": 9}
+{"type": "entry", "asset": "WLFI", "strategy": "c_banda_atr", "version": "P1-v5", "t": "2026-09-28 13:40", "ts": 1790602800, "price": 0.0498, "qty": 22.95, "spread": 0.00201}
