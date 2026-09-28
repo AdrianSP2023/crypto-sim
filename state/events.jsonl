@@ -1,3 +1,8 @@
 {"type": "universe", "t": "2026-09-28T08:49:26.648342+00:00", "assets": ["BTC", "QNT", "SOL", "ETH", "XRP", "SUI", "NEAR", "ZEC", "ONDO", "LINK", "LTC", "PUMP", "TAO", "ADA", "UNI", "AVAX", "BCH", "DOGE", "ARB", "ENA", "HYPE", "DOT", "XLM", "AAVE", "W", "PEPE", "XPL", "POL", "XDC", "DASH", "MON", "WLD", "JUP", "GRT", "FET"]}
 {"type": "entry", "asset": "MON", "strategy": "pullback_tendencia", "version": "P1-v1", "t": "2026-09-28 08:45", "ts": 1790585100, "price": 0.02498, "qty": 46.21, "spread": 0.0004}
 {"type": "entry", "asset": "XDC", "strategy": "pullback_tendencia", "version": "P1-v1", "t": "2026-09-28 08:50", "ts": 1790585400, "price": 0.02991, "qty": 46.21, "spread": 0.00234}
+{"type": "entry", "asset": "ETH", "strategy": "c_banda_atr", "version": "P1-v1", "t": "2026-09-28 08:55", "ts": 1790585700, "price": 2328.8, "qty": 46.21, "spread": 6e-05}
+{"type": "entry", "asset": "DOGE", "strategy": "c_banda_atr", "version": "P1-v1", "t": "2026-09-28 08:55", "ts": 1790585700, "price": 0.0818388, "qty": 46.21, "spread": 6e-05}
+{"type": "entry", "asset": "HYPE", "strategy": "c_banda_atr", "version": "P1-v1", "t": "2026-09-28 08:55", "ts": 1790585700, "price": 78.46, "qty": 46.21, "spread": 0.00026}
+{"type": "entry", "asset": "XLM", "strategy": "c_banda_atr", "version": "P1-v1", "t": "2026-09-28 08:55", "ts": 1790585700, "price": 0.184503, "qty": 46.21, "spread": 0.00072}
+{"type": "entry", "asset": "XLM", "strategy": "ruptura_volumen", "version": "P1-v1", "t": "2026-09-28 08:55", "ts": 1790585700, "price": 0.184503, "qty": 46.21, "spread": 0.00072}
