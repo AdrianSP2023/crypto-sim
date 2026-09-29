@@ -1918,3 +1918,10 @@
 {"type": "entry", "asset": "HYPE", "strategy": "c_banda_atr", "version": "P3-v2", "t": "2026-09-29 16:20", "ts": 1790698800, "price": 76.76, "qty": 22.75, "spread": 0.00052}
 {"type": "entry", "asset": "HYPE", "strategy": "c_banda_atr_tope", "version": "P3-v2", "t": "2026-09-29 16:20", "ts": 1790698800, "price": 76.76, "qty": 22.92, "spread": 0.00052}
 {"type": "entry", "asset": "HYPE", "strategy": "c_banda_atr_evento", "version": "P3-v2", "t": "2026-09-29 16:20", "ts": 1790698800, "price": 76.76, "qty": 22.93, "spread": 0.00052}
+{"type": "entry", "asset": "JUP", "strategy": "ruptura_volumen", "version": "P3-v2", "t": "2026-09-29 16:25", "ts": 1790699100, "price": 0.29238, "qty": 22.75, "spread": 0.00143}
+{"type": "entry", "asset": "JUP", "strategy": "ruptura_estricta", "version": "P3-v2", "t": "2026-09-29 16:25", "ts": 1790699100, "price": 0.29238, "qty": 22.83, "spread": 0.00143}
+{"type": "entry", "asset": "JUP", "strategy": "ruptura_volumen_tope", "version": "P3-v2", "t": "2026-09-29 16:25", "ts": 1790699100, "price": 0.29238, "qty": 22.99, "spread": 0.00143}
+{"type": "entry", "asset": "JUP", "strategy": "ruptura_volumen_evento", "version": "P3-v2", "t": "2026-09-29 16:25", "ts": 1790699100, "price": 0.29238, "qty": 23.0, "spread": 0.00143}
+{"type": "entry", "asset": "INJ", "strategy": "macd_momentum", "version": "P3-v2", "t": "2026-09-29 16:25", "ts": 1790699100, "price": 6.736, "qty": 22.47, "spread": 0.00104}
+{"type": "entry", "asset": "INJ", "strategy": "macd_sin_salida", "version": "P3-v2", "t": "2026-09-29 16:25", "ts": 1790699100, "price": 6.736, "qty": 22.64, "spread": 0.00104}
+{"type": "entry", "asset": "INJ", "strategy": "macd_momentum_evento", "version": "P3-v2", "t": "2026-09-29 16:25", "ts": 1790699100, "price": 6.736, "qty": 22.84, "spread": 0.00104}
