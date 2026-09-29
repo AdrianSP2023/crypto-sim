@@ -1487,3 +1487,8 @@ P3,pullback_tendencia,pullback_tendencia,P3-v1,INJ,largo spot (compra->venta),20
 P3,ruptura_volumen,ruptura_volumen,P3-v1,PENGU,largo spot (compra->venta),2026-09-29 09:45,2026-09-29 10:45,60,0.008541,0.008432,23.11,-1.276,1.1,-2.376,0.076,-2.452,0.2542,-0.549,stop-loss,12,9,
 P3,ruptura_volumen_regimen,ruptura_volumen,P3-v1,PENGU,largo spot (compra->venta),2026-09-29 09:45,2026-09-29 10:45,60,0.008541,0.008432,23.11,-1.276,1.1,-2.376,0.076,-2.452,0.2542,-0.549,stop-loss,12,9,
 P3,ruptura_volumen_tope,ruptura_volumen,P3-v1,PENGU,largo spot (compra->venta),2026-09-29 09:45,2026-09-29 10:45,60,0.008541,0.008432,23.11,-1.276,1.1,-2.376,0.076,-2.452,0.2542,-0.549,stop-loss,12,9,
+P3,macd_momentum,macd_momentum,P3-v1,NIGHT,largo spot (compra->venta),2026-09-29 10:00,2026-09-29 10:50,50,0.02582,0.0263364,23.09,2.0,1.1,0.9,0.192,0.708,0.254,0.208,take-profit,10,10,
+P3,macd_momentum_regimen,macd_momentum,P3-v1,NIGHT,largo spot (compra->venta),2026-09-29 10:00,2026-09-29 10:50,50,0.02582,0.0263364,23.09,2.0,1.1,0.9,0.192,0.708,0.254,0.208,take-profit,10,10,
+P3,macd_sin_salida,macd_momentum,P3-v1,NIGHT,largo spot (compra->venta),2026-09-29 10:00,2026-09-29 10:50,50,0.02582,0.0263364,23.11,2.0,1.1,0.9,0.192,0.708,0.2542,0.208,take-profit,10,10,
+P3,ruptura_volumen,ruptura_volumen,P3-v1,SPX,largo spot (compra->venta),2026-09-29 10:15,2026-09-29 10:50,35,0.3677,0.3632876,23.09,-1.2,1.1,-2.3,0.082,-2.382,0.254,-0.531,stop-loss,7,10,
+P3,ruptura_volumen_regimen,ruptura_volumen,P3-v1,SPX,largo spot (compra->venta),2026-09-29 10:15,2026-09-29 10:50,35,0.3677,0.3632876,23.09,-1.2,1.1,-2.3,0.082,-2.382,0.254,-0.531,stop-loss,7,10,
