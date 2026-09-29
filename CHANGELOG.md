@@ -201,3 +201,10 @@ Solo registro (no cambia ninguna estrategia ni reinicia conteos).
 - **`tools/analisis_historico.py`** (contraste de hipótesis H1-H7, modo `robustez`) y
   `datos/eventos/desplomes_4h_12pct.csv` (1.084 eventos de caída ≥ 12 % en 4 h en pares USD y EUR).
 - Resultados en `claude/contraste-historico-kraken.md` (proyecto). Ninguna estrategia del motor cambia.
+
+## Herramientas — 2026-09-29 (estudio de ventanas de 1 min)
+
+Sin cambio de versión de config (no toca el motor). `tools/historico_kraken.py ventanas`
+hace una segunda pasada por el zip de Kraken y guarda velas de 1 min desde t-4 h hasta
+t+9 h alrededor de cada desplome de `datos/eventos/desplomes_4h_12pct.csv`
+(`datos/ventanas_1m/`). Sirve para medir la entrada realista, el rebote alcanzable y el stop.

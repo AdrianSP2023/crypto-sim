@@ -9,6 +9,7 @@ que interesan (base en WANTED, cotizados en EUR o USD). El resto se descomprime 
 Uso (en GitHub Actions, workflow "Histórico Kraken"):
   python3 tools/historico_kraken.py probe   # comprueba acceso, tamaños, nombres de los primeros ficheros y formato
   python3 tools/historico_kraken.py full    # procesa todo y escribe datos/historico_1h/*.csv.gz + informe
+  python3 tools/historico_kraken.py ventanas  # velas de 1 min alrededor de los desplomes de datos/eventos/desplomes_4h_12pct.csv
 """
 import gzip
 import io
@@ -94,8 +95,21 @@ def http_parts(nparts=NPARTS, url=URL, limit_bytes=None):
 class Agg:
     """Agrega trades a velas de 1 h de forma incremental (los datos vienen ordenados por tiempo)."""
 
-    def __init__(self):
+    def __init__(self, bucket=3600, windows=None):
+        """bucket: segundos por vela (3600 = 1 h, 60 = 1 min). windows: (inicio, fin) en epoch;
+        si se indica, solo se agregan los trades dentro de esas ventanas (el resto se descarta)."""
         self.parts, self.buf, self.rows, self.first = [], b"", 0, True
+        self.bucket = bucket
+        self.win = None
+        if windows:
+            w = sorted(windows)
+            merged = [list(w[0])]
+            for a, b in w[1:]:
+                if a <= merged[-1][1]:
+                    merged[-1][1] = max(merged[-1][1], b)
+                else:
+                    merged.append([a, b])
+            self.win = (np.array([m[0] for m in merged], dtype="float64"), np.array([m[1] for m in merged], dtype="float64"))
 
     def _flush_lines(self, data):
         if self.first:
@@ -110,7 +124,14 @@ class Agg:
             return
         ts = df.timestamp.to_numpy()
         ts = np.where(ts > 1e12, ts / 1000.0, ts)
-        df["h"] = (ts // 3600).astype("int64") * 3600
+        if self.win is not None:
+            st, en = self.win
+            k = np.searchsorted(st, ts, side="right") - 1
+            ok = (k >= 0) & (ts < en[np.clip(k, 0, len(en) - 1)])
+            if not ok.any():
+                return
+            df, ts = df[ok].copy(), ts[ok]
+        df["h"] = (ts // self.bucket).astype("int64") * self.bucket
         g = df.groupby("h", sort=True)
         a = pd.DataFrame({"open": g.price.first(), "high": g.price.max(), "low": g.price.min(),
                           "close": g.price.last(), "volume": g.volume.sum(), "trades": g.price.size()})
@@ -140,7 +161,7 @@ class Agg:
         return out
 
 
-def process(stream, wanted, out_dir=None, log=print, max_members=None):
+def process(stream, wanted, out_dir=None, log=print, max_members=None, make_agg=None):
     """Recorre el zip en streaming. Devuelve (miembros, resultados por par)."""
     from stream_unzip import stream_unzip
     out_dir = Path(out_dir) if out_dir else OUT
@@ -149,9 +170,13 @@ def process(stream, wanted, out_dir=None, log=print, max_members=None):
     for name, size, chunks in stream_unzip(stream):
         nm = name.decode(errors="replace")
         pair = parse_pair(nm)
-        take = pair is not None and pair[0] in wanted
+        if make_agg is not None:
+            agg = make_agg(pair) if pair is not None else None
+            take = agg is not None
+        else:
+            take = pair is not None and pair[0] in wanted
+            agg = Agg() if take else None
         base = nm.rsplit("/", 1)[-1]
-        agg = Agg() if take else None
         keep_manifest = base.upper() == "MANIFEST.JSON"
         mbuf = b""
         nbytes = 0
@@ -246,5 +271,36 @@ def full():
     print("\n".join(rep[:6]))
 
 
+EVENTOS = ROOT / "datos" / "eventos" / "desplomes_4h_12pct.csv"
+OUT_V = ROOT / "datos" / "ventanas_1m"
+PRE_S, POST_S = 4 * 3600, 9 * 3600      # ventana por evento: desde t-4 h hasta t+9 h (t = inicio de la vela 1 h del evento)
+
+
+def event_windows(path=EVENTOS):
+    """(base, quote) -> lista de (inicio, fin) en epoch, a partir del CSV de desplomes."""
+    ev = pd.read_csv(path)
+    t = (pd.to_datetime(ev.t_utc, utc=True) - pd.Timestamp("1970-01-01", tz="UTC")) // pd.Timedelta(seconds=1)
+    out = {}
+    for (q, a), ts in zip(zip(ev.quote, ev.asset), t):
+        out.setdefault((a, q), []).append((int(ts) - PRE_S, int(ts) + POST_S))
+    return out
+
+
+def ventanas(stream=None, events_path=EVENTOS, out_dir=OUT_V, log=print):
+    t0 = time.time()
+    wins = event_windows(events_path)
+    stream = http_parts() if stream is None else stream
+    members, results, _ = process(stream, set(), out_dir=out_dir, log=log,
+                                  make_agg=lambda pair: Agg(60, wins[(pair[0], pair[1])]) if (pair[0], pair[1]) in wins else None)
+    rep = [f"Ventanas 1 min alrededor de desplomes · {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())} · {time.time()-t0:.0f} s",
+           f"pares pedidos: {len(wins)} · pares guardados: {len(results)} · eventos: {sum(len(v) for v in wins.values())}",
+           "", "== Pares guardados ==", json.dumps(results, indent=1, ensure_ascii=False),
+           "", "== Pares pedidos que NO aparecieron ==", ", ".join(f"{a}/{q}" for (a, q) in wins if f"{a}/{q}" not in results) or "(ninguno)"]
+    Path(out_dir).mkdir(parents=True, exist_ok=True)
+    (Path(out_dir) / "_informe.txt").write_text("\n".join(rep))
+    print("\n".join(rep[:3]))
+    return results
+
+
 if __name__ == "__main__":
-    {"probe": probe, "full": full}[sys.argv[1] if len(sys.argv) > 1 else "probe"]()
+    {"probe": probe, "full": full, "ventanas": ventanas}[sys.argv[1] if len(sys.argv) > 1 else "probe"]()

@@ -2,11 +2,12 @@ name: Histórico Kraken
 
 # Manual. mode=probe: comprueba acceso, tamaños y formato (rápido).
 # mode=full: procesa las 13 partes (~26 GB) en streaming y guarda velas de 1 h en datos/historico_1h/.
+# mode=ventanas: segunda pasada; guarda velas de 1 min alrededor de los desplomes en datos/ventanas_1m/.
 on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "probe o full"
+        description: "probe, full o ventanas"
         required: true
         default: "probe"
 
@@ -36,7 +37,7 @@ jobs:
         run: |
           git config user.name "historico-kraken"
           git config user.email "historico-kraken@users.noreply.github.com"
-          git add datos/historico_1h
+          git add datos/historico_1h datos/ventanas_1m
           if git diff --cached --quiet; then echo "sin cambios"; exit 0; fi
           git commit -q -m "Histórico Kraken (${{ github.event.inputs.mode }})"
           for i in 1 2 3 4 5; do

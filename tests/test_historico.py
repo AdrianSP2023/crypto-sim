@@ -57,7 +57,28 @@ def main():
     assert hk.parse_pair("2ZEUR.csv") == ("2Z", "EUR") and hk.parse_pair("XETHZUSD.csv") == ("ETH", "USD")
     assert hk.parse_pair("AAVEXBT.csv") is None and hk.parse_pair("ADAETH.csv") is None
     assert hk.parse_pair("USDTUSD.csv") == ("USDT", "USD") and hk.parse_pair("MANIFEST.json") is None
-    print("histórico Kraken (streaming, partes, filtro, agregación 1 h) OK")
+    # ---- modo ventanas: velas de 1 min solo dentro de las ventanas de cada evento
+    with tempfile.TemporaryDirectory() as d:
+        t_ev = 1_600_000_000 + 2 * 86400
+        t_ev = (t_ev // 3600) * 3600
+        ev = pd.DataFrame({"quote": ["USD"], "asset": ["BTC"], "t_utc": [pd.to_datetime(t_ev, unit="s", utc=True).strftime("%Y-%m-%d %H:%M")]})
+        ep = Path(d) / "ev.csv"
+        ev.to_csv(ep, index=False)
+        stream2 = (data[i:i + 65536] for i in range(0, len(data), 65536))
+        out = Path(d) / "v"
+        res2 = hk.ventanas(stream2, events_path=ep, out_dir=out, log=lambda s: None)
+        assert set(res2) == {"BTC/USD"}, res2
+        got = pd.read_csv(out / "USD_BTC.csv.gz").set_index("time")
+        m0, m1 = t_ev - hk.PRE_S, t_ev + hk.POST_S
+        sub = A[(A.timestamp >= m0) & (A.timestamp < m1)]
+        mm = (sub.timestamp // 60).astype("int64") * 60
+        g = sub.groupby(mm)
+        exp = pd.DataFrame({"open": g.price.first(), "high": g.price.max(), "low": g.price.min(), "close": g.price.last(), "trades": g.price.size()})
+        assert list(got.index) == list(exp.index) and len(got) > 100, (len(got), len(exp))
+        for c in ("open", "high", "low", "close", "trades"):
+            assert np.allclose(got[c], exp[c], rtol=1e-9), c
+        assert got.index.min() >= m0 and got.index.max() < m1
+    print("histórico Kraken (streaming, partes, filtro, agregación 1 h y ventanas 1 min) OK")
 
 if __name__ == "__main__":
     main()
