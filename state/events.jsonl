@@ -2483,3 +2483,9 @@
 {"type": "exit", "asset": "NIGHT", "strategy": "estocastico_rebote_filtro", "version": "P1-v10", "entry_t": "2026-09-29 06:15", "exit_t": "2026-09-29 07:00", "entry_ts": 1790662500, "exit_ts": 1790665200, "entry": 0.02466, "exit": 0.02510388, "qty": 22.86, "gross_pct": 1.8, "net_pct": 0.7, "net_spread_pct": 0.519, "pnl_eur": 0.16, "reason": "take-profit", "candles": 9}
 {"type": "entry", "asset": "NIGHT", "strategy": "macd_sin_salida", "version": "P1-v10", "t": "2026-09-29 07:00", "ts": 1790665200, "price": 0.02513, "qty": 22.64, "spread": 0.0016}
 {"type": "entry", "asset": "NIGHT", "strategy": "c_banda_atr_tope", "version": "P1-v10", "t": "2026-09-29 07:00", "ts": 1790665200, "price": 0.02513, "qty": 23.04, "spread": 0.0016}
+{"type": "entry", "asset": "AVAX", "strategy": "ruptura_estricta", "version": "P1-v10", "t": "2026-09-29 07:05", "ts": 1790665500, "price": 9.743, "qty": 22.83, "spread": 0.00072}
+{"type": "entry", "asset": "HYPE", "strategy": "ruptura_volumen", "version": "P1-v10", "t": "2026-09-29 07:05", "ts": 1790665500, "price": 77.6, "qty": 21.69, "spread": 0.00013}
+{"type": "entry", "asset": "HYPE", "strategy": "ruptura_volumen_filtro", "version": "P1-v10", "t": "2026-09-29 07:05", "ts": 1790665500, "price": 77.6, "qty": 22.31, "spread": 0.00013}
+{"type": "entry", "asset": "JUP", "strategy": "c_banda_atr", "version": "P1-v10", "t": "2026-09-29 07:05", "ts": 1790665500, "price": 0.28792, "qty": 21.39, "spread": 0.00122}
+{"type": "entry", "asset": "JUP", "strategy": "c_banda_atr_filtro", "version": "P1-v10", "t": "2026-09-29 07:05", "ts": 1790665500, "price": 0.28792, "qty": 22.22, "spread": 0.00122}
+{"type": "entry", "asset": "JUP", "strategy": "c_banda_atr_tope", "version": "P1-v10", "t": "2026-09-29 07:05", "ts": 1790665500, "price": 0.28792, "qty": 23.04, "spread": 0.00122}
