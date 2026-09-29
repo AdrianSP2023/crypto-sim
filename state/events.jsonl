@@ -1864,3 +1864,4 @@
 {"type": "entry", "asset": "W", "strategy": "ruptura_volumen_filtro", "version": "P1-v10", "t": "2026-09-29 03:55", "ts": 1790654100, "price": 0.01212, "qty": 22.37, "spread": 0.00248}
 {"type": "entry", "asset": "W", "strategy": "ruptura_volumen_tope", "version": "P1-v10", "t": "2026-09-29 03:55", "ts": 1790654100, "price": 0.01212, "qty": 23.11, "spread": 0.00248}
 {"type": "exit", "asset": "WLFI", "strategy": "ruptura_estricta", "version": "P1-v9", "entry_t": "2026-09-29 00:55", "exit_t": "2026-09-29 03:55", "entry_ts": 1790643300, "exit_ts": 1790654100, "entry": 0.05, "exit": 0.0494, "qty": 22.99, "gross_pct": -1.2, "net_pct": -2.3, "net_spread_pct": -2.501, "pnl_eur": -0.529, "reason": "timeout", "candles": 36}
+{"type": "entry", "asset": "ALGO", "strategy": "pullback_tendencia", "version": "P1-v10", "t": "2026-09-29 04:00", "ts": 1790654400, "price": 0.11932, "qty": 22.58, "spread": 0.00059}
