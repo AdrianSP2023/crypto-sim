@@ -1915,3 +1915,6 @@
 {"type": "entry", "asset": "PUMP", "strategy": "macd_sin_salida", "version": "P3-v2", "t": "2026-09-29 16:15", "ts": 1790698500, "price": 0.005108, "qty": 22.64, "spread": 0.00334}
 {"type": "entry", "asset": "PUMP", "strategy": "macd_momentum_evento", "version": "P3-v2", "t": "2026-09-29 16:15", "ts": 1790698500, "price": 0.005108, "qty": 22.84, "spread": 0.00334}
 {"type": "entry", "asset": "CRV", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-29 16:15", "ts": 1790698500, "price": 0.35019, "qty": 22.03, "spread": 0.00142}
+{"type": "entry", "asset": "HYPE", "strategy": "c_banda_atr", "version": "P3-v2", "t": "2026-09-29 16:20", "ts": 1790698800, "price": 76.76, "qty": 22.75, "spread": 0.00052}
+{"type": "entry", "asset": "HYPE", "strategy": "c_banda_atr_tope", "version": "P3-v2", "t": "2026-09-29 16:20", "ts": 1790698800, "price": 76.76, "qty": 22.92, "spread": 0.00052}
+{"type": "entry", "asset": "HYPE", "strategy": "c_banda_atr_evento", "version": "P3-v2", "t": "2026-09-29 16:20", "ts": 1790698800, "price": 76.76, "qty": 22.93, "spread": 0.00052}
