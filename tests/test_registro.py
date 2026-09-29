@@ -34,5 +34,19 @@ def main():
             assert registro.sync(st, cfg, path=p) == 1
         print("registro CSV OK (", mode, "):", n1, "filas")
 
+def test_velas():
+    import pandas as pd
+    df = synth(5)[:300]
+    with tempfile.TemporaryDirectory() as d:
+        st = {}
+        assert registro.guardar_velas({"A/B": df.iloc[:200]}, st, 5, base=d) == 200
+        assert registro.guardar_velas({"A/B": df.iloc[:200]}, st, 5, base=d) == 0          # sin duplicar
+        assert registro.guardar_velas({"A/B": df}, st, 5, base=d) == 100                    # solo las nuevas
+        got = pd.read_csv(Path(d) / "A_B.csv")
+        assert len(got) == 300 and got.time.is_unique and got.time.is_monotonic_increasing
+        assert abs(got.close.iloc[-1] - df.close.iloc[-1]) < 1e-9 * df.close.iloc[-1]
+    print("guardado de velas OK")
+
 if __name__ == "__main__":
     main()
+    test_velas()

@@ -75,6 +75,29 @@ def sync(state, cfg, fase=None, path=PATH):
     return len(rows)
 
 
+VELAS_COLS = ["time", "open", "high", "low", "close", "vwap", "volume", "count"]
+
+
+def guardar_velas(frames, state, minutes, base=None):
+    """Guarda en datos/velas_<min>m/<ACTIVO>.csv todas las velas cerradas de cada activo (sin duplicar).
+    Sirve para analizar después cualquier cosa: qué hizo el precio tras cada entrada o salida, patrones,
+    re-simulaciones... Kraken solo devuelve las últimas 720 velas, así que lo no guardado se pierde."""
+    base = Path(base) if base else ROOT / "datos" / f"velas_{minutes}m"
+    base.mkdir(parents=True, exist_ok=True)
+    last = state.setdefault("velas_last", {})
+    n = 0
+    for asset, df in frames.items():
+        new = df[df.time > last.get(asset, 0)]
+        if new.empty:
+            continue
+        f = base / (str(asset).replace("/", "_") + ".csv")
+        cols = [c for c in VELAS_COLS if c in df.columns]
+        new[cols].to_csv(f, mode="a", header=not f.exists() or f.stat().st_size == 0, index=False)
+        last[asset] = int(new.time.max())
+        n += len(new)
+    return n
+
+
 if __name__ == "__main__":
     d = ROOT / sys.argv[1]
     st = json.loads((d / "state" / "state.json").read_text())

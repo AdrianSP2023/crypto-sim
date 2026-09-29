@@ -167,3 +167,13 @@ Solo registro; el comportamiento de las estrategias no cambia (tests idénticos)
   de la señal (RSI, ATR, EMA, volumen relativo...) y amplitud de mercado con EMA50 y EMA200. Solo para operaciones
   abiertas a partir de este cambio.
 - `tests/test_registro.py`. `registro.py` se añade a los ficheros de código vigilados por el motor y al workflow.
+
+## P3-v1 (sin cambio de versión) — 2026-09-29 ~11:05 UTC: registro de velas de precio
+
+Solo registro (no cambia ninguna estrategia ni reinicia conteos).
+- **`datos/velas_5m/<ACTIVO>.csv`**: todas las velas cerradas de 5 min de los 60 activos (time, open, high, low,
+  close, vwap, volume, count), sin duplicar (`state["velas_last"]`). Kraken solo devuelve las últimas 720 velas
+  (60 h), así que la primera vuelta con este cambio guarda esas 60 h (cubren todo P1 y lo que va de P3) y desde
+  ahí se acumulan. Sirve para medir qué hizo el precio tras cada entrada o salida (recorrido máximo a favor y en
+  contra, rebotes posteriores), buscar patrones y re-simular sin depender de la ventana de la API.
+- Crecimiento estimado: ~1-1,5 MB/día de CSV en el repo.

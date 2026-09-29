@@ -151,7 +151,7 @@ def save_all(state, events, cfg, warnings, log):
 
 
 def git_sync(msg):
-    sh("git", "add", "state", "STATUS.md", "registro")
+    sh("git", "add", "state", "STATUS.md", "registro", "datos")
     if sh("git", "diff", "--cached", "--quiet", check=False).returncode == 0:
         return
     sh("git", "commit", "-q", "-m", msg)
@@ -189,6 +189,11 @@ def one_loop(state, cfg):
             warnings.append(f"{x['asset']}: sin datos ({e})")
         time.sleep(0.6)  # ~1 petición/s: límite de la API pública de Kraken
     core.process_frames(state, frames, cfg, log, spreads, events)
+    try:
+        import registro
+        registro.guardar_velas(frames, state, cfg["candle_minutes"])
+    except Exception as ex:  # guardar precios nunca debe parar el motor
+        warnings.append(f"guardar velas: {ex}")
     prev = state.get("last_loop")
     if prev:
         gap = (now() - datetime.fromisoformat(prev)).total_seconds() / 60
