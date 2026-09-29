@@ -1,0 +1,39 @@
+Eventos usados: 1253 tras cooldown 24 h/activo · filas de disparo: 19920
+TECHO por sesgo de selección (las ventanas se eligieron porque la subida ocurrió).
+
+== Disparo +3 % sobre el mínimo de 4 h · n=1245 · ya subido al entrar (retraso 0): mediana 3.6 % ==
+ retraso                     +30m                     +60m                    +120m                    +240m
+     0 m  +0.61 |  +0.13 | t +4.0  +1.05 |  +0.50 | t +4.6  +1.63 |  +0.64 | t +4.2  +4.25 |  +4.07 | t +7.2
+     1 m  +0.55 |  +0.14 | t +3.6  +1.00 |  +0.42 | t +4.6  +1.54 |  +0.65 | t +4.1  +4.22 |  +4.22 | t +7.2
+     5 m  +0.53 |  +0.13 | t +4.2  +0.94 |  +0.48 | t +4.5  +1.47 |  +0.63 | t +4.2  +4.21 |  +4.38 | t +7.2
+    15 m  +0.35 |  +0.14 | t +2.6  +0.82 |  +0.43 | t +3.8  +1.22 |  +0.70 | t +3.5  +4.31 |  +4.48 | t +7.7
+  TP/SL (retraso 0, neto 1,1 % | 0,5 %): tp3_sl2: -0.37|+0.23 · tp5_sl3: +0.56|+1.16 · tp8_sl4: +1.60|+2.20 · tp5_slx: +0.89|+1.49 · tp8_slx: +2.00|+2.60
+
+== Disparo +5 % sobre el mínimo de 4 h · n=1245 · ya subido al entrar (retraso 0): mediana 5.4 % ==
+ retraso                     +30m                     +60m                    +120m                    +240m
+     0 m  +1.69 |  +0.93 | t +7.8  +2.38 |  +1.52 | t +8.7  +3.33 |  +3.58 | t +7.9  +6.00 |  +6.89 | t+11.6
+     1 m  +1.62 |  +0.87 | t +6.5  +2.26 |  +1.43 | t +8.3  +3.18 |  +3.28 | t +7.6  +5.88 |  +6.71 | t+11.3
+     5 m  +1.29 |  +0.80 | t +7.8  +1.98 |  +1.44 | t +8.5  +2.98 |  +2.98 | t +7.8  +5.60 |  +6.46 | t+11.0
+    15 m  +0.95 |  +0.65 | t +7.7  +1.52 |  +1.26 | t +6.0  +2.58 |  +2.68 | t +6.9  +5.30 |  +5.76 | t+11.4
+  TP/SL (retraso 0, neto 1,1 % | 0,5 %): tp3_sl2: +0.09|+0.69 · tp5_sl3: +1.36|+1.96 · tp8_sl4: +3.04|+3.64 · tp5_slx: +1.90|+2.50 · tp8_slx: +3.55|+4.15
+
+== Disparo +8 % sobre el mínimo de 4 h · n=1245 · ya subido al entrar (retraso 0): mediana 8.4 % ==
+ retraso                     +30m                     +60m                    +120m                    +240m
+     0 m  +2.14 |  +1.60 | t +9.9  +3.05 |  +2.62 | t+12.4  +4.25 |  +4.51 | t+12.7  +6.15 |  +6.01 | t+19.6
+     1 m  +2.11 |  +1.56 | t +8.5  +2.93 |  +2.55 | t+11.8  +4.12 |  +4.35 | t+12.4  +6.01 |  +5.87 | t+19.0
+     5 m  +1.64 |  +1.19 | t+10.2  +2.51 |  +2.26 | t+10.6  +3.72 |  +3.96 | t+12.1  +5.54 |  +5.51 | t+18.4
+    15 m  +1.23 |  +1.00 | t +8.8  +1.92 |  +1.77 | t +5.8  +3.19 |  +3.29 | t+10.9  +5.03 |  +4.90 | t+19.2
+  TP/SL (retraso 0, neto 1,1 % | 0,5 %): tp3_sl2: +0.34|+0.94 · tp5_sl3: +1.83|+2.43 · tp8_sl4: +3.59|+4.19 · tp5_slx: +2.80|+3.40 · tp8_slx: +4.33|+4.93
+
+== Disparo +10 % sobre el mínimo de 4 h · n=1245 · ya subido al entrar (retraso 0): mediana 10.4 % ==
+ retraso                     +30m                     +60m                    +120m                    +240m
+     0 m  +2.05 |  +1.53 | t +9.4  +2.91 |  +2.56 | t+12.6  +3.65 |  +3.46 | t+13.3  +5.20 |  +4.56 | t+19.0
+     1 m  +1.95 |  +1.44 | t +7.8  +2.73 |  +2.47 | t+11.6  +3.44 |  +3.43 | t+12.4  +5.02 |  +4.49 | t+18.0
+     5 m  +1.51 |  +1.22 | t +9.6  +2.32 |  +2.07 | t+10.4  +3.05 |  +3.05 | t+12.1  +4.60 |  +4.33 | t+18.3
+    15 m  +1.13 |  +0.96 | t +8.5  +1.72 |  +1.63 | t +6.0  +2.48 |  +2.58 | t +9.8  +4.01 |  +3.58 | t+16.5
+  TP/SL (retraso 0, neto 1,1 % | 0,5 %): tp3_sl2: +0.39|+0.99 · tp5_sl3: +1.71|+2.31 · tp8_sl4: +2.80|+3.40 · tp5_slx: +2.69|+3.29 · tp8_slx: +3.70|+4.30
+
+== CONTROL SIN SESGO (velas de 1 h, 42 activos USD 2018-2026, mismo disparo aplicado a TODAS las horas, cooldown 24 h) ==
+Disparo +5 % sobre el mínimo de 4 h: n=16.677 · +4 h bruto +0,07 % (mediana -0,10, 48 % >0, t +1,3)
+Disparo +10 % sobre el mínimo de 4 h: n=3.811 · +4 h bruto +0,14 % (mediana -0,04, 49 % >0, t +0,9)
+Comparación: dentro de las ventanas elegidas a posteriori el mismo disparo daba +5,2 a +6,2 % a +4 h. La diferencia es sesgo de selección.

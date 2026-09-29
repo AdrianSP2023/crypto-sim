@@ -253,3 +253,6 @@ Cambios (Maestro pidió las dos ideas; las cuentas de las 14 estrategias existen
 
 ## Precursores de subidas — 2026-09-29
 - `tools/precursores_subidas.py` (HistGradientBoosting, velas de 1 h, 42 activos USD, entrena 2018-21, valida 2022, test 2023-26) y `tools/precursores_robustez.py`. Informes en `datos/eventos/precursores_informe.txt` y `precursores_robustez.txt`. Sin cambios en el motor.
+
+## Subidas en velas de 1 min — 2026-09-29
+- Descarga `ventanas_subidas` terminada (59 pares, 1.758 eventos, 23 MB). `tools/analisis_subidas_1m.py` -> `datos/eventos/subidas_1m_informe.txt`, `subidas_1m_eventos.csv`. Resultado con techo por sesgo; control sin sesgo con velas de 1 h: +0,07 a +0,14 % a +4 h. Sin cambios en el motor.
