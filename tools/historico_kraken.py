@@ -320,5 +320,14 @@ def ventanas_subidas():
         tmp.unlink(missing_ok=True)
 
 
+MODELO = ROOT / "datos" / "eventos" / "horas_modelo.csv"
+OUT_M = ROOT / "datos" / "ventanas_1m_modelo"
+
+
+def ventanas_modelo():
+    """Velas de 1 min desde t-2 h hasta t+8 h alrededor de las horas elegidas por el modelo de precursores (selección sin mirar al futuro)."""
+    return ventanas(events_path=MODELO, out_dir=OUT_M, pre=2 * 3600, post=8 * 3600)
+
+
 if __name__ == "__main__":
-    {"probe": probe, "full": full, "ventanas": ventanas, "ventanas_subidas": ventanas_subidas}[sys.argv[1] if len(sys.argv) > 1 else "probe"]()
+    {"probe": probe, "full": full, "ventanas": ventanas, "ventanas_subidas": ventanas_subidas, "ventanas_modelo": ventanas_modelo}[sys.argv[1] if len(sys.argv) > 1 else "probe"]()

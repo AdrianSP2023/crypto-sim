@@ -256,3 +256,6 @@ Cambios (Maestro pidió las dos ideas; las cuentas de las 14 estrategias existen
 
 ## Subidas en velas de 1 min — 2026-09-29
 - Descarga `ventanas_subidas` terminada (59 pares, 1.758 eventos, 23 MB). `tools/analisis_subidas_1m.py` -> `datos/eventos/subidas_1m_informe.txt`, `subidas_1m_eventos.csv`. Resultado con techo por sesgo; control sin sesgo con velas de 1 h: +0,07 a +0,14 % a +4 h. Sin cambios en el motor.
+
+## tools: modo ventanas_modelo — 2026-09-29
+- `tools/horas_modelo.py` -> `datos/eventos/horas_modelo.csv` (1.056 horas de test 2023-26 elegidas por el modelo de precursores con umbral de validación, sin mirar al futuro). `historico_kraken.py ventanas_modelo` baja velas de 1 min de t-2 h a t+8 h a `datos/ventanas_1m_modelo/`. Objetivo: probar sin sesgo si entrar dentro de la hora mejora el resultado. Sin cambios en el motor.
