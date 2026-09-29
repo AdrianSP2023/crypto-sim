@@ -1,0 +1,13 @@
+{
+ "initial": 924.24,
+ "cash": 924.24,
+ "open": [],
+ "volume": [],
+ "n_closed": 0,
+ "last_run": "2026-09-29 18:18:21",
+ "warnings": [],
+ "skipped_assets": [
+  "MATIC"
+ ],
+ "runs": 1
+}
