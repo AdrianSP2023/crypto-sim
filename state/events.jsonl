@@ -2559,3 +2559,6 @@
 {"type": "entry", "asset": "SHIB", "strategy": "macd_momentum", "version": "P3-v2", "t": "2026-09-29 21:10", "ts": 1790716200, "price": 5.087e-06, "qty": 22.4, "spread": 0.00059}
 {"type": "entry", "asset": "SHIB", "strategy": "macd_sin_salida", "version": "P3-v2", "t": "2026-09-29 21:10", "ts": 1790716200, "price": 5.087e-06, "qty": 22.61, "spread": 0.00059}
 {"type": "entry", "asset": "SHIB", "strategy": "macd_momentum_evento", "version": "P3-v2", "t": "2026-09-29 21:10", "ts": 1790716200, "price": 5.087e-06, "qty": 22.72, "spread": 0.00059}
+{"type": "entry", "asset": "ADA", "strategy": "macd_momentum", "version": "P3-v2", "t": "2026-09-29 21:15", "ts": 1790716500, "price": 0.216217, "qty": 22.4, "spread": 7e-05}
+{"type": "entry", "asset": "ADA", "strategy": "macd_momentum_evento", "version": "P3-v2", "t": "2026-09-29 21:15", "ts": 1790716500, "price": 0.216217, "qty": 22.72, "spread": 7e-05}
+{"type": "entry", "asset": "SPX", "strategy": "ruptura_estricta", "version": "P3-v2", "t": "2026-09-29 21:15", "ts": 1790716500, "price": 0.3692, "qty": 22.78, "spread": 0.00109}
