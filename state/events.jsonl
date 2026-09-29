@@ -1966,3 +1966,22 @@
 {"type": "entry", "asset": "VIRTUAL", "strategy": "ruptura_volumen", "version": "P1-v10", "t": "2026-09-29 04:55", "ts": 1790657700, "price": 0.7105, "qty": 21.77, "spread": 0.00239}
 {"type": "entry", "asset": "AVAX", "strategy": "c_banda_atr", "version": "P1-v10", "t": "2026-09-29 05:00", "ts": 1790658000, "price": 9.213, "qty": 21.37, "spread": 0.00054}
 {"type": "entry", "asset": "AVAX", "strategy": "c_banda_atr_filtro", "version": "P1-v10", "t": "2026-09-29 05:00", "ts": 1790658000, "price": 9.213, "qty": 22.21, "spread": 0.00054}
+{"type": "entry", "asset": "SOL", "strategy": "c_banda_atr", "version": "P1-v10", "t": "2026-09-29 05:05", "ts": 1790658300, "price": 103.78, "qty": 21.37, "spread": 0.0001}
+{"type": "entry", "asset": "SOL", "strategy": "c_banda_atr_filtro", "version": "P1-v10", "t": "2026-09-29 05:05", "ts": 1790658300, "price": 103.78, "qty": 22.21, "spread": 0.0001}
+{"type": "entry", "asset": "DOGE", "strategy": "macd_momentum", "version": "P1-v10", "t": "2026-09-29 05:05", "ts": 1790658300, "price": 0.0820333, "qty": 22.11, "spread": 4e-05}
+{"type": "entry", "asset": "DOGE", "strategy": "macd_momentum_filtro", "version": "P1-v10", "t": "2026-09-29 05:05", "ts": 1790658300, "price": 0.0820333, "qty": 22.62, "spread": 4e-05}
+{"type": "entry", "asset": "DOGE", "strategy": "macd_sin_salida", "version": "P1-v10", "t": "2026-09-29 05:05", "ts": 1790658300, "price": 0.0820333, "qty": 22.61, "spread": 4e-05}
+{"type": "entry", "asset": "ENA", "strategy": "macd_momentum", "version": "P1-v10", "t": "2026-09-29 05:05", "ts": 1790658300, "price": 0.221, "qty": 22.11, "spread": 0.00091}
+{"type": "entry", "asset": "ENA", "strategy": "macd_momentum_filtro", "version": "P1-v10", "t": "2026-09-29 05:05", "ts": 1790658300, "price": 0.221, "qty": 22.62, "spread": 0.00091}
+{"type": "entry", "asset": "ENA", "strategy": "macd_sin_salida", "version": "P1-v10", "t": "2026-09-29 05:05", "ts": 1790658300, "price": 0.221, "qty": 22.61, "spread": 0.00091}
+{"type": "entry", "asset": "AAVE", "strategy": "c_banda_atr", "version": "P1-v10", "t": "2026-09-29 05:05", "ts": 1790658300, "price": 132.04, "qty": 21.37, "spread": 0.00129}
+{"type": "entry", "asset": "AAVE", "strategy": "macd_momentum", "version": "P1-v10", "t": "2026-09-29 05:05", "ts": 1790658300, "price": 132.04, "qty": 22.11, "spread": 0.00129}
+{"type": "entry", "asset": "AAVE", "strategy": "c_banda_atr_filtro", "version": "P1-v10", "t": "2026-09-29 05:05", "ts": 1790658300, "price": 132.04, "qty": 22.21, "spread": 0.00129}
+{"type": "entry", "asset": "AAVE", "strategy": "macd_momentum_filtro", "version": "P1-v10", "t": "2026-09-29 05:05", "ts": 1790658300, "price": 132.04, "qty": 22.62, "spread": 0.00129}
+{"type": "entry", "asset": "AAVE", "strategy": "macd_sin_salida", "version": "P1-v10", "t": "2026-09-29 05:05", "ts": 1790658300, "price": 132.04, "qty": 22.61, "spread": 0.00129}
+{"type": "entry", "asset": "RENDER", "strategy": "ruptura_volumen", "version": "P1-v10", "t": "2026-09-29 05:05", "ts": 1790658300, "price": 1.682, "qty": 21.77, "spread": 0.00178}
+{"type": "entry", "asset": "RENDER", "strategy": "ruptura_volumen_filtro", "version": "P1-v10", "t": "2026-09-29 05:05", "ts": 1790658300, "price": 1.682, "qty": 22.35, "spread": 0.00178}
+{"type": "exit", "asset": "RAY", "strategy": "c_banda_atr", "version": "P1-v10", "entry_t": "2026-09-29 02:50", "exit_t": "2026-09-29 05:05", "entry_ts": 1790650200, "exit_ts": 1790658300, "entry": 1.629, "exit": 1.66158, "qty": 21.39, "gross_pct": 2.0, "net_pct": 0.9, "net_spread_pct": 0.686, "pnl_eur": 0.193, "reason": "take-profit", "candles": 27}
+{"type": "entry", "asset": "RAY", "strategy": "c_banda_atr_filtro", "version": "P1-v10", "t": "2026-09-29 05:05", "ts": 1790658300, "price": 1.649, "qty": 22.21, "spread": 0.00243}
+{"type": "exit", "asset": "RAY", "strategy": "c_banda_atr_tope", "version": "P1-v10", "entry_t": "2026-09-29 02:50", "exit_t": "2026-09-29 05:05", "entry_ts": 1790650200, "exit_ts": 1790658300, "entry": 1.629, "exit": 1.66158, "qty": 23.06, "gross_pct": 2.0, "net_pct": 0.9, "net_spread_pct": 0.686, "pnl_eur": 0.208, "reason": "take-profit", "candles": 27}
+{"type": "exit", "asset": "CC", "strategy": "macd_momentum", "version": "P1-v10", "entry_t": "2026-09-29 03:15", "exit_t": "2026-09-29 05:05", "entry_ts": 1790651700, "exit_ts": 1790658300, "entry": 0.11613, "exit": 0.11751, "qty": 22.11, "gross_pct": 1.188, "net_pct": 0.088, "net_spread_pct": -0.096, "pnl_eur": 0.02, "reason": "momentum perdido", "candles": 22}
