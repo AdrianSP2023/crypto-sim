@@ -1903,3 +1903,7 @@
 {"type": "entry", "asset": "MINA", "strategy": "c_banda_atr", "version": "P3-v2", "t": "2026-09-29 16:00", "ts": 1790697600, "price": 0.1323, "qty": 22.77, "spread": 0.00301}
 {"type": "entry", "asset": "MINA", "strategy": "c_banda_atr_tope", "version": "P3-v2", "t": "2026-09-29 16:00", "ts": 1790697600, "price": 0.1323, "qty": 22.92, "spread": 0.00301}
 {"type": "entry", "asset": "MINA", "strategy": "c_banda_atr_evento", "version": "P3-v2", "t": "2026-09-29 16:00", "ts": 1790697600, "price": 0.1323, "qty": 22.95, "spread": 0.00301}
+{"type": "entry", "asset": "MINA", "strategy": "macd_momentum", "version": "P3-v2", "t": "2026-09-29 16:05", "ts": 1790697900, "price": 0.1328, "qty": 22.47, "spread": 0.00225}
+{"type": "entry", "asset": "MINA", "strategy": "macd_sin_salida", "version": "P3-v2", "t": "2026-09-29 16:05", "ts": 1790697900, "price": 0.1328, "qty": 22.64, "spread": 0.00225}
+{"type": "entry", "asset": "MINA", "strategy": "macd_momentum_evento", "version": "P3-v2", "t": "2026-09-29 16:05", "ts": 1790697900, "price": 0.1328, "qty": 22.84, "spread": 0.00225}
+{"type": "entry", "asset": "NIGHT", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-29 16:05", "ts": 1790697900, "price": 0.02828, "qty": 22.48, "spread": 0.00141}
