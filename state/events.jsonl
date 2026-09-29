@@ -1784,3 +1784,4 @@
 {"type": "entry", "asset": "W", "strategy": "c_banda_atr_tope", "version": "P1-v10", "t": "2026-09-29 02:20", "ts": 1790648400, "price": 0.01196, "qty": 23.08, "spread": 0.00167}
 {"type": "entry", "asset": "ICP", "strategy": "macd_momentum", "version": "P1-v10", "t": "2026-09-29 02:20", "ts": 1790648400, "price": 2.734, "qty": 22.13, "spread": 0.0011}
 {"type": "entry", "asset": "ICP", "strategy": "macd_sin_salida", "version": "P1-v10", "t": "2026-09-29 02:20", "ts": 1790648400, "price": 2.734, "qty": 22.65, "spread": 0.0011}
+{"type": "exit", "asset": "VIRTUAL", "strategy": "estocastico_rebote", "version": "P1-v9", "entry_t": "2026-09-29 01:25", "exit_t": "2026-09-29 02:25", "entry_ts": 1790645100, "exit_ts": 1790648700, "entry": 0.703, "exit": 0.6896, "qty": 22.32, "gross_pct": -1.906, "net_pct": -3.006, "net_spread_pct": -3.329, "pnl_eur": -0.671, "reason": "stop-loss", "candles": 12}
