@@ -1805,3 +1805,7 @@
 {"type": "entry", "asset": "LINK", "strategy": "estocastico_rebote", "version": "P1-v10", "t": "2026-09-29 02:45", "ts": 1790649900, "price": 13.24635, "qty": 22.18, "spread": 0.00025}
 {"type": "entry", "asset": "XLM", "strategy": "estocastico_rebote", "version": "P1-v10", "t": "2026-09-29 02:45", "ts": 1790649900, "price": 0.197653, "qty": 22.18, "spread": 0.00071}
 {"type": "entry", "asset": "CRV", "strategy": "pullback_tendencia", "version": "P1-v10", "t": "2026-09-29 02:45", "ts": 1790649900, "price": 0.33033, "qty": 22.57, "spread": 0.00139}
+{"type": "entry", "asset": "RAY", "strategy": "c_banda_atr", "version": "P1-v10", "t": "2026-09-29 02:50", "ts": 1790650200, "price": 1.629, "qty": 21.39, "spread": 0.00185}
+{"type": "entry", "asset": "RAY", "strategy": "c_banda_atr_tope", "version": "P1-v10", "t": "2026-09-29 02:50", "ts": 1790650200, "price": 1.629, "qty": 23.06, "spread": 0.00185}
+{"type": "entry", "asset": "CRV", "strategy": "macd_momentum", "version": "P1-v10", "t": "2026-09-29 02:50", "ts": 1790650200, "price": 0.33248, "qty": 22.11, "spread": 0.00208}
+{"type": "entry", "asset": "CRV", "strategy": "macd_sin_salida", "version": "P1-v10", "t": "2026-09-29 02:50", "ts": 1790650200, "price": 0.33248, "qty": 22.62, "spread": 0.00208}
