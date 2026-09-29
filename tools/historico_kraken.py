@@ -49,11 +49,11 @@ def parse_pair(member):
         return None
     p = n[:-4].upper()
     for q in QUOTES:
-        for suf in ("Z" + q, q):
-            if p.endswith(suf) and len(p) > len(suf):
-                base = p[: -len(suf)]
-                base = ALIAS.get(base, base)
-                return base, q
+        if p.endswith(q) and len(p) > len(q):
+            base = p[: -len(q)]
+            if base.endswith("Z") and base[:-1] in ALIAS:      # nombres antiguos: XXBTZEUR, XETHZUSD...
+                base = base[:-1]
+            return ALIAS.get(base, base), q
     return None
 
 

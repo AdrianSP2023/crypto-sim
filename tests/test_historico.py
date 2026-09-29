@@ -54,6 +54,8 @@ def main():
             assert res[key]["trades"] == len(src)
         assert not (Path(d) / "EUR_ZZZZ.csv.gz").exists()
     assert hk.parse_pair(b"x/XXBTZEUR.csv") == ("BTC", "EUR") and hk.parse_pair("XDGUSD.csv") == ("DOGE", "USD")
+    assert hk.parse_pair("2ZEUR.csv") == ("2Z", "EUR") and hk.parse_pair("XETHZUSD.csv") == ("ETH", "USD")
+    assert hk.parse_pair("AAVEXBT.csv") is None and hk.parse_pair("ADAETH.csv") is None
     assert hk.parse_pair("USDTUSD.csv") == ("USDT", "USD") and hk.parse_pair("MANIFEST.json") is None
     print("histórico Kraken (streaming, partes, filtro, agregación 1 h) OK")
 
