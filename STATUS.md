@@ -1,30 +1,32 @@
 # Simulación P1 (sin dinero real)
 
-Config `P1-v10` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-29 04:51 UTC · vueltas 214 · 60 activos · velas 5 min · comisión 1.1% ida+vuelta
+Config `P1-v10` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-29 04:56 UTC · vueltas 215 · 60 activos · velas 5 min · comisión 1.1% ida+vuelta
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 854.09 € (-7.59%) | 145 | 11 | 18% | -0.792% | -1.892% | -2.018% | -69.42 € |
+| c_banda_atr | 854.24 € (-7.57%) | 145 | 12 | 18% | -0.792% | -1.892% | -2.018% | -69.42 € |
 | reversion_bb | 918.89 € (-0.58%) | 41 | 1 | 61% | +0.486% | -0.614% | -0.785% | -5.44 € |
-| ruptura_volumen | 870.05 € (-5.86%) | 118 | 15 | 14% | -0.525% | -1.625% | -1.742% | -53.12 € |
+| ruptura_volumen | 870.07 € (-5.86%) | 119 | 15 | 13% | -0.530% | -1.630% | -1.748% | -53.62 € |
 | rebote_extremo | 917.94 € (-0.68%) | 27 | 0 | 41% | +0.285% | -0.815% | -1.073% | -6.30 € |
-| pullback_tendencia | 903.43 € (-2.25%) | 63 | 2 | 21% | -0.247% | -1.347% | -1.438% | -20.92 € |
-| macd_momentum | 884.44 € (-4.31%) | 128 | 2 | 16% | -0.235% | -1.335% | -1.447% | -39.95 € |
-| estocastico_rebote | 885.91 € (-4.15%) | 106 | 2 | 25% | -0.438% | -1.538% | -1.635% | -38.21 € |
-| c_banda_atr_filtro | 887.55 € (-3.97%) | 65 | 7 | 5% | -1.314% | -2.414% | -2.530% | -35.88 € |
-| ruptura_volumen_filtro | 893.72 € (-3.30%) | 68 | 12 | 7% | -0.814% | -1.914% | -2.030% | -29.75 € |
-| macd_momentum_filtro | 904.78 € (-2.11%) | 55 | 1 | 9% | -0.433% | -1.533% | -1.639% | -19.34 € |
-| pullback_tendencia_filtro | 914.89 € (-1.01%) | 27 | 2 | 11% | -0.422% | -1.522% | -1.579% | -9.46 € |
+| pullback_tendencia | 903.40 € (-2.25%) | 63 | 2 | 21% | -0.247% | -1.347% | -1.438% | -20.92 € |
+| macd_momentum | 884.53 € (-4.30%) | 128 | 3 | 16% | -0.235% | -1.335% | -1.447% | -39.95 € |
+| estocastico_rebote | 886.20 € (-4.12%) | 106 | 2 | 25% | -0.438% | -1.538% | -1.635% | -38.21 € |
+| c_banda_atr_filtro | 887.64 € (-3.96%) | 65 | 7 | 5% | -1.314% | -2.414% | -2.530% | -35.88 € |
+| ruptura_volumen_filtro | 893.73 € (-3.30%) | 69 | 11 | 7% | -0.820% | -1.920% | -2.036% | -30.26 € |
+| macd_momentum_filtro | 904.87 € (-2.10%) | 55 | 1 | 9% | -0.433% | -1.533% | -1.639% | -19.34 € |
+| pullback_tendencia_filtro | 914.86 € (-1.01%) | 27 | 2 | 11% | -0.422% | -1.522% | -1.579% | -9.46 € |
 | estocastico_rebote_filtro | 915.40 € (-0.96%) | 21 | 0 | 14% | -0.727% | -1.827% | -1.934% | -8.84 € |
-| ruptura_estricta | 912.88 € (-1.23%) | 20 | 3 | 10% | -1.388% | -2.488% | -2.633% | -11.46 € |
-| macd_sin_salida | 904.68 € (-2.12%) | 50 | 2 | 22% | -0.616% | -1.716% | -1.832% | -19.71 € |
-| c_banda_atr_tope | 921.69 € (-0.28%) | 8 | 4 | 38% | -0.158% | -1.258% | -1.464% | -2.32 € |
-| ruptura_volumen_tope | 925.05 € (+0.09%) | 2 | 4 | 100% | +2.500% | +1.400% | +1.262% | +0.65 € |
+| ruptura_estricta | 913.19 € (-1.20%) | 20 | 3 | 10% | -1.388% | -2.488% | -2.633% | -11.46 € |
+| macd_sin_salida | 904.78 € (-2.11%) | 50 | 3 | 22% | -0.616% | -1.716% | -1.832% | -19.71 € |
+| c_banda_atr_tope | 921.70 € (-0.27%) | 8 | 5 | 38% | -0.158% | -1.258% | -1.464% | -2.32 € |
+| ruptura_volumen_tope | 925.01 € (+0.08%) | 2 | 5 | 100% | +2.500% | +1.400% | +1.262% | +0.65 € |
 
 ## Últimas 15 operaciones cerradas
 
 | Salida (UTC) | Estrategia | Activo | Motivo | Bruto | Neto | € |
 |---|---|---|---|---|---|---|
+| 2026-09-29 04:55 | ruptura_volumen_filtro | ARB | stop-loss | -1.20% | -2.30% | -0.52 |
+| 2026-09-29 04:55 | ruptura_volumen | ARB | stop-loss | -1.20% | -2.30% | -0.50 |
 | 2026-09-29 04:50 | c_banda_atr_tope | JUP | stop-loss | -1.64% | -2.74% | -0.63 |
 | 2026-09-29 04:50 | macd_sin_salida | JUP | stop-loss | -1.64% | -2.74% | -0.62 |
 | 2026-09-29 04:50 | macd_momentum_filtro | JUP | stop-loss | -1.64% | -2.74% | -0.62 |
@@ -38,16 +40,16 @@ Config `P1-v10` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-29 04:5
 | 2026-09-29 04:40 | rebote_extremo | KAS | timeout | +1.23% | +0.13% | +0.03 |
 | 2026-09-29 04:40 | rebote_extremo | RENDER | timeout | +1.45% | +0.35% | +0.08 |
 | 2026-09-29 04:40 | ruptura_volumen | CRV | take-profit | +2.50% | +1.40% | +0.30 |
-| 2026-09-29 04:40 | ruptura_volumen | XLM | stop-loss | -1.26% | -2.36% | -0.51 |
-| 2026-09-29 04:35 | rebote_extremo | SHIB | timeout | +1.54% | +0.45% | +0.10 |
 
 ## Eventos de la última vuelta
 
-- 2026-09-29 04:50 [c_banda_atr] CIERRE JUP stop-loss bruto -1.64% neto -2.74%
-- 2026-09-29 04:50 [macd_momentum] CIERRE JUP stop-loss bruto -1.64% neto -2.74%
-- 2026-09-29 04:50 [c_banda_atr_filtro] CIERRE JUP stop-loss bruto -1.64% neto -2.74%
-- 2026-09-29 04:50 [macd_momentum_filtro] CIERRE JUP stop-loss bruto -1.64% neto -2.74%
-- 2026-09-29 04:50 [macd_sin_salida] CIERRE JUP stop-loss bruto -1.64% neto -2.74%
-- 2026-09-29 04:50 [c_banda_atr_tope] CIERRE JUP stop-loss bruto -1.64% neto -2.74%
+- 2026-09-29 04:55 [macd_momentum] ENTRADA ETH @ 2347.86 (22.11 €)
+- 2026-09-29 04:55 [macd_sin_salida] ENTRADA ETH @ 2347.86 (22.61 €)
+- 2026-09-29 04:55 [ruptura_volumen] CIERRE ARB stop-loss bruto -1.20% neto -2.30%
+- 2026-09-29 04:55 [ruptura_volumen_filtro] CIERRE ARB stop-loss bruto -1.20% neto -2.30%
+- 2026-09-29 04:55 [ruptura_volumen_tope] ENTRADA ALGO @ 0.12224 (23.12 €)
+- 2026-09-29 04:55 [c_banda_atr] ENTRADA ICP @ 2.867 (21.37 €)
+- 2026-09-29 04:55 [c_banda_atr_tope] ENTRADA ICP @ 2.867 (23.05 €)
+- 2026-09-29 04:55 [ruptura_volumen] ENTRADA VIRTUAL @ 0.7105 (21.77 €)
 
 Universo: BTC, SOL, ETH, XRP, SUI, NEAR, LINK, ZEC, LTC, HBAR, ONDO, ADA, UNI, PUMP, TAO, ARB, AVAX, DOGE, BCH, ENA, XLM, XDC, HYPE, DOT, AAVE, ALGO, PEPE, MON, POL, DASH, XPL, JUP, W, GRT, USELESS, FET, ZRO, SEI, ATOM, WLD, INJ, FIL, ICP, TRX, RENDER, PENGU, TON, VVV, RAY, SHIB, SKY, TRUMP, CRV, VIRTUAL, OP, NIGHT, KAS, CC, EIGEN, WLFI
