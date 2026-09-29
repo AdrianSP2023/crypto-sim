@@ -259,3 +259,6 @@ Cambios (Maestro pidió las dos ideas; las cuentas de las 14 estrategias existen
 
 ## tools: modo ventanas_modelo — 2026-09-29
 - `tools/horas_modelo.py` -> `datos/eventos/horas_modelo.csv` (1.056 horas de test 2023-26 elegidas por el modelo de precursores con umbral de validación, sin mirar al futuro). `historico_kraken.py ventanas_modelo` baja velas de 1 min de t-2 h a t+8 h a `datos/ventanas_1m_modelo/`. Objetivo: probar sin sesgo si entrar dentro de la hora mejora el resultado. Sin cambios en el motor.
+
+## Estrategia trailing + recompra (propuesta de Maestro) — 2026-09-29
+- `tools/simula_trailing.py`: entrada tras +5 % sobre mínimo 4 h, trailing x %, recompra tras caída extra x % y rebote x %. Todas las horas, 42 activos, 2018-26. Informes `datos/eventos/trailing_informe.txt` y `trailing_informe_amplio.txt`. Sin cambios en el motor.

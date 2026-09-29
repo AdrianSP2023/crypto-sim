@@ -1,0 +1,23 @@
+Disparo de entrada: cierre >= +5 % sobre el mínimo de 4 h. Todas las horas, 42 activos USD, 2018-2026 (desde 60 días tras el listado).
+
+== Trailing x = 1 % · operaciones 74811 (1.07 por activo-día) ==
+  por operación: bruto medio +0.076 % (mediana -0.56, 36 % ganadoras, t agrupado +5.8) · neto 1,1 % -1.024 · neto 0,5 % -0.424
+  retorno bruto sumado por activo y año (media, %): 2018: +12 2019: +5 2020: +12 2021: +45 2022: +29 2023: +24 2024: +45 2025: +26 2026: +3
+  neto 0,5 % sumado por activo y año: 2018: -160 2019: -114 2020: -126 2021: -279 2022: -155 2023: -80 2024: -147 2025: -155 2026: -73
+
+== Trailing x = 2 % · operaciones 39348 (0.56 por activo-día) ==
+  por operación: bruto medio +0.050 % (mediana -0.71, 37 % ganadoras, t agrupado +1.9) · neto 1,1 % -1.050 · neto 0,5 % -0.450
+  retorno bruto sumado por activo y año (media, %): 2018: -12 2019: -7 2020: +12 2021: +19 2022: +3 2023: +21 2024: +14 2025: +12 2026: -5
+  neto 0,5 % sumado por activo y año: 2018: -100 2019: -69 2020: -65 2021: -154 2022: -89 2023: -36 2024: -86 2025: -85 2026: -44
+
+== Trailing x = 3 % · operaciones 26855 (0.38 por activo-día) ==
+  por operación: bruto medio -0.021 % (mediana -1.05, 36 % ganadoras, t agrupado -0.5) · neto 1,1 % -1.121 · neto 0,5 % -0.521
+  retorno bruto sumado por activo y año (media, %): 2018: -28 2019: -1 2020: +2 2021: -2 2022: -11 2023: +22 2024: -4 2025: -4 2026: -10
+  neto 0,5 % sumado por activo y año: 2018: -87 2019: -47 2020: -53 2021: -121 2022: -73 2023: -17 2024: -71 2025: -68 2026: -37
+
+== Trailing x = 5 % · operaciones 16908 (0.24 por activo-día) ==
+  por operación: bruto medio -0.034 % (mediana -1.63, 36 % ganadoras, t agrupado -0.4) · neto 1,1 % -1.134 · neto 0,5 % -0.534
+  retorno bruto sumado por activo y año (media, %): 2018: -45 2019: -18 2020: +14 2021: -7 2022: -6 2023: +18 2024: +19 2025: -10 2026: -20
+  neto 0,5 % sumado por activo y año: 2018: -84 2019: -47 2020: -20 2021: -82 2022: -45 2023: -7 2024: -23 2025: -50 2026: -37
+
+Nota: 'sumado' = suma simple de rentabilidades por operación entre activos (sin reinversión), como orden de magnitud.
