@@ -1,0 +1,45 @@
+name: Histórico Kraken
+
+# Manual. mode=probe: comprueba acceso, tamaños y formato (rápido).
+# mode=full: procesa las 13 partes (~26 GB) en streaming y guarda velas de 1 h en datos/historico_1h/.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "probe o full"
+        required: true
+        default: "probe"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: historico
+  cancel-in-progress: false
+
+jobs:
+  historico:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt stream-unzip
+      - run: python -u tests/test_historico.py
+      - run: python -u tools/historico_kraken.py ${{ github.event.inputs.mode }}
+      - name: Guardar resultados en el repo
+        run: |
+          git config user.name "historico-kraken"
+          git config user.email "historico-kraken@users.noreply.github.com"
+          git add datos/historico_1h
+          if git diff --cached --quiet; then echo "sin cambios"; exit 0; fi
+          git commit -q -m "Histórico Kraken (${{ github.event.inputs.mode }})"
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase -X theirs || true
+            git push -q && exit 0
+            sleep $((5*i))
+          done
+          echo "no se pudo hacer push"; exit 1

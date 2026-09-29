@@ -177,3 +177,10 @@ Solo registro (no cambia ninguna estrategia ni reinicia conteos).
   ahí se acumulan. Sirve para medir qué hizo el precio tras cada entrada o salida (recorrido máximo a favor y en
   contra, rebotes posteriores), buscar patrones y re-simular sin depender de la ventana de la API.
 - Crecimiento estimado: ~1-1,5 MB/día de CSV en el repo.
+
+## Herramientas de datos (sin cambio de versión) — 2026-09-29
+
+- **`tools/historico_kraken.py` + workflow manual "Histórico Kraken"** (`mode=probe|full`): descarga en streaming las
+  13 partes (~26 GB) del histórico de trades de Kraken (hasta 30/06/2026), filtra los activos que usamos (EUR y USD) y
+  guarda velas de 1 h en `datos/historico_1h/<QUOTE>_<BASE>.csv.gz` más un informe. Para contrastar patrones con años de
+  datos (caída y rebote, eventos). Test: `tests/test_historico.py`.
