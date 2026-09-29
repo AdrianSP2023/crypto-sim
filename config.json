@@ -1,5 +1,5 @@
 {
-  "version": "P3-v1",
+  "version": "P3-v2",
   "phase": "P3",
   "enabled": true,
   "phase_end_utc": "2026-09-30T10:13:00+00:00",
@@ -213,6 +213,55 @@
       "base": "ruptura_volumen",
       "market_filter": 0.5,
       "market_filter_ema": 200
+    },
+    "c_banda_atr_evento": {
+      "enabled": true,
+      "fast": 3,
+      "slow": 8,
+      "rsi_n": 8,
+      "rsi_lo": 20,
+      "rsi_hi": 80,
+      "atr_n": 14,
+      "atr_mult": 0.3,
+      "tp": 0.02,
+      "sl": 0.015,
+      "max_hold": 48,
+      "exit_on_cross": false,
+      "base": "c_banda_atr",
+      "respect_blackouts": true
+    },
+    "macd_momentum_evento": {
+      "enabled": true,
+      "fast": 12,
+      "slow": 26,
+      "signal": 9,
+      "ema_trend": 50,
+      "tp": 0.02,
+      "sl": 0.015,
+      "max_hold": 36,
+      "base": "macd_momentum",
+      "respect_blackouts": true
+    },
+    "ruptura_volumen_evento": {
+      "enabled": true,
+      "lookback": 24,
+      "vol_mult": 2.0,
+      "ema_trend": 50,
+      "tp": 0.025,
+      "sl": 0.012,
+      "max_hold": 24,
+      "base": "ruptura_volumen",
+      "respect_blackouts": true
+    },
+    "rebote_desplome": {
+      "enabled": true,
+      "lookback": 48,
+      "drop_min": 0.12,
+      "cooldown": 288,
+      "delay": 1,
+      "tp": 0.08,
+      "sl": 0.5,
+      "max_hold": 72
     }
   },
   "breadth_ema": 50,
@@ -229,6 +278,15 @@
     {
       "from": 50000,
       "side": 0.0021
+    }
+  ],
+  "blackout_before_min": 30,
+  "blackout_after_min": 90,
+  "event_calendar": [
+    {
+      "ts": "2026-09-30T12:30:00+00:00",
+      "label": "PCE de agosto (EE. UU.)",
+      "importancia": "alta"
     }
   ]
 }

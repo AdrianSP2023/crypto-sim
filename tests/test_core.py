@@ -82,7 +82,7 @@ def test_reference_and_coverage():
         assert got == ref, (seed, got[:5], ref[:5])
         for k in counts:
             counts[k] += len(st["strategies"][k]["closed"])
-    assert all(v >= 5 for k, v in counts.items() if not k.endswith("_regimen")), counts
+    assert all(v >= 5 for k, v in counts.items() if not k.endswith("_regimen") and k != "rebote_desplome"), counts
     print("referencia c_banda_atr OK · operaciones por estrategia:", counts)
 
 def test_incremental_equals_batch():
@@ -229,8 +229,71 @@ def test_incremental_next_open():
         assert a["closed"] == b["closed"] and a["positions"] == b["positions"] and a["pending"] == b["pending"] and abs(a["cash"] - b["cash"]) < 1e-9, k
     print("incremental == de golpe (entrada a apertura siguiente + tramos) OK")
 
+def test_blackout():
+    """Variante *_evento: sin eventos es idéntica a la base; con un evento no abre nada en su ventana de pausa."""
+    import copy
+    frames = {a: synth(100 + k) for k, a in enumerate("ABCDEF")}
+    cfg = copy.deepcopy(CFG_RAW)
+    cfg["event_calendar"] = []
+    st0 = run_batch(frames, cfg)
+    twins = [k for k, p in cfg["strategies"].items() if p.get("respect_blackouts")]
+    assert len(twins) == 3, twins
+    for k in twins:
+        b = cfg["strategies"][k]["base"]
+        strip = lambda cl: [{a: v for a, v in c.items() if a != "strategy"} for c in cl]
+        assert strip(st0["strategies"][k]["closed"]) == strip(st0["strategies"][b]["closed"]), k
+        assert st0["strategies"][k].get("blocked_event", 0) == 0
+    t0 = int(frames["A"].time.iat[350])
+    from datetime import datetime, timezone
+    cfg["blackout_before_min"], cfg["blackout_after_min"] = 600, 1500      # ventana larga para que los datos sintéticos la toquen
+    cfg["event_calendar"] = [{"ts": datetime.fromtimestamp(t0, timezone.utc).isoformat(), "label": "prueba"}]
+    st = run_batch(frames, cfg)
+    lo, hi = t0 - cfg["blackout_before_min"] * 60, t0 + cfg["blackout_after_min"] * 60
+    blocked = 0
+    for k in twins:
+        s = st["strategies"][k]
+        for c in s["closed"]:
+            assert not (lo <= c["entry_ts"] < hi), (k, c["entry_ts"], lo, hi)
+        for x in s["positions"].values():
+            assert not (lo <= x["entry_candle"] + 300 < hi), k
+        blocked += s.get("blocked_event", 0)
+    assert blocked > 0
+    assert any(any(lo <= c["entry_ts"] < hi for c in st["strategies"][cfg["strategies"][k]["base"]]["closed"]) for k in twins), "la base debería operar en la ventana"
+    print("pausa por eventos OK · bloqueadas:", blocked)
+
+def test_rebote_desplome():
+    """Una señal por desplome (aunque la condición siga cumpliéndose), 1 vela después del disparo, entrada a la apertura siguiente."""
+    import copy
+    n = 900
+    rng = np.random.default_rng(5)
+    px = 100 + np.cumsum(rng.normal(0, 0.01, n))
+    for a, b in ((150, 175), (600, 625)):       # dos desplomes de -18 % en 25 velas, separados por > 288 velas
+        px[a:b] = px[a] * np.linspace(1, 0.82, b - a)
+        px[b:] = px[b - 1] * (px[b:] / px[b])
+    op = np.concatenate([[px[0]], px[:-1]])
+    df = pd.DataFrame({"time": 1_760_000_000 + 300 * np.arange(n), "open": op, "high": np.maximum(op, px) * 1.001,
+                       "low": np.minimum(op, px) * 0.999, "close": px, "volume": 10.0})
+    cfg = copy.deepcopy(CFG_RAW)
+    cfg["strategies"] = {"rebote_desplome": cfg["strategies"]["rebote_desplome"]}
+    p = cfg["strategies"]["rebote_desplome"]
+    prep, entry, _ = REGISTRY["rebote_desplome"]
+    d = prep(df, p)
+    sig = np.flatnonzero(d["dsp_sig"].to_numpy())
+    trig = np.flatnonzero((d["drop"] <= -p["drop_min"]).to_numpy())
+    assert len(sig) == 2, sig
+    for s_i, region in zip(sig, (trig[trig < 400], trig[trig >= 400])):
+        assert s_i == region[0] + p["delay"], (s_i, region[:3])
+    st = run_batch({"X": df}, cfg)
+    s = st["strategies"]["rebote_desplome"]
+    ents = sorted([c["entry_ts"] for c in s["closed"]] + [x["entry_candle"] + 300 for x in s["positions"].values()])
+    assert len(ents) == 2 and ents == [int(df.time.iat[i]) + 300 for i in sig], (ents, sig)
+    e0 = s["closed"][0]
+    assert abs(e0["entry"] - float(df.open.iat[sig[0] + 1])) < 1e-6, (e0["entry"], df.open.iat[sig[0] + 1])
+    print("rebote_desplome OK · señales", list(sig), "entradas", len(ents))
+
 if __name__ == "__main__":
     test_next_open_reference(); test_fee_tiers_and_volume(); test_incremental_next_open()
     test_max_open()
+    test_blackout(); test_rebote_desplome()
     test_market_filter()
     test_no_lookahead(); test_reference_and_coverage(); test_incremental_equals_batch()

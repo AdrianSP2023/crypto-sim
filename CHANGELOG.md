@@ -219,3 +219,21 @@ Resultados en `datos/eventos/eventos_informe.txt` y en el proyecto (`catalogo-ev
 
 Sin cambio de versión. `datos/eventos/subidas_4h_12pct.csv`: 1.758 eventos de subida ≥ 12 % en 4 h (USD y EUR,
 sin solape de 24 h por activo) con retornos hacia delante y exceso sobre el control (`analisis_historico.build_events(kind="up")`).
+
+## P3-v2 — 2026-09-29 ~14:35 UTC: pausa por eventos + rebote tras desplome
+
+Cambios (Maestro pidió las dos ideas; las cuentas de las 14 estrategias existentes no cambian de reglas):
+1. **Variantes `c_banda_atr_evento`, `macd_momentum_evento`, `ruptura_volumen_evento`** (A/B con cuenta propia de 924,24 €):
+   igual que su base pero con `respect_blackouts: true`: no abren posiciones desde 30 min antes hasta 90 min después de un
+   evento del `event_calendar` de la config (`blackout_before_min` / `blackout_after_min`). Se cuentan en `blocked_event`
+   (suma en la columna "filtradas" de `report.py`). Motivo de la ventana corta: con el histórico de Kraken (102 publicaciones de
+   empleo de EE. UU., 2018-2026) la volatilidad sube ×1,2-1,3 solo en la hora de la publicación (BTC/ETH/XRP/SOL) y en las
+   horas siguientes vuelve a lo normal. El único evento del calendario (PCE de agosto, 30/09 12:30 UTC) cae DESPUÉS del fin de P3
+   (10:13 UTC): en P3 estas variantes se comportarán igual que sus bases; el calendario se irá ampliando (`datos/eventos/calendario.csv`).
+2. **Estrategia nueva `rebote_desplome`** (`strategies.py`, `prep_dsp`): caída ≥ 12 % en 48 velas (4 h), primera vela que cumple tras
+   288 velas (24 h) sin cumplir; señal 1 vela después del disparo y entrada a la apertura siguiente (≈ 5-10 min tras el disparo);
+   TP +8 %, sin stop efectivo (SL 50 %), máx. 72 velas (6 h). Sale del estudio de ventanas de 1 min (`datos/ventanas_1m/`,
+   `datos/eventos/ventanas_informe.txt`): con entrada a los 5 min, TP 8 % y sin stop, neto de 1,1 % +1,85 % por evento (752 eventos, t 3,7);
+   con 1 % extra de deslizamiento +0,85 % (t 1,7); 2018-21 +0,96 % (t 1,5) frente a 2022-26 +2,67 % (t 4,1). Los stops del 2-8 % destruyen la ventaja
+   (mueren antes del rebote). Es raro (~0,25 eventos al día en 42 activos): no llegará a 30 cierres por ciclo; se juzga por muestra acumulada.
+3. `core.in_blackout`, `report.py` (columna filtradas) y tests nuevos (`test_blackout`, `test_rebote_desplome`).

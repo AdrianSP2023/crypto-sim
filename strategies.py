@@ -212,6 +212,25 @@ def entry_stoch(d, i, p):
 
 # ------------------------------------------------------------------ registro
 
+# ------------- S8: rebote tras desplome (estudio de ventanas de 1 min, 29/09/2026)
+
+def prep_dsp(df, p):
+    """Caída >= drop_min en `lookback` velas (4 h con velas de 5 min). El disparo es la PRIMERA vela que cumple tras
+    `cooldown` velas sin cumplir (un evento cada 24 h por activo); la señal sale `delay` velas después del disparo
+    (el estudio con velas de 1 min dio el mejor resultado entrando 5-15 min tras el disparo, no al instante)."""
+    d = df.copy()
+    d["drop"] = d.close / d.close.shift(p["lookback"]) - 1
+    cond = (d["drop"] <= -p["drop_min"]).fillna(False)
+    prev = cond.shift(1).fillna(False).astype(float).rolling(p["cooldown"], min_periods=1).max().fillna(0)
+    first = cond & (prev == 0)
+    d["dsp_sig"] = first.shift(p["delay"]).fillna(False).astype(bool)
+    return d
+
+
+def entry_dsp(d, i, p):
+    return bool(d["dsp_sig"].iat[i])
+
+
 REGISTRY = {
     "c_banda_atr": (prep_c, entry_c, exit_c),
     "reversion_bb": (prep_rev, entry_rev, exit_none),
@@ -220,4 +239,5 @@ REGISTRY = {
     "pullback_tendencia": (prep_pb, entry_pb, exit_pb),
     "macd_momentum": (prep_macd, entry_macd, exit_macd),
     "estocastico_rebote": (prep_stoch, entry_stoch, exit_none),
+    "rebote_desplome": (prep_dsp, entry_dsp, exit_none),
 }

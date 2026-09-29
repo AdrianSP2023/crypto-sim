@@ -73,6 +73,17 @@ def add_volume(st, ts, eur):
         del log[: len(log) - 20000]
 
 
+def in_blackout(cfg, ts):
+    """True si `ts` (epoch) cae en la ventana de pausa de algún evento programado del calendario de la config
+    (de `blackout_before_min` antes a `blackout_after_min` después de la hora del evento)."""
+    b, a = cfg.get("blackout_before_min", 30) * 60, cfg.get("blackout_after_min", 90) * 60
+    for ev in cfg.get("event_calendar", []):
+        t = int(datetime.fromisoformat(ev["ts"]).timestamp())
+        if t - b <= ts < t + a:
+            return True
+    return False
+
+
 def market_breadth(frames, cfg, n=None):
     """Fracción de activos con cierre > EMA(n) en cada vela (timestamp -> 0..1).
     Solo usa datos hasta esa vela (la EMA es causal)."""
@@ -135,7 +146,9 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadths=Non
         pend = st.setdefault("pending", {}).pop(asset, None) if next_open else None
         if pos is None and pend is not None and ct == pend["signal_candle"] + csec:
             mo = p.get("max_open")
-            if not (mo and len(st["positions"]) >= mo):
+            if p.get("respect_blackouts") and in_blackout(cfg, ct):
+                st["blocked_event"] = st.get("blocked_event", 0) + 1
+            elif not (mo and len(st["positions"]) >= mo):
                 equity_cost = st["cash"] + sum(x["qty"] for x in st["positions"].values())
                 qty = min(st["cash"], cfg["position_pct"] * equity_cost)
                 if qty < 5:
@@ -207,6 +220,9 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadths=Non
         if not p.get("enabled", True) or i < cfg["warmup"]:
             continue
         if not entry(d, i, p):
+            continue
+        if p.get("respect_blackouts") and in_blackout(cfg, close_t):
+            st["blocked_event"] = st.get("blocked_event", 0) + 1
             continue
         mf = p.get("market_filter")
         breadth = breadths.get(p.get("market_filter_ema") or cfg.get("breadth_ema", 50), {}).get(bt)
