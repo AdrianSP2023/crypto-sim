@@ -112,6 +112,31 @@ def test_market_filter():
         assert f["blocked_filter"] > 0, base
     print("filtro de mercado OK:", {b: st["strategies"][b]["blocked_filter"] for b in st["strategies"] if b.endswith("_filtro")})
 
+def test_max_open():
+    """Variante con tope: nunca hay mas de max_open posiciones simultaneas y se registran los bloqueos."""
+    frames = {a: synth(80 + k) for k, a in enumerate("ABCDEFGHIJKLMNOP")}
+    import copy
+    cfg = copy.deepcopy(CFG)
+    for p in cfg["strategies"].values():
+        if p.get("max_open"):
+            p["max_open"] = 1  # tope muy bajo para que los datos sinteticos lo alcancen
+    st = run_batch(frames, cfg)
+    csec = cfg["candle_minutes"] * 60
+    for name, p in cfg["strategies"].items():
+        mo = p.get("max_open")
+        if not mo:
+            continue
+        s = st["strategies"][name]
+        iv = [(c["entry_ts"], c["exit_ts"]) for c in s["closed"]]
+        iv += [(x["entry_candle"] + csec, 10**12) for x in s["positions"].values()]
+        for t0, _ in iv:
+            n = sum(1 for a, b in iv if a <= t0 < b)
+            assert n <= mo, (name, n, mo)
+        base = st["strategies"][p["base"]]
+        assert s["blocked_exposure"] > 0, name
+        print("tope de exposicion OK:", name, "bloqueadas", s["blocked_exposure"], "cierres", len(s["closed"]), "frente a base", len(base["closed"]))
+
 if __name__ == "__main__":
+    test_max_open()
     test_market_filter()
     test_no_lookahead(); test_reference_and_coverage(); test_incremental_equals_batch()

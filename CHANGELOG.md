@@ -106,3 +106,19 @@ pierden juntas.
   Motivo: 43 de 60 cierres de macd_momentum son por "momentum perdido", con bruto
   medio −0,46% a las ~10 velas. Es el mismo patrón que tenía c_banda_atr en v1:
   una salida por señal que corta por ruido y fija la comisión. La original sigue igual.
+
+## P1-v10 — 2026-09-29 01:33 UTC (ajuste in situ, variantes A/B, cambio de código)
+
+- **Nuevo parámetro de estrategia `max_open`** (tope de posiciones simultáneas por estrategia; `core.py`).
+  Los bloqueos se cuentan en `blocked_exposure` y `report.py` los suma a la columna "filtradas".
+- **Nuevas variantes A/B: `c_banda_atr_tope` y `ruptura_volumen_tope`**, iguales a sus originales pero con
+  `max_open: 5`. Cada una tiene su propia caja de 924,24 €. Las originales no se tocan.
+  T0 del A/B (tope) = primera entrada de la variante (ver `entry_ts` mínimo de cada `*_tope`).
+- Motivo: entre las 01:00 y las 01:31 UTC hubo 114 cierres, todos perdedores (0% de acierto en las 14
+  estrategias), con c_banda_atr 17 cierres (-9,74 €), ruptura_volumen 15 (-7,75 €) y sus variantes con filtro
+  de amplitud sin bloquear ninguna entrada nueva. Antes tenían 22-25 posiciones abiertas a la vez: las
+  pérdidas son de un mismo episodio de mercado, no de señales independientes. Se prueba en vivo el límite de
+  exposición previsto para P2, en vez de esperar a una re-simulación que aún no existe.
+- Sesgo conocido: al alcanzar el tope, entra el primer activo que dé señal en el orden del universo (no el mejor).
+- Pruebas: `tests/test_core.py` pasa entero, con un nuevo `test_max_open` (con tope 1, nunca hay más de 1
+  posición simultánea y se registran los bloqueos).

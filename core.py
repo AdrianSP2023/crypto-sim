@@ -44,6 +44,7 @@ def ensure_strategies(state, cfg):
             "skipped_no_cash": 0,
         })
         state["strategies"][name].setdefault("blocked_filter", 0)
+        state["strategies"][name].setdefault("blocked_exposure", 0)
 
 
 def base_of(name, p):
@@ -153,6 +154,10 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadth=None
         mf = p.get("market_filter")
         if mf and (breadth is None or breadth < mf):
             st["blocked_filter"] += 1
+            continue
+        mo = p.get("max_open")
+        if mo and len(st["positions"]) >= mo:
+            st["blocked_exposure"] = st.get("blocked_exposure", 0) + 1
             continue
         equity_cost = st["cash"] + sum(x["qty"] for x in st["positions"].values())
         qty = min(st["cash"], cfg["position_pct"] * equity_cost)

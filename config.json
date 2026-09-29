@@ -1,5 +1,5 @@
 {
-  "version": "P1-v9",
+  "version": "P1-v10",
   "phase": "P1",
   "enabled": true,
   "phase_end_utc": "2026-09-29T09:00:00+00:00",
@@ -208,6 +208,33 @@
       "max_hold": 36,
       "base": "macd_momentum",
       "exit_on_momentum": false
+    },
+    "c_banda_atr_tope": {
+      "enabled": true,
+      "fast": 3,
+      "slow": 8,
+      "rsi_n": 8,
+      "rsi_lo": 20,
+      "rsi_hi": 80,
+      "atr_n": 14,
+      "atr_mult": 0.3,
+      "tp": 0.02,
+      "sl": 0.015,
+      "max_hold": 48,
+      "exit_on_cross": false,
+      "base": "c_banda_atr",
+      "max_open": 5
+    },
+    "ruptura_volumen_tope": {
+      "enabled": true,
+      "lookback": 24,
+      "vol_mult": 2.0,
+      "ema_trend": 50,
+      "tp": 0.025,
+      "sl": 0.012,
+      "max_hold": 24,
+      "base": "ruptura_volumen",
+      "max_open": 5
     }
   },
   "breadth_ema": 50
