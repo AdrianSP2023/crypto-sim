@@ -265,3 +265,7 @@ Cambios (Maestro pidió las dos ideas; las cuentas de las 14 estrategias existen
 
 ## Horas del modelo en velas de 1 min — 2026-09-29
 - Descarga `ventanas_modelo` terminada (41 pares, 1.056 horas). `tools/analisis_modelo_1m.py` -> `datos/eventos/modelo_1m_informe.txt`, `modelo_1m_eventos.csv`. Sin cambios en el motor.
+
+## Paper trader del modelo de precursores — 2026-09-29
+- Nuevo flujo `.github/workflows/modelo.yml` (cron :02 de cada hora) y `modelo/` (features.py, entrenar.py, paper.py, report.py, modelo.joblib, meta.json). Modelo HistGradientBoosting entrenado 2018-2021, umbral = p99,5 de 2022 (0,686). Opera en papel con cuenta propia de 924,24: compra al ASK si p >= umbral, TP +8 % sin stop-loss, salida por tiempo a las 4 h al BID, 2,5 % del patrimonio por posición, máx. 8 abiertas, comisión por tramos como el motor. Sin cambios en el motor de 5 min ni en `config.json`.
+- Pruebas: `tests/test_modelo.py` (rasgos idénticos a tools/, puntuaciones en vivo = entrenamiento, máquina de estados).

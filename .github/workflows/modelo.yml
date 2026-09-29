@@ -1,0 +1,29 @@
+name: Modelo precursores (paper)
+
+# Cada hora, 2 min después del cierre de la vela de 1 h: puntúa el modelo de precursores y opera en papel (cuenta propia).
+# No toca el motor de 5 min ni sus cuentas. Estado y operaciones en modelo/ (state.json, operaciones.csv, senales.csv).
+on:
+  schedule:
+    - cron: "2 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: modelo
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: modelo/requirements.txt
+      - run: pip install -r modelo/requirements.txt
+      - run: python -u modelo/paper.py
