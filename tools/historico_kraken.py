@@ -181,9 +181,23 @@ def process(stream, wanted, out_dir=None, log=print, max_members=None):
 # ------------------------------------------------------------------------- modos
 
 def probe():
-    import requests
+    import traceback
     lines = []
-    L = lambda s: (print(s, flush=True), lines.append(s))
+    OUT.mkdir(parents=True, exist_ok=True)
+
+    def L(s):
+        print(s, flush=True)
+        lines.append(s)
+        (OUT / "_probe.txt").write_text("\n".join(lines))
+    try:
+        _probe(L)
+    except Exception:  # noqa: BLE001
+        L("== ERROR ==")
+        L(traceback.format_exc())
+
+
+def _probe(L):
+    import requests
     L("== HEAD de las 13 partes ==")
     for k in range(NPARTS):
         try:
@@ -200,20 +214,21 @@ def probe():
     from stream_unzip import stream_unzip
     n = 0
     for name, size, chunks in stream_unzip(http_parts(limit_bytes=300 << 20)):
+        L(f"miembro {n}: {name.decode(errors='replace')} · tamaño declarado {size} · par {parse_pair(name)}")
         head = b""
         nbytes = 0
         for c in chunks:
             nbytes += len(c)
             if len(head) < 400:
                 head += c
-        L(f"{name.decode(errors='replace')} · tamaño declarado {size} · leídos {nbytes} · par {parse_pair(name)}")
+            if len(head) >= 400 and n < 3 and nbytes < 500:
+                L("   primeras líneas: " + repr(head[:300]))
+        L(f"   leídos {nbytes:,} bytes sin comprimir")
         if n < 3 or name.upper().endswith(b"MANIFEST.JSON"):
-            L("   primeras líneas: " + repr(head[:300]))
+            L("   cabecera: " + repr(head[:300]))
         n += 1
         if n >= 40:
             break
-    OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / "_probe.txt").write_text("\n".join(lines))
 
 
 def full():

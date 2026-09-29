@@ -194,6 +194,25 @@ def one_loop(state, cfg):
         registro.guardar_velas(frames, state, cfg["candle_minutes"])
     except Exception as ex:  # guardar precios nunca debe parar el motor
         warnings.append(f"guardar velas: {ex}")
+    if cfg.get("record_1m", True):
+        # Velas de 1 min solo para registro y análisis (no las usa ninguna estrategia). Kraken devuelve 12 h por
+        # petición, así que cada vuelta recupera lo que falte. Con límite de tiempo para no retrasar el ciclo de 5 min.
+        t_1m, f1, fails = time.time(), {}, 0
+        for x in state["universe"]:
+            if time.time() - t_1m > 150:
+                warnings.append("velas 1m: cortado por tiempo")
+                break
+            try:
+                f1[x["asset"]] = fetch_ohlc(x["pair"], 1, ts)
+            except Exception:
+                fails += 1
+            time.sleep(0.6)
+        if fails:
+            warnings.append(f"velas 1m: {fails} activos sin datos")
+        try:
+            registro.guardar_velas(f1, state, 1)
+        except Exception as ex:
+            warnings.append(f"guardar velas 1m: {ex}")
     prev = state.get("last_loop")
     if prev:
         gap = (now() - datetime.fromisoformat(prev)).total_seconds() / 60

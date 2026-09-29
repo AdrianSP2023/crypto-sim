@@ -84,7 +84,7 @@ def guardar_velas(frames, state, minutes, base=None):
     re-simulaciones... Kraken solo devuelve las últimas 720 velas, así que lo no guardado se pierde."""
     base = Path(base) if base else ROOT / "datos" / f"velas_{minutes}m"
     base.mkdir(parents=True, exist_ok=True)
-    last = state.setdefault("velas_last", {})
+    last = state.setdefault("velas_last" if minutes == 5 else f"velas_last_{minutes}", {})
     n = 0
     for asset, df in frames.items():
         new = df[df.time > last.get(asset, 0)]

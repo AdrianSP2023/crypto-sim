@@ -42,6 +42,8 @@ def test_velas():
         assert registro.guardar_velas({"A/B": df.iloc[:200]}, st, 5, base=d) == 200
         assert registro.guardar_velas({"A/B": df.iloc[:200]}, st, 5, base=d) == 0          # sin duplicar
         assert registro.guardar_velas({"A/B": df}, st, 5, base=d) == 100                    # solo las nuevas
+        st1 = st
+        assert registro.guardar_velas({"A/B": df.iloc[:50]}, st1, 1, base=Path(d) / "m1") == 50          # 1 min: contador propio
         got = pd.read_csv(Path(d) / "A_B.csv")
         assert len(got) == 300 and got.time.is_unique and got.time.is_monotonic_increasing
         assert abs(got.close.iloc[-1] - df.close.iloc[-1]) < 1e-9 * df.close.iloc[-1]

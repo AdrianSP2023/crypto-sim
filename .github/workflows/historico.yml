@@ -30,7 +30,9 @@ jobs:
       - run: pip install -r requirements.txt stream-unzip
       - run: python -u tests/test_historico.py
       - run: python -u tools/historico_kraken.py ${{ github.event.inputs.mode }}
+        continue-on-error: true
       - name: Guardar resultados en el repo
+        if: always()
         run: |
           git config user.name "historico-kraken"
           git config user.email "historico-kraken@users.noreply.github.com"

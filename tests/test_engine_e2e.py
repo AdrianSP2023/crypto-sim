@@ -6,12 +6,14 @@ from pathlib import Path
 import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT)); sys.path.insert(0, str(ROOT / "tests")); sys.path.insert(0, str(ROOT / "tools"))
-import core, engine, decide_p7
+import core, engine, decide_p7, registro, tempfile
 from test_core import synth
 
 def main():
     cfg = copy.deepcopy(json.loads((ROOT / "config.json").read_text()))
     cfg["entry_fill"] = "next_open"
+    registro.ROOT = Path(tempfile.mkdtemp())      # no ensuciar datos/ del repo con velas sinteticas
+    cfg["record_1m"] = False
     cfg["fee_tiers"] = [{"from": 0, "side": 0.0055}, {"from": 300, "side": 0.0025}]
     assets = list("ABCDEF")
     full = {a: synth(200 + k, n=900) for k, a in enumerate(assets)}

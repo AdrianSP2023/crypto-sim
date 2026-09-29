@@ -184,3 +184,11 @@ Solo registro (no cambia ninguna estrategia ni reinicia conteos).
   13 partes (~26 GB) del histórico de trades de Kraken (hasta 30/06/2026), filtra los activos que usamos (EUR y USD) y
   guarda velas de 1 h en `datos/historico_1h/<QUOTE>_<BASE>.csv.gz` más un informe. Para contrastar patrones con años de
   datos (caída y rebote, eventos). Test: `tests/test_historico.py`.
+
+## P3-v1 (sin cambio de versión) — 2026-09-29 ~12:00 UTC: velas de 1 minuto
+
+- El motor guarda además `datos/velas_1m/<ACTIVO>.csv` (velas cerradas de 1 min de los 60 activos), solo para registro y
+  análisis: ninguna estrategia las usa. Kraken devuelve 12 h por petición, así que la primera vuelta recupera 12 h y
+  después cada vuelta añade lo nuevo (sin duplicar; contador `state["velas_last_1"]`). Coste: +~40 s por vuelta (60
+  peticiones más, con límite de 150 s). Se puede apagar con `"record_1m": false` en `config.json`. ~5 MB/día.
+- Objetivo: poder probar entradas/salidas evaluadas cada minuto (A/B en simulación) con datos reales.
