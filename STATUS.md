@@ -1,6 +1,6 @@
 # Simulación P3 (sin dinero real)
 
-Config `P3-v2` · inicio 2026-09-29 09:43 UTC · última vuelta 2026-09-29 20:02 UTC · vueltas 124 · 60 activos · velas 5 min · comisión por tramos de volumen 30 d (ida+vuelta 1.10% / 0.50% / 0.42%)
+Config `P3-v2` · inicio 2026-09-29 09:43 UTC · última vuelta 2026-09-29 20:04 UTC · vueltas 124 · 60 activos · velas 5 min · comisión por tramos de volumen 30 d (ida+vuelta 1.10% / 0.50% / 0.42%)
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
@@ -20,7 +20,7 @@ Config `P3-v2` · inicio 2026-09-29 09:43 UTC · última vuelta 2026-09-29 20:02
 | ruptura_volumen_regimen | 906.63 € (-1.91%) | 73 | 13 | 26% | -0.096% | -0.953% | -1.096% | -15.98 € |
 | c_banda_atr_evento | 914.91 € (-1.01%) | 26 | 6 | 31% | -0.440% | -1.540% | -1.691% | -9.24 € |
 | macd_momentum_evento | 911.88 € (-1.34%) | 35 | 1 | 17% | -0.431% | -1.531% | -1.660% | -12.36 € |
-| ruptura_volumen_evento | 913.91 € (-1.12%) | 22 | 20 | 18% | -0.579% | -1.679% | -1.862% | -8.51 € |
+| ruptura_volumen_evento | 913.91 € (-1.12%) | 22 | 20 | 18% | -0.579% | -1.679% | -1.861% | -8.51 € |
 | rebote_desplome | 924.24 € (+0.00%) | 0 | 0 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
 
 ## Últimas 15 operaciones cerradas
