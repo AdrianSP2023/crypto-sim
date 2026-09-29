@@ -1,0 +1,72 @@
+Horas del modelo: 1056 (con rasgos de causa: 1056) · con 1 min: 1056
+Medianas de las horas del modelo: ret6_own -0.043 · mkt_ret6 -0.026 · breadth3 +0.058 · rel6 -0.002 · own_share -0.032 · vol_own +5.000 · vol_rel +1.579
+Todas las horas del test (control): mkt_ret6 -0.000 · breadth3 +0.485 · rel6 +0.000 · own_share +0.000 · vol_z +0.999 · vol_rel +1.000
+
+== Referencia: todas las horas del modelo ==
+  fwd 4 h : n=1056 bruto +1.82 (med +1.27, 59% >0, t +3.7) neto0,5 +1.32 neto1,1 +0.72 | sin 10 mejores días +0.51 | años 2023:+0.5 2024:+3.0 2025:+1.2 2026:+0.1
+  tp8_slx : n=1056 bruto +1.83 (med +1.77, 62% >0, t +5.4) neto0,5 +1.33 neto1,1 +0.73 | sin 10 mejores días +0.94 | años 2023:+1.0 2024:+2.4 2025:+1.6 2026:+0.5
+
+== Activo frente al mercado, con signo (own_share; 1ª versión) (PRIMARIA) ==
+  activo rinde MÁS que mercado (own_share >= -0.03) fwd 4h: n= 528 bruto +1.33 (med +0.38, 53% >0, t +2.5) neto0,5 +0.83 neto1,1 +0.23 | sin 10 mejores días +0.01 | años 2023:-0.3 2024:+2.4 2025:+1.0 2026:-1.2
+                                     tp8_slx: n= 528 bruto +1.48 (med +1.09, 56% >0, t +3.6) neto0,5 +0.98 neto1,1 +0.38 | sin 10 mejores días +0.48 | años 2023:+0.4 2024:+2.0 2025:+1.6 2026:-0.5
+  activo rinde MENOS que mercado (cae más) fwd 4h: n= 528 bruto +2.30 (med +1.96, 66% >0, t +4.4) neto0,5 +1.80 neto1,1 +1.20 | sin 10 mejores días +0.84 | años 2023:+2.0 2024:+3.6 2025:+1.3 2026:+1.6
+                                     tp8_slx: n= 528 bruto +2.19 (med +2.25, 68% >0, t +5.9) neto0,5 +1.69 neto1,1 +1.09 | sin 10 mejores días +1.20 | años 2023:+2.2 2024:+2.8 2025:+1.7 2026:+1.8
+  Diferencia de medias (fwd 4 h): -0.97 pts · error típico aprox 0.37 (días distintos: 208 vs 137)
+
+== Amplitud del mercado (breadth3): la mediana es ~0,06, casi todas las horas son de caída generalizada (PRIMARIA) ==
+  mercado menos débil (breadth3 >= 0.06) fwd 4h: n= 528 bruto +0.69 (med +0.20, 53% >0, t +2.0) neto0,5 +0.19 neto1,1 -0.41 | sin 10 mejores días -0.17 | años 2023:+0.0 2024:+1.1 2025:+0.6 2026:+0.2
+                                     tp8_slx: n= 528 bruto +1.08 (med +1.04, 55% >0, t +3.4) neto0,5 +0.58 neto1,1 -0.02 | sin 10 mejores días +0.34 | años 2023:+0.7 2024:+1.0 2025:+1.4 2026:+0.8
+  caída generalizada (breadth3 bajo) fwd 4h: n= 528 bruto +2.94 (med +2.21, 66% >0, t +3.7) neto0,5 +2.44 neto1,1 +1.84 | sin 10 mejores días +0.51 | años 2023:+2.1 2024:+4.8 2025:+1.6 2026:-0.1
+                                     tp8_slx: n= 528 bruto +2.58 (med +2.44, 68% >0, t +5.2) neto0,5 +2.08 neto1,1 +1.48 | sin 10 mejores días +1.00 | años 2023:+2.3 2024:+3.7 2025:+1.8 2026:+0.2
+  Diferencia de medias (fwd 4 h): -2.26 pts · error típico aprox 0.37 (días distintos: 202 vs 114)
+
+(Añadido tras ver la 1ª pasada: own_share con signo mezcla 'cae menos' y 'sube solo'; se añade la versión simétrica idio_abs = |rel6|/(|rel6|+|mkt_ret6|). Horas del modelo con retorno 6 h del activo < 0: 64 % · con mercado (mediana) < 0: 72 %)
+
+== Movimiento propio vs de mercado, simétrico (idio_abs; añadida tras 1ª pasada) (exploratoria) ==
+  movimiento PROPIO (idio_abs >= 0.50) fwd 4h: n= 528 bruto +0.74 (med +0.17, 52% >0, t +2.6) neto0,5 +0.24 neto1,1 -0.36 | sin 10 mejores días +0.13 | años 2023:+0.0 2024:+1.5 2025:+0.4 2026:-0.2
+                                     tp8_slx: n= 528 bruto +0.95 (med +0.68, 54% >0, t +3.8) neto0,5 +0.45 neto1,1 -0.15 | sin 10 mejores días +0.52 | años 2023:+0.7 2024:+1.4 2025:+0.6 2026:+0.4
+  movimiento de MERCADO (idio_abs bajo) fwd 4h: n= 528 bruto +2.90 (med +2.38, 67% >0, t +3.7) neto0,5 +2.40 neto1,1 +1.80 | sin 10 mejores días +0.38 | años 2023:+2.4 2024:+4.4 2025:+1.8 2026:+0.6
+                                     tp8_slx: n= 528 bruto +2.72 (med +2.79, 70% >0, t +5.2) neto0,5 +2.22 neto1,1 +1.62 | sin 10 mejores días +1.03 | años 2023:+2.3 2024:+3.4 2025:+2.4 2026:+0.8
+  Diferencia de medias (fwd 4 h): -2.16 pts · error típico aprox 0.37 (días distintos: 232 vs 95)
+
+== Volumen propio frente al del mercado (vol_rel) (exploratoria) ==
+  volumen propio alto (>= 1.58)      fwd 4h: n= 528 bruto +1.09 (med +0.73, 55% >0, t +2.8) neto0,5 +0.59 neto1,1 -0.01 | sin 10 mejores días +0.14 | años 2023:+0.2 2024:+1.9 2025:+0.8 2026:-0.2
+                                     tp8_slx: n= 528 bruto +1.37 (med +1.26, 58% >0, t +4.7) neto0,5 +0.87 neto1,1 +0.27 | sin 10 mejores días +0.72 | años 2023:+1.0 2024:+1.7 2025:+1.4 2026:+0.5
+  volumen propio normal              fwd 4h: n= 528 bruto +2.55 (med +1.91, 64% >0, t +4.1) neto0,5 +2.05 neto1,1 +1.45 | sin 10 mejores días +0.62 | años 2023:+1.4 2024:+3.8 2025:+1.5 2026:+0.5
+                                     tp8_slx: n= 528 bruto +2.30 (med +2.31, 66% >0, t +5.2) neto0,5 +1.80 neto1,1 +1.20 | sin 10 mejores días +0.96 | años 2023:+1.3 2024:+3.0 2025:+1.8 2026:+0.7
+  Diferencia de medias (fwd 4 h): -1.46 pts · error típico aprox 0.37 (días distintos: 215 vs 130)
+
+== Cruce: 'noticia propia' (propia + mercado flojo) vs 'mercado entero' (mercado + alcista) (exploratoria) ==
+  propia + mercado flojo             fwd 4h: n= 176 bruto +3.48 (med +2.33, 64% >0, t +3.2) neto0,5 +2.98 neto1,1 +2.38 | sin 10 mejores días -0.19 | años 2023:-0.0 2024:+5.4 2025:+2.3 2026:-1.4
+                                     tp8_slx: n= 176 bruto +2.79 (med +2.86, 67% >0, t +4.0) neto0,5 +2.29 neto1,1 +1.69 | sin 10 mejores días +0.42 | años 2023:+0.3 2024:+4.0 2025:+2.2 2026:-1.4
+  mercado entero + alcista           fwd 4h: n= 176 bruto +1.54 (med +1.71, 65% >0, t +3.0) neto0,5 +1.04 neto1,1 +0.44 | sin 10 mejores días +0.01 | años 2023:+0.9 2024:+1.8 2025:+1.2 2026:+3.0
+                                     tp8_slx: n= 176 bruto +1.62 (med +1.89, 65% >0, t +3.2) neto0,5 +1.12 neto1,1 +0.52 | sin 10 mejores días +0.25 | años 2023:+1.2 2024:+1.4 2025:+1.7 2026:+3.0
+  Diferencia de medias (fwd 4 h): +1.94 pts · error típico aprox 0.63 (días distintos: 59 vs 80)
+
+  (cruce restante) propia+alcista         fwd 4h: n= 352 bruto +0.26 (med -0.39, 47% >0, t +0.7) neto0,5 -0.24 neto1,1 -0.84 | sin 10 mejores días -0.58 | años 2023:-0.3 2024:+0.8 2025:+0.2 2026:-1.2
+  (cruce restante) mercado+flojo          fwd 4h: n= 352 bruto +2.68 (med +2.14, 66% >0, t +3.9) neto0,5 +2.18 neto1,1 +1.58 | sin 10 mejores días +0.52 | años 2023:+3.7 2024:+4.4 2025:+1.4 2026:+0.6
+
+== Terciles de own_share (exploratorio) ==
+  T1 mercado   fwd 4h: n= 352 bruto +1.84 (med +1.85, 66% >0, t +4.6) neto0,5 +1.34 neto1,1 +0.74 | sin 10 mejores días +0.86 | años 2023:+2.2 2024:+2.7 2025:+1.1 2026:+1.6
+  T2           fwd 4h: n= 352 bruto +3.17 (med +2.38, 65% >0, t +3.0) neto0,5 +2.67 neto1,1 +2.07 | sin 10 mejores días -0.40 | años 2023:+1.5 2024:+4.9 2025:+1.8 2026:-0.7
+  T3 propia    fwd 4h: n= 352 bruto +0.44 (med -0.36, 48% >0, t +1.3) neto0,5 -0.06 neto1,1 -0.66 | sin 10 mejores días -0.25 | años 2023:-0.5 2024:+1.2 2025:+0.3 2026:-1.3
+
+== Control: mismas particiones en TODAS las horas del test (con solape, solo media y mediana) ==
+  own_share >= -0.03     n= 536982 fwd 4h medio +0.010 (mediana -0.019)
+  own_share bajo         n= 481934 fwd 4h medio +0.023 (mediana +0.000)
+  breadth3 >= 0.06       n= 889202 fwd 4h medio +0.008 (mediana -0.021)
+  breadth3 bajo          n= 129714 fwd 4h medio +0.073 (mediana +0.115)
+
+== Confirmación con cortes fijados en VALIDACIÓN 2022 (horas top 0,5 %: n=975; mediana idio_abs 0.31, breadth3 0.04) ==
+  idio_abs < 0.31 (mercado)                  fwd 4h: n= 383 bruto +3.30 (med +2.44, 68% >0, t +3.5) neto0,5 +2.80 neto1,1 +2.20 | sin 10 mejores días -0.13 | años 2023:+2.2 2024:+4.9 2025:+1.9 2026:+0.4
+                                             tp8_slx: n= 383 bruto +2.94 (med +3.06, 70% >0, t +4.6) neto0,5 +2.44 neto1,1 +1.84 | sin 10 mejores días +0.57 | años 2023:+2.0 2024:+3.7 2025:+2.4 2026:+0.5
+  idio_abs >= 0.31 (propio)                  fwd 4h: n= 673 bruto +0.97 (med +0.48, 55% >0, t +3.2) neto0,5 +0.47 neto1,1 -0.13 | sin 10 mejores días +0.28 | años 2023:+0.3 2024:+1.7 2025:+0.6 2026:+0.0
+                                             tp8_slx: n= 673 bruto +1.20 (med +1.16, 57% >0, t +4.8) neto0,5 +0.70 neto1,1 +0.10 | sin 10 mejores días +0.68 | años 2023:+0.9 2024:+1.6 2025:+1.1 2026:+0.6
+  breadth3 <= 0.04 (caída generalizada)      fwd 4h: n= 486 bruto +3.19 (med +2.38, 67% >0, t +4.2) neto0,5 +2.69 neto1,1 +2.09 | sin 10 mejores días +0.58 | años 2023:+2.1 2024:+4.9 2025:+2.0 2026:-0.1
+                                             tp8_slx: n= 486 bruto +2.65 (med +2.44, 69% >0, t +5.2) neto0,5 +2.15 neto1,1 +1.55 | sin 10 mejores días +0.91 | años 2023:+2.3 2024:+3.7 2025:+1.9 2026:+0.1
+  breadth3 > 0.04                            fwd 4h: n= 570 bruto +0.64 (med +0.20, 53% >0, t +1.9) neto0,5 +0.14 neto1,1 -0.46 | sin 10 mejores días -0.17 | años 2023:+0.0 2024:+1.1 2025:+0.4 2026:+0.2
+                                             tp8_slx: n= 570 bruto +1.14 (med +1.08, 56% >0, t +3.8) neto0,5 +0.64 neto1,1 +0.04 | sin 10 mejores días +0.45 | años 2023:+0.7 2024:+1.1 2025:+1.4 2026:+0.8
+  ambos: mercado Y caída generalizada        fwd 4h: n= 307 bruto +3.49 (med +2.24, 66% >0, t +3.2) neto0,5 +2.99 neto1,1 +2.39 | sin 10 mejores días -0.30 | años 2023:+2.0 2024:+5.0 2025:+1.8 2026:-0.5
+                                             tp8_slx: n= 307 bruto +2.81 (med +2.40, 67% >0, t +3.8) neto0,5 +2.31 neto1,1 +1.71 | sin 10 mejores días -0.02 | años 2023:+1.9 2024:+3.7 2025:+1.8 2026:-0.5
+
+Notas: cortes por mediana de las horas del modelo (no usan el resultado); n pequeños en cruces: leer como pista, no como prueba. Sin fuente de noticias en los datos: 'propia' es proxy de precio/volumen.
