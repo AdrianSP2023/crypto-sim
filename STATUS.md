@@ -1,60 +1,79 @@
 # Simulación P1 (sin dinero real)
 
-Config `P1-v9` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-29 01:06 UTC · vueltas 169 · 60 activos · velas 5 min · comisión 1.1% ida+vuelta
+Config `P1-v9` · inicio 2026-09-28 08:49 UTC · última vuelta 2026-09-29 01:11 UTC · vueltas 170 · 60 activos · velas 5 min · comisión 1.1% ida+vuelta
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 868.05 € (-6.08%) | 116 | 21 | 20% | -0.701% | -1.801% | -1.922% | -55.21 € |
-| reversion_bb | 923.88 € (-0.04%) | 28 | 5 | 79% | +0.978% | -0.122% | -0.304% | -0.42 € |
-| ruptura_volumen | 879.82 € (-4.81%) | 97 | 18 | 14% | -0.448% | -1.548% | -1.663% | -43.93 € |
+| c_banda_atr | 865.12 € (-6.40%) | 119 | 18 | 19% | -0.722% | -1.822% | -1.943% | -56.94 € |
+| reversion_bb | 923.18 € (-0.11%) | 28 | 5 | 79% | +0.978% | -0.122% | -0.304% | -0.42 € |
+| ruptura_volumen | 876.93 € (-5.12%) | 103 | 12 | 14% | -0.496% | -1.596% | -1.709% | -47.09 € |
 | rebote_extremo | 922.00 € (-0.24%) | 10 | 0 | 50% | +0.661% | -0.439% | -0.795% | -2.24 € |
-| pullback_tendencia | 903.70 € (-2.22%) | 58 | 2 | 17% | -0.344% | -1.444% | -1.536% | -20.68 € |
-| macd_momentum | 887.55 € (-3.97%) | 119 | 2 | 15% | -0.220% | -1.320% | -1.429% | -36.91 € |
-| estocastico_rebote | 895.18 € (-3.14%) | 82 | 10 | 28% | -0.351% | -1.451% | -1.547% | -28.37 € |
-| c_banda_atr_filtro | 894.20 € (-3.25%) | 53 | 11 | 6% | -1.286% | -2.386% | -2.503% | -29.06 € |
-| ruptura_volumen_filtro | 904.70 € (-2.11%) | 46 | 20 | 9% | -0.703% | -1.803% | -1.917% | -19.02 € |
+| pullback_tendencia | 903.26 € (-2.27%) | 59 | 1 | 17% | -0.340% | -1.440% | -1.531% | -20.95 € |
+| macd_momentum | 887.59 € (-3.97%) | 119 | 2 | 15% | -0.220% | -1.320% | -1.429% | -36.91 € |
+| estocastico_rebote | 893.02 € (-3.38%) | 86 | 7 | 27% | -0.387% | -1.487% | -1.584% | -30.35 € |
+| c_banda_atr_filtro | 891.94 € (-3.49%) | 57 | 7 | 5% | -1.285% | -2.385% | -2.500% | -31.18 € |
+| ruptura_volumen_filtro | 901.39 € (-2.47%) | 52 | 14 | 8% | -0.770% | -1.870% | -1.978% | -22.26 € |
 | macd_momentum_filtro | 906.47 € (-1.92%) | 53 | 1 | 9% | -0.378% | -1.478% | -1.580% | -17.98 € |
-| pullback_tendencia_filtro | 915.16 € (-0.98%) | 26 | 1 | 12% | -0.436% | -1.536% | -1.593% | -9.20 € |
-| estocastico_rebote_filtro | 918.11 € (-0.66%) | 15 | 6 | 20% | -0.415% | -1.515% | -1.614% | -5.24 € |
-| ruptura_estricta | 919.30 € (-0.53%) | 8 | 11 | 12% | -1.418% | -2.518% | -2.637% | -4.65 € |
-| macd_sin_salida | 915.38 € (-0.96%) | 26 | 17 | 27% | -0.387% | -1.487% | -1.595% | -8.94 € |
+| pullback_tendencia_filtro | 914.78 € (-1.02%) | 27 | 0 | 11% | -0.422% | -1.522% | -1.579% | -9.46 € |
+| estocastico_rebote_filtro | 916.33 € (-0.86%) | 19 | 2 | 16% | -0.643% | -1.743% | -1.848% | -7.63 € |
+| ruptura_estricta | 918.05 € (-0.67%) | 10 | 9 | 10% | -1.552% | -2.652% | -2.781% | -6.11 € |
+| macd_sin_salida | 913.29 € (-1.18%) | 28 | 15 | 29% | -0.339% | -1.439% | -1.554% | -9.31 € |
 
 ## Últimas 15 operaciones cerradas
 
 | Salida (UTC) | Estrategia | Activo | Motivo | Bruto | Neto | € |
 |---|---|---|---|---|---|---|
-| 2026-09-29 01:05 | macd_momentum_filtro | KAS | momentum perdido | -0.15% | -1.25% | -0.28 |
-| 2026-09-29 01:05 | macd_momentum_filtro | PEPE | momentum perdido | -0.97% | -2.07% | -0.47 |
-| 2026-09-29 01:05 | ruptura_volumen_filtro | W | stop-loss | -1.31% | -2.41% | -0.55 |
-| 2026-09-29 01:05 | ruptura_volumen_filtro | LINK | stop-loss | -1.23% | -2.33% | -0.53 |
-| 2026-09-29 01:05 | c_banda_atr_filtro | LTC | timeout | -0.77% | -1.87% | -0.42 |
-| 2026-09-29 01:05 | estocastico_rebote | BTC | timeout | +0.01% | -1.09% | -0.25 |
-| 2026-09-29 01:05 | macd_momentum | KAS | momentum perdido | -0.15% | -1.25% | -0.28 |
-| 2026-09-29 01:05 | macd_momentum | PEPE | momentum perdido | -0.97% | -2.07% | -0.46 |
-| 2026-09-29 01:05 | ruptura_volumen | W | stop-loss | -1.31% | -2.41% | -0.53 |
-| 2026-09-29 01:05 | ruptura_volumen | LINK | stop-loss | -1.23% | -2.33% | -0.52 |
-| 2026-09-29 01:05 | c_banda_atr | LTC | timeout | -0.77% | -1.87% | -0.41 |
-| 2026-09-29 01:00 | pullback_tendencia_filtro | XLM | rotura de tendencia | -1.08% | -2.18% | -0.50 |
-| 2026-09-29 01:00 | macd_momentum_filtro | EIGEN | momentum perdido | -0.67% | -1.77% | -0.40 |
-| 2026-09-29 01:00 | macd_momentum_filtro | ARB | momentum perdido | -1.18% | -2.28% | -0.52 |
-| 2026-09-29 01:00 | ruptura_volumen_filtro | VVV | timeout | -0.30% | -1.41% | -0.32 |
+| 2026-09-29 01:10 | macd_sin_salida | CC | take-profit | +2.06% | +0.96% | +0.22 |
+| 2026-09-29 01:10 | macd_sin_salida | ARB | stop-loss | -1.50% | -2.60% | -0.59 |
+| 2026-09-29 01:10 | ruptura_estricta | JUP | stop-loss | -2.17% | -3.27% | -0.75 |
+| 2026-09-29 01:10 | ruptura_estricta | DASH | stop-loss | -2.00% | -3.10% | -0.71 |
+| 2026-09-29 01:10 | estocastico_rebote_filtro | VVV | stop-loss | -1.50% | -2.60% | -0.60 |
+| 2026-09-29 01:10 | estocastico_rebote_filtro | DASH | stop-loss | -1.50% | -2.60% | -0.60 |
+| 2026-09-29 01:10 | estocastico_rebote_filtro | POL | stop-loss | -1.50% | -2.60% | -0.60 |
+| 2026-09-29 01:10 | estocastico_rebote_filtro | HBAR | stop-loss | -1.50% | -2.60% | -0.60 |
+| 2026-09-29 01:10 | pullback_tendencia_filtro | ALGO | rotura de tendencia | -0.06% | -1.16% | -0.27 |
+| 2026-09-29 01:10 | ruptura_volumen_filtro | SHIB | stop-loss | -1.20% | -2.30% | -0.52 |
+| 2026-09-29 01:10 | ruptura_volumen_filtro | ZRO | stop-loss | -1.39% | -2.49% | -0.56 |
+| 2026-09-29 01:10 | ruptura_volumen_filtro | DOT | stop-loss | -1.41% | -2.51% | -0.57 |
+| 2026-09-29 01:10 | ruptura_volumen_filtro | ARB | stop-loss | -1.29% | -2.39% | -0.54 |
+| 2026-09-29 01:10 | ruptura_volumen_filtro | LTC | stop-loss | -1.20% | -2.30% | -0.52 |
+| 2026-09-29 01:10 | ruptura_volumen_filtro | XRP | stop-loss | -1.20% | -2.30% | -0.52 |
 
 ## Eventos de la última vuelta
 
-- 2026-09-29 01:05 [estocastico_rebote] CIERRE BTC timeout bruto +0.01% neto -1.09%
-- 2026-09-29 01:05 [ruptura_volumen] CIERRE LINK stop-loss bruto -1.23% neto -2.33%
-- 2026-09-29 01:05 [ruptura_volumen_filtro] CIERRE LINK stop-loss bruto -1.23% neto -2.33%
-- 2026-09-29 01:05 [c_banda_atr] CIERRE LTC timeout bruto -0.77% neto -1.87%
-- 2026-09-29 01:05 [c_banda_atr_filtro] CIERRE LTC timeout bruto -0.77% neto -1.87%
-- 2026-09-29 01:05 [estocastico_rebote] ENTRADA AAVE @ 131.43 (22.40 €)
-- 2026-09-29 01:05 [macd_momentum] CIERRE PEPE momentum perdido bruto -0.97% neto -2.07%
-- 2026-09-29 01:05 [macd_momentum_filtro] CIERRE PEPE momentum perdido bruto -0.97% neto -2.07%
-- 2026-09-29 01:05 [ruptura_volumen] CIERRE W stop-loss bruto -1.31% neto -2.41%
-- 2026-09-29 01:05 [ruptura_volumen_filtro] CIERRE W stop-loss bruto -1.31% neto -2.41%
-- 2026-09-29 01:05 [estocastico_rebote] ENTRADA CRV @ 0.3303 (22.40 €)
-- 2026-09-29 01:05 [macd_momentum] CIERRE KAS momentum perdido bruto -0.15% neto -1.25%
-- 2026-09-29 01:05 [macd_momentum_filtro] CIERRE KAS momentum perdido bruto -0.15% neto -1.25%
-- 2026-09-29 01:05 [macd_momentum] ENTRADA CC @ 0.11676 (22.18 €)
-- 2026-09-29 01:05 [ruptura_estricta] ENTRADA CC @ 0.11676 (22.99 €)
+- 2026-09-29 01:10 [estocastico_rebote] CIERRE ETH timeout bruto +0.03% neto -1.07%
+- 2026-09-29 01:10 [ruptura_volumen] CIERRE XRP stop-loss bruto -1.20% neto -2.30%
+- 2026-09-29 01:10 [ruptura_volumen_filtro] CIERRE XRP stop-loss bruto -1.20% neto -2.30%
+- 2026-09-29 01:10 [ruptura_volumen] CIERRE LTC stop-loss bruto -1.20% neto -2.30%
+- 2026-09-29 01:10 [ruptura_volumen_filtro] CIERRE LTC stop-loss bruto -1.20% neto -2.30%
+- 2026-09-29 01:10 [estocastico_rebote_filtro] CIERRE HBAR stop-loss bruto -1.50% neto -2.60%
+- 2026-09-29 01:10 [c_banda_atr] CIERRE TAO stop-loss bruto -1.65% neto -2.75%
+- 2026-09-29 01:10 [estocastico_rebote] ENTRADA TAO @ 266.874 (22.39 €)
+- 2026-09-29 01:10 [c_banda_atr_filtro] CIERRE TAO stop-loss bruto -1.65% neto -2.75%
+- 2026-09-29 01:10 [c_banda_atr] CIERRE ARB stop-loss bruto -1.50% neto -2.60%
+- 2026-09-29 01:10 [ruptura_volumen] CIERRE ARB stop-loss bruto -1.29% neto -2.39%
+- 2026-09-29 01:10 [c_banda_atr_filtro] CIERRE ARB stop-loss bruto -1.50% neto -2.60%
+- 2026-09-29 01:10 [ruptura_volumen_filtro] CIERRE ARB stop-loss bruto -1.29% neto -2.39%
+- 2026-09-29 01:10 [macd_sin_salida] CIERRE ARB stop-loss bruto -1.50% neto -2.60%
+- 2026-09-29 01:10 [c_banda_atr_filtro] CIERRE BCH timeout bruto -0.42% neto -1.52%
+- 2026-09-29 01:10 [ruptura_volumen] CIERRE DOT stop-loss bruto -1.41% neto -2.51%
+- 2026-09-29 01:10 [ruptura_volumen_filtro] CIERRE DOT stop-loss bruto -1.41% neto -2.51%
+- 2026-09-29 01:10 [pullback_tendencia] CIERRE ALGO rotura de tendencia bruto -0.06% neto -1.16%
+- 2026-09-29 01:10 [pullback_tendencia_filtro] CIERRE ALGO rotura de tendencia bruto -0.06% neto -1.16%
+- 2026-09-29 01:10 [estocastico_rebote] CIERRE POL stop-loss bruto -1.50% neto -2.60%
+- 2026-09-29 01:10 [estocastico_rebote_filtro] CIERRE POL stop-loss bruto -1.50% neto -2.60%
+- 2026-09-29 01:10 [estocastico_rebote] CIERRE DASH stop-loss bruto -1.50% neto -2.60%
+- 2026-09-29 01:10 [estocastico_rebote_filtro] CIERRE DASH stop-loss bruto -1.50% neto -2.60%
+- 2026-09-29 01:10 [ruptura_estricta] CIERRE DASH stop-loss bruto -2.00% neto -3.10%
+- 2026-09-29 01:10 [ruptura_estricta] CIERRE JUP stop-loss bruto -2.17% neto -3.27%
+- 2026-09-29 01:10 [ruptura_volumen] CIERRE ZRO stop-loss bruto -1.39% neto -2.49%
+- 2026-09-29 01:10 [ruptura_volumen_filtro] CIERRE ZRO stop-loss bruto -1.39% neto -2.49%
+- 2026-09-29 01:10 [c_banda_atr] CIERRE SEI stop-loss bruto -1.50% neto -2.60%
+- 2026-09-29 01:10 [estocastico_rebote] CIERRE VVV stop-loss bruto -1.50% neto -2.60%
+- 2026-09-29 01:10 [estocastico_rebote_filtro] CIERRE VVV stop-loss bruto -1.50% neto -2.60%
+- 2026-09-29 01:10 [ruptura_volumen] CIERRE SHIB stop-loss bruto -1.20% neto -2.30%
+- 2026-09-29 01:10 [ruptura_volumen_filtro] CIERRE SHIB stop-loss bruto -1.20% neto -2.30%
+- 2026-09-29 01:10 [c_banda_atr_filtro] CIERRE TRUMP stop-loss bruto -1.50% neto -2.60%
+- 2026-09-29 01:10 [macd_sin_salida] CIERRE CC take-profit bruto +2.06% neto +0.96%
 
 Universo: BTC, SOL, ETH, XRP, SUI, NEAR, LINK, ZEC, LTC, HBAR, ONDO, ADA, UNI, PUMP, TAO, ARB, AVAX, DOGE, BCH, ENA, XLM, XDC, HYPE, DOT, AAVE, ALGO, PEPE, MON, POL, DASH, XPL, JUP, W, GRT, USELESS, FET, ZRO, SEI, ATOM, WLD, INJ, FIL, ICP, TRX, RENDER, PENGU, TON, VVV, RAY, SHIB, SKY, TRUMP, CRV, VIRTUAL, OP, NIGHT, KAS, CC, EIGEN, WLFI
