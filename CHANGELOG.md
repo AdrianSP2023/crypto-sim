@@ -262,3 +262,6 @@ Cambios (Maestro pidió las dos ideas; las cuentas de las 14 estrategias existen
 
 ## Estrategia trailing + recompra (propuesta de Maestro) — 2026-09-29
 - `tools/simula_trailing.py`: entrada tras +5 % sobre mínimo 4 h, trailing x %, recompra tras caída extra x % y rebote x %. Todas las horas, 42 activos, 2018-26. Informes `datos/eventos/trailing_informe.txt` y `trailing_informe_amplio.txt`. Sin cambios en el motor.
+
+## Horas del modelo en velas de 1 min — 2026-09-29
+- Descarga `ventanas_modelo` terminada (41 pares, 1.056 horas). `tools/analisis_modelo_1m.py` -> `datos/eventos/modelo_1m_informe.txt`, `modelo_1m_eventos.csv`. Sin cambios en el motor.
