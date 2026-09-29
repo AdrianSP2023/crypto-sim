@@ -237,3 +237,8 @@ Cambios (Maestro pidió las dos ideas; las cuentas de las 14 estrategias existen
    con 1 % extra de deslizamiento +0,85 % (t 1,7); 2018-21 +0,96 % (t 1,5) frente a 2022-26 +2,67 % (t 4,1). Los stops del 2-8 % destruyen la ventaja
    (mueren antes del rebote). Es raro (~0,25 eventos al día en 42 activos): no llegará a 30 cierres por ciclo; se juzga por muestra acumulada.
 3. `core.in_blackout`, `report.py` (columna filtradas) y tests nuevos (`test_blackout`, `test_rebote_desplome`).
+
+## Eventos por activo — 2026-09-29
+- `tools/detector_movimientos.py`: 8 mayores subidas + 8 mayores bajadas de 24 h por activo (10 activos, sin solapes ±72 h) -> `datos/eventos/detector_top_movimientos.csv` (160 filas).
+- Causas buscadas por 5 subagentes -> `datos/eventos/eventos_por_activo.csv` (16 por activo; confianza alta 62, media 50, baja 48). Doble pasada en SOL/XRP: acuerdo de tipo 75 %. Ficheros por agente en `datos/eventos/pasadas_previas/`.
+- Sin cambios en el motor.
