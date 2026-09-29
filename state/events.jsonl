@@ -1529,3 +1529,13 @@
 {"type": "entry", "asset": "EIGEN", "strategy": "c_banda_atr_filtro", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.2232, "qty": 22.4, "spread": 0.00179}
 {"type": "entry", "asset": "EIGEN", "strategy": "macd_momentum_filtro", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.2232, "qty": 22.75, "spread": 0.00179}
 {"type": "entry", "asset": "EIGEN", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.2232, "qty": 22.88, "spread": 0.00179}
+{"type": "entry", "asset": "BTC", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-29 00:45", "ts": 1790642700, "price": 73475.5, "qty": 22.28, "spread": 2e-05}
+{"type": "entry", "asset": "BTC", "strategy": "macd_momentum_filtro", "version": "P1-v9", "t": "2026-09-29 00:45", "ts": 1790642700, "price": 73475.5, "qty": 22.75, "spread": 2e-05}
+{"type": "entry", "asset": "BTC", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-29 00:45", "ts": 1790642700, "price": 73475.5, "qty": 22.88, "spread": 2e-05}
+{"type": "entry", "asset": "VVV", "strategy": "estocastico_rebote", "version": "P1-v9", "t": "2026-09-29 00:45", "ts": 1790642700, "price": 24.295, "qty": 22.4, "spread": 0.00111}
+{"type": "entry", "asset": "VVV", "strategy": "estocastico_rebote_filtro", "version": "P1-v9", "t": "2026-09-29 00:45", "ts": 1790642700, "price": 24.295, "qty": 22.97, "spread": 0.00111}
+{"type": "entry", "asset": "OP", "strategy": "c_banda_atr", "version": "P1-v9", "t": "2026-09-29 00:45", "ts": 1790642700, "price": 0.118, "qty": 21.76, "spread": 0.00085}
+{"type": "entry", "asset": "OP", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-29 00:45", "ts": 1790642700, "price": 0.118, "qty": 22.28, "spread": 0.00085}
+{"type": "entry", "asset": "OP", "strategy": "c_banda_atr_filtro", "version": "P1-v9", "t": "2026-09-29 00:45", "ts": 1790642700, "price": 0.118, "qty": 22.4, "spread": 0.00085}
+{"type": "entry", "asset": "OP", "strategy": "macd_momentum_filtro", "version": "P1-v9", "t": "2026-09-29 00:45", "ts": 1790642700, "price": 0.118, "qty": 22.75, "spread": 0.00085}
+{"type": "entry", "asset": "OP", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-29 00:45", "ts": 1790642700, "price": 0.118, "qty": 22.88, "spread": 0.00085}
