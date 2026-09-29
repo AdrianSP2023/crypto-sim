@@ -122,3 +122,35 @@ pierden juntas.
 - Sesgo conocido: al alcanzar el tope, entra el primer activo que dé señal en el orden del universo (no el mejor).
 - Pruebas: `tests/test_core.py` pasa entero, con un nuevo `test_max_open` (con tope 1, nunca hay más de 1
   posición simultánea y se registran los bloqueos).
+
+## P3-v1 — 2026-09-29 (fin de P1; ajustes de P2, cambio de código y de config)
+
+**Arranque limpio de P3**: `state/` de P1 archivado en `archive/P1/`; todas las cuentas parten de 924,24 €.
+La duración de P3 es de 24 h (ver `phase_end_utc`). Como cambian el precio de ejecución y la comisión, P3 no es
+comparable con P1: las cuentas empiezan de nuevo y los conteos de ciclos del criterio de P7 también.
+
+**Cambios del motor (auditoría de P2)**
+- **Auditoría:** los indicadores y el filtro de amplitud son causales (sin look-ahead) y solo se procesan velas
+  cerradas. Optimista en P1: la entrada se fijaba al *cierre* de la vela que daba la señal.
+- **Entrada a la apertura de la vela siguiente** (`entry_fill: "next_open"`): la señal se guarda como pendiente y
+  se ejecuta al precio de apertura de la vela siguiente. La vela de entrada ya evalúa SL/TP. `entry_ts` pasa a ser
+  la apertura de esa vela (la salida por señal sigue siendo al cierre de la vela de la señal de salida).
+- **Comisión por tramos de Bit2Me** (`fee_tiers`, por lado, según volumen de 30 días de cada cuenta): 0,55 % por
+  debajo de 2.000 €, 0,25 % de 2.000 a 50.000 €, 0,21 % de 50.000 a 250.000 € (ida+vuelta 1,10 / 0,50 / 0,42 %).
+  Cada cierre guarda `fee_pct`. [Suposición] las cifras por lado son la mitad de las de ida y vuelta del plan.
+- **Fotos horarias** en `state["snapshots"]` (precios y patrimonio por estrategia valorando lo abierto a mercado,
+  menos comisiones) y `state["loop_gaps"]` (huecos > 15 min entre vueltas), para medir ciclos de 24 h.
+- **`tools/decide_p7.py`** (y `report.py --ciclos`): decisión determinista de paso a P7 con las salvaguardas del
+  plan (PnL con no realizado, neto de comisión y spread, ≥ 30 cierres, versión actual, motor sano, sin la mejor
+  operación, sin el mejor activo, superar a la cesta, ciclo no concluyente si la cesta sube > 2 %).
+- Pruebas nuevas: referencia independiente de la entrada a la apertura, comisión por tramos y volumen,
+  incremental == de golpe en el modo nuevo, y `tests/test_engine_e2e.py` (motor completo con Kraken simulado).
+
+**Cambios de estrategias**
+- **Retiradas las 5 variantes `*_filtro`** (amplitud sobre EMA50): en P1 no mostraron ventaja y con menos
+  estrategias baja el riesgo de falsos positivos en el criterio de P7. Sustituidas por:
+- **Nuevas `c_banda_atr_regimen`, `macd_momentum_regimen`, `ruptura_volumen_regimen`**: igual que la original,
+  pero solo entran si ≥ 50 % de los activos cierra sobre su EMA200 de 5 min (≈ 16,7 h), una lectura de régimen
+  más lenta que la anterior. Parámetro nuevo `market_filter_ema`.
+- Se mantienen: las 7 originales, `ruptura_estricta`, `macd_sin_salida` y los dos `*_tope`. Sin retirar más por
+  falta de base estadística (A/B de P1 inconclusos).

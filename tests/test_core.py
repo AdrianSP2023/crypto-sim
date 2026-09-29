@@ -15,7 +15,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import core
 from strategies import REGISTRY
 
-CFG = json.loads((Path(__file__).resolve().parents[1] / "config.json").read_text())
+CFG_RAW = json.loads((Path(__file__).resolve().parents[1] / "config.json").read_text())
+import copy as _copy
+CFG = _copy.deepcopy(CFG_RAW)          # modo "clasico" (entrada al cierre, comision fija) para las pruebas antiguas
+CFG["entry_fill"] = "close"
+CFG.pop("fee_tiers", None)
 
 def synth(seed, n=700, start=1_760_000_000):
     rng = np.random.default_rng(seed)
@@ -78,7 +82,7 @@ def test_reference_and_coverage():
         assert got == ref, (seed, got[:5], ref[:5])
         for k in counts:
             counts[k] += len(st["strategies"][k]["closed"])
-    assert all(v >= 5 for v in counts.values()), counts
+    assert all(v >= 5 for k, v in counts.items() if not k.endswith("_regimen")), counts
     print("referencia c_banda_atr OK · operaciones por estrategia:", counts)
 
 def test_incremental_equals_batch():
@@ -103,14 +107,15 @@ def test_market_filter():
     """Variante filtrada = misma estrategia base, pero solo entra con amplitud >= umbral."""
     frames = {a: synth(60 + k) for k, a in enumerate("ABCDEF")}
     st = run_batch(frames, CFG)
-    br = core.market_breadth(frames, CFG)
-    for base in ["c_banda_atr", "ruptura_volumen", "macd_momentum", "pullback_tendencia"]:
-        f = st["strategies"][base + "_filtro"]
-        thr = CFG["strategies"][base + "_filtro"]["market_filter"]
+    for base in ["c_banda_atr", "ruptura_volumen", "macd_momentum"]:
+        pv = CFG["strategies"][base + "_regimen"]
+        br = core.market_breadth(frames, CFG, pv["market_filter_ema"])
+        f = st["strategies"][base + "_regimen"]
+        thr = pv["market_filter"]
         for t in f["closed"]:
             assert br[t["entry_ts"] - 300] >= thr, (base, t)
         assert f["blocked_filter"] > 0, base
-    print("filtro de mercado OK:", {b: st["strategies"][b]["blocked_filter"] for b in st["strategies"] if b.endswith("_filtro")})
+    print("filtro de regimen OK:", {b: st["strategies"][b]["blocked_filter"] for b in st["strategies"] if b.endswith("_regimen")})
 
 def test_max_open():
     """Variante con tope: nunca hay mas de max_open posiciones simultaneas y se registran los bloqueos."""
@@ -136,7 +141,96 @@ def test_max_open():
         assert s["blocked_exposure"] > 0, name
         print("tope de exposicion OK:", name, "bloqueadas", s["blocked_exposure"], "cierres", len(s["closed"]), "frente a base", len(base["closed"]))
 
+def reference_c_next(df, p, warmup):
+    """Referencia independiente con entrada a la APERTURA de la vela siguiente a la señal."""
+    prep, entry, ex = REGISTRY["c_banda_atr"]
+    d = prep(df, p)
+    out, pos, pend = [], None, False
+    for i in range(len(d)):
+        if pend and pos is None:
+            pos = (d.open[i], i - 1)
+        pend = False
+        if pos:
+            e, ei = pos
+            px = None
+            if d.low[i] <= e * (1 - p["sl"]): px = min(d.open[i], e * (1 - p["sl"]))
+            elif d.high[i] >= e * (1 + p["tp"]): px = max(d.open[i], e * (1 + p["tp"]))
+            elif ex(d, i, p): px = d.close[i]
+            elif i - ei >= p["max_hold"]: px = d.close[i]
+            if px is not None:
+                out.append(round((px / e - 1) * 100, 3)); pos = None
+            continue
+        if i >= warmup and entry(d, i, p):
+            pend = True
+    return out
+
+def cfg_next():
+    import copy
+    c = copy.deepcopy(CFG_RAW)
+    c["entry_fill"] = "next_open"
+    return c
+
+def test_next_open_reference():
+    cfg = cfg_next()
+    total = 0
+    for seed in range(25):
+        df = synth(seed)
+        st = run_batch({"X": df}, cfg)
+        got = [t["gross_pct"] for t in st["strategies"]["c_banda_atr"]["closed"]]
+        ref = reference_c_next(df, cfg["strategies"]["c_banda_atr"], cfg["warmup"])
+        assert got == ref, (seed, got[:5], ref[:5])
+        total += len(got)
+        # la entrada se ejecuta a la apertura de la vela siguiente a la señal
+        for t in st["strategies"]["c_banda_atr"]["closed"]:
+            row = df[df.time == t["entry_ts"]].iloc[0]
+            assert abs(t["entry"] - row.open) < 1e-6 * row.open + 1e-9, (seed, t)
+    assert total > 40, total
+    print("entrada a apertura siguiente: referencia OK,", total, "operaciones")
+
+def test_fee_tiers_and_volume():
+    cfg = cfg_next()
+    cfg["fee_tiers"] = [{"from": 0, "side": 0.0055}, {"from": 150, "side": 0.0025}, {"from": 600, "side": 0.0021}]
+    frames = {a: synth(90 + k) for k, a in enumerate("ABCDEFGH")}
+    st = run_batch(frames, cfg)
+    ok = {round(a + b, 3) for a in (0.55, 0.25, 0.21) for b in (0.55, 0.25, 0.21)}
+    for name, s in st["strategies"].items():
+        if not s["closed"]:
+            continue
+        for c in s["closed"]:
+            assert round(c["fee_pct"], 3) in ok, (name, c["fee_pct"])
+            assert abs(c["net_pct"] - (c["gross_pct"] - c["fee_pct"])) < 0.002, (name, c)
+        # el primer cierre paga mas que los ultimos (el volumen sube de tramo)
+        assert s["closed"][0]["fee_pct"] >= s["closed"][-1]["fee_pct"], name
+        # volumen registrado = entradas (cerradas + abiertas) + salidas
+        vol = sum(v for _, v in s["volume_log"])
+        exp = sum(c["qty"] * (1 + 1 + c["gross_pct"] / 100) for c in s["closed"]) + sum(p["qty"] for p in s["positions"].values())
+        assert abs(vol - exp) < 0.06 * (len(s["closed"]) * 2 + len(s["positions"]) + 1), (name, vol, exp)
+    n_low = sum(1 for s in st["strategies"].values() for c in s["closed"] if c["fee_pct"] < 1.0)
+    assert n_low > 50, n_low
+    print("comision por tramos y volumen OK · cierres con tramo reducido:", n_low)
+
+def test_incremental_next_open():
+    cfg = cfg_next()
+    cfg["fee_tiers"] = [{"from": 0, "side": 0.0055}, {"from": 300, "side": 0.0025}]
+    frames = {a: synth(140 + k) for k, a in enumerate("ABCD")}
+    batch = run_batch(frames, cfg)
+    st = core.new_state(cfg)
+    for a, df in frames.items():
+        st["last_candle"][a] = int(df.time.iat[cfg["warmup"] - 1])
+    rng = np.random.default_rng(11)
+    n = len(frames["A"]); cut = cfg["warmup"] + 1
+    while True:
+        core.process_frames(st, {a: df.iloc[:cut].reset_index(drop=True) for a, df in frames.items()}, cfg, [])
+        st = json.loads(json.dumps(st))
+        if cut == n: break
+        cut = min(n, cut + int(rng.choice([0, 1, 1, 1, 2, 5, 12])))
+    for k in cfg["strategies"]:
+        a, b = batch["strategies"][k], st["strategies"][k]
+        assert a["closed"] == b["closed"] and a["positions"] == b["positions"] and a["pending"] == b["pending"] and abs(a["cash"] - b["cash"]) < 1e-9, k
+    print("incremental == de golpe (entrada a apertura siguiente + tramos) OK")
+
 if __name__ == "__main__":
+    test_next_open_reference(); test_fee_tiers_and_volume(); test_incremental_next_open()
     test_max_open()
     test_market_filter()
     test_no_lookahead(); test_reference_and_coverage(); test_incremental_equals_batch()

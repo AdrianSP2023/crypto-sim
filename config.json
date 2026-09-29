@@ -1,8 +1,8 @@
 {
-  "version": "P1-v10",
-  "phase": "P1",
+  "version": "P3-v1",
+  "phase": "P3",
   "enabled": true,
-  "phase_end_utc": "2026-09-29T09:00:00+00:00",
+  "phase_end_utc": "2026-09-30T10:13:00+00:00",
   "candle_minutes": 5,
   "fee_round_trip": 0.011,
   "initial_cash": 924.24,
@@ -123,70 +123,6 @@
       "sl": 0.015,
       "max_hold": 36
     },
-    "c_banda_atr_filtro": {
-      "enabled": true,
-      "fast": 3,
-      "slow": 8,
-      "rsi_n": 8,
-      "rsi_lo": 20,
-      "rsi_hi": 80,
-      "atr_n": 14,
-      "atr_mult": 0.3,
-      "tp": 0.02,
-      "sl": 0.015,
-      "max_hold": 48,
-      "exit_on_cross": false,
-      "base": "c_banda_atr",
-      "market_filter": 0.5
-    },
-    "ruptura_volumen_filtro": {
-      "enabled": true,
-      "lookback": 24,
-      "vol_mult": 2.0,
-      "ema_trend": 50,
-      "tp": 0.025,
-      "sl": 0.012,
-      "max_hold": 24,
-      "base": "ruptura_volumen",
-      "market_filter": 0.5
-    },
-    "macd_momentum_filtro": {
-      "enabled": true,
-      "fast": 12,
-      "slow": 26,
-      "signal": 9,
-      "ema_trend": 50,
-      "tp": 0.02,
-      "sl": 0.015,
-      "max_hold": 36,
-      "base": "macd_momentum",
-      "market_filter": 0.5
-    },
-    "pullback_tendencia_filtro": {
-      "enabled": true,
-      "ema_fast": 20,
-      "ema_mid": 50,
-      "ema_slow": 100,
-      "tp": 0.02,
-      "sl": 0.015,
-      "max_hold": 48,
-      "base": "pullback_tendencia",
-      "market_filter": 0.5
-    },
-    "estocastico_rebote_filtro": {
-      "enabled": true,
-      "k_n": 14,
-      "k_smooth": 3,
-      "d_n": 3,
-      "oversold": 20,
-      "ema_mid": 50,
-      "ema_slow": 100,
-      "tp": 0.018,
-      "sl": 0.015,
-      "max_hold": 36,
-      "base": "estocastico_rebote",
-      "market_filter": 0.5
-    },
     "ruptura_estricta": {
       "enabled": true,
       "base": "ruptura_volumen",
@@ -235,7 +171,64 @@
       "max_hold": 24,
       "base": "ruptura_volumen",
       "max_open": 5
+    },
+    "c_banda_atr_regimen": {
+      "enabled": true,
+      "fast": 3,
+      "slow": 8,
+      "rsi_n": 8,
+      "rsi_lo": 20,
+      "rsi_hi": 80,
+      "atr_n": 14,
+      "atr_mult": 0.3,
+      "tp": 0.02,
+      "sl": 0.015,
+      "max_hold": 48,
+      "exit_on_cross": false,
+      "base": "c_banda_atr",
+      "market_filter": 0.5,
+      "market_filter_ema": 200
+    },
+    "macd_momentum_regimen": {
+      "enabled": true,
+      "fast": 12,
+      "slow": 26,
+      "signal": 9,
+      "ema_trend": 50,
+      "tp": 0.02,
+      "sl": 0.015,
+      "max_hold": 36,
+      "base": "macd_momentum",
+      "market_filter": 0.5,
+      "market_filter_ema": 200
+    },
+    "ruptura_volumen_regimen": {
+      "enabled": true,
+      "lookback": 24,
+      "vol_mult": 2.0,
+      "ema_trend": 50,
+      "tp": 0.025,
+      "sl": 0.012,
+      "max_hold": 24,
+      "base": "ruptura_volumen",
+      "market_filter": 0.5,
+      "market_filter_ema": 200
     }
   },
-  "breadth_ema": 50
+  "breadth_ema": 50,
+  "entry_fill": "next_open",
+  "fee_tiers": [
+    {
+      "from": 0,
+      "side": 0.0055
+    },
+    {
+      "from": 2000,
+      "side": 0.0025
+    },
+    {
+      "from": 50000,
+      "side": 0.0021
+    }
+  ]
 }

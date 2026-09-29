@@ -36,12 +36,19 @@ def mark_value(st, prices):
     return v
 
 
+def fee_txt(cfg):
+    t = cfg.get("fee_tiers")
+    if not t:
+        return f"{cfg['fee_round_trip']*100:.1f}% ida+vuelta"
+    return "por tramos de volumen 30 d (ida+vuelta " + " / ".join(f"{2*x['side']*100:.2f}%" for x in t) + ")"
+
+
 def status_md(state, cfg, warnings, log):
     prices = state.get("last_prices", {})
     L = [f"# Simulación {state['phase']} (sin dinero real)", ""]
     L.append(f"Config `{cfg['version']}` · inicio {state['started_at'][:16].replace('T', ' ')} UTC · "
              f"última vuelta {state['last_loop'][:16].replace('T', ' ')} UTC · vueltas {state['loops']} · "
-             f"{len(state['universe'])} activos · velas {cfg['candle_minutes']} min · comisión {cfg['fee_round_trip']*100:.1f}% ida+vuelta")
+             f"{len(state['universe'])} activos · velas {cfg['candle_minutes']} min · comisión {fee_txt(cfg)}")
     L.append("")
     if warnings:
         L += ["**Avisos:** " + " · ".join(warnings), ""]
@@ -107,4 +114,10 @@ if __name__ == "__main__":
     if "--hours" in sys.argv:
         hours = float(sys.argv[sys.argv.index("--hours") + 1])
     st = json.loads((Path(__file__).parent / "state" / "state.json").read_text())
-    print(analyze(st, hours))
+    if "--ciclos" in sys.argv:
+        sys.path.insert(0, str(Path(__file__).parent / "tools"))
+        import decide_p7
+        cf = json.loads((Path(__file__).parent / "config.json").read_text())
+        decide_p7.print_report(decide_p7.report(st, cf))
+    else:
+        print(analyze(st, hours))

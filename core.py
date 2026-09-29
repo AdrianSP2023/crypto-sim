@@ -51,10 +51,32 @@ def base_of(name, p):
     return p.get("base", name)
 
 
-def market_breadth(frames, cfg):
+def side_fee(st, cfg, ts):
+    """Comisión de UN lado (entrada o salida) según el tramo de Bit2Me, que
+    depende del volumen operado por esta cuenta en los últimos 30 días.
+    Sin `fee_tiers` en la config, se usa la comisión fija (mitad por lado)."""
+    tiers = cfg.get("fee_tiers")
+    if not tiers:
+        return cfg["fee_round_trip"] / 2
+    vol = sum(v for t, v in st.get("volume_log", []) if t > ts - 30 * 86400)
+    fee = tiers[0]["side"]
+    for tr in tiers:
+        if vol >= tr["from"]:
+            fee = tr["side"]
+    return fee
+
+
+def add_volume(st, ts, eur):
+    log = st.setdefault("volume_log", [])
+    log.append([ts, round(eur, 2)])
+    if len(log) > 20000:
+        del log[: len(log) - 20000]
+
+
+def market_breadth(frames, cfg, n=None):
     """Fracción de activos con cierre > EMA(n) en cada vela (timestamp -> 0..1).
     Solo usa datos hasta esa vela (la EMA es causal)."""
-    n = cfg.get("breadth_ema", 50)
+    n = n or cfg.get("breadth_ema", 50)
     up, tot = {}, {}
     for df in frames.values():
         above = (df.close > ema(df.close, n)).to_numpy()
@@ -82,7 +104,8 @@ def process_frames(state, frames, cfg, log, spreads=None, events=None):
     spreads = spreads or {}
     ensure_strategies(state, cfg)
     prepared = prepare(frames, cfg)
-    breadth = market_breadth(frames, cfg)
+    ns = {cfg.get("breadth_ema", 50)} | {p["market_filter_ema"] for p in cfg["strategies"].values() if p.get("market_filter_ema")}
+    breadths = {n: market_breadth(frames, cfg, n) for n in ns}
     evs = []
     for asset, df in frames.items():
         last = state["last_candle"].get(asset)
@@ -93,12 +116,13 @@ def process_frames(state, frames, cfg, log, spreads=None, events=None):
         evs += [(int(df.time.iat[i]), asset, i) for i in idx]
     order = list(frames)
     for ct, asset, i in sorted(evs, key=lambda e: (e[0], order.index(e[1]))):
-        step(state, cfg, asset, prepared[asset], i, log, spreads.get(asset, 0.0), events, breadth.get(ct))
+        step(state, cfg, asset, prepared[asset], i, log, spreads.get(asset, 0.0), events, breadths, ct)
         state["last_candle"][asset] = ct
 
 
-def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadth=None):
-    fee = cfg["fee_round_trip"]
+def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadths=None, bt=None):
+    breadths = breadths or {}
+    next_open = cfg.get("entry_fill", "close") == "next_open"
     csec = cfg["candle_minutes"] * 60
     for name, p in cfg["strategies"].items():
         st = state["strategies"][name]
@@ -107,6 +131,31 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadth=None
         close_t = ct + csec
         prep, entry, exit_signal = REGISTRY[base_of(name, p)]
         pos = st["positions"].get(asset)
+
+        pend = st.setdefault("pending", {}).pop(asset, None) if next_open else None
+        if pos is None and pend is not None and ct == pend["signal_candle"] + csec:
+            mo = p.get("max_open")
+            if not (mo and len(st["positions"]) >= mo):
+                equity_cost = st["cash"] + sum(x["qty"] for x in st["positions"].values())
+                qty = min(st["cash"], cfg["position_pct"] * equity_cost)
+                if qty < 5:
+                    st["skipped_no_cash"] += 1
+                else:
+                    st["cash"] -= qty
+                    fee_in = side_fee(st, cfg, ct)
+                    add_volume(st, ct, qty)
+                    pos = st["positions"][asset] = {
+                        "entry_price": float(d.open.iat[i]), "entry_candle": pend["signal_candle"], "qty": qty,
+                        "tp": p["tp"], "sl": p["sl"], "max_hold": p["max_hold"],
+                        "spread_in": spread, "version": cfg["version"], "fee_in": fee_in,
+                    }
+                    log.append(f"{iso(ct)} [{name}] ENTRADA {asset} @ {d.open.iat[i]:.6g} ({qty:.2f} €, apertura)")
+                    if events is not None:
+                        events.append({"type": "entry", "asset": asset, "strategy": name, "version": cfg["version"],
+                                       "t": iso(ct), "ts": ct, "price": float(d.open.iat[i]), "qty": round(qty, 2),
+                                       "spread": round(spread, 5)})
+            else:
+                st["blocked_exposure"] = st.get("blocked_exposure", 0) + 1
 
         if pos is not None:
             if ct <= pos["entry_candle"]:
@@ -127,6 +176,10 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadth=None
             if px is None:
                 continue
             gross = px / e - 1
+            fee_in = pos.get("fee_in", cfg["fee_round_trip"] / 2)
+            fee_out = side_fee(st, cfg, close_t)
+            add_volume(st, close_t, pos["qty"] * (1 + gross))
+            fee = fee_in + fee_out
             net = gross - fee
             net_sp = net - (pos["spread_in"] + spread) / 2
             pnl = pos["qty"] * net
@@ -139,6 +192,7 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadth=None
                 "gross_pct": round(gross * 100, 3), "net_pct": round(net * 100, 3),
                 "net_spread_pct": round(net_sp * 100, 3), "pnl_eur": round(pnl, 3),
                 "reason": why, "candles": int((ct - pos["entry_candle"]) // csec),
+                "fee_pct": round(fee * 100, 3),
             }
             st["closed"].append(rec)
             del st["positions"][asset]
@@ -152,8 +206,12 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadth=None
         if not entry(d, i, p):
             continue
         mf = p.get("market_filter")
+        breadth = breadths.get(p.get("market_filter_ema") or cfg.get("breadth_ema", 50), {}).get(bt)
         if mf and (breadth is None or breadth < mf):
             st["blocked_filter"] += 1
+            continue
+        if next_open:
+            st["pending"][asset] = {"signal_candle": ct}
             continue
         mo = p.get("max_open")
         if mo and len(st["positions"]) >= mo:
@@ -169,9 +227,28 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadth=None
             "entry_price": float(d.close.iat[i]), "entry_candle": ct, "qty": qty,
             "tp": p["tp"], "sl": p["sl"], "max_hold": p["max_hold"],
             "spread_in": spread, "version": cfg["version"],
+            "fee_in": side_fee(st, cfg, close_t),
         }
+        add_volume(st, close_t, qty)
         log.append(f"{iso(close_t)} [{name}] ENTRADA {asset} @ {d.close.iat[i]:.6g} ({qty:.2f} €)")
         if events is not None:
             events.append({"type": "entry", "asset": asset, "strategy": name, "version": cfg["version"],
                            "t": iso(close_t), "ts": close_t, "price": float(d.close.iat[i]), "qty": round(qty, 2),
                            "spread": round(spread, 5)})
+
+
+def equity_marked(state, cfg, prices):
+    """Patrimonio de cada estrategia valorando las abiertas a mercado y descontando
+    las comisiones de entrada (ya pagada al cerrar) y de salida estimada."""
+    out = {}
+    for name, st in state["strategies"].items():
+        v = st["cash"]
+        for a, p in st["positions"].items():
+            px = prices.get(a)
+            if px is None:
+                v += p["qty"]
+                continue
+            fee_out = side_fee(st, cfg, int(datetime.now(timezone.utc).timestamp()))
+            v += p["qty"] * (1 + (px / p["entry_price"] - 1) - p.get("fee_in", cfg["fee_round_trip"] / 2) - fee_out)
+        out[name] = round(v, 4)
+    return out

@@ -184,9 +184,20 @@ def one_loop(state, cfg):
             warnings.append(f"{x['asset']}: sin datos ({e})")
         time.sleep(0.6)  # ~1 petición/s: límite de la API pública de Kraken
     core.process_frames(state, frames, cfg, log, spreads, events)
+    prev = state.get("last_loop")
+    if prev:
+        gap = (now() - datetime.fromisoformat(prev)).total_seconds() / 60
+        if gap > 15:
+            state.setdefault("loop_gaps", []).append([ts, round(gap, 1)])
+            warnings.append(f"hueco de {gap:.0f} min entre vueltas")
     state["loops"] += 1
     state["last_loop"] = now().isoformat()
     state["last_prices"] = {a: float(df.close.iat[-1]) for a, df in frames.items()}
+    snaps = state.setdefault("snapshots", [])
+    if not snaps or ts - snaps[-1]["ts"] >= 3600 - 120:
+        snaps.append({"ts": ts, "prices": {a: round(x, 10) for a, x in state["last_prices"].items()},
+                      "equity": core.equity_marked(state, cfg, state["last_prices"])})
+        del snaps[:-24 * 8]
     state["last_warnings"] = warnings
     return warnings, log, events
 
