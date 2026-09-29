@@ -192,3 +192,12 @@ Solo registro (no cambia ninguna estrategia ni reinicia conteos).
   después cada vuelta añade lo nuevo (sin duplicar; contador `state["velas_last_1"]`). Coste: +~40 s por vuelta (60
   peticiones más, con límite de 150 s). Se puede apagar con `"record_1m": false` en `config.json`. ~5 MB/día.
 - Objetivo: poder probar entradas/salidas evaluadas cada minuto (A/B en simulación) con datos reales.
+
+## Datos e histórico (sin cambio de versión) — 2026-09-29 ~13:30 UTC
+
+- **Histórico de Kraken completo** (run `full`, 48 min): `datos/historico_1h/` con 128 pares (EUR y USD) en velas de 1 h
+  desde 2013 hasta 30/06/2026, más `_informe.txt` (manifiesto: 1.659 pares, 1.873 M de trades). Verificado contra
+  máximos y mínimos conocidos de BTC; 0 velas con OHLC incoherente. Repo: ~110 MB.
+- **`tools/analisis_historico.py`** (contraste de hipótesis H1-H7, modo `robustez`) y
+  `datos/eventos/desplomes_4h_12pct.csv` (1.084 eventos de caída ≥ 12 % en 4 h en pares USD y EUR).
+- Resultados en `claude/contraste-historico-kraken.md` (proyecto). Ninguna estrategia del motor cambia.
