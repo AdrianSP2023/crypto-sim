@@ -1,0 +1,103 @@
+fecha_utc,activo,direccion_esperada,ret_pre24h_pct,ret_24h_pct,ret_3d_pct,ret_7d_pct,rareza_24h_pct,evento,confianza,fuente
+2017-12-18,BTC,0,-2.25,-0.46,-14.27,-27.28,20.3,CME lanza futuros de Bitcoin,Seguro,conocimiento general
+2018-01-16,BTC,-1,-0.75,-15.25,-17.07,-20.55,99.6,Rumores de prohibición del trading cripto en Corea del Sur,Probable,conocimiento general (fecha por verificar)
+2018-01-16,ETH,-1,-6.32,-16.49,-19.6,-21.4,99.4,Rumores de prohibición del trading cripto en Corea del Sur,Probable,conocimiento general (fecha por verificar)
+2018-01-16,XRP,-1,-10.32,-28.92,-4.85,-19.28,99.6,Rumores de prohibición del trading cripto en Corea del Sur,Probable,conocimiento general (fecha por verificar)
+2019-04-02,BTC,0,1.04,18.49,18.56,27.73,99.9,Subida súbita de BTC (~+18 %) sin noticia clara,Probable,conocimiento general (fecha por verificar)
+2019-04-02,ETH,0,-0.18,16.73,11.76,28.09,99.4,Subida súbita de BTC (~+18 %) sin noticia clara,Probable,conocimiento general (fecha por verificar)
+2019-06-18,BTC,1,4.0,-2.73,2.13,18.06,71.2,Facebook anuncia Libra,Probable,conocimiento general (fecha por verificar)
+2019-06-18,ETH,1,1.92,-3.32,-0.64,13.41,67.5,Facebook anuncia Libra,Probable,conocimiento general (fecha por verificar)
+2019-06-18,XRP,1,4.37,-4.6,-3.96,5.5,78.6,Facebook anuncia Libra,Probable,conocimiento general (fecha por verificar)
+2020-03-12,BTC,-1,0.72,-38.94,-35.01,-31.83,100.0,Jueves negro del COVID: caída global de activos de riesgo,Seguro,conocimiento general
+2020-03-12,ETH,-1,-2.67,-44.16,-37.23,-39.12,100.0,Jueves negro del COVID: caída global de activos de riesgo,Seguro,conocimiento general
+2020-03-12,XRP,-1,-1.97,-34.14,-29.71,-28.64,99.8,Jueves negro del COVID: caída global de activos de riesgo,Seguro,conocimiento general
+2020-05-11,BTC,0,-8.63,-1.67,6.89,10.97,54.5,"Halving de Bitcoin (recompensa 12,5 -> 6,25 BTC)",Seguro,conocimiento general
+2020-10-21,BTC,1,1.43,7.44,8.5,14.46,95.4,PayPal anuncia compra/venta de cripto,Seguro,conocimiento general
+2020-10-21,ETH,1,-2.82,6.15,11.15,9.45,87.0,PayPal anuncia compra/venta de cripto,Seguro,conocimiento general
+2020-12-22,XRP,-1,-7.49,-13.21,-34.36,-51.92,97.0,La SEC demanda a Ripple (XRP),Seguro,https://www.ccn.com/education/crypto/ripple-vs-sec-timeline-and-outcomes/
+2020-12-22,BTC,-1,-3.26,4.9,4.41,18.99,88.4,La SEC demanda a Ripple (XRP),Seguro,https://www.ccn.com/education/crypto/ripple-vs-sec-timeline-and-outcomes/
+2021-01-29,BTC,1,9.88,2.49,-0.92,10.61,68.1,Musk pone #bitcoin en su biografía de Twitter,Probable,conocimiento general (fecha por verificar)
+2021-01-29,DOGE,1,393.89,24.36,0.49,43.99,98.9,Musk pone #bitcoin en su biografía de Twitter,Probable,conocimiento general (fecha por verificar)
+2021-02-04,DOGE,1,19.55,41.83,54.45,94.42,99.6,Musk: «Dogecoin is the people's crypto»,Seguro,https://news.bitcoin.com/doge-token-pumps-after-elon-musk-tweets-dogecoin-is-the-peoples-crypto/
+2021-02-04,BTC,1,6.12,-1.84,4.21,19.05,57.7,Musk: «Dogecoin is the people's crypto»,Seguro,https://news.bitcoin.com/doge-token-pumps-after-elon-musk-tweets-dogecoin-is-the-peoples-crypto/
+2021-02-08,BTC,1,-0.97,19.42,15.36,25.14,99.9,Tesla anuncia compra de 1.500 M$ en BTC,Seguro,conocimiento general
+2021-02-08,ETH,1,-3.75,8.43,7.89,11.66,93.7,Tesla anuncia compra de 1.500 M$ en BTC,Seguro,conocimiento general
+2021-04-14,BTC,0,6.29,-0.97,-3.35,-11.15,37.2,Coinbase sale a bolsa (salida directa),Seguro,conocimiento general
+2021-04-14,ETH,0,7.58,5.76,5.5,1.41,85.2,Coinbase sale a bolsa (salida directa),Seguro,conocimiento general
+2021-04-28,DOGE,1,0.44,18.74,24.19,97.68,98.1,Tuits de Musk y Mark Cuban sobre Dogecoin,Seguro,https://www.cnbc.com/2021/04/28/dogecoin-price-surges-after-tweets-from-elon-musk-and-mark-cuban.html
+2021-04-28,BTC,1,1.9,-0.33,4.9,-3.34,14.7,Tuits de Musk y Mark Cuban sobre Dogecoin,Seguro,https://www.cnbc.com/2021/04/28/dogecoin-price-surges-after-tweets-from-elon-musk-and-mark-cuban.html
+2021-05-08,DOGE,-1,18.67,-7.7,-34.74,-18.91,88.8,Musk en Saturday Night Live llama a Dogecoin «hustle»,Seguro,https://www.fortune.com/2021/05/09/dogecoin-price-stock-buy-elon-musk-snl-host
+2021-05-08,BTC,-1,1.7,2.74,-2.61,-13.04,71.4,Musk en Saturday Night Live llama a Dogecoin «hustle»,Seguro,https://www.fortune.com/2021/05/09/dogecoin-price-stock-buy-elon-musk-snl-host
+2021-05-12,BTC,-1,1.54,-12.77,-12.07,-24.41,99.2,Tesla suspende pagos con Bitcoin (minería y energía),Seguro,conocimiento general
+2021-05-12,DOGE,-1,9.85,-20.81,13.12,-3.69,98.5,Tesla suspende pagos con Bitcoin (minería y energía),Seguro,conocimiento general
+2021-05-19,BTC,-1,-1.51,-14.34,-12.97,-10.51,99.5,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %,Seguro,conocimiento general (fecha exacta por verificar)
+2021-05-19,ETH,-1,2.82,-27.65,-27.95,-19.77,99.9,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %,Seguro,conocimiento general (fecha exacta por verificar)
+2021-05-19,DOGE,-1,-2.4,-30.73,-24.66,-27.23,99.4,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %,Seguro,conocimiento general (fecha exacta por verificar)
+2021-05-19,XRP,-1,6.48,-33.29,-36.62,-38.65,99.7,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %,Seguro,conocimiento general (fecha exacta por verificar)
+2021-06-18,BTC,-1,-0.68,-5.92,-6.52,-8.96,92.2,Sichuan ordena cerrar mineros de Bitcoin (salida de hashrate de China),Probable,conocimiento general (fecha por verificar)
+2021-09-24,BTC,-1,3.05,-4.58,-3.75,-2.43,86.8,China declara ilegales todas las transacciones con cripto,Probable,conocimiento general (fecha por verificar)
+2021-09-24,ETH,-1,2.51,-7.13,-2.98,-4.9,90.5,China declara ilegales todas las transacciones con cripto,Probable,conocimiento general (fecha por verificar)
+2021-11-10,BTC,0,-0.9,-2.96,-4.18,-10.18,73.9,"IPC de EE. UU. de 6,2 %; BTC marca máximo histórico de 2021 (~69 k$)",Probable,conocimiento general (fecha por verificar)
+2021-11-10,ETH,0,-1.65,-2.05,-1.33,-11.0,50.3,"IPC de EE. UU. de 6,2 %; BTC marca máximo histórico de 2021 (~69 k$)",Probable,conocimiento general (fecha por verificar)
+2022-05-09,BTC,-1,-4.06,-11.61,-14.78,-8.02,98.9,Colapso de TerraUSD/LUNA (LUNA no está en Kraken USD),Seguro,conocimiento general
+2022-05-09,ETH,-1,-4.42,-11.51,-17.6,-14.89,97.5,Colapso de TerraUSD/LUNA (LUNA no está en Kraken USD),Seguro,conocimiento general
+2022-06-13,BTC,-1,-6.38,-15.47,-15.09,-22.64,99.7,Celsius congela retiros; miedo a contagio (3AC),Seguro,conocimiento general
+2022-06-13,ETH,-1,-6.28,-15.59,-13.77,-21.39,99.2,Celsius congela retiros; miedo a contagio (3AC),Seguro,conocimiento general
+2022-09-15,ETH,0,4.13,-10.19,-10.31,-24.03,96.3,The Merge de Ethereum (paso a prueba de participación),Seguro,conocimiento general
+2022-10-28,DOGE,1,5.71,8.87,52.89,59.42,91.4,Musk cierra la compra de Twitter; DOGE se dispara,Probable,conocimiento general (fecha por verificar)
+2022-10-28,BTC,1,-2.36,1.56,1.67,-0.38,52.3,Musk cierra la compra de Twitter; DOGE se dispara,Probable,conocimiento general (fecha por verificar)
+2022-11-08,BTC,-1,-1.5,-9.97,-14.76,-19.48,98.1,Colapso de FTX (SOL muy ligada a FTX/Alameda),Seguro,conocimiento general
+2022-11-08,ETH,-1,-0.03,-14.88,-17.4,-20.83,99.0,Colapso de FTX (SOL muy ligada a FTX/Alameda),Seguro,conocimiento general
+2022-11-08,SOL,-1,-9.17,-17.85,-40.47,-52.75,99.0,Colapso de FTX (SOL muy ligada a FTX/Alameda),Seguro,conocimiento general
+2022-11-08,XRP,-1,-1.15,-12.74,-15.3,-19.07,96.7,Colapso de FTX (SOL muy ligada a FTX/Alameda),Seguro,conocimiento general
+2023-03-11,BTC,1,-0.68,1.94,19.7,35.71,59.5,Quiebra de Silicon Valley Bank y desanclaje de USDC; BTC sube como refugio,Seguro,conocimiento general
+2023-03-11,ETH,1,-0.57,3.73,17.48,25.4,71.6,Quiebra de Silicon Valley Bank y desanclaje de USDC; BTC sube como refugio,Seguro,conocimiento general
+2023-06-05,BTC,-1,0.19,-5.17,-2.84,-4.4,89.6,"La SEC demanda a Binance y, al día siguiente, a Coinbase",Seguro,conocimiento general
+2023-06-05,ETH,-1,-0.11,-4.2,-3.05,-7.25,75.5,"La SEC demanda a Binance y, al día siguiente, a Coinbase",Seguro,conocimiento general
+2023-06-05,SOL,-1,2.92,-8.3,-14.62,-28.64,90.6,"La SEC demanda a Binance y, al día siguiente, a Coinbase",Seguro,conocimiento general
+2023-06-05,ADA,-1,0.45,-6.74,-14.57,-27.67,86.6,"La SEC demanda a Binance y, al día siguiente, a Coinbase",Seguro,conocimiento general
+2023-06-15,BTC,1,-3.12,1.8,5.52,19.38,57.1,BlackRock solicita un ETF de Bitcoin al contado,Seguro,conocimiento general
+2023-06-15,ETH,1,-5.1,0.91,4.66,14.44,26.7,BlackRock solicita un ETF de Bitcoin al contado,Seguro,conocimiento general
+2023-07-13,XRP,1,-0.88,72.95,51.63,74.02,100.0,Sentencia Torres: XRP no es valor en ventas públicas,Seguro,https://www.ccn.com/education/crypto/ripple-vs-sec-timeline-and-outcomes/
+2023-07-13,BTC,1,-0.75,3.59,-0.36,-1.59,79.8,Sentencia Torres: XRP no es valor en ventas públicas,Seguro,https://www.ccn.com/education/crypto/ripple-vs-sec-timeline-and-outcomes/
+2023-08-29,BTC,1,0.09,6.21,-0.66,-1.16,93.0,Grayscale gana a la SEC (camino a los ETF),Seguro,conocimiento general
+2023-08-29,ETH,1,-0.32,4.66,-0.4,-1.41,79.0,Grayscale gana a la SEC (camino a los ETF),Seguro,conocimiento general
+2023-10-16,BTC,1,1.16,4.96,4.29,10.37,88.6,Falsa noticia de aprobación del ETF de BlackRock; se desmiente,Seguro,conocimiento general
+2023-10-16,ETH,1,0.19,2.71,0.37,6.75,60.1,Falsa noticia de aprobación del ETF de BlackRock; se desmiente,Seguro,conocimiento general
+2024-01-10,BTC,1,-1.83,1.16,-7.22,-6.49,42.6,La SEC aprueba los ETF de Bitcoin al contado (¿vender la noticia?),Seguro,conocimiento general
+2024-01-10,ETH,1,0.52,10.19,7.58,10.28,96.3,La SEC aprueba los ETF de Bitcoin al contado (¿vender la noticia?),Seguro,conocimiento general
+2024-04-20,BTC,0,0.54,1.79,4.67,-0.15,56.9,"Halving de Bitcoin (recompensa 6,25 -> 3,125 BTC)",Seguro,conocimiento general
+2024-05-20,ETH,1,-1.59,19.19,21.65,24.52,99.7,Giro sorpresa: la SEC admitirá ETF de Ethereum,Seguro,conocimiento general
+2024-05-20,BTC,1,-0.98,7.77,4.35,3.34,95.9,Giro sorpresa: la SEC admitirá ETF de Ethereum,Seguro,conocimiento general
+2024-08-05,BTC,-1,-4.26,-7.05,-5.18,1.06,94.7,Caída global por el cierre del carry trade del yen,Seguro,conocimiento general
+2024-08-05,ETH,-1,-7.4,-10.03,-12.81,-4.99,96.1,Caída global por el cierre del carry trade del yen,Seguro,conocimiento general
+2024-08-05,SOL,-1,-2.93,-6.11,4.51,2.39,81.8,Caída global por el cierre del carry trade del yen,Seguro,conocimiento general
+2024-11-06,BTC,1,2.36,9.02,10.33,26.96,97.3,Trump gana las elecciones de EE. UU.,Seguro,conocimiento general
+2024-11-06,ETH,1,1.1,12.43,22.32,34.09,98.0,Trump gana las elecciones de EE. UU.,Seguro,conocimiento general
+2024-11-06,DOGE,1,7.34,15.64,18.82,123.6,97.3,Trump gana las elecciones de EE. UU.,Seguro,conocimiento general
+2024-11-06,XRP,1,2.16,5.49,7.79,37.03,83.7,Trump gana las elecciones de EE. UU.,Seguro,conocimiento general
+2024-12-05,BTC,1,2.96,-1.69,1.16,2.45,54.9,BTC supera los 100.000 $,Seguro,conocimiento general
+2024-12-05,ETH,1,6.26,-1.38,4.06,-0.27,37.6,BTC supera los 100.000 $,Seguro,conocimiento general
+2024-12-05,XRP,1,-5.95,-4.89,10.58,1.37,80.3,BTC supera los 100.000 $,Seguro,conocimiento general
+2025-01-18,BTC,0,4.11,0.28,-1.85,0.72,12.9,Lanzamiento de la memecoin de Trump (drenó liquidez del resto),Seguro,conocimiento general
+2025-01-18,SOL,0,4.04,19.09,10.16,15.37,99.2,Lanzamiento de la memecoin de Trump (drenó liquidez del resto),Seguro,conocimiento general
+2025-01-18,DOGE,0,10.37,-4.68,-14.71,-15.56,75.1,Lanzamiento de la memecoin de Trump (drenó liquidez del resto),Seguro,conocimiento general
+2025-02-21,BTC,-1,1.77,-2.28,-2.07,-13.88,65.2,Hackeo de Bybit (~1.500 M$ en ETH),Seguro,conocimiento general
+2025-02-21,ETH,-1,0.9,-2.93,2.93,-15.86,63.1,Hackeo de Bybit (~1.500 M$ en ETH),Seguro,conocimiento general
+2025-03-02,XRP,1,2.03,34.27,12.14,6.18,99.8,"Trump anuncia una reserva estratégica cripto que cita XRP, SOL y ADA",Seguro,conocimiento general
+2025-03-02,SOL,1,-3.0,24.41,0.79,-4.66,99.7,"Trump anuncia una reserva estratégica cripto que cita XRP, SOL y ADA",Seguro,conocimiento general
+2025-03-02,ADA,1,4.11,72.28,42.77,22.16,100.0,"Trump anuncia una reserva estratégica cripto que cita XRP, SOL y ADA",Seguro,conocimiento general
+2025-03-02,BTC,1,2.03,9.61,1.43,0.17,97.8,"Trump anuncia una reserva estratégica cripto que cita XRP, SOL y ADA",Seguro,conocimiento general
+2025-03-19,XRP,1,-2.28,11.5,4.16,7.23,96.0,La SEC abandona su apelación contra Ripple,Probable,https://www.ccn.com/ripple-vs-sec-lawsuit-decision-xrp-court-ruling-timing-details-in-full/ (fecha por verificar)
+2025-04-03,BTC,-1,-3.16,0.76,1.21,0.06,30.6,Aranceles del «Día de la Liberación» de Trump,Seguro,conocimiento general
+2025-04-03,ETH,-1,-5.89,1.26,0.7,-6.92,35.1,Aranceles del «Día de la Liberación» de Trump,Seguro,conocimiento general
+2025-04-03,SOL,-1,-7.4,-0.21,2.51,1.48,4.7,Aranceles del «Día de la Liberación» de Trump,Seguro,conocimiento general
+2025-04-09,BTC,1,-3.61,8.23,9.37,9.65,96.5,Trump pausa 90 días los aranceles,Seguro,conocimiento general
+2025-04-09,ETH,1,-5.13,13.37,6.4,7.95,98.5,Trump pausa 90 días los aranceles,Seguro,conocimiento general
+2025-04-09,SOL,1,-1.41,12.97,15.19,19.64,97.4,Trump pausa 90 días los aranceles,Seguro,conocimiento general
+2025-10-10,BTC,-1,-1.32,-7.15,-5.4,-11.11,94.9,Arancel del 100 % a China: mayor liquidación de la historia (~19.000 M$),Seguro,https://www.cnn.com/2025/10/11/business/trump-tariffs-crypto-selloff
+2025-10-10,ETH,-1,-3.45,-12.2,-4.89,-10.87,97.9,Arancel del 100 % a China: mayor liquidación de la historia (~19.000 M$),Seguro,https://www.cnn.com/2025/10/11/business/trump-tariffs-crypto-selloff
+2025-10-10,SOL,-1,-3.52,-14.54,-10.7,-16.34,98.2,Arancel del 100 % a China: mayor liquidación de la historia (~19.000 M$),Seguro,https://www.cnn.com/2025/10/11/business/trump-tariffs-crypto-selloff
+2025-10-10,DOGE,-1,-2.73,-22.0,-16.47,-24.2,98.6,Arancel del 100 % a China: mayor liquidación de la historia (~19.000 M$),Seguro,https://www.cnn.com/2025/10/11/business/trump-tariffs-crypto-selloff
+2025-10-10,XRP,-1,-2.63,-15.32,-9.76,-16.94,97.8,Arancel del 100 % a China: mayor liquidación de la historia (~19.000 M$),Seguro,https://www.cnn.com/2025/10/11/business/trump-tariffs-crypto-selloff
+2025-10-10,ADA,-1,-2.74,-19.69,-14.02,-20.92,99.2,Arancel del 100 % a China: mayor liquidación de la historia (~19.000 M$),Seguro,https://www.cnn.com/2025/10/11/business/trump-tariffs-crypto-selloff

@@ -1,0 +1,199 @@
+Catálogo de eventos y grandes movimientos · datos Kraken USD 1 h · BTC 2016-01-01 -> 2026-07-01
+Activos disponibles y desde cuándo: BTC 2016-01-01, ETH 2016-01-01, XRP 2017-05-18, DOGE 2019-12-19, LTC 2016-01-01, ADA 2018-09-28, SOL 2021-06-17, SHIB 2021-11-30, DOT 2020-08-18, LINK 2019-09-25, BCH 2017-08-01, XMR 2017-01-02, TRX 2020-03-05, PEPE 2023-05-16, POL 2023-12-21
+
+== A. Ciclos de BTC (movimientos de al menos 30 %, cierres diarios UTC) ==
+  2017-01-04  máx       1,143 $
+  2017-01-11  mín         790 $  (-31 % desde el anterior, 7 días)
+  2017-06-11  máx       2,891 $  (+266 % desde el anterior, 151 días)
+  2017-07-16  mín       1,929 $  (-33 % desde el anterior, 35 días)
+  2017-09-01  máx       4,875 $  (+153 % desde el anterior, 47 días)
+  2017-09-14  mín       3,318 $  (-32 % desde el anterior, 13 días)
+  2017-12-16  máx      19,342 $  (+483 % desde el anterior, 93 días)
+  2017-12-30  mín      12,913 $  (-33 % desde el anterior, 14 días)
+  2018-01-06  máx      17,040 $  (+32 % desde el anterior, 7 días)
+  2018-02-05  mín       6,750 $  (-60 % desde el anterior, 30 días)
+  2018-03-05  máx      11,558 $  (+71 % desde el anterior, 28 días)
+  2018-04-06  mín       6,525 $  (-44 % desde el anterior, 32 días)
+  2018-05-05  máx       9,788 $  (+50 % desde el anterior, 29 días)
+  2018-06-28  mín       5,939 $  (-39 % desde el anterior, 54 días)
+  2018-07-24  máx       8,313 $  (+40 % desde el anterior, 26 días)
+  2018-12-16  mín       3,192 $  (-62 % desde el anterior, 145 días)
+  2019-07-09  máx      12,587 $  (+294 % desde el anterior, 205 días)
+  2019-12-17  mín       6,580 $  (-48 % desde el anterior, 161 días)
+  2020-02-14  máx      10,371 $  (+58 % desde el anterior, 59 días)
+  2020-03-16  mín       4,941 $  (-52 % desde el anterior, 31 días)
+  2021-04-15  máx      63,349 $  (+1182 % desde el anterior, 395 días)
+  2021-07-20  mín      29,539 $  (-53 % desde el anterior, 96 días)
+  2021-11-09  máx      67,320 $  (+128 % desde el anterior, 112 días)
+  2022-01-22  mín      34,882 $  (-48 % desde el anterior, 74 días)
+  2022-03-28  máx      47,551 $  (+36 % desde el anterior, 65 días)
+  2022-11-21  mín      15,725 $  (-67 % desde el anterior, 238 días)
+  2025-10-06  máx     125,074 $  (+695 % desde el anterior, 1050 días)
+  2026-06-30  mín*     58,520 $  (-53 % desde el anterior, 267 días)
+
+== B. Mayores movimientos de 24 h detectados automáticamente (cierre de la ventana; sin solapes ±72 h) ==
+  -- BTC: 8 mayores movimientos de 24 h --
+     2018-01-18 16:00   +27.5 %   ≈ Rumores de prohibición del trading cripto en Corea del Sur (2018-01-16)
+     2018-02-07 08:00   +30.1 %   sin evento del catálogo cercano
+     2019-06-26 20:00   +21.7 %   sin evento del catálogo cercano
+     2019-10-26 02:00   +35.5 %   sin evento del catálogo cercano
+     2020-03-13 02:00   -45.2 %   ≈ Jueves negro del COVID: caída global de activos de riesgo (2020-03-12)
+     2020-03-20 11:00   +22.8 %   sin evento del catálogo cercano
+     2021-02-09 07:00   +23.3 %   ≈ Tesla anuncia compra de 1.500 M$ en BTC (2021-02-08)
+     2021-05-20 13:00   +22.9 %   ≈ China refuerza prohibición cripto a bancos y frena la minería: caída del 30 % (2021-05-19)
+  -- ETH: 8 mayores movimientos de 24 h --
+     2018-01-18 16:00   +40.5 %   ≈ Rumores de prohibición del trading cripto en Corea del Sur (2018-01-16)
+     2018-02-02 12:00   -26.5 %   sin evento del catálogo cercano
+     2018-02-07 08:00   +36.3 %   sin evento del catálogo cercano
+     2020-03-13 02:00   -47.0 %   ≈ Jueves negro del COVID: caída global de activos de riesgo (2020-03-12)
+     2021-01-04 07:00   +38.8 %   sin evento del catálogo cercano
+     2021-05-20 01:00   -33.3 %   ≈ China refuerza prohibición cripto a bancos y frena la minería: caída del 30 % (2021-05-19)
+     2021-05-24 20:00   +34.5 %   sin evento del catálogo cercano
+     2022-06-19 21:00   +26.5 %   sin evento del catálogo cercano
+  -- XRP: 8 mayores movimientos de 24 h --
+     2018-01-18 16:00   +91.2 %   ≈ Rumores de prohibición del trading cripto en Corea del Sur (2018-01-16)
+     2018-02-10 08:00   +53.7 %   sin evento del catálogo cercano
+     2018-09-21 15:00   +92.5 %   sin evento del catálogo cercano
+     2020-11-24 06:00   +59.8 %   sin evento del catálogo cercano
+     2021-01-07 12:00   +56.9 %   sin evento del catálogo cercano
+     2021-01-31 00:00   +56.9 %   ≈ Musk pone #bitcoin en su biografía de Twitter (2021-01-29)
+     2021-04-05 22:00   +46.1 %   sin evento del catálogo cercano
+     2023-07-13 20:00   +75.6 %   ≈ Sentencia Torres: XRP no es valor en ventas públicas (2023-07-13)
+  -- DOGE: 8 mayores movimientos de 24 h --
+     2019-12-20 19:00   -91.2 %   sin evento del catálogo cercano
+     2020-07-08 21:00   +77.0 %   sin evento del catálogo cercano
+     2021-01-02 19:00  +127.6 %   sin evento del catálogo cercano
+     2021-01-29 04:00  +940.5 %   ≈ Musk pone #bitcoin en su biografía de Twitter (2021-01-29)
+     2021-02-04 12:00   +67.6 %   ≈ Musk: «Dogecoin is the people's crypto» (2021-02-04)
+     2021-04-16 14:00  +191.6 %   ≈ Coinbase sale a bolsa (salida directa) (2021-04-14)
+     2021-05-05 06:00   +56.9 %   ≈ Musk en Saturday Night Live llama a Dogecoin «hustle» (2021-05-08)
+     2022-10-30 06:00   +64.0 %   ≈ Musk cierra la compra de Twitter; DOGE se dispara (2022-10-28)
+
+== C. Cada evento: rentabilidad % antes y después (t0 = 00:00 UTC del día; dir = efecto esperado de la noticia) ==
+fecha      activo dir    -24h    +24h     +3d     +7d rareza24  evento [confianza]
+2017-12-18 BTC    +0   -2.3   -0.5  -14.3  -27.3      20%  CME lanza futuros de Bitcoin [Seguro]
+2018-01-16 BTC    -1   -0.8  -15.2  -17.1  -20.6     100%  Rumores de prohibición del trading cripto en Corea del Sur [Probable]
+2018-01-16 ETH    -1   -6.3  -16.5  -19.6  -21.4      99%  Rumores de prohibición del trading cripto en Corea del Sur [Probable]
+2018-01-16 XRP    -1  -10.3  -28.9   -4.9  -19.3     100%  Rumores de prohibición del trading cripto en Corea del Sur [Probable]
+2019-04-02 BTC    +0   +1.0  +18.5  +18.6  +27.7     100%  Subida súbita de BTC (~+18 %) sin noticia clara [Probable]
+2019-04-02 ETH    +0   -0.2  +16.7  +11.8  +28.1      99%  Subida súbita de BTC (~+18 %) sin noticia clara [Probable]
+2019-06-18 BTC    +1   +4.0   -2.7   +2.1  +18.1      71%  Facebook anuncia Libra [Probable]
+2019-06-18 ETH    +1   +1.9   -3.3   -0.6  +13.4      68%  Facebook anuncia Libra [Probable]
+2019-06-18 XRP    +1   +4.4   -4.6   -4.0   +5.5      79%  Facebook anuncia Libra [Probable]
+2020-03-12 BTC    -1   +0.7  -38.9  -35.0  -31.8     100%  Jueves negro del COVID: caída global de activos de riesgo [Seguro]
+2020-03-12 ETH    -1   -2.7  -44.2  -37.2  -39.1     100%  Jueves negro del COVID: caída global de activos de riesgo [Seguro]
+2020-03-12 XRP    -1   -2.0  -34.1  -29.7  -28.6     100%  Jueves negro del COVID: caída global de activos de riesgo [Seguro]
+2020-05-11 BTC    +0   -8.6   -1.7   +6.9  +11.0      55%  Halving de Bitcoin (recompensa 12,5 -> 6,25 BTC) [Seguro]
+2020-10-21 BTC    +1   +1.4   +7.4   +8.5  +14.5      95%  PayPal anuncia compra/venta de cripto [Seguro]
+2020-10-21 ETH    +1   -2.8   +6.2  +11.1   +9.4      87%  PayPal anuncia compra/venta de cripto [Seguro]
+2020-12-22 XRP    -1   -7.5  -13.2  -34.4  -51.9      97%  La SEC demanda a Ripple (XRP) [Seguro]
+2020-12-22 BTC    -1   -3.3   +4.9   +4.4  +19.0      88%  La SEC demanda a Ripple (XRP) [Seguro]
+2021-01-29 BTC    +1   +9.9   +2.5   -0.9  +10.6      68%  Musk pone #bitcoin en su biografía de Twitter [Probable]
+2021-01-29 DOGE   +1 +393.9  +24.4   +0.5  +44.0      99%  Musk pone #bitcoin en su biografía de Twitter [Probable]
+2021-02-04 DOGE   +1  +19.6  +41.8  +54.5  +94.4     100%  Musk: «Dogecoin is the people's crypto» [Seguro]
+2021-02-04 BTC    +1   +6.1   -1.8   +4.2  +19.1      58%  Musk: «Dogecoin is the people's crypto» [Seguro]
+2021-02-08 BTC    +1   -1.0  +19.4  +15.4  +25.1     100%  Tesla anuncia compra de 1.500 M$ en BTC [Seguro]
+2021-02-08 ETH    +1   -3.7   +8.4   +7.9  +11.7      94%  Tesla anuncia compra de 1.500 M$ en BTC [Seguro]
+2021-04-14 BTC    +0   +6.3   -1.0   -3.4  -11.1      37%  Coinbase sale a bolsa (salida directa) [Seguro]
+2021-04-14 ETH    +0   +7.6   +5.8   +5.5   +1.4      85%  Coinbase sale a bolsa (salida directa) [Seguro]
+2021-04-28 DOGE   +1   +0.4  +18.7  +24.2  +97.7      98%  Tuits de Musk y Mark Cuban sobre Dogecoin [Seguro]
+2021-04-28 BTC    +1   +1.9   -0.3   +4.9   -3.3      15%  Tuits de Musk y Mark Cuban sobre Dogecoin [Seguro]
+2021-05-08 DOGE   -1  +18.7   -7.7  -34.7  -18.9      89%  Musk en Saturday Night Live llama a Dogecoin «hustle» [Seguro]
+2021-05-08 BTC    -1   +1.7   +2.7   -2.6  -13.0      71%  Musk en Saturday Night Live llama a Dogecoin «hustle» [Seguro]
+2021-05-12 BTC    -1   +1.5  -12.8  -12.1  -24.4      99%  Tesla suspende pagos con Bitcoin (minería y energía) [Seguro]
+2021-05-12 DOGE   -1   +9.8  -20.8  +13.1   -3.7      98%  Tesla suspende pagos con Bitcoin (minería y energía) [Seguro]
+2021-05-19 BTC    -1   -1.5  -14.3  -13.0  -10.5     100%  China refuerza prohibición cripto a bancos y frena la minería: caída del 30 % [Seguro]
+2021-05-19 ETH    -1   +2.8  -27.7  -27.9  -19.8     100%  China refuerza prohibición cripto a bancos y frena la minería: caída del 30 % [Seguro]
+2021-05-19 DOGE   -1   -2.4  -30.7  -24.7  -27.2      99%  China refuerza prohibición cripto a bancos y frena la minería: caída del 30 % [Seguro]
+2021-05-19 XRP    -1   +6.5  -33.3  -36.6  -38.6     100%  China refuerza prohibición cripto a bancos y frena la minería: caída del 30 % [Seguro]
+2021-06-18 BTC    -1   -0.7   -5.9   -6.5   -9.0      92%  Sichuan ordena cerrar mineros de Bitcoin (salida de hashrate de China) [Probable]
+2021-09-24 BTC    -1   +3.0   -4.6   -3.8   -2.4      87%  China declara ilegales todas las transacciones con cripto [Probable]
+2021-09-24 ETH    -1   +2.5   -7.1   -3.0   -4.9      90%  China declara ilegales todas las transacciones con cripto [Probable]
+2021-11-10 BTC    +0   -0.9   -3.0   -4.2  -10.2      74%  IPC de EE. UU. de 6,2 %; BTC marca máximo histórico de 2021 (~69 k$) [Probable]
+2021-11-10 ETH    +0   -1.7   -2.1   -1.3  -11.0      50%  IPC de EE. UU. de 6,2 %; BTC marca máximo histórico de 2021 (~69 k$) [Probable]
+2022-05-09 BTC    -1   -4.1  -11.6  -14.8   -8.0      99%  Colapso de TerraUSD/LUNA (LUNA no está en Kraken USD) [Seguro]
+2022-05-09 ETH    -1   -4.4  -11.5  -17.6  -14.9      97%  Colapso de TerraUSD/LUNA (LUNA no está en Kraken USD) [Seguro]
+2022-06-13 BTC    -1   -6.4  -15.5  -15.1  -22.6     100%  Celsius congela retiros; miedo a contagio (3AC) [Seguro]
+2022-06-13 ETH    -1   -6.3  -15.6  -13.8  -21.4      99%  Celsius congela retiros; miedo a contagio (3AC) [Seguro]
+2022-09-15 ETH    +0   +4.1  -10.2  -10.3  -24.0      96%  The Merge de Ethereum (paso a prueba de participación) [Seguro]
+2022-10-28 DOGE   +1   +5.7   +8.9  +52.9  +59.4      91%  Musk cierra la compra de Twitter; DOGE se dispara [Probable]
+2022-10-28 BTC    +1   -2.4   +1.6   +1.7   -0.4      52%  Musk cierra la compra de Twitter; DOGE se dispara [Probable]
+2022-11-08 BTC    -1   -1.5  -10.0  -14.8  -19.5      98%  Colapso de FTX (SOL muy ligada a FTX/Alameda) [Seguro]
+2022-11-08 ETH    -1   -0.0  -14.9  -17.4  -20.8      99%  Colapso de FTX (SOL muy ligada a FTX/Alameda) [Seguro]
+2022-11-08 SOL    -1   -9.2  -17.9  -40.5  -52.8      99%  Colapso de FTX (SOL muy ligada a FTX/Alameda) [Seguro]
+2022-11-08 XRP    -1   -1.1  -12.7  -15.3  -19.1      97%  Colapso de FTX (SOL muy ligada a FTX/Alameda) [Seguro]
+2023-03-11 BTC    +1   -0.7   +1.9  +19.7  +35.7      59%  Quiebra de Silicon Valley Bank y desanclaje de USDC; BTC sube como refugio [Seguro]
+2023-03-11 ETH    +1   -0.6   +3.7  +17.5  +25.4      72%  Quiebra de Silicon Valley Bank y desanclaje de USDC; BTC sube como refugio [Seguro]
+2023-06-05 BTC    -1   +0.2   -5.2   -2.8   -4.4      90%  La SEC demanda a Binance y, al día siguiente, a Coinbase [Seguro]
+2023-06-05 ETH    -1   -0.1   -4.2   -3.1   -7.3      76%  La SEC demanda a Binance y, al día siguiente, a Coinbase [Seguro]
+2023-06-05 SOL    -1   +2.9   -8.3  -14.6  -28.6      91%  La SEC demanda a Binance y, al día siguiente, a Coinbase [Seguro]
+2023-06-05 ADA    -1   +0.5   -6.7  -14.6  -27.7      87%  La SEC demanda a Binance y, al día siguiente, a Coinbase [Seguro]
+2023-06-15 BTC    +1   -3.1   +1.8   +5.5  +19.4      57%  BlackRock solicita un ETF de Bitcoin al contado [Seguro]
+2023-06-15 ETH    +1   -5.1   +0.9   +4.7  +14.4      27%  BlackRock solicita un ETF de Bitcoin al contado [Seguro]
+2023-07-13 XRP    +1   -0.9  +73.0  +51.6  +74.0     100%  Sentencia Torres: XRP no es valor en ventas públicas [Seguro]
+2023-07-13 BTC    +1   -0.7   +3.6   -0.4   -1.6      80%  Sentencia Torres: XRP no es valor en ventas públicas [Seguro]
+2023-08-29 BTC    +1   +0.1   +6.2   -0.7   -1.2      93%  Grayscale gana a la SEC (camino a los ETF) [Seguro]
+2023-08-29 ETH    +1   -0.3   +4.7   -0.4   -1.4      79%  Grayscale gana a la SEC (camino a los ETF) [Seguro]
+2023-10-16 BTC    +1   +1.2   +5.0   +4.3  +10.4      89%  Falsa noticia de aprobación del ETF de BlackRock; se desmiente [Seguro]
+2023-10-16 ETH    +1   +0.2   +2.7   +0.4   +6.8      60%  Falsa noticia de aprobación del ETF de BlackRock; se desmiente [Seguro]
+2024-01-10 BTC    +1   -1.8   +1.2   -7.2   -6.5      43%  La SEC aprueba los ETF de Bitcoin al contado (¿vender la noticia?) [Seguro]
+2024-01-10 ETH    +1   +0.5  +10.2   +7.6  +10.3      96%  La SEC aprueba los ETF de Bitcoin al contado (¿vender la noticia?) [Seguro]
+2024-04-20 BTC    +0   +0.5   +1.8   +4.7   -0.2      57%  Halving de Bitcoin (recompensa 6,25 -> 3,125 BTC) [Seguro]
+2024-05-20 ETH    +1   -1.6  +19.2  +21.6  +24.5     100%  Giro sorpresa: la SEC admitirá ETF de Ethereum [Seguro]
+2024-05-20 BTC    +1   -1.0   +7.8   +4.3   +3.3      96%  Giro sorpresa: la SEC admitirá ETF de Ethereum [Seguro]
+2024-08-05 BTC    -1   -4.3   -7.1   -5.2   +1.1      95%  Caída global por el cierre del carry trade del yen [Seguro]
+2024-08-05 ETH    -1   -7.4  -10.0  -12.8   -5.0      96%  Caída global por el cierre del carry trade del yen [Seguro]
+2024-08-05 SOL    -1   -2.9   -6.1   +4.5   +2.4      82%  Caída global por el cierre del carry trade del yen [Seguro]
+2024-11-06 BTC    +1   +2.4   +9.0  +10.3  +27.0      97%  Trump gana las elecciones de EE. UU. [Seguro]
+2024-11-06 ETH    +1   +1.1  +12.4  +22.3  +34.1      98%  Trump gana las elecciones de EE. UU. [Seguro]
+2024-11-06 DOGE   +1   +7.3  +15.6  +18.8 +123.6      97%  Trump gana las elecciones de EE. UU. [Seguro]
+2024-11-06 XRP    +1   +2.2   +5.5   +7.8  +37.0      84%  Trump gana las elecciones de EE. UU. [Seguro]
+2024-12-05 BTC    +1   +3.0   -1.7   +1.2   +2.5      55%  BTC supera los 100.000 $ [Seguro]
+2024-12-05 ETH    +1   +6.3   -1.4   +4.1   -0.3      38%  BTC supera los 100.000 $ [Seguro]
+2024-12-05 XRP    +1   -6.0   -4.9  +10.6   +1.4      80%  BTC supera los 100.000 $ [Seguro]
+2025-01-18 BTC    +0   +4.1   +0.3   -1.9   +0.7      13%  Lanzamiento de la memecoin de Trump (drenó liquidez del resto) [Seguro]
+2025-01-18 SOL    +0   +4.0  +19.1  +10.2  +15.4      99%  Lanzamiento de la memecoin de Trump (drenó liquidez del resto) [Seguro]
+2025-01-18 DOGE   +0  +10.4   -4.7  -14.7  -15.6      75%  Lanzamiento de la memecoin de Trump (drenó liquidez del resto) [Seguro]
+2025-02-21 BTC    -1   +1.8   -2.3   -2.1  -13.9      65%  Hackeo de Bybit (~1.500 M$ en ETH) [Seguro]
+2025-02-21 ETH    -1   +0.9   -2.9   +2.9  -15.9      63%  Hackeo de Bybit (~1.500 M$ en ETH) [Seguro]
+2025-03-02 XRP    +1   +2.0  +34.3  +12.1   +6.2     100%  Trump anuncia una reserva estratégica cripto que cita XRP, SOL y ADA [Seguro]
+2025-03-02 SOL    +1   -3.0  +24.4   +0.8   -4.7     100%  Trump anuncia una reserva estratégica cripto que cita XRP, SOL y ADA [Seguro]
+2025-03-02 ADA    +1   +4.1  +72.3  +42.8  +22.2     100%  Trump anuncia una reserva estratégica cripto que cita XRP, SOL y ADA [Seguro]
+2025-03-02 BTC    +1   +2.0   +9.6   +1.4   +0.2      98%  Trump anuncia una reserva estratégica cripto que cita XRP, SOL y ADA [Seguro]
+2025-03-19 XRP    +1   -2.3  +11.5   +4.2   +7.2      96%  La SEC abandona su apelación contra Ripple [Probable]
+2025-04-03 BTC    -1   -3.2   +0.8   +1.2   +0.1      31%  Aranceles del «Día de la Liberación» de Trump [Seguro]
+2025-04-03 ETH    -1   -5.9   +1.3   +0.7   -6.9      35%  Aranceles del «Día de la Liberación» de Trump [Seguro]
+2025-04-03 SOL    -1   -7.4   -0.2   +2.5   +1.5       5%  Aranceles del «Día de la Liberación» de Trump [Seguro]
+2025-04-09 BTC    +1   -3.6   +8.2   +9.4   +9.6      97%  Trump pausa 90 días los aranceles [Seguro]
+2025-04-09 ETH    +1   -5.1  +13.4   +6.4   +7.9      98%  Trump pausa 90 días los aranceles [Seguro]
+2025-04-09 SOL    +1   -1.4  +13.0  +15.2  +19.6      97%  Trump pausa 90 días los aranceles [Seguro]
+2025-10-10 BTC    -1   -1.3   -7.1   -5.4  -11.1      95%  Arancel del 100 % a China: mayor liquidación de la historia (~19.000 M$) [Seguro]
+2025-10-10 ETH    -1   -3.5  -12.2   -4.9  -10.9      98%  Arancel del 100 % a China: mayor liquidación de la historia (~19.000 M$) [Seguro]
+2025-10-10 SOL    -1   -3.5  -14.5  -10.7  -16.3      98%  Arancel del 100 % a China: mayor liquidación de la historia (~19.000 M$) [Seguro]
+2025-10-10 DOGE   -1   -2.7  -22.0  -16.5  -24.2      99%  Arancel del 100 % a China: mayor liquidación de la historia (~19.000 M$) [Seguro]
+2025-10-10 XRP    -1   -2.6  -15.3   -9.8  -16.9      98%  Arancel del 100 % a China: mayor liquidación de la historia (~19.000 M$) [Seguro]
+2025-10-10 ADA    -1   -2.7  -19.7  -14.0  -20.9      99%  Arancel del 100 % a China: mayor liquidación de la historia (~19.000 M$) [Seguro]
+
+== D. Lectura estadística (solo el activo PRINCIPAL de cada evento con dirección; n pequeño, no concluyente por sí solo) ==
+  noticias positivas (n=19): en 24 h el precio fue en el sentido de la noticia el 89 % de las veces; a 7 d el 89 % (en contra 11 %); ya se movía en ese sentido 24 h antes el 58 %; movimiento medio ORIENTADO a la noticia: 24 h +14.0 %, 7 d +27.8 %
+  noticias negativas (n=16): en 24 h el precio fue en el sentido de la noticia el 94 % de las veces; a 7 d el 88 % (en contra 12 %); ya se movía en ese sentido 24 h antes el 62 %; movimiento medio ORIENTADO a la noticia: 24 h +10.7 %, 7 d +15.5 %
+
+== E. Ciclos de halving de BTC (cierres diarios UTC; halvings 09/07/2016, 11/05/2020, 20/04/2024) ==
+  halving 2016-07-09: BTC 654 $ -> máximo del ciclo 19,342 $ el 2017-12-16 (525 días después, x29.6); mínimo posterior 3,192 $ el 2018-12-16 (365 días tras el máximo, -83 %)
+       a  30 días del halving:    -10 %
+       a  90 días del halving:     -5 %
+       a 180 días del halving:    +55 %
+       a 365 días del halving:   +284 %
+  halving 2020-05-11: BTC 8,605 $ -> máximo del ciclo 67,320 $ el 2021-11-09 (547 días después, x7.8); mínimo posterior 15,725 $ el 2022-11-21 (377 días tras el máximo, -77 %)
+       a  30 días del halving:    +15 %
+       a  90 días del halving:    +36 %
+       a 180 días del halving:    +72 %
+       a 365 días del halving:   +557 %
+  halving 2024-04-20: BTC 64,692 $ -> máximo del ciclo 125,074 $ el 2025-10-06 (534 días después, x1.9); mínimo posterior 58,520 $ el 2026-06-30 (267 días tras el máximo, -53 %)
+       a  30 días del halving:     +8 %
+       a  90 días del halving:     +3 %
+       a 180 días del halving:     +4 %
+       a 365 días del halving:    +31 %
+  Con 3 ciclos NO hay significación estadística: es una hipótesis para vigilar, no una regla operable.
+
+Notas: (1) ventana por día, no por hora; (2) el catálogo lo elegí yo a partir de eventos conocidos: hay sesgo de selección (se eligen eventos porque el precio se movió), así que el % de aciertos de la dirección de la noticia NO demuestra nada por sí solo; (3) esto describe lo ocurrido, no una regla operable sin conocer la noticia antes.

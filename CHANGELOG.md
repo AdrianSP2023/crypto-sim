@@ -208,3 +208,9 @@ Sin cambio de versión de config (no toca el motor). `tools/historico_kraken.py 
 hace una segunda pasada por el zip de Kraken y guarda velas de 1 min desde t-4 h hasta
 t+9 h alrededor de cada desplome de `datos/eventos/desplomes_4h_12pct.csv`
 (`datos/ventanas_1m/`). Sirve para medir la entrada realista, el rebote alcanzable y el stop.
+
+## Herramientas — 2026-09-29 (catálogo de eventos)
+
+Sin cambio de versión. `tools/analisis_eventos.py`: ciclos de BTC, mayores movimientos de 24 h,
+43 fechas de evento (`datos/eventos/catalogo_eventos.csv`) con rentabilidad antes/después y ciclos de halving.
+Resultados en `datos/eventos/eventos_informe.txt` y en el proyecto (`catalogo-eventos.md`).
