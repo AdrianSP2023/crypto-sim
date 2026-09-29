@@ -1475,3 +1475,36 @@
 {"type": "entry", "asset": "XRP", "strategy": "macd_momentum_filtro", "version": "P1-v9", "t": "2026-09-29 00:30", "ts": 1790641800, "price": 1.31816, "qty": 22.75, "spread": 0.00044}
 {"type": "entry", "asset": "HBAR", "strategy": "estocastico_rebote", "version": "P1-v9", "t": "2026-09-29 00:30", "ts": 1790641800, "price": 0.10661, "qty": 22.4, "spread": 0.00047}
 {"type": "exit", "asset": "RENDER", "strategy": "macd_momentum", "version": "P1-v9", "entry_t": "2026-09-28 22:40", "exit_t": "2026-09-29 00:30", "entry_ts": 1790635200, "exit_ts": 1790641800, "entry": 1.688, "exit": 1.701, "qty": 22.27, "gross_pct": 0.77, "net_pct": -0.33, "net_spread_pct": -0.477, "pnl_eur": -0.073, "reason": "momentum perdido", "candles": 22}
+{"type": "entry", "asset": "BTC", "strategy": "pullback_tendencia", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 73505.6, "qty": 22.62, "spread": 5e-05}
+{"type": "entry", "asset": "BTC", "strategy": "pullback_tendencia_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 73505.6, "qty": 22.9, "spread": 5e-05}
+{"type": "entry", "asset": "SOL", "strategy": "c_banda_atr", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 104.67, "qty": 21.75, "spread": 0.0001}
+{"type": "entry", "asset": "SOL", "strategy": "ruptura_volumen", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 104.67, "qty": 22.08, "spread": 0.0001}
+{"type": "entry", "asset": "SOL", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 104.67, "qty": 22.28, "spread": 0.0001}
+{"type": "entry", "asset": "SOL", "strategy": "c_banda_atr_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 104.67, "qty": 22.4, "spread": 0.0001}
+{"type": "entry", "asset": "SOL", "strategy": "ruptura_volumen_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 104.67, "qty": 22.71, "spread": 0.0001}
+{"type": "entry", "asset": "SOL", "strategy": "macd_momentum_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 104.67, "qty": 22.75, "spread": 0.0001}
+{"type": "entry", "asset": "SOL", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 104.67, "qty": 22.88, "spread": 0.0001}
+{"type": "entry", "asset": "ETH", "strategy": "pullback_tendencia", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 2368.07, "qty": 22.62, "spread": 0.0}
+{"type": "entry", "asset": "ETH", "strategy": "pullback_tendencia_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 2368.07, "qty": 22.9, "spread": 0.0}
+{"type": "entry", "asset": "XRP", "strategy": "ruptura_volumen", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 1.32103, "qty": 22.08, "spread": 0.00042}
+{"type": "entry", "asset": "XRP", "strategy": "ruptura_volumen_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 1.32103, "qty": 22.71, "spread": 0.00042}
+{"type": "entry", "asset": "LTC", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 60.92, "qty": 22.28, "spread": 0.00016}
+{"type": "entry", "asset": "LTC", "strategy": "macd_momentum_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 60.92, "qty": 22.75, "spread": 0.00016}
+{"type": "entry", "asset": "TAO", "strategy": "c_banda_atr", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 271.3557, "qty": 21.75, "spread": 0.00046}
+{"type": "entry", "asset": "TAO", "strategy": "c_banda_atr_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 271.3557, "qty": 22.4, "spread": 0.00046}
+{"type": "entry", "asset": "ARB", "strategy": "c_banda_atr", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 0.1781, "qty": 21.75, "spread": 0.00112}
+{"type": "entry", "asset": "ARB", "strategy": "ruptura_volumen", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 0.1781, "qty": 22.08, "spread": 0.00112}
+{"type": "entry", "asset": "ARB", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 0.1781, "qty": 22.28, "spread": 0.00112}
+{"type": "entry", "asset": "ARB", "strategy": "c_banda_atr_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 0.1781, "qty": 22.4, "spread": 0.00112}
+{"type": "entry", "asset": "ARB", "strategy": "ruptura_volumen_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 0.1781, "qty": 22.71, "spread": 0.00112}
+{"type": "entry", "asset": "ARB", "strategy": "macd_momentum_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 0.1781, "qty": 22.75, "spread": 0.00112}
+{"type": "entry", "asset": "ARB", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 0.1781, "qty": 22.88, "spread": 0.00112}
+{"type": "exit", "asset": "AVAX", "strategy": "ruptura_volumen", "version": "P1-v9", "entry_t": "2026-09-28 23:30", "exit_t": "2026-09-29 00:35", "entry_ts": 1790638200, "exit_ts": 1790642100, "entry": 9.306, "exit": 9.53865, "qty": 22.09, "gross_pct": 2.5, "net_pct": 1.4, "net_spread_pct": 1.368, "pnl_eur": 0.309, "reason": "take-profit", "candles": 13}
+{"type": "exit", "asset": "AVAX", "strategy": "ruptura_volumen_filtro", "version": "P1-v9", "entry_t": "2026-09-28 23:30", "exit_t": "2026-09-29 00:35", "entry_ts": 1790638200, "exit_ts": 1790642100, "entry": 9.306, "exit": 9.53865, "qty": 22.72, "gross_pct": 2.5, "net_pct": 1.4, "net_spread_pct": 1.368, "pnl_eur": 0.318, "reason": "take-profit", "candles": 13}
+{"type": "entry", "asset": "XLM", "strategy": "pullback_tendencia", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 0.202927, "qty": 22.62, "spread": 0.0008}
+{"type": "entry", "asset": "XLM", "strategy": "pullback_tendencia_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 0.202927, "qty": 22.9, "spread": 0.0008}
+{"type": "entry", "asset": "PEPE", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 3.708e-06, "qty": 22.28, "spread": 0.00027}
+{"type": "entry", "asset": "PEPE", "strategy": "c_banda_atr_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 3.708e-06, "qty": 22.4, "spread": 0.00027}
+{"type": "entry", "asset": "PEPE", "strategy": "macd_momentum_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 3.708e-06, "qty": 22.75, "spread": 0.00027}
+{"type": "entry", "asset": "PEPE", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 3.708e-06, "qty": 22.88, "spread": 0.00027}
+{"type": "entry", "asset": "TRUMP", "strategy": "c_banda_atr_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 1.77, "qty": 22.4, "spread": 0.00113}
