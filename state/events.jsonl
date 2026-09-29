@@ -1508,3 +1508,24 @@
 {"type": "entry", "asset": "PEPE", "strategy": "macd_momentum_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 3.708e-06, "qty": 22.75, "spread": 0.00027}
 {"type": "entry", "asset": "PEPE", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 3.708e-06, "qty": 22.88, "spread": 0.00027}
 {"type": "entry", "asset": "TRUMP", "strategy": "c_banda_atr_filtro", "version": "P1-v9", "t": "2026-09-29 00:35", "ts": 1790642100, "price": 1.77, "qty": 22.4, "spread": 0.00113}
+{"type": "entry", "asset": "LTC", "strategy": "ruptura_volumen", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 61.02, "qty": 22.09, "spread": 0.00049}
+{"type": "entry", "asset": "LTC", "strategy": "ruptura_volumen_filtro", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 61.02, "qty": 22.72, "spread": 0.00049}
+{"type": "exit", "asset": "ADA", "strategy": "c_banda_atr", "version": "P1-v9", "entry_t": "2026-09-28 22:40", "exit_t": "2026-09-29 00:40", "entry_ts": 1790635200, "exit_ts": 1790642400, "entry": 0.215391, "exit": 0.21969882, "qty": 21.74, "gross_pct": 2.0, "net_pct": 0.9, "net_spread_pct": 0.85, "pnl_eur": 0.196, "reason": "take-profit", "candles": 24}
+{"type": "entry", "asset": "ADA", "strategy": "ruptura_volumen", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.219838, "qty": 22.09, "spread": 0.00097}
+{"type": "entry", "asset": "ADA", "strategy": "ruptura_volumen_filtro", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.219838, "qty": 22.72, "spread": 0.00097}
+{"type": "entry", "asset": "POL", "strategy": "estocastico_rebote", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.10236, "qty": 22.4, "spread": 0.00186}
+{"type": "entry", "asset": "POL", "strategy": "estocastico_rebote_filtro", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.10236, "qty": 22.97, "spread": 0.00186}
+{"type": "entry", "asset": "DASH", "strategy": "estocastico_rebote", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 57.307, "qty": 22.4, "spread": 0.0007}
+{"type": "entry", "asset": "DASH", "strategy": "estocastico_rebote_filtro", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 57.307, "qty": 22.97, "spread": 0.0007}
+{"type": "entry", "asset": "JUP", "strategy": "ruptura_volumen", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.29427, "qty": 22.09, "spread": 0.00194}
+{"type": "entry", "asset": "JUP", "strategy": "ruptura_volumen_filtro", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.29427, "qty": 22.72, "spread": 0.00194}
+{"type": "entry", "asset": "JUP", "strategy": "ruptura_estricta", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.29427, "qty": 23.01, "spread": 0.00194}
+{"type": "exit", "asset": "WLD", "strategy": "c_banda_atr", "version": "P1-v9", "entry_t": "2026-09-28 22:50", "exit_t": "2026-09-29 00:40", "entry_ts": 1790635800, "exit_ts": 1790642400, "entry": 0.4261, "exit": 0.4353, "qty": 21.74, "gross_pct": 2.159, "net_pct": 1.059, "net_spread_pct": 0.849, "pnl_eur": 0.23, "reason": "take-profit", "candles": 22}
+{"type": "entry", "asset": "NIGHT", "strategy": "estocastico_rebote", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.02506, "qty": 22.4, "spread": 0.00159}
+{"type": "entry", "asset": "NIGHT", "strategy": "estocastico_rebote_filtro", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.02506, "qty": 22.97, "spread": 0.00159}
+{"type": "entry", "asset": "KAS", "strategy": "ruptura_estricta", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.04018, "qty": 23.01, "spread": 0.00174}
+{"type": "entry", "asset": "EIGEN", "strategy": "c_banda_atr", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.2232, "qty": 21.76, "spread": 0.00179}
+{"type": "entry", "asset": "EIGEN", "strategy": "macd_momentum", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.2232, "qty": 22.28, "spread": 0.00179}
+{"type": "entry", "asset": "EIGEN", "strategy": "c_banda_atr_filtro", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.2232, "qty": 22.4, "spread": 0.00179}
+{"type": "entry", "asset": "EIGEN", "strategy": "macd_momentum_filtro", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.2232, "qty": 22.75, "spread": 0.00179}
+{"type": "entry", "asset": "EIGEN", "strategy": "macd_sin_salida", "version": "P1-v9", "t": "2026-09-29 00:40", "ts": 1790642400, "price": 0.2232, "qty": 22.88, "spread": 0.00179}
