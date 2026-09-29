@@ -235,6 +235,8 @@ def step(state, model, thr, kr, ts, log=print):
     if "BTC" not in panel:
         state["warnings"].append(f"{iso(ts)} sin BTC: no se puntúa")
     opened = open_new(state, sc, tick, ts, thr, log)
+    state["ultimo_top"] = [[r.activo, round(float(r.p), 3)] for _, r in sc.sort_values("p", ascending=False).head(5).iterrows()]
+    state["n_puntuados"] = int(len(sc))
     state["last_run"] = iso(ts)
     state["runs"] += 1
     state["warnings"] = state["warnings"][-20:]

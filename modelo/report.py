@@ -15,6 +15,7 @@ def main():
     eq = st["cash"] + sum(p["tamano"] for p in st["open"])
     print(f"Última ejecución: {st['last_run']} · ejecuciones {st['runs']} · efectivo {st['cash']:.2f} · abiertas {len(st['open'])} · "
           f"patrimonio (coste) {eq:.2f} de {st['initial']:.2f}")
+    print(f"Puntuados en la última hora: {st.get('n_puntuados', '?')} activos · mayores puntuaciones: {st.get('ultimo_top')} (umbral 0,686)")
     if st["skipped_assets"]:
         print("Activos sin par USD en Kraken:", ", ".join(st["skipped_assets"]))
     for w in st["warnings"][-5:]:
