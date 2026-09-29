@@ -1877,3 +1877,10 @@
 {"type": "entry", "asset": "ASTER", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-29 15:35", "ts": 1790696100, "price": 0.63231, "qty": 22.63, "spread": 0.0004}
 {"type": "entry", "asset": "SPX", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-29 15:35", "ts": 1790696100, "price": 0.3621, "qty": 22.63, "spread": 0.00083}
 {"type": "entry", "asset": "FET", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-29 15:35", "ts": 1790696100, "price": 0.1981, "qty": 22.63, "spread": 0.00101}
+{"type": "entry", "asset": "NEAR", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-29 15:40", "ts": 1790696400, "price": 4.3788, "qty": 22.63, "spread": 0.00064}
+{"type": "entry", "asset": "PUMP", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-29 15:40", "ts": 1790696400, "price": 0.00506, "qty": 22.63, "spread": 0.00295}
+{"type": "entry", "asset": "ENA", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-29 15:40", "ts": 1790696400, "price": 0.2215, "qty": 22.63, "spread": 0.00091}
+{"type": "entry", "asset": "ICP", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-29 15:40", "ts": 1790696400, "price": 2.982, "qty": 22.63, "spread": 0.00134}
+{"type": "entry", "asset": "INJ", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-29 15:40", "ts": 1790696400, "price": 6.699, "qty": 22.63, "spread": 0.00119}
+{"type": "entry", "asset": "VIRTUAL", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-29 15:40", "ts": 1790696400, "price": 0.7092, "qty": 22.63, "spread": 0.00366}
+{"type": "entry", "asset": "OP", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-29 15:40", "ts": 1790696400, "price": 0.1162, "qty": 22.63, "spread": 0.00086}
