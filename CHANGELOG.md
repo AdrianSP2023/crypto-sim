@@ -250,3 +250,6 @@ Cambios (Maestro pidió las dos ideas; las cuentas de las 14 estrategias existen
 
 ## tools: modo ventanas_subidas — 2026-09-29
 - `tools/historico_kraken.py ventanas_subidas`: velas de 1 min desde t-10 h hasta t+8 h alrededor de las 1.758 subidas ≥ 12 % en 4 h (`datos/ventanas_1m_subidas/`). Workflow `historico.yml` acepta `mode=ventanas_subidas`. Sin cambios en el motor.
+
+## Precursores de subidas — 2026-09-29
+- `tools/precursores_subidas.py` (HistGradientBoosting, velas de 1 h, 42 activos USD, entrena 2018-21, valida 2022, test 2023-26) y `tools/precursores_robustez.py`. Informes en `datos/eventos/precursores_informe.txt` y `precursores_robustez.txt`. Sin cambios en el motor.

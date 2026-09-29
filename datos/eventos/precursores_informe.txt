@@ -1,0 +1,34 @@
+Filas: 1,570,730 (train 356,671 · val 194,917 · test 1,019,142) · activos 42
+Tasa base test: >= 5 % en 4 h: 1.60 % · >= 10 % en 4 h: 0.223 %
+Rentabilidad media de una hora cualquiera del test (+4 h, entrada apertura siguiente): +0.016 % (mediana -0.002)
+
+== Modelo y5 · val: AUC 0.805 ==
+  top 2.0 % horas: precisión 16.62 % vs base 1.80 % (x9.3) · entradas sin solape 1653 · bruto medio +0.43 % (mediana +0.59, 55 % >0, t +1.2) · neto1,1 -0.67 · neto0,5 -0.07
+  top 0.5 % horas: precisión 24.41 % vs base 1.80 % (x13.6) · entradas sin solape 460 · bruto medio +0.95 % (mediana +1.63, 61 % >0, t +1.8) · neto1,1 -0.15 · neto0,5 +0.45
+  top 0.1 % horas: precisión 27.69 % vs base 1.80 % (x15.4) · entradas sin solape 129 · bruto medio +1.41 % (mediana +1.58, 60 % >0, t +2.4) · neto1,1 +0.31 · neto0,5 +0.91
+== Modelo y5 · test: AUC 0.797 ==
+  top 2.0 % horas: precisión 12.82 % vs base 1.60 % (x8.0) · entradas sin solape 8456 · bruto medio +0.44 % (mediana +0.18, 52 % >0, t +4.1) · neto1,1 -0.66 · neto0,5 -0.06
+  top 0.5 % horas: precisión 20.70 % vs base 1.60 % (x12.9) · entradas sin solape 2514 · bruto medio +0.99 % (mediana +0.57, 56 % >0, t +3.9) · neto1,1 -0.11 · neto0,5 +0.49
+  top 0.1 % horas: precisión 35.88 % vs base 1.60 % (x22.4) · entradas sin solape 596 · bruto medio +2.69 % (mediana +2.05, 63 % >0, t +3.9) · neto1,1 +1.59 · neto0,5 +2.19
+
+== Modelo y10 · val: AUC 0.882 ==
+  top 2.0 % horas: precisión 4.64 % vs base 0.25 % (x18.6) · entradas sin solape 1634 · bruto medio +0.38 % (mediana +0.29, 53 % >0, t +1.1) · neto1,1 -0.72 · neto0,5 -0.12
+  top 0.5 % horas: precisión 8.82 % vs base 0.25 % (x35.4) · entradas sin solape 440 · bruto medio +0.64 % (mediana +0.98, 56 % >0, t +1.2) · neto1,1 -0.46 · neto0,5 +0.14
+  top 0.1 % horas: precisión 16.41 % vs base 0.25 % (x65.8) · entradas sin solape 108 · bruto medio +1.42 % (mediana +1.91, 65 % >0, t +5.2) · neto1,1 +0.32 · neto0,5 +0.92
+== Modelo y10 · test: AUC 0.851 ==
+  top 2.0 % horas: precisión 3.45 % vs base 0.22 % (x15.5) · entradas sin solape 8433 · bruto medio +0.39 % (mediana +0.04, 50 % >0, t +3.9) · neto1,1 -0.71 · neto0,5 -0.11
+  top 0.5 % horas: precisión 7.26 % vs base 0.22 % (x32.6) · entradas sin solape 2159 · bruto medio +0.93 % (mediana +0.17, 52 % >0, t +3.4) · neto1,1 -0.17 · neto0,5 +0.43
+  top 0.1 % horas: precisión 12.16 % vs base 0.22 % (x54.6) · entradas sin solape 530 · bruto medio +1.87 % (mediana +0.74, 56 % >0, t +2.6) · neto1,1 +0.77 · neto0,5 +1.37
+
+== Rasgos más importantes (test, modelo 5 %; caída de AUC al barajar) ==
+  dist_lo72: 0.0488
+  dist_hi24: 0.0197
+  dist_hi168: 0.0171
+  rel6: 0.0119
+  ret1: 0.0116
+  hcos: 0.0096
+  ret3: 0.0070
+  dow: 0.0067
+
+== Regla simple en TEST: volumen >= 5x mediana y rango de la hora >= 3x el normal y cierre en el 25 % superior de la vela ==
+  entradas sin solape 4722: bruto +0.31 % (mediana +0.06, 51 % >0, t +2.4) · neto1,1 -0.79 · neto0,5 -0.19
