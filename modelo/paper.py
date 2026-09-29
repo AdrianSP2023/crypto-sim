@@ -273,7 +273,11 @@ def main():
     save(state, closed, sc, ts)
     sh("git", "config", "user.name", "modelo-precursores")
     sh("git", "config", "user.email", "modelo-precursores@users.noreply.github.com")
-    sh("git", "add", "modelo/state.json", "modelo/operaciones.csv", "modelo/senales.csv")
+    for f in ("state.json", "operaciones.csv", "senales.csv"):
+        if (MD / f).exists():
+            r = sh("git", "add", f"modelo/{f}")
+            if r.returncode:
+                print("git add", f, r.stderr)
     if sh("git", "diff", "--cached", "--quiet").returncode == 0:
         print("sin cambios")
         return
