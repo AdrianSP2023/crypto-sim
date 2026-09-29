@@ -148,6 +148,7 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadths=Non
                         "entry_price": float(d.open.iat[i]), "entry_candle": pend["signal_candle"], "qty": qty,
                         "tp": p["tp"], "sl": p["sl"], "max_hold": p["max_hold"],
                         "spread_in": spread, "version": cfg["version"], "fee_in": fee_in,
+                        "ctx": pend.get("ctx"),
                     }
                     log.append(f"{iso(ct)} [{name}] ENTRADA {asset} @ {d.open.iat[i]:.6g} ({qty:.2f} €, apertura)")
                     if events is not None:
@@ -194,6 +195,8 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadths=Non
                 "reason": why, "candles": int((ct - pos["entry_candle"]) // csec),
                 "fee_pct": round(fee * 100, 3),
             }
+            if pos.get("ctx"):
+                rec["ctx"] = pos["ctx"]
             st["closed"].append(rec)
             del st["positions"][asset]
             log.append(f"{iso(close_t)} [{name}] CIERRE {asset} {why} bruto {gross*100:+.2f}% neto {net*100:+.2f}%")
@@ -211,7 +214,7 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadths=Non
             st["blocked_filter"] += 1
             continue
         if next_open:
-            st["pending"][asset] = {"signal_candle": ct}
+            st["pending"][asset] = {"signal_candle": ct, "ctx": signal_ctx(d, i, breadths, bt)}
             continue
         mo = p.get("max_open")
         if mo and len(st["positions"]) >= mo:
@@ -228,6 +231,7 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadths=Non
             "tp": p["tp"], "sl": p["sl"], "max_hold": p["max_hold"],
             "spread_in": spread, "version": cfg["version"],
             "fee_in": side_fee(st, cfg, close_t),
+            "ctx": signal_ctx(d, i, breadths, bt),
         }
         add_volume(st, close_t, qty)
         log.append(f"{iso(close_t)} [{name}] ENTRADA {asset} @ {d.close.iat[i]:.6g} ({qty:.2f} €)")
@@ -235,6 +239,25 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadths=Non
             events.append({"type": "entry", "asset": asset, "strategy": name, "version": cfg["version"],
                            "t": iso(close_t), "ts": close_t, "price": float(d.close.iat[i]), "qty": round(qty, 2),
                            "spread": round(spread, 5)})
+
+
+def signal_ctx(d, i, breadths, bt):
+    """Valores de los indicadores en la vela de la señal (para el registro y el análisis posterior)."""
+    out = {}
+    for col in d.columns:
+        if col in ("time", "open", "high", "low"):
+            continue
+        try:
+            x = float(d[col].iat[i])
+        except (TypeError, ValueError):
+            continue
+        if x == x:
+            out[col] = float(f"{x:.6g}")
+    for n, br in breadths.items():
+        b = br.get(bt)
+        if b is not None:
+            out[f"amplitud_ema{n}"] = round(b, 3)
+    return out
 
 
 def equity_marked(state, cfg, prices):

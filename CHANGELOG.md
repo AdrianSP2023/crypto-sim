@@ -154,3 +154,16 @@ comparable con P1: las cuentas empiezan de nuevo y los conteos de ciclos del cri
   más lenta que la anterior. Parámetro nuevo `market_filter_ema`.
 - Se mantienen: las 7 originales, `ruptura_estricta`, `macd_sin_salida` y los dos `*_tope`. Sin retirar más por
   falta de base estadística (A/B de P1 inconclusos).
+
+## P3-v1 (sin cambio de versión) — 2026-09-29 ~10:30 UTC: registro CSV permanente
+
+Solo registro; el comportamiento de las estrategias no cambia (tests idénticos), así que no se reinicia ningún conteo.
+- **`registro/operaciones.csv`**: una fila por operación cerrada (fase, estrategia, familia, versión, activo, tipo,
+  entrada/salida UTC, precios, cantidad, bruto, comisión, neto, spread, comisión y resultado en €, motivo de salida,
+  velas, hora de entrada y **contexto de la señal**). El motor lo actualiza en cada vuelta con `registro.sync`
+  (idempotente: añade solo lo que falta; se autorrepara). P1 está rellenado desde `archive/P1/` (1.395 filas, sin
+  contexto de señal porque entonces no se guardaba).
+- **Contexto de la señal** (`ctx` en cada posición y cierre): valores de los indicadores de la estrategia en la vela
+  de la señal (RSI, ATR, EMA, volumen relativo...) y amplitud de mercado con EMA50 y EMA200. Solo para operaciones
+  abiertas a partir de este cambio.
+- `tests/test_registro.py`. `registro.py` se añade a los ficheros de código vigilados por el motor y al workflow.

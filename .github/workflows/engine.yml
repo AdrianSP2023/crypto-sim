@@ -5,7 +5,7 @@ name: Motor P1
 on:
   push:
     branches: [main]
-    paths: ["engine.py", "core.py", "strategies.py", "config.json", ".github/workflows/engine.yml"]
+    paths: ["engine.py", "core.py", "strategies.py", "registro.py", "config.json", ".github/workflows/engine.yml"]
   schedule:
     - cron: "*/10 * * * *"
   workflow_dispatch: {}

@@ -32,7 +32,7 @@ CONFIG = ROOT / "config.json"
 STATE = ROOT / "state" / "state.json"
 EVENTS = ROOT / "state" / "events.jsonl"
 STATUS = ROOT / "STATUS.md"
-CODE_FILES = ["engine.py", "core.py", "strategies.py"]
+CODE_FILES = ["engine.py", "core.py", "strategies.py", "registro.py"]
 API = "https://api.kraken.com/0/public"
 ALIASES = {"XBT": "BTC", "XDG": "DOGE"}
 
@@ -143,10 +143,15 @@ def save_all(state, events, cfg, warnings, log):
                 f.write(json.dumps(e, ensure_ascii=False) + "\n")
     import report
     STATUS.write_text(report.status_md(state, cfg, warnings, log))
+    try:
+        import registro
+        registro.sync(state, cfg)
+    except Exception as ex:  # el registro nunca debe parar el motor
+        warnings.append(f"registro CSV: {ex}")
 
 
 def git_sync(msg):
-    sh("git", "add", "state", "STATUS.md")
+    sh("git", "add", "state", "STATUS.md", "registro")
     if sh("git", "diff", "--cached", "--quiet", check=False).returncode == 0:
         return
     sh("git", "commit", "-q", "-m", msg)
