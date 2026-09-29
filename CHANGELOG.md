@@ -214,3 +214,8 @@ t+9 h alrededor de cada desplome de `datos/eventos/desplomes_4h_12pct.csv`
 Sin cambio de versión. `tools/analisis_eventos.py`: ciclos de BTC, mayores movimientos de 24 h,
 43 fechas de evento (`datos/eventos/catalogo_eventos.csv`) con rentabilidad antes/después y ciclos de halving.
 Resultados en `datos/eventos/eventos_informe.txt` y en el proyecto (`catalogo-eventos.md`).
+
+## Datos — 2026-09-29 (subidas ≥ 12 % en 4 h)
+
+Sin cambio de versión. `datos/eventos/subidas_4h_12pct.csv`: 1.758 eventos de subida ≥ 12 % en 4 h (USD y EUR,
+sin solape de 24 h por activo) con retornos hacia delante y exceso sobre el control (`analisis_historico.build_events(kind="up")`).
