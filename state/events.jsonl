@@ -1964,3 +1964,5 @@
 {"type": "entry", "asset": "ICP", "strategy": "c_banda_atr", "version": "P1-v10", "t": "2026-09-29 04:55", "ts": 1790657700, "price": 2.867, "qty": 21.37, "spread": 0.0007}
 {"type": "entry", "asset": "ICP", "strategy": "c_banda_atr_tope", "version": "P1-v10", "t": "2026-09-29 04:55", "ts": 1790657700, "price": 2.867, "qty": 23.05, "spread": 0.0007}
 {"type": "entry", "asset": "VIRTUAL", "strategy": "ruptura_volumen", "version": "P1-v10", "t": "2026-09-29 04:55", "ts": 1790657700, "price": 0.7105, "qty": 21.77, "spread": 0.00239}
+{"type": "entry", "asset": "AVAX", "strategy": "c_banda_atr", "version": "P1-v10", "t": "2026-09-29 05:00", "ts": 1790658000, "price": 9.213, "qty": 21.37, "spread": 0.00054}
+{"type": "entry", "asset": "AVAX", "strategy": "c_banda_atr_filtro", "version": "P1-v10", "t": "2026-09-29 05:00", "ts": 1790658000, "price": 9.213, "qty": 22.21, "spread": 0.00054}
