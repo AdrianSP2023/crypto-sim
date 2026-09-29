@@ -242,3 +242,8 @@ Cambios (Maestro pidió las dos ideas; las cuentas de las 14 estrategias existen
 - `tools/detector_movimientos.py`: 8 mayores subidas + 8 mayores bajadas de 24 h por activo (10 activos, sin solapes ±72 h) -> `datos/eventos/detector_top_movimientos.csv` (160 filas).
 - Causas buscadas por 5 subagentes -> `datos/eventos/eventos_por_activo.csv` (16 por activo; confianza alta 62, media 50, baja 48). Doble pasada en SOL/XRP: acuerdo de tipo 75 %. Ficheros por agente en `datos/eventos/pasadas_previas/`.
 - Sin cambios en el motor.
+
+## Subidas repentinas por ventana — 2026-09-29
+- `tools/analisis_subidas.py`: ventanas 1/3/6/9/12/15/18 h, p99,5 por activo (42 activos líquidos USD, 2018-2026), cooldown 24 h, entrada a la apertura siguiente, control por activo, recorte al [0,1 %; 99,9 %], t agrupado por día. Salida en `datos/eventos/subidas_ventanas_informe.txt` y `subidas_ventanas_eventos.csv`.
+- Primera versión descartada: listados nuevos (SEI, INJ) y medias dominadas por datos extremos daban un falso "-2 % a +1 h" (t -13). Corregido ignorando 60 días iniciales y recortando extremos.
+- Sin cambios en el motor.
