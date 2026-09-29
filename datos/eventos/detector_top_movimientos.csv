@@ -1,0 +1,161 @@
+activo,cierre_ventana_utc,inicio_ventana_utc,ret_24h_pct,sentido,precio_cierre_usd,en_catalogo,evento_catalogo
+BTC,2020-03-13 02:00,2020-03-12 02:00,-45.2,bajada,4225.1,True,Jueves negro del COVID: caída global de activos de riesgo
+BTC,2019-10-26 02:00,2019-10-25 02:00,35.5,subida,10096.0,False,
+BTC,2020-03-14 02:00,2020-03-13 02:00,30.8,subida,5526.5,True,Jueves negro del COVID: caída global de activos de riesgo
+BTC,2018-02-07 08:00,2018-02-06 08:00,30.1,subida,7675.3,False,
+BTC,2018-01-18 16:00,2018-01-17 16:00,27.5,subida,12099.9,True,Rumores de prohibición del trading cripto en Corea del Sur
+BTC,2018-02-06 05:00,2018-02-05 05:00,-27.0,bajada,6011.0,False,
+BTC,2018-01-17 16:00,2018-01-16 16:00,-23.4,bajada,9493.0,True,Rumores de prohibición del trading cripto en Corea del Sur
+BTC,2021-02-09 07:00,2021-02-08 07:00,23.3,subida,48159.9,True,Tesla anuncia compra de 1.500 M$ en BTC
+BTC,2021-05-20 13:00,2021-05-19 13:00,22.9,subida,41790.6,True,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %
+BTC,2020-03-20 11:00,2020-03-19 11:00,22.8,subida,6862.6,False,
+BTC,2021-05-19 13:00,2021-05-18 13:00,-22.8,bajada,33999.9,True,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %
+BTC,2019-06-26 20:00,2019-06-25 20:00,21.7,subida,13839.0,False,
+BTC,2019-06-27 20:00,2019-06-26 20:00,-21.7,bajada,10830.9,False,
+BTC,2021-01-11 16:00,2021-01-10 16:00,-20.6,bajada,31523.5,False,
+BTC,2022-06-14 02:00,2022-06-13 02:00,-19.0,bajada,20832.9,True,Celsius congela retiros; miedo a contagio (3AC)
+BTC,2024-08-05 13:00,2024-08-04 13:00,-18.4,bajada,49811.1,True,Caída global por el cierre del carry trade del yen
+ETH,2020-03-13 02:00,2020-03-12 02:00,-47.0,bajada,97.9,True,Jueves negro del COVID: caída global de activos de riesgo
+ETH,2018-01-18 16:00,2018-01-17 16:00,40.5,subida,1110.0,True,Rumores de prohibición del trading cripto en Corea del Sur
+ETH,2021-01-04 07:00,2021-01-03 07:00,38.8,subida,1109.99,False,
+ETH,2020-03-14 02:00,2020-03-13 02:00,36.8,subida,133.92,True,Jueves negro del COVID: caída global de activos de riesgo
+ETH,2018-02-07 08:00,2018-02-06 08:00,36.3,subida,770.32,False,
+ETH,2021-05-24 20:00,2021-05-23 20:00,34.5,subida,2651.32,False,
+ETH,2021-05-20 01:00,2021-05-19 01:00,-33.3,bajada,2237.19,True,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %
+ETH,2018-01-17 16:00,2018-01-16 16:00,-32.0,bajada,789.83,True,Rumores de prohibición del trading cripto en Corea del Sur
+ETH,2018-02-06 05:00,2018-02-05 05:00,-31.8,bajada,576.01,False,
+ETH,2021-05-21 01:00,2021-05-20 01:00,30.0,subida,2907.52,True,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %
+ETH,2022-06-19 21:00,2022-06-18 21:00,26.5,subida,1141.88,False,
+ETH,2018-02-02 12:00,2018-02-01 12:00,-26.5,bajada,808.1,False,
+ETH,2021-01-11 17:00,2021-01-10 17:00,-26.1,bajada,960.0,False,
+ETH,2025-05-09 09:00,2025-05-08 09:00,24.8,subida,2413.75,False,
+ETH,2022-11-09 17:00,2022-11-08 17:00,-24.1,bajada,1172.41,True,Colapso de FTX (SOL muy ligada a FTX/Alameda)
+ETH,2022-05-12 06:00,2022-05-11 06:00,-23.9,bajada,1812.55,True,Colapso de TerraUSD/LUNA (LUNA no está en Kraken USD)
+XRP,2018-09-21 15:00,2018-09-20 15:00,92.5,subida,0.70336,False,
+XRP,2018-01-18 16:00,2018-01-17 16:00,91.2,subida,1.74,True,Rumores de prohibición del trading cripto en Corea del Sur
+XRP,2023-07-13 20:00,2023-07-12 20:00,75.6,subida,0.82199,True,Sentencia Torres: XRP no es valor en ventas públicas
+XRP,2020-11-24 06:00,2020-11-23 06:00,59.8,subida,0.73073,False,
+XRP,2021-01-07 12:00,2021-01-06 12:00,56.9,subida,0.35795,False,
+XRP,2021-01-31 00:00,2021-01-30 00:00,56.9,subida,0.44432,True,Musk pone #bitcoin en su biografía de Twitter
+XRP,2018-02-10 08:00,2018-02-09 08:00,53.7,subida,1.17,False,
+XRP,2021-02-02 11:00,2021-02-01 11:00,-47.1,bajada,0.38392,True,Musk: «Dogecoin is the people's crypto»
+XRP,2021-04-05 22:00,2021-04-04 22:00,46.1,subida,0.90068,False,
+XRP,2020-12-24 00:00,2020-12-23 00:00,-41.8,bajada,0.26001,True,La SEC demanda a Ripple (XRP)
+XRP,2018-01-16 22:00,2018-01-15 22:00,-40.3,bajada,1.05,True,Rumores de prohibición del trading cripto en Corea del Sur
+XRP,2020-03-13 02:00,2020-03-12 02:00,-38.9,bajada,0.12351,True,Jueves negro del COVID: caída global de activos de riesgo
+XRP,2020-12-29 16:00,2020-12-28 16:00,-38.0,bajada,0.17899,False,
+XRP,2021-05-20 01:00,2021-05-19 01:00,-37.6,bajada,0.99742,True,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %
+XRP,2022-05-12 06:00,2022-05-11 06:00,-30.8,bajada,0.35483,True,Colapso de TerraUSD/LUNA (LUNA no está en Kraken USD)
+XRP,2018-02-02 12:00,2018-02-01 12:00,-30.7,bajada,0.71001,False,
+SOL,2022-11-09 22:00,2022-11-08 22:00,-47.1,bajada,12.61,True,Colapso de FTX (SOL muy ligada a FTX/Alameda)
+SOL,2021-08-16 15:00,2021-08-15 15:00,43.7,subida,67.2,False,
+SOL,2022-11-10 22:00,2022-11-09 22:00,43.3,subida,18.07,True,Colapso de FTX (SOL muy ligada a FTX/Alameda)
+SOL,2023-01-14 06:00,2023-01-13 06:00,41.1,subida,23.74,False,
+SOL,2022-05-12 06:00,2022-05-11 06:00,-36.9,bajada,41.62,True,Colapso de TerraUSD/LUNA (LUNA no está en Kraken USD)
+SOL,2021-09-09 08:00,2021-09-08 08:00,36.4,subida,207.63,False,
+SOL,2023-07-14 02:00,2023-07-13 02:00,34.6,subida,29.35,True,Sentencia Torres: XRP no es valor en ventas públicas
+SOL,2022-05-13 07:00,2022-05-12 07:00,30.2,subida,51.5,False,
+SOL,2022-01-22 19:00,2022-01-21 19:00,-27.3,bajada,89.93,False,
+SOL,2021-09-03 08:00,2021-09-02 08:00,26.3,subida,144.78,False,
+SOL,2023-11-11 01:00,2023-11-10 01:00,25.6,subida,56.79,False,
+SOL,2023-06-10 07:00,2023-06-09 07:00,-24.8,bajada,14.05,False,
+SOL,2024-08-05 13:00,2024-08-04 13:00,-22.8,bajada,111.85,True,Caída global por el cierre del carry trade del yen
+SOL,2025-03-04 02:00,2025-03-03 02:00,-20.9,bajada,136.47,True,"Trump anuncia una reserva estratégica cripto que cita XRP, SOL y ADA"
+SOL,2021-12-04 12:00,2021-12-03 12:00,-20.8,bajada,188.63,False,
+SOL,2022-06-13 09:00,2022-06-12 09:00,-20.5,bajada,26.2,True,Celsius congela retiros; miedo a contagio (3AC)
+DOGE,2021-01-29 04:00,2021-01-28 04:00,940.5,subida,0.0817992,True,Musk pone #bitcoin en su biografía de Twitter
+DOGE,2021-04-16 14:00,2021-04-15 14:00,191.6,subida,0.3886543,True,Coinbase sale a bolsa (salida directa)
+DOGE,2021-01-02 19:00,2021-01-01 19:00,127.6,subida,0.01153,False,
+DOGE,2020-07-08 21:00,2020-07-07 21:00,77.0,subida,0.0049782,False,
+DOGE,2021-02-04 12:00,2021-02-03 12:00,67.6,subida,0.054,True,Musk: «Dogecoin is the people's crypto»
+DOGE,2022-10-30 06:00,2022-10-29 06:00,64.0,subida,0.139783,True,Musk cierra la compra de Twitter; DOGE se dispara
+DOGE,2021-01-30 04:00,2021-01-29 04:00,-60.8,bajada,0.0321058,True,Musk pone #bitcoin en su biografía de Twitter
+DOGE,2021-05-05 06:00,2021-05-04 06:00,56.9,subida,0.6874257,True,Musk en Saturday Night Live llama a Dogecoin «hustle»
+DOGE,2024-11-12 09:00,2024-11-11 09:00,54.3,subida,0.4333629,False,
+DOGE,2021-05-19 13:00,2021-05-18 13:00,-42.1,bajada,0.2813436,True,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %
+DOGE,2021-05-09 13:00,2021-05-08 13:00,-40.8,bajada,0.4296515,True,Musk en Saturday Night Live llama a Dogecoin «hustle»; Tesla suspende pagos con Bitcoin (minería y energía)
+DOGE,2021-06-21 23:00,2021-06-20 23:00,-40.3,bajada,0.1684191,True,Sichuan ordena cerrar mineros de Bitcoin (salida de hashrate de China)
+DOGE,2020-03-13 02:00,2020-03-12 02:00,-33.7,bajada,0.0014044,True,Jueves negro del COVID: caída global de activos de riesgo
+DOGE,2022-05-12 06:00,2022-05-11 06:00,-33.0,bajada,0.0720681,True,Colapso de TerraUSD/LUNA (LUNA no está en Kraken USD)
+DOGE,2021-01-04 12:00,2021-01-03 12:00,-32.8,bajada,0.0088994,False,
+DOGE,2021-04-17 14:00,2021-04-16 14:00,-32.1,bajada,0.2638973,True,Coinbase sale a bolsa (salida directa)
+ADA,2025-03-03 00:00,2025-03-02 00:00,72.3,subida,1.135041,True,"Trump anuncia una reserva estratégica cripto que cita XRP, SOL y ADA"
+ADA,2021-05-20 13:00,2021-05-19 13:00,56.4,subida,1.926562,True,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %
+ADA,2024-11-10 13:00,2024-11-09 13:00,45.4,subida,0.63897,False,
+ADA,2020-03-13 02:00,2020-03-12 02:00,-43.1,bajada,0.021351,True,Jueves negro del COVID: caída global de activos de riesgo
+ADA,2022-05-13 06:00,2022-05-12 06:00,42.1,subida,0.579353,False,
+ADA,2021-05-19 13:00,2021-05-18 13:00,-39.5,bajada,1.231518,True,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %
+ADA,2021-01-06 14:00,2021-01-05 14:00,37.0,subida,0.313962,False,
+ADA,2021-02-27 06:00,2021-02-26 06:00,35.1,subida,1.36,False,
+ADA,2024-11-23 01:00,2024-11-22 01:00,35.1,subida,1.117222,False,
+ADA,2021-05-24 20:00,2021-05-23 20:00,34.9,subida,1.577785,False,
+ADA,2022-05-12 06:00,2022-05-11 06:00,-34.8,bajada,0.407598,True,Colapso de TerraUSD/LUNA (LUNA no está en Kraken USD)
+ADA,2025-02-03 02:00,2025-02-02 02:00,-31.2,bajada,0.624199,False,
+ADA,2025-03-04 02:00,2025-03-03 02:00,-27.7,bajada,0.78406,True,"Trump anuncia una reserva estratégica cripto que cita XRP, SOL y ADA"
+ADA,2021-05-23 17:00,2021-05-22 17:00,-26.9,bajada,1.114831,False,
+ADA,2020-11-26 19:00,2020-11-25 19:00,-25.2,bajada,0.128288,False,
+ADA,2021-06-22 14:00,2021-06-21 14:00,-24.3,bajada,1.010429,False,
+LINK,2020-03-13 02:00,2020-03-12 02:00,-52.2,bajada,1.65001,True,Jueves negro del COVID: caída global de activos de riesgo
+LINK,2021-05-24 20:00,2021-05-23 20:00,47.5,subida,25.9,False,
+LINK,2020-03-14 02:00,2020-03-13 02:00,46.6,subida,2.41944,True,Jueves negro del COVID: caída global de activos de riesgo
+LINK,2021-05-20 01:00,2021-05-19 01:00,-42.9,bajada,24.08494,True,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %
+LINK,2020-08-08 19:00,2020-08-07 19:00,38.4,subida,13.25143,False,
+LINK,2024-12-02 21:00,2024-12-01 21:00,35.1,subida,25.20675,True,BTC supera los 100.000 $
+LINK,2021-05-23 17:00,2021-05-22 17:00,-33.1,bajada,16.44208,False,
+LINK,2022-05-12 06:00,2022-05-11 06:00,-33.1,bajada,5.75806,True,Colapso de TerraUSD/LUNA (LUNA no está en Kraken USD)
+LINK,2020-09-24 21:00,2020-09-23 21:00,32.7,subida,10.21027,False,
+LINK,2020-08-13 03:00,2020-08-12 03:00,32.6,subida,16.7372,False,
+LINK,2021-05-21 01:00,2021-05-20 01:00,32.0,subida,31.78802,True,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %
+LINK,2020-03-20 09:00,2020-03-19 09:00,30.0,subida,2.56061,False,
+LINK,2021-02-23 09:00,2021-02-22 09:00,-29.9,bajada,22.55,False,
+LINK,2020-03-16 11:00,2020-03-15 11:00,-29.4,bajada,1.56247,False,
+LINK,2022-11-09 17:00,2022-11-08 17:00,-28.6,bajada,6.50259,True,Colapso de FTX (SOL muy ligada a FTX/Alameda)
+LINK,2024-08-05 13:00,2024-08-04 13:00,-28.5,bajada,8.3049,True,Caída global por el cierre del carry trade del yen
+LTC,2018-01-18 16:00,2018-01-17 16:00,46.1,subida,208.9,True,Rumores de prohibición del trading cripto en Corea del Sur
+LTC,2020-03-14 02:00,2020-03-13 02:00,44.9,subida,37.29,True,Jueves negro del COVID: caída global de activos de riesgo
+LTC,2020-03-13 02:00,2020-03-12 02:00,-44.2,bajada,25.74,True,Jueves negro del COVID: caída global de activos de riesgo
+LTC,2021-05-19 13:00,2021-05-18 13:00,-43.7,bajada,172.09,True,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %
+LTC,2019-04-03 03:00,2019-04-02 03:00,39.7,subida,84.59,True,Subida súbita de BTC (~+18 %) sin noticia clara
+LTC,2018-02-04 06:00,2018-02-03 06:00,38.6,subida,171.9,False,
+LTC,2021-05-24 20:00,2021-05-23 20:00,38.2,subida,182.34,False,
+LTC,2018-02-07 08:00,2018-02-06 08:00,36.9,subida,143.0,False,
+LTC,2018-02-15 01:00,2018-02-14 01:00,36.4,subida,220.22,False,
+LTC,2019-02-09 08:00,2019-02-08 08:00,34.0,subida,44.82,False,
+LTC,2018-01-17 16:00,2018-01-16 16:00,-32.6,bajada,142.99,True,Rumores de prohibición del trading cripto en Corea del Sur
+LTC,2018-02-06 05:00,2018-02-05 05:00,-30.2,bajada,106.2,False,
+LTC,2022-05-12 06:00,2022-05-11 06:00,-29.0,bajada,56.28,True,Colapso de TerraUSD/LUNA (LUNA no está en Kraken USD)
+LTC,2021-01-11 17:00,2021-01-10 17:00,-28.7,bajada,122.77,False,
+LTC,2021-05-23 17:00,2021-05-22 17:00,-28.4,bajada,128.07,False,
+LTC,2025-10-11 14:00,2025-10-10 14:00,-27.9,bajada,96.59,True,Arancel del 100 % a China: mayor liquidación de la historia (~19.000 M$)
+XLM,2021-01-06 14:00,2021-01-05 14:00,100.8,subida,0.346,False,
+XLM,2024-11-23 16:00,2024-11-22 16:00,74.8,subida,0.515715,False,
+XLM,2020-11-24 05:00,2020-11-23 05:00,73.8,subida,0.184998,False,
+XLM,2023-07-13 20:00,2023-07-12 20:00,69.4,subida,0.161775,True,Sentencia Torres: XRP no es valor en ventas públicas
+XLM,2024-11-16 22:00,2024-11-15 22:00,59.8,subida,0.226791,False,
+XLM,2021-05-20 13:00,2021-05-19 13:00,53.4,subida,0.52648,True,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %
+XLM,2021-01-29 05:00,2021-01-28 05:00,48.6,subida,0.36813,True,Musk pone #bitcoin en su biografía de Twitter
+XLM,2021-05-19 13:00,2021-05-18 13:00,-48.2,bajada,0.343287,True,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %
+XLM,2026-05-30 03:00,2026-05-29 03:00,44.9,subida,0.286497,False,
+XLM,2020-03-13 02:00,2020-03-12 02:00,-39.2,bajada,0.029182,True,Jueves negro del COVID: caída global de activos de riesgo
+XLM,2020-11-26 19:00,2020-11-25 19:00,-29.9,bajada,0.15355,False,
+XLM,2021-02-23 09:00,2021-02-22 09:00,-28.5,bajada,0.350211,False,
+XLM,2025-02-03 02:00,2025-02-02 02:00,-26.9,bajada,0.291405,False,
+XLM,2022-05-12 06:00,2022-05-11 06:00,-26.3,bajada,0.107443,True,Colapso de TerraUSD/LUNA (LUNA no está en Kraken USD)
+XLM,2021-05-23 17:00,2021-05-22 17:00,-25.7,bajada,0.297008,False,
+XLM,2021-01-11 07:00,2021-01-10 07:00,-25.4,bajada,0.238469,False,
+DOT,2021-05-24 17:00,2021-05-23 17:00,44.9,subida,21.7995,False,
+DOT,2021-05-20 01:00,2021-05-19 01:00,-43.4,bajada,22.8726,True,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %
+DOT,2021-01-14 01:00,2021-01-13 01:00,43.0,subida,11.4061,False,
+DOT,2022-05-13 14:00,2022-05-12 14:00,42.9,subida,11.59,False,
+DOT,2024-11-24 01:00,2024-11-23 01:00,41.6,subida,9.6828,False,
+DOT,2026-02-25 22:00,2026-02-24 22:00,39.5,subida,1.7282,False,
+DOT,2021-05-23 17:00,2021-05-22 17:00,-33.3,bajada,15.0464,False,
+DOT,2021-05-21 01:00,2021-05-20 01:00,33.0,subida,30.427,True,China refuerza prohibición cripto a bancos y frena la minería: caída del 30 %
+DOT,2022-05-12 06:00,2022-05-11 06:00,-31.2,bajada,7.6248,True,Colapso de TerraUSD/LUNA (LUNA no está en Kraken USD)
+DOT,2020-12-29 03:00,2020-12-28 03:00,29.6,subida,6.7739,False,
+DOT,2025-02-03 02:00,2025-02-02 02:00,-29.1,bajada,4.2352,False,
+DOT,2025-10-11 02:00,2025-10-10 02:00,-28.7,bajada,2.91,True,Arancel del 100 % a China: mayor liquidación de la historia (~19.000 M$)
+DOT,2021-06-22 14:00,2021-06-21 14:00,-27.2,bajada,13.3546,False,
+DOT,2021-09-08 08:00,2021-09-07 08:00,-27.1,bajada,25.6005,False,
+DOT,2021-02-24 09:00,2021-02-23 09:00,26.1,subida,36.4347,False,
+DOT,2021-04-18 10:00,2021-04-17 10:00,-25.8,bajada,35.5558,False,
