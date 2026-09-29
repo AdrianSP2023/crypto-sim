@@ -247,3 +247,6 @@ Cambios (Maestro pidió las dos ideas; las cuentas de las 14 estrategias existen
 - `tools/analisis_subidas.py`: ventanas 1/3/6/9/12/15/18 h, p99,5 por activo (42 activos líquidos USD, 2018-2026), cooldown 24 h, entrada a la apertura siguiente, control por activo, recorte al [0,1 %; 99,9 %], t agrupado por día. Salida en `datos/eventos/subidas_ventanas_informe.txt` y `subidas_ventanas_eventos.csv`.
 - Primera versión descartada: listados nuevos (SEI, INJ) y medias dominadas por datos extremos daban un falso "-2 % a +1 h" (t -13). Corregido ignorando 60 días iniciales y recortando extremos.
 - Sin cambios en el motor.
+
+## tools: modo ventanas_subidas — 2026-09-29
+- `tools/historico_kraken.py ventanas_subidas`: velas de 1 min desde t-10 h hasta t+8 h alrededor de las 1.758 subidas ≥ 12 % en 4 h (`datos/ventanas_1m_subidas/`). Workflow `historico.yml` acepta `mode=ventanas_subidas`. Sin cambios en el motor.

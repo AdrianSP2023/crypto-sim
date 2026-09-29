@@ -276,19 +276,21 @@ OUT_V = ROOT / "datos" / "ventanas_1m"
 PRE_S, POST_S = 4 * 3600, 9 * 3600      # ventana por evento: desde t-4 h hasta t+9 h (t = inicio de la vela 1 h del evento)
 
 
-def event_windows(path=EVENTOS):
+def event_windows(path=EVENTOS, pre=None, post=None):
     """(base, quote) -> lista de (inicio, fin) en epoch, a partir del CSV de desplomes."""
+    pre = PRE_S if pre is None else pre
+    post = POST_S if post is None else post
     ev = pd.read_csv(path)
     t = (pd.to_datetime(ev.t_utc, utc=True) - pd.Timestamp("1970-01-01", tz="UTC")) // pd.Timedelta(seconds=1)
     out = {}
     for (q, a), ts in zip(zip(ev.quote, ev.asset), t):
-        out.setdefault((a, q), []).append((int(ts) - PRE_S, int(ts) + POST_S))
+        out.setdefault((a, q), []).append((int(ts) - pre, int(ts) + post))
     return out
 
 
-def ventanas(stream=None, events_path=EVENTOS, out_dir=OUT_V, log=print):
+def ventanas(stream=None, events_path=EVENTOS, out_dir=OUT_V, log=print, pre=None, post=None):
     t0 = time.time()
-    wins = event_windows(events_path)
+    wins = event_windows(events_path, pre, post)
     stream = http_parts() if stream is None else stream
     members, results, _ = process(stream, set(), out_dir=out_dir, log=log,
                                   make_agg=lambda pair: Agg(60, wins[(pair[0], pair[1])]) if (pair[0], pair[1]) in wins else None)
@@ -302,5 +304,21 @@ def ventanas(stream=None, events_path=EVENTOS, out_dir=OUT_V, log=print):
     return results
 
 
+SUBIDAS = ROOT / "datos" / "eventos" / "subidas_4h_12pct.csv"
+OUT_S = ROOT / "datos" / "ventanas_1m_subidas"
+
+
+def ventanas_subidas():
+    """Velas de 1 min desde t-10 h hasta t+8 h alrededor de las subidas >= 12 % en 4 h (t = inicio de la vela 1 h del evento)."""
+    ev = pd.read_csv(SUBIDAS)
+    ev["t_utc"] = ev["t"]
+    tmp = ROOT / "datos" / "eventos" / "_subidas_tmp.csv"
+    ev[["asset", "quote", "t_utc"]].to_csv(tmp, index=False)
+    try:
+        return ventanas(events_path=tmp, out_dir=OUT_S, pre=10 * 3600, post=8 * 3600)
+    finally:
+        tmp.unlink(missing_ok=True)
+
+
 if __name__ == "__main__":
-    {"probe": probe, "full": full, "ventanas": ventanas}[sys.argv[1] if len(sys.argv) > 1 else "probe"]()
+    {"probe": probe, "full": full, "ventanas": ventanas, "ventanas_subidas": ventanas_subidas}[sys.argv[1] if len(sys.argv) > 1 else "probe"]()
