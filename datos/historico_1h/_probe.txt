@@ -1,0 +1,97 @@
+== HEAD de las 13 partes ==
+parte 00: HTTP 200 · 2097152000 bytes · Range: bytes
+parte 01: HTTP 200 · 2097152000 bytes · Range: bytes
+parte 02: HTTP 200 · 2097152000 bytes · Range: bytes
+parte 03: HTTP 200 · 2097152000 bytes · Range: bytes
+parte 04: HTTP 200 · 2097152000 bytes · Range: bytes
+parte 05: HTTP 200 · 2097152000 bytes · Range: bytes
+parte 06: HTTP 200 · 2097152000 bytes · Range: bytes
+parte 07: HTTP 200 · 2097152000 bytes · Range: bytes
+parte 08: HTTP 200 · 2097152000 bytes · Range: bytes
+parte 09: HTTP 200 · 2097152000 bytes · Range: bytes
+parte 10: HTTP 200 · 2097152000 bytes · Range: bytes
+parte 11: HTTP 200 · 2097152000 bytes · Range: bytes
+parte 12: HTTP 200 · 1754414385 bytes · Range: bytes
+== SHA256SUMS (primeras líneas) ==
+bce086564e73119c43acc5a804d52bc2c857486b89df57902070221525e33c2d  Kraken_Trades_Full_2026Q2.zip.part00
+f67856e9b4869937a96e908a57ec042cd68ec7dccd0e1f46077b80d5d329927e  Kraken_Trades_Full_2026Q2.zip.part01
+353120c3ef454f58d939cafd3ae3029467f548e202850d70e5bb7049ca58da52  Kraken_Trades_Full_2026Q2.zip.part02
+9238f8545de7e9829fe1b357f38b5b89ef547654633abc72444133b92112409b  Kraken_Trades_Full_2026Q2.zip.part03
+f285647e10be049bc8f6696a5d24b1a4969d3a1430122892e126d27e3f8f27bb  Kraken_Trades_Full_2026Q2.zip.part04
+d9eeea1de7e4bccc68d1068c1ca7acfdc86b28e441aec7b26d28c702d7dc5f26  Kraken_Trades_Full_2026Q2.zip.part05
+9aa852b0571ec3af6c7b8b72f822a1cf53f97354f4fa23e4efccaf366ddbbcea  Kraken_Trades_Full_2026Q2.zip.part06
+b973cf08cb64b5500ddc954aeb0ab7ae5965c6ee36572cadd4f38da62bb71359  Kraken_Trades_Full_2026Q2.zip.part07
+f10fa5d67ba8cd135fde808c2f579b0769951c82a2f84917c5a371baf3290cd9  Kraken_Tra
+== Primeros miembros del zip (streaming de la parte 00, máx. 300 MB) ==
+miembro 0: 0GEUR.csv · tamaño declarado 4028745 · par ('0G', 'EUR')
+   leídos 4,028,745 bytes sin comprimir
+   cabecera: b'timestamp,price,volume,type,order_type,misc,trade_id\n1758535295.6007776,3.1060000,31.41050,b,l,,1\n1758535321.738789,3.0470000,3.40693,b,l,,2\n1758535322.3817055,3.0470000,3.53842,b,l,,3\n1758535322.973284,3.0470000,3.67497,b,l,,4\n1758535328.542333,3.0970000,31.92079,b,l,,5\n1758535328.5488656,3.0970000'
+miembro 1: 0GUSD.csv · tamaño declarado 25229931 · par ('0G', 'USD')
+   leídos 25,229,931 bytes sin comprimir
+   cabecera: b'timestamp,price,volume,type,order_type,misc,trade_id\n1758535281.5686107,5.2560000,94.54139,b,m,,1\n1758535281.5686107,5.2670000,304.21407,b,m,,2\n1758535281.5686107,5.3190000,279.95769,b,m,,3\n1758535281.722979,5.2500000,209.00000,s,l,,4\n1758535284.669109,5.2570000,3.00000,s,l,,5\n1758535284.669109,5.00'
+miembro 2: 1INCHEUR.csv · tamaño declarado 10752188 · par ('1INCH', 'EUR')
+   leídos 10,752,188 bytes sin comprimir
+   cabecera: b'timestamp,price,volume,type,order_type,misc,trade_id\n1628609486.8506148,2.36400,29.18557000,b,l,,1\n1628609494.419684,2.36400,12.50281000,b,l,,2\n1628609496.0971527,2.36300,416.76043000,b,l,,3\n1628609520.1161933,2.36500,38.94156000,b,l,,4\n1628609525.3229783,2.36300,0.41676000,b,l,,5\n1628609527.3815033'
+miembro 3: 1INCHUSD.csv · tamaño declarado 18360829 · par ('1INCH', 'USD')
+   leídos 18,360,829 bytes sin comprimir
+miembro 4: 2ZEUR.csv · tamaño declarado 8666542 · par ('2', 'EUR')
+   leídos 8,666,542 bytes sin comprimir
+miembro 5: 2ZUSD.csv · tamaño declarado 16088485 · par ('2', 'USD')
+   leídos 16,088,485 bytes sin comprimir
+miembro 6: AAVEAUD.csv · tamaño declarado 506644 · par None
+   leídos 506,644 bytes sin comprimir
+miembro 7: AAVEETH.csv · tamaño declarado 110399721 · par None
+   leídos 110,399,721 bytes sin comprimir
+miembro 8: AAVEEUR.csv · tamaño declarado 98010018 · par ('AAVE', 'EUR')
+   leídos 98,010,018 bytes sin comprimir
+miembro 9: AAVEGBP.csv · tamaño declarado 9255828 · par None
+   leídos 9,255,828 bytes sin comprimir
+miembro 10: AAVEUSD.csv · tamaño declarado 260863191 · par ('AAVE', 'USD')
+   leídos 260,863,191 bytes sin comprimir
+miembro 11: AAVEXBT.csv · tamaño declarado 145160643 · par None
+   leídos 145,160,643 bytes sin comprimir
+miembro 12: ABEUR.csv · tamaño declarado 7879069 · par ('AB', 'EUR')
+   leídos 7,879,069 bytes sin comprimir
+miembro 13: ABUSD.csv · tamaño declarado 14299476 · par ('AB', 'USD')
+   leídos 14,299,476 bytes sin comprimir
+miembro 14: ACAEUR.csv · tamaño declarado 12925039 · par ('ACA', 'EUR')
+   leídos 12,925,039 bytes sin comprimir
+miembro 15: ACAUSD.csv · tamaño declarado 24210948 · par ('ACA', 'USD')
+   leídos 24,210,948 bytes sin comprimir
+miembro 16: ACHEUR.csv · tamaño declarado 8656418 · par ('ACH', 'EUR')
+   leídos 8,656,418 bytes sin comprimir
+miembro 17: ACHUSD.csv · tamaño declarado 45189854 · par ('ACH', 'USD')
+   leídos 45,189,854 bytes sin comprimir
+miembro 18: ACTEUR.csv · tamaño declarado 566900 · par ('ACT', 'EUR')
+   leídos 566,900 bytes sin comprimir
+miembro 19: ACTUSD.csv · tamaño declarado 4027358 · par ('ACT', 'USD')
+   leídos 4,027,358 bytes sin comprimir
+miembro 20: ACUEUR.csv · tamaño declarado 10053547 · par ('ACU', 'EUR')
+   leídos 10,053,547 bytes sin comprimir
+miembro 21: ACUUSD.csv · tamaño declarado 18799293 · par ('ACU', 'USD')
+   leídos 18,799,293 bytes sin comprimir
+miembro 22: ACXEUR.csv · tamaño declarado 167576 · par ('ACX', 'EUR')
+   leídos 167,576 bytes sin comprimir
+miembro 23: ACXUSD.csv · tamaño declarado 601176 · par ('ACX', 'USD')
+   leídos 601,176 bytes sin comprimir
+miembro 24: ADAAUD.csv · tamaño declarado 10496382 · par None
+   leídos 10,496,382 bytes sin comprimir
+miembro 25: ADAETH.csv · tamaño declarado 104188463 · par None
+   leídos 104,188,463 bytes sin comprimir
+miembro 26: ADAEUR.csv · tamaño declarado 758028280 · par ('ADA', 'EUR')
+== ERROR ==
+Traceback (most recent call last):
+  File "/home/runner/work/crypto-sim/crypto-sim/tools/historico_kraken.py", line 193, in probe
+    _probe(L)
+  File "/home/runner/work/crypto-sim/crypto-sim/tools/historico_kraken.py", line 220, in _probe
+    for c in chunks:
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/stream_unzip/__init__.py", line 299, in checked_from_local_header
+    yield from chunks
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/stream_unzip/__init__.py", line 290, in _iter
+    for chunk in chunks:
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/stream_unzip/__init__.py", line 276, in decrypt_none_decompress
+    yield from decompress(next_or_truncated_error(chunks))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/stream_unzip/__init__.py", line 59, in next_or_truncated_error
+    raise TruncatedDataError from None
+stream_unzip.TruncatedDataError
