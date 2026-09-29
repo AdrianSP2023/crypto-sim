@@ -1,26 +1,26 @@
 # Simulación P3 (sin dinero real)
 
-Config `P3-v2` · inicio 2026-09-29 09:43 UTC · última vuelta 2026-09-29 17:57 UTC · vueltas 99 · 60 activos · velas 5 min · comisión por tramos de volumen 30 d (ida+vuelta 1.10% / 0.50% / 0.42%)
+Config `P3-v2` · inicio 2026-09-29 09:43 UTC · última vuelta 2026-09-29 18:02 UTC · vueltas 100 · 60 activos · velas 5 min · comisión por tramos de volumen 30 d (ida+vuelta 1.10% / 0.50% / 0.42%)
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
 | c_banda_atr | 909.11 € (-1.64%) | 55 | 1 | 33% | -0.213% | -1.188% | -1.326% | -15.06 € |
-| reversion_bb | 917.81 € (-0.70%) | 12 | 4 | 17% | -1.026% | -2.126% | -2.232% | -5.89 € |
-| ruptura_volumen | 909.48 € (-1.60%) | 70 | 1 | 27% | -0.044% | -0.917% | -1.054% | -14.76 € |
-| rebote_extremo | 922.63 € (-0.17%) | 4 | 3 | 25% | -0.905% | -2.005% | -2.191% | -1.85 € |
+| reversion_bb | 917.99 € (-0.68%) | 12 | 6 | 17% | -1.026% | -2.126% | -2.232% | -5.89 € |
+| ruptura_volumen | 909.49 € (-1.60%) | 70 | 1 | 27% | -0.044% | -0.917% | -1.054% | -14.76 € |
+| rebote_extremo | 922.66 € (-0.17%) | 4 | 3 | 25% | -0.905% | -2.005% | -2.191% | -1.85 € |
 | pullback_tendencia | 907.99 € (-1.76%) | 69 | 0 | 25% | -0.147% | -1.026% | -1.140% | -16.25 € |
 | macd_momentum | 897.23 € (-2.92%) | 152 | 1 | 19% | -0.104% | -0.775% | -0.894% | -26.94 € |
-| estocastico_rebote | 888.93 € (-3.82%) | 121 | 26 | 27% | -0.428% | -1.144% | -1.264% | -31.63 € |
+| estocastico_rebote | 889.39 € (-3.77%) | 121 | 26 | 27% | -0.428% | -1.144% | -1.264% | -31.63 € |
 | ruptura_estricta | 911.41 € (-1.39%) | 42 | 0 | 29% | -0.226% | -1.326% | -1.452% | -12.83 € |
-| macd_sin_salida | 903.63 € (-2.23%) | 97 | 2 | 30% | -0.145% | -0.914% | -1.041% | -20.33 € |
+| macd_sin_salida | 903.74 € (-2.22%) | 97 | 2 | 30% | -0.145% | -0.914% | -1.041% | -20.33 € |
 | c_banda_atr_tope | 915.24 € (-0.97%) | 22 | 1 | 23% | -0.661% | -1.761% | -1.924% | -8.93 € |
-| ruptura_volumen_tope | 919.11 € (-0.55%) | 21 | 1 | 19% | +0.041% | -1.059% | -1.189% | -5.13 € |
+| ruptura_volumen_tope | 919.12 € (-0.55%) | 21 | 1 | 19% | +0.041% | -1.059% | -1.189% | -5.13 € |
 | c_banda_atr_regimen | 909.84 € (-1.56%) | 50 | 0 | 32% | -0.226% | -1.248% | -1.385% | -14.40 € |
 | macd_momentum_regimen | 898.81 € (-2.75%) | 147 | 0 | 20% | -0.078% | -0.756% | -0.872% | -25.43 € |
 | ruptura_volumen_regimen | 909.87 € (-1.55%) | 69 | 0 | 28% | -0.027% | -0.906% | -1.043% | -14.37 € |
 | c_banda_atr_evento | 915.11 € (-0.99%) | 23 | 1 | 26% | -0.607% | -1.707% | -1.858% | -9.06 € |
 | macd_momentum_evento | 911.49 € (-1.38%) | 32 | 1 | 12% | -0.618% | -1.718% | -1.847% | -12.68 € |
-| ruptura_volumen_evento | 919.66 € (-0.50%) | 11 | 1 | 18% | -0.704% | -1.804% | -2.004% | -4.58 € |
+| ruptura_volumen_evento | 919.67 € (-0.49%) | 11 | 1 | 18% | -0.704% | -1.804% | -2.004% | -4.58 € |
 | rebote_desplome | 924.24 € (+0.00%) | 0 | 0 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
 
 ## Últimas 15 operaciones cerradas
@@ -45,14 +45,7 @@ Config `P3-v2` · inicio 2026-09-29 09:43 UTC · última vuelta 2026-09-29 17:57
 
 ## Eventos de la última vuelta
 
-- 2026-09-29 17:55 [c_banda_atr] CIERRE HYPE stop-loss bruto -1.55% neto -2.05%
-- 2026-09-29 17:55 [c_banda_atr_tope] CIERRE HYPE stop-loss bruto -1.55% neto -2.65%
-- 2026-09-29 17:55 [c_banda_atr_evento] CIERRE HYPE stop-loss bruto -1.55% neto -2.65%
-- 2026-09-29 17:50 [estocastico_rebote] ENTRADA CRV @ 0.3353 (22.35 €, apertura)
-- 2026-09-29 17:55 [estocastico_rebote] CIERRE ICP stop-loss bruto -1.51% neto -2.01%
-- 2026-09-29 17:50 [rebote_extremo] ENTRADA ZRO @ 1.361 (23.06 €, apertura)
-- 2026-09-29 17:55 [estocastico_rebote] CIERRE ZRO stop-loss bruto -1.50% neto -2.00%
-- 2026-09-29 17:55 [estocastico_rebote] CIERRE OP stop-loss bruto -1.81% neto -2.31%
-- 2026-09-29 17:55 [c_banda_atr_evento] CIERRE BNB stop-loss bruto -1.51% neto -2.61%
+- 2026-09-29 17:55 [reversion_bb] ENTRADA VVV @ 23.41 (22.96 €, apertura)
+- 2026-09-29 17:55 [reversion_bb] ENTRADA XPL @ 0.0857 (22.96 €, apertura)
 
 Universo: BTC, XRP, LINK, ETH, SOL, QNT, HBAR, ZEC, NEAR, ADA, SUI, LTC, XLM, AVAX, AAVE, UNI, PUMP, ALGO, TAO, HYPE, ARB, XDC, ONDO, DOGE, DOT, CRV, DASH, ENA, JUP, MON, ICP, BCH, INJ, VVV, TRX, ATOM, RENDER, WLD, ZRO, VIRTUAL, PEPE, USELESS, RAY, SEI, MINA, OP, NIGHT, FIL, SHIB, TON, PENGU, POL, BNB, TRUMP, GRT, ASTER, XPL, KAS, SPX, FET
