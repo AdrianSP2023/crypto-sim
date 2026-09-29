@@ -1,0 +1,4 @@
+fecha_utc,activos,tipo,evento,fuente,mov_30m_pct,mov_60m_pct,nota
+2026-09-29 08:17,ZEC,mercado,"ZEC cae un 12 %: mayor caída entre los tokens principales; el artículo no da causa (sube el rendimiento del Tesoro, inflación)",https://www.coindesk.com/markets/2026/09/29/bitcoin-holds-usd83-000-as-zec-drops-12-and-oil-climbs-again,,,"medir con datos/velas_1m cuando haya hueco"
+2026-09-29 08:17,BTC,macro,"Rendimiento del bono a 10 años EE. UU. 5,25 % (máximo desde 2007); Brent ~107 $ por esperanzas diplomáticas con Irán que se desvanecen; BTC ~83.100 $",https://www.coindesk.com/markets/2026/09/29/bitcoin-holds-usd83-000-as-zec-drops-12-and-oil-climbs-again,,,
+2026-09-29 (fecha aprox.),COIN,regulatorio,"La CFTC aprueba registrar Coinbase Clearing LLC como cámara de compensación propia (liquidación 24/7 con colateral USDC)",https://www.coingabbar.com/en/crypto-news-today-bitcoin-ethereum-price-coinbase-cftc-rules,,,"fecha exacta por verificar"
