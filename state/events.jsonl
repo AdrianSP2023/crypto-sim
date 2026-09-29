@@ -351,3 +351,15 @@
 {"type": "entry", "asset": "PENGU", "strategy": "estocastico_rebote", "version": "P3-v1", "t": "2026-09-29 10:55", "ts": 1790679300, "price": 0.008458, "qty": 23.1, "spread": 0.00059}
 {"type": "entry", "asset": "ASTER", "strategy": "c_banda_atr", "version": "P3-v1", "t": "2026-09-29 10:55", "ts": 1790679300, "price": 0.63864, "qty": 23.11, "spread": 0.00042}
 {"type": "entry", "asset": "ASTER", "strategy": "c_banda_atr_regimen", "version": "P3-v1", "t": "2026-09-29 10:55", "ts": 1790679300, "price": 0.63864, "qty": 23.11, "spread": 0.00042}
+{"type": "entry", "asset": "LINK", "strategy": "estocastico_rebote", "version": "P3-v1", "t": "2026-09-29 11:00", "ts": 1790679600, "price": 13.49978, "qty": 23.1, "spread": 0.0}
+{"type": "entry", "asset": "ETH", "strategy": "estocastico_rebote", "version": "P3-v1", "t": "2026-09-29 11:00", "ts": 1790679600, "price": 2391.53, "qty": 23.1, "spread": 2e-05}
+{"type": "entry", "asset": "ALGO", "strategy": "macd_momentum", "version": "P3-v1", "t": "2026-09-29 11:00", "ts": 1790679600, "price": 0.11637, "qty": 22.8, "spread": 0.00094}
+{"type": "entry", "asset": "ALGO", "strategy": "macd_sin_salida", "version": "P3-v1", "t": "2026-09-29 11:00", "ts": 1790679600, "price": 0.11637, "qty": 23.08, "spread": 0.00094}
+{"type": "entry", "asset": "ALGO", "strategy": "macd_momentum_regimen", "version": "P3-v1", "t": "2026-09-29 11:00", "ts": 1790679600, "price": 0.11637, "qty": 22.8, "spread": 0.00094}
+{"type": "entry", "asset": "ONDO", "strategy": "estocastico_rebote", "version": "P3-v1", "t": "2026-09-29 11:00", "ts": 1790679600, "price": 0.45887, "qty": 23.1, "spread": 0.00083}
+{"type": "entry", "asset": "VVV", "strategy": "estocastico_rebote", "version": "P3-v1", "t": "2026-09-29 11:00", "ts": 1790679600, "price": 24.681, "qty": 23.1, "spread": 0.00065}
+{"type": "entry", "asset": "RENDER", "strategy": "estocastico_rebote", "version": "P3-v1", "t": "2026-09-29 11:00", "ts": 1790679600, "price": 1.71, "qty": 23.1, "spread": 0.00175}
+{"type": "entry", "asset": "OP", "strategy": "estocastico_rebote", "version": "P3-v1", "t": "2026-09-29 11:00", "ts": 1790679600, "price": 0.1165, "qty": 23.1, "spread": 0.00086}
+{"type": "entry", "asset": "BNB", "strategy": "estocastico_rebote", "version": "P3-v1", "t": "2026-09-29 11:00", "ts": 1790679600, "price": 673.5, "qty": 23.1, "spread": 0.00013}
+{"type": "entry", "asset": "TRUMP", "strategy": "estocastico_rebote", "version": "P3-v1", "t": "2026-09-29 11:00", "ts": 1790679600, "price": 1.782, "qty": 23.1, "spread": 0.00112}
+{"type": "entry", "asset": "SPX", "strategy": "estocastico_rebote", "version": "P3-v1", "t": "2026-09-29 11:00", "ts": 1790679600, "price": 0.3639, "qty": 23.1, "spread": 0.00055}
