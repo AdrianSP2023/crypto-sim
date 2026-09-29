@@ -1,0 +1,2468 @@
+Histórico Kraken -> velas 1 h · 2026-09-29 12:44 UTC · 2872 s
+miembros en el zip: 1661 · pares guardados: 128
+
+== MANIFEST ==
+{
+  "product": "trades",
+  "schema_version": 2,
+  "release": "r1",
+  "columns": [
+    "timestamp",
+    "price",
+    "volume",
+    "type",
+    "order_type",
+    "misc",
+    "trade_id"
+  ],
+  "has_header": true,
+  "coverage": {
+    "start": "2013-09-11",
+    "end": "2026-06-30"
+  },
+  "pairs": 1659,
+  "files": 1659,
+  "rows": 1873113017,
+  "generated": "2026-08-17",
+  "schema_1_differences": [
+    "Column order: schema 1 was Price,Volume,Timestamp,...; schema 2 is timestamp,price,volume,...",
+    "Header: schema 2 names all 7 fields; schema 1 named 6",
+    "Coverage extends back to each pair's first trade"
+  ]
+}
+
+
+== Pares guardados ==
+{
+ "AAVE/EUR": {
+  "filas_1h": 47506,
+  "trades": 1886770,
+  "desde": "2020-12-15 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "AAVE/USD": {
+  "filas_1h": 48345,
+  "trades": 4979682,
+  "desde": "2020-12-15 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ADA/EUR": {
+  "filas_1h": 67806,
+  "trades": 14111813,
+  "desde": "2018-09-28 13:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ADA/USD": {
+  "filas_1h": 67635,
+  "trades": 20350330,
+  "desde": "2018-09-28 13:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ALGO/EUR": {
+  "filas_1h": 55611,
+  "trades": 2684216,
+  "desde": "2020-01-22 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ALGO/USD": {
+  "filas_1h": 55803,
+  "trades": 7032183,
+  "desde": "2020-01-22 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ARB/EUR": {
+  "filas_1h": 26708,
+  "trades": 465194,
+  "desde": "2023-03-23 13:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ARB/USD": {
+  "filas_1h": 28626,
+  "trades": 2011676,
+  "desde": "2023-03-23 13:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ASTER/EUR": {
+  "filas_1h": 2660,
+  "trades": 12373,
+  "desde": "2025-10-20 15:00",
+  "hasta": "2026-06-30 21:00"
+ },
+ "ASTER/USD": {
+  "filas_1h": 6041,
+  "trades": 282164,
+  "desde": "2025-10-20 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ATOM/EUR": {
+  "filas_1h": 62247,
+  "trades": 3680844,
+  "desde": "2019-04-22 18:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ATOM/USD": {
+  "filas_1h": 61905,
+  "trades": 8031158,
+  "desde": "2019-04-22 18:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "AVAX/EUR": {
+  "filas_1h": 39335,
+  "trades": 1694399,
+  "desde": "2021-12-21 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "AVAX/USD": {
+  "filas_1h": 39629,
+  "trades": 5836389,
+  "desde": "2021-12-21 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "BCH/EUR": {
+  "filas_1h": 77907,
+  "trades": 8479215,
+  "desde": "2017-08-01 16:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "BCH/USD": {
+  "filas_1h": 77980,
+  "trades": 10109907,
+  "desde": "2017-08-01 16:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "BNB/EUR": {
+  "filas_1h": 10086,
+  "trades": 559058,
+  "desde": "2025-04-22 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "BNB/USD": {
+  "filas_1h": 10419,
+  "trades": 1196298,
+  "desde": "2025-04-22 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "CRV/EUR": {
+  "filas_1h": 45771,
+  "trades": 1188302,
+  "desde": "2020-09-17 13:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "CRV/USD": {
+  "filas_1h": 49736,
+  "trades": 3683075,
+  "desde": "2020-09-17 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "DASH/EUR": {
+  "filas_1h": 77610,
+  "trades": 3184325,
+  "desde": "2017-04-12 17:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "DASH/USD": {
+  "filas_1h": 76425,
+  "trades": 4537300,
+  "desde": "2017-04-12 17:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "DOT/EUR": {
+  "filas_1h": 51360,
+  "trades": 8012611,
+  "desde": "2020-08-18 17:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "DOT/USD": {
+  "filas_1h": 51382,
+  "trades": 14783192,
+  "desde": "2020-08-18 17:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ENA/EUR": {
+  "filas_1h": 15948,
+  "trades": 408540,
+  "desde": "2024-05-30 16:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ENA/USD": {
+  "filas_1h": 17787,
+  "trades": 1771121,
+  "desde": "2024-05-30 18:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "EOS/EUR": {
+  "filas_1h": 62929,
+  "trades": 3507084,
+  "desde": "2017-07-01 14:00",
+  "hasta": "2025-06-30 22:00"
+ },
+ "EOS/USD": {
+  "filas_1h": 64477,
+  "trades": 4418988,
+  "desde": "2017-07-01 14:00",
+  "hasta": "2025-06-30 23:00"
+ },
+ "ETC/EUR": {
+  "filas_1h": 80967,
+  "trades": 4410575,
+  "desde": "2016-07-27 08:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ETC/USD": {
+  "filas_1h": 82801,
+  "trades": 4673851,
+  "desde": "2016-07-27 08:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ETH/EUR": {
+  "filas_1h": 94480,
+  "trades": 55615856,
+  "desde": "2015-08-07 11:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ETH/USD": {
+  "filas_1h": 92036,
+  "trades": 64013073,
+  "desde": "2015-08-07 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "FET/EUR": {
+  "filas_1h": 32203,
+  "trades": 1220617,
+  "desde": "2022-05-06 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "FET/USD": {
+  "filas_1h": 34810,
+  "trades": 4631265,
+  "desde": "2022-05-06 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "FIL/EUR": {
+  "filas_1h": 45426,
+  "trades": 1291842,
+  "desde": "2020-10-15 17:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "FIL/USD": {
+  "filas_1h": 49740,
+  "trades": 5786749,
+  "desde": "2020-10-15 17:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "GRT/EUR": {
+  "filas_1h": 46693,
+  "trades": 1674550,
+  "desde": "2020-12-18 21:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "GRT/USD": {
+  "filas_1h": 48164,
+  "trades": 2112536,
+  "desde": "2020-12-18 21:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "HBAR/EUR": {
+  "filas_1h": 8453,
+  "trades": 303216,
+  "desde": "2025-07-10 16:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "HBAR/USD": {
+  "filas_1h": 8522,
+  "trades": 1608582,
+  "desde": "2025-07-10 16:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "HYPE/EUR": {
+  "filas_1h": 3668,
+  "trades": 207828,
+  "desde": "2026-01-28 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "HYPE/USD": {
+  "filas_1h": 3681,
+  "trades": 1587141,
+  "desde": "2026-01-28 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ICP/EUR": {
+  "filas_1h": 33132,
+  "trades": 737759,
+  "desde": "2022-03-18 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ICP/USD": {
+  "filas_1h": 37327,
+  "trades": 3708941,
+  "desde": "2022-03-18 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "INJ/EUR": {
+  "filas_1h": 38542,
+  "trades": 748724,
+  "desde": "2021-08-10 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "INJ/USD": {
+  "filas_1h": 40642,
+  "trades": 3450451,
+  "desde": "2021-08-10 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "JUP/EUR": {
+  "filas_1h": 18691,
+  "trades": 225486,
+  "desde": "2024-01-31 16:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "JUP/USD": {
+  "filas_1h": 21101,
+  "trades": 1254321,
+  "desde": "2024-01-31 16:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "KAS/EUR": {
+  "filas_1h": 14029,
+  "trades": 630713,
+  "desde": "2024-11-19 13:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "KAS/USD": {
+  "filas_1h": 14114,
+  "trades": 2679814,
+  "desde": "2024-11-19 13:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "LINK/EUR": {
+  "filas_1h": 58700,
+  "trades": 5406547,
+  "desde": "2019-09-25 13:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "LINK/USD": {
+  "filas_1h": 58774,
+  "trades": 12826188,
+  "desde": "2019-09-25 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "LTC/EUR": {
+  "filas_1h": 101751,
+  "trades": 20946653,
+  "desde": "2013-09-14 08:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "LTC/USD": {
+  "filas_1h": 88909,
+  "trades": 17081952,
+  "desde": "2013-10-24 13:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "MATIC/EUR": {
+  "filas_1h": 33796,
+  "trades": 2228531,
+  "desde": "2021-05-17 15:00",
+  "hasta": "2025-03-31 23:00"
+ },
+ "MATIC/USD": {
+  "filas_1h": 33913,
+  "trades": 6562425,
+  "desde": "2021-05-17 15:00",
+  "hasta": "2025-03-31 23:00"
+ },
+ "MINA/EUR": {
+  "filas_1h": 41597,
+  "trades": 1072067,
+  "desde": "2021-06-01 00:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "MINA/USD": {
+  "filas_1h": 44041,
+  "trades": 2162296,
+  "desde": "2021-06-01 00:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "MON/EUR": {
+  "filas_1h": 5118,
+  "trades": 221966,
+  "desde": "2025-11-24 15:00",
+  "hasta": "2026-06-30 22:00"
+ },
+ "MON/USD": {
+  "filas_1h": 5241,
+  "trades": 945059,
+  "desde": "2025-11-24 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "NEAR/EUR": {
+  "filas_1h": 33149,
+  "trades": 1080743,
+  "desde": "2022-06-16 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "NEAR/USD": {
+  "filas_1h": 35119,
+  "trades": 3917839,
+  "desde": "2022-06-16 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "NIGHT/EUR": {
+  "filas_1h": 4829,
+  "trades": 365740,
+  "desde": "2025-12-09 10:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "NIGHT/USD": {
+  "filas_1h": 4886,
+  "trades": 1513467,
+  "desde": "2025-12-09 10:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ONDO/EUR": {
+  "filas_1h": 18991,
+  "trades": 607428,
+  "desde": "2024-04-11 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ONDO/USD": {
+  "filas_1h": 19433,
+  "trades": 2768675,
+  "desde": "2024-04-11 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "OP/EUR": {
+  "filas_1h": 20711,
+  "trades": 212471,
+  "desde": "2023-09-29 10:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "OP/USD": {
+  "filas_1h": 23943,
+  "trades": 1107936,
+  "desde": "2023-09-29 09:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "PENGU/EUR": {
+  "filas_1h": 11459,
+  "trades": 366509,
+  "desde": "2025-01-28 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "PENGU/USD": {
+  "filas_1h": 12433,
+  "trades": 3043103,
+  "desde": "2025-01-28 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "PEPE/EUR": {
+  "filas_1h": 27104,
+  "trades": 2016302,
+  "desde": "2023-05-16 16:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "PEPE/USD": {
+  "filas_1h": 27280,
+  "trades": 5567143,
+  "desde": "2023-05-16 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "POL/EUR": {
+  "filas_1h": 17055,
+  "trades": 477712,
+  "desde": "2023-12-21 17:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "POL/USD": {
+  "filas_1h": 16602,
+  "trades": 1015140,
+  "desde": "2023-12-21 21:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "PUMP/EUR": {
+  "filas_1h": 8321,
+  "trades": 659999,
+  "desde": "2025-07-14 16:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "PUMP/USD": {
+  "filas_1h": 8421,
+  "trades": 1729722,
+  "desde": "2025-07-14 16:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "QNT/EUR": {
+  "filas_1h": 34146,
+  "trades": 491321,
+  "desde": "2022-03-29 15:00",
+  "hasta": "2026-06-30 22:00"
+ },
+ "QNT/USD": {
+  "filas_1h": 36799,
+  "trades": 1627235,
+  "desde": "2022-03-29 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "RAY/EUR": {
+  "filas_1h": 26730,
+  "trades": 251609,
+  "desde": "2021-09-28 15:00",
+  "hasta": "2026-06-30 22:00"
+ },
+ "RAY/USD": {
+  "filas_1h": 31077,
+  "trades": 684882,
+  "desde": "2021-09-28 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "RENDER/EUR": {
+  "filas_1h": 16414,
+  "trades": 478873,
+  "desde": "2024-08-06 12:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "RENDER/USD": {
+  "filas_1h": 16633,
+  "trades": 2498937,
+  "desde": "2024-08-06 12:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "SEI/EUR": {
+  "filas_1h": 23148,
+  "trades": 452718,
+  "desde": "2023-08-15 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "SEI/USD": {
+  "filas_1h": 24814,
+  "trades": 3002130,
+  "desde": "2023-08-15 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "SHIB/EUR": {
+  "filas_1h": 39807,
+  "trades": 1528926,
+  "desde": "2021-11-30 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "SHIB/USD": {
+  "filas_1h": 40135,
+  "trades": 4201464,
+  "desde": "2021-11-30 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "SOL/EUR": {
+  "filas_1h": 44114,
+  "trades": 14117051,
+  "desde": "2021-06-17 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "SOL/USD": {
+  "filas_1h": 44113,
+  "trades": 31503385,
+  "desde": "2021-06-17 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "SPX/EUR": {
+  "filas_1h": 13266,
+  "trades": 475688,
+  "desde": "2024-12-11 15:00",
+  "hasta": "2026-06-30 22:00"
+ },
+ "SPX/USD": {
+  "filas_1h": 13581,
+  "trades": 2573130,
+  "desde": "2024-12-11 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "SUI/EUR": {
+  "filas_1h": 26352,
+  "trades": 1556121,
+  "desde": "2023-05-03 13:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "SUI/USD": {
+  "filas_1h": 26866,
+  "trades": 7072850,
+  "desde": "2023-05-03 12:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "TAO/EUR": {
+  "filas_1h": 17336,
+  "trades": 1244316,
+  "desde": "2024-06-25 19:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "TAO/USD": {
+  "filas_1h": 17614,
+  "trades": 5141204,
+  "desde": "2024-06-25 19:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "TON/EUR": {
+  "filas_1h": 14627,
+  "trades": 657619,
+  "desde": "2024-10-11 16:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "TON/USD": {
+  "filas_1h": 15033,
+  "trades": 1233284,
+  "desde": "2024-10-11 16:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "TRUMP/EUR": {
+  "filas_1h": 12127,
+  "trades": 681898,
+  "desde": "2025-01-18 20:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "TRUMP/USD": {
+  "filas_1h": 12664,
+  "trades": 2843139,
+  "desde": "2025-01-18 20:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "TRX/EUR": {
+  "filas_1h": 54935,
+  "trades": 4145918,
+  "desde": "2020-03-05 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "TRX/USD": {
+  "filas_1h": 54675,
+  "trades": 4841711,
+  "desde": "2020-03-05 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "UNI/EUR": {
+  "filas_1h": 49044,
+  "trades": 2930298,
+  "desde": "2020-10-15 13:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "UNI/USD": {
+  "filas_1h": 49851,
+  "trades": 4773713,
+  "desde": "2020-10-15 13:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "USELESS/EUR": {
+  "filas_1h": 7459,
+  "trades": 285482,
+  "desde": "2025-08-13 16:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "USELESS/USD": {
+  "filas_1h": 7703,
+  "trades": 1058138,
+  "desde": "2025-08-13 16:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "VIRTUAL/EUR": {
+  "filas_1h": 9851,
+  "trades": 98094,
+  "desde": "2025-02-12 15:00",
+  "hasta": "2026-06-30 22:00"
+ },
+ "VIRTUAL/USD": {
+  "filas_1h": 12050,
+  "trades": 968158,
+  "desde": "2025-02-12 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "VVV/EUR": {
+  "filas_1h": 6194,
+  "trades": 384061,
+  "desde": "2025-02-27 17:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "VVV/USD": {
+  "filas_1h": 7142,
+  "trades": 537520,
+  "desde": "2025-02-27 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "WLD/EUR": {
+  "filas_1h": 8795,
+  "trades": 133112,
+  "desde": "2025-03-05 18:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "WLD/USD": {
+  "filas_1h": 11353,
+  "trades": 895382,
+  "desde": "2025-03-05 18:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "BTC/EUR": {
+  "filas_1h": 110972,
+  "trades": 107795072,
+  "desde": "2013-09-10 23:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "BTC/USD": {
+  "filas_1h": 100728,
+  "trades": 103098393,
+  "desde": "2013-10-06 21:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "XDC/EUR": {
+  "filas_1h": 6747,
+  "trades": 286432,
+  "desde": "2025-09-02 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "XDC/USD": {
+  "filas_1h": 7228,
+  "trades": 794785,
+  "desde": "2025-09-02 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "DOGE/EUR": {
+  "filas_1h": 55421,
+  "trades": 9922076,
+  "desde": "2019-12-19 14:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "DOGE/USD": {
+  "filas_1h": 54576,
+  "trades": 23711532,
+  "desde": "2019-12-19 18:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "XLM/EUR": {
+  "filas_1h": 77418,
+  "trades": 6419830,
+  "desde": "2017-01-18 13:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "XLM/USD": {
+  "filas_1h": 76546,
+  "trades": 9689550,
+  "desde": "2017-01-17 20:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "XMR/EUR": {
+  "filas_1h": 79655,
+  "trades": 5549141,
+  "desde": "2017-01-02 18:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "XMR/USD": {
+  "filas_1h": 81663,
+  "trades": 11497906,
+  "desde": "2017-01-02 19:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "XPL/EUR": {
+  "filas_1h": 6537,
+  "trades": 367753,
+  "desde": "2025-09-25 13:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "XPL/USD": {
+  "filas_1h": 6672,
+  "trades": 1206079,
+  "desde": "2025-09-25 13:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "XRP/EUR": {
+  "filas_1h": 79839,
+  "trades": 27698672,
+  "desde": "2017-05-18 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "XRP/USD": {
+  "filas_1h": 79835,
+  "trades": 36046522,
+  "desde": "2017-05-18 15:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ZEC/EUR": {
+  "filas_1h": 80365,
+  "trades": 4150590,
+  "desde": "2016-10-28 21:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ZEC/USD": {
+  "filas_1h": 80795,
+  "trades": 9455762,
+  "desde": "2016-10-29 00:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ZRO/EUR": {
+  "filas_1h": 11605,
+  "trades": 84965,
+  "desde": "2024-06-21 18:00",
+  "hasta": "2026-06-30 23:00"
+ },
+ "ZRO/USD": {
+  "filas_1h": 17136,
+  "trades": 766499,
+  "desde": "2024-06-21 17:00",
+  "hasta": "2026-06-30 23:00"
+ }
+}
+
+== Todos los miembros (nombre · tamaño sin comprimir leído) ==
+0GEUR.csv · 4,028,745
+0GUSD.csv · 25,229,931
+1INCHEUR.csv · 10,752,188
+1INCHUSD.csv · 18,360,829
+2ZEUR.csv · 8,666,542
+2ZUSD.csv · 16,088,485
+AAVEAUD.csv · 506,644
+AAVEETH.csv · 110,399,721
+AAVEEUR.csv · 98,010,018
+AAVEGBP.csv · 9,255,828
+AAVEUSD.csv · 260,863,191
+AAVEXBT.csv · 145,160,643
+ABEUR.csv · 7,879,069
+ABUSD.csv · 14,299,476
+ACAEUR.csv · 12,925,039
+ACAUSD.csv · 24,210,948
+ACHEUR.csv · 8,656,418
+ACHUSD.csv · 45,189,854
+ACTEUR.csv · 566,900
+ACTUSD.csv · 4,027,358
+ACUEUR.csv · 10,053,547
+ACUUSD.csv · 18,799,293
+ACXEUR.csv · 167,576
+ACXUSD.csv · 601,176
+ADAAUD.csv · 10,496,382
+ADAETH.csv · 104,188,463
+ADAEUR.csv · 758,028,280
+ADAGBP.csv · 65,946,153
+ADAUSD.csv · 1,100,124,512
+ADAUSDC.csv · 28,658,475
+ADAUSDT.csv · 208,539,179
+ADAXBT.csv · 225,542,459
+ADIEUR.csv · 2,866,217
+ADIUSD.csv · 20,191,051
+ADXEUR.csv · 2,534,129
+ADXUSD.csv · 6,238,291
+AEROEUR.csv · 2,805,940
+AEROUSD.csv · 44,723,558
+AEUR.csv · 499,599
+AEVOEUR.csv · 1,564,603
+AEVOUSD.csv · 4,241,419
+AGLDEUR.csv · 1,044,455
+AGLDUSD.csv · 1,638,777
+AI16ZEUR.csv · 1,727,447
+AI16ZUSD.csv · 8,190,186
+AI16ZUSDC.csv · 1,007,353
+AI16ZUSDT.csv · 2,690,398
+AI3EUR.csv · 161,149
+AI3USD.csv · 506,241
+AIEUR.csv · 4,060,578
+AINUSD.csv · 1,837,400
+AIOUSD.csv · 903,497
+AIOZEUR.csv · 4,944,838
+AIOZUSD.csv · 12,370,771
+AIREUR.csv · 5,001,714
+AIRUSD.csv · 14,029,422
+AIUSD.csv · 16,986,154
+AIXBTEUR.csv · 1,574,925
+AIXBTUSD.csv · 6,477,158
+AKEUSD.csv · 23,993,433
+AKTEUR.csv · 25,927,585
+AKTUSD.csv · 184,513,802
+ALCHEUR.csv · 686,599
+ALCHUSD.csv · 1,944,650
+ALCXEUR.csv · 3,018,388
+ALCXUSD.csv · 17,410,629
+ALEOUSD.csv · 8,299,214
+ALEOUSDT.csv · 6,673,826
+ALGOETH.csv · 25,146,302
+ALGOEUR.csv · 142,646,924
+ALGOGBP.csv · 16,465,788
+ALGOUSD.csv · 374,808,744
+ALGOUSDC.csv · 6,067,455
+ALGOUSDT.csv · 36,996,648
+ALGOXBT.csv · 67,926,475
+ALICEEUR.csv · 1,827,000
+ALICEUSD.csv · 4,275,878
+ALKIMIEUR.csv · 2,988,981
+ALKIMIUSD.csv · 9,721,908
+ALLOUSD.csv · 4,668,089
+ALPHAEUR.csv · 4,345,134
+ALPHAUSD.csv · 17,930,699
+ALTEUR.csv · 1,006,983
+ALTHEAEUR.csv · 1,817,451
+ALTHEAUSD.csv · 12,421,651
+ALTUSD.csv · 4,895,778
+AMIUSD.csv · 3,135,909
+ANIMEEUR.csv · 149,070
+ANIMEUSD.csv · 1,678,059
+ANKREUR.csv · 16,738,461
+ANKRGBP.csv · 698,867
+ANKRUSD.csv · 20,957,055
+ANKRXBT.csv · 4,125,355
+ANLOGEUR.csv · 171,288
+ANLOGUSD.csv · 510,956
+ANONEUR.csv · 822,064
+ANONUSD.csv · 7,778,273
+ANTETH.csv · 3,964,619
+ANTEUR.csv · 15,793,772
+ANTUSD.csv · 20,180,892
+ANTXBT.csv · 10,677,446
+APEEUR.csv · 33,048,941
+APENFTEUR.csv · 655,900
+APENFTUSD.csv · 3,025,906
+APEUSD.csv · 103,498,945
+APEUSDC.csv · 613,849
+APEUSDT.csv · 10,536,057
+API3EUR.csv · 5,236,410
+API3USD.csv · 34,991,765
+APREUR.csv · 98,333
+APRUSD.csv · 5,332,637
+APTEUR.csv · 15,767,457
+APTUSD.csv · 79,408,642
+APUEUR.csv · 7,080,910
+APUUSD.csv · 26,926,158
+APXUSDUSD.csv · 27,606
+APXUSDUSDC.csv · 8,688
+ARBEUR.csv · 23,731,425
+ARBUSD.csv · 104,393,021
+ARCEUR.csv · 1,177,742
+ARCUSD.csv · 5,409,361
+AREUR.csv · 1,428,248
+ARKMEUR.csv · 3,020,118
+ARKMUSD.csv · 11,385,593
+ARPAEUR.csv · 2,405,323
+ARPAUSD.csv · 8,179,505
+ARUSD.csv · 16,504,065
+ARXUSD.csv · 2,644,964
+ASSETUSD.csv · 1,490,411
+ASTEREUR.csv · 625,768
+ASTERUSD.csv · 14,720,841
+ASTREUR.csv · 19,014,554
+ASTRUSD.csv · 23,814,776
+ATHEUR.csv · 5,030,124
+ATHUSD.csv · 24,791,008
+ATLASEUR.csv · 5,242,526
+ATLASUSD.csv · 31,879,836
+ATOMAUD.csv · 838,343
+ATOMETH.csv · 36,433,538
+ATOMEUR.csv · 193,825,271
+ATOMGBP.csv · 15,824,939
+ATOMUSD.csv · 423,956,028
+ATOMUSDC.csv · 2,984,585
+ATOMUSDT.csv · 21,470,337
+ATOMXBT.csv · 87,078,570
+AUCTIONEUR.csv · 922,812
+AUCTIONUSD.csv · 6,013,476
+AUDIOEUR.csv · 4,955,733
+AUDIOUSD.csv · 10,859,708
+AUDJPY.csv · 1,319,789
+AUDUSD.csv · 151,838,428
+AUDXAUD.csv · 367,816
+AUDXUSD.csv · 429,378
+AUSD.csv · 4,541,431
+AUSDUSD.csv · 2,115,849
+AVAAIEUR.csv · 379,778
+AVAAIUSD.csv · 1,813,077
+AVAEUR.csv · 782,249
+AVAUSD.csv · 22,686,292
+AVAXEUR.csv · 87,120,424
+AVAXUSD.csv · 303,208,343
+AVAXUSDC.csv · 6,080,417
+AVAXUSDT.csv · 46,829,177
+AVNTEUR.csv · 10,029,446
+AVNTUSD.csv · 49,424,187
+AXSEUR.csv · 20,586,923
+AXSUSD.csv · 108,652,312
+AZTECEUR.csv · 2,660,776
+AZTECUSD.csv · 8,778,348
+B2EUR.csv · 4,289,180
+B2USD.csv · 6,427,732
+B3EUR.csv · 640,260
+B3USD.csv · 6,048,600
+BABYEUR.csv · 543,301
+BABYSHARKUSD.csv · 593,346
+BABYUSD.csv · 18,229,878
+BADGEREUR.csv · 11,554,536
+BADGERUSD.csv · 13,582,335
+BALETH.csv · 1,655,758
+BALEUR.csv · 12,777,871
+BALUSD.csv · 19,995,329
+BALXBT.csv · 5,819,064
+BANANAS31EUR.csv · 1,298,110
+BANANAS31USD.csv · 10,976,832
+BANDEUR.csv · 4,859,425
+BANDUSD.csv · 11,133,280
+BASEDEUR.csv · 903,939
+BASEDUSD.csv · 9,697,288
+BATETH.csv · 5,037,316
+BATEUR.csv · 54,511,269
+BATJPY.csv · 213,584
+BATUSD.csv · 69,964,937
+BATXBT.csv · 16,478,477
+BCHAUD.csv · 4,375,150
+BCHETH.csv · 12,183,261
+BCHEUR.csv · 455,954,268
+BCHGBP.csv · 8,098,979
+BCHJPY.csv · 2,203,905
+BCHUSD.csv · 543,932,886
+BCHUSDC.csv · 1,536,350
+BCHUSDT.csv · 54,142,538
+BCHXBT.csv · 203,626,434
+BDXNEUR.csv · 1,398,657
+BDXNUSD.csv · 3,327,714
+BEAMEUR.csv · 6,319,694
+BEAMUSD.csv · 52,820,361
+BERAEUR.csv · 1,912,467
+BERAUSD.csv · 17,013,830
+BERAUSDC.csv · 1,073,500
+BERAUSDT.csv · 1,842,526
+BERTEUR.csv · 3,433,166
+BERTUSD.csv · 11,607,149
+BGBEUR.csv · 41,187
+BGBUSD.csv · 250,113
+BICOEUR.csv · 2,786,775
+BICOUSD.csv · 9,479,896
+BIGTIMEEUR.csv · 828,618
+BIGTIMEUSD.csv · 3,983,375
+BILLEUR.csv · 7,219,726
+BILLUSD.csv · 11,715,165
+BILLYEUR.csv · 406,696
+BILLYUSD.csv · 3,363,073
+BIOEUR.csv · 2,685,238
+BIOUSD.csv · 18,439,263
+BITEUR.csv · 1,309,383
+BITUSD.csv · 7,574,990
+BKSEUR.csv · 992,826
+BKSUSD.csv · 1,664,455
+BLENDEUR.csv · 2,044,138
+BLENDUSD.csv · 4,543,230
+BLESSUSD.csv · 7,362,224
+BLUAIEUR.csv · 1,804,210
+BLUAIUSD.csv · 4,625,475
+BLUEEUR.csv · 37,557
+BLUEUSD.csv · 170,770
+BLUREUR.csv · 6,980,557
+BLURUSD.csv · 40,032,416
+BLZEUR.csv · 9,206,469
+BLZUSD.csv · 40,627,975
+BMBUSD.csv · 1,993,632
+BMTEUR.csv · 5,870,389
+BMTUSD.csv · 12,728,681
+BNBEUR.csv · 27,169,865
+BNBUSD.csv · 58,721,771
+BNBUSDC.csv · 6,995,061
+BNBUSDT.csv · 4,854,936
+BNCEUR.csv · 11,558,633
+BNCUSD.csv · 18,561,124
+BNTEUR.csv · 3,573,530
+BNTGBP.csv · 166,767
+BNTUSD.csv · 5,560,581
+BNTXBT.csv · 800,442
+BOBAEUR.csv · 4,679,899
+BOBAUSD.csv · 19,808,457
+BOBEUR.csv · 5,812,262
+BOBUSD.csv · 17,525,933
+BODENEUR.csv · 4,367,519
+BODENUSD.csv · 23,239,950
+BONDEUR.csv · 4,167,361
+BONDUSD.csv · 15,445,619
+BONKEUR.csv · 27,756,868
+BONKUSD.csv · 141,168,531
+BONZOUSD.csv · 222,065
+BOSUSD.csv · 5,137,608
+BREVEUR.csv · 1,053,415
+BREVUSD.csv · 3,746,361
+BRICKEUR.csv · 4,482,087
+BRICKUSD.csv · 20,113,843
+BRL1USD.csv · 491,920
+BSXEUR.csv · 4,990,393
+BSXUSD.csv · 24,866,703
+BTREUR.csv · 2,107,534
+BTRUSD.csv · 13,468,529
+BTTEUR.csv · 7,733,245
+BTTUSD.csv · 36,046,384
+C98EUR.csv · 769,179
+C98USD.csv · 3,318,703
+CAKEEUR.csv · 949,688
+CAKEUSD.csv · 10,163,621
+CAMPEUR.csv · 3,001,000
+CAMPUSD.csv · 12,909,212
+CAPUSD.csv · 1,720,884
+CARVEUR.csv · 1,584,834
+CARVUSD.csv · 3,485,763
+CASHUSD.csv · 70,172
+CASHUSDC.csv · 2,109
+CATEUR.csv · 427,638
+CATUSD.csv · 1,977,161
+CCDEUR.csv · 12,394,656
+CCDUSD.csv · 29,880,651
+CCEUR.csv · 6,085,332
+CCUSD.csv · 74,133,408
+CCUSDC.csv · 5,715,916
+CCUSDT.csv · 2,949,401
+CELOEUR.csv · 553,036
+CELOUSD.csv · 13,041,257
+CELREUR.csv · 1,918,463
+CELRUSD.csv · 6,977,724
+CFGEUR.csv · 18,764,385
+CFGUSD.csv · 80,648,701
+CFXEUR.csv · 105,291
+CFXUSD.csv · 653,025
+CHECKUSD.csv · 6,730,641
+CHEEMSEUR.csv · 267,664
+CHEEMSUSD.csv · 3,813,741
+CHEXEUR.csv · 2,125,485
+CHEXUSD.csv · 16,926,246
+CHILLHOUSEEUR.csv · 874,280
+CHILLHOUSEUSD.csv · 13,331,088
+CHIPEUR.csv · 230,856
+CHIPUSD.csv · 4,468,157
+CHREUR.csv · 2,253,158
+CHRUSD.csv · 10,012,616
+CHZEUR.csv · 24,898,347
+CHZUSD.csv · 40,028,550
+CLANKEREUR.csv · 693,300
+CLANKERUSD.csv · 6,670,760
+CLOUDEUR.csv · 5,874,646
+CLOUDUSD.csv · 50,318,762
+CLVEUR.csv · 384,868
+CLVUSD.csv · 3,815,434
+CMETHETH.csv · 991,704
+CMETHUSD.csv · 887,730
+COMPETH.csv · 5,765,006
+COMPEUR.csv · 38,632,566
+COMPUSD.csv · 74,569,167
+COMPXBT.csv · 21,508,348
+COOKIEEUR.csv · 705,715
+COOKIEUSD.csv · 2,235,450
+COPMUSD.csv · 117,296
+COQEUR.csv · 782,708
+COQUSD.csv · 17,913,678
+CORNEUR.csv · 836,901
+CORNUSD.csv · 3,915,473
+COTIEUR.csv · 6,723,907
+COTIUSD.csv · 26,431,007
+COWEUR.csv · 727,936
+COWUSD.csv · 2,601,324
+CPOOLEUR.csv · 4,016,967
+CPOOLUSD.csv · 55,857,434
+CQTEUR.csv · 24,647,423
+CQTUSD.csv · 33,849,375
+CROEUR.csv · 6,788,694
+CROUSD.csv · 30,781,749
+CROUSDC.csv · 3,694,730
+CROUSDT.csv · 3,859,071
+CRVETH.csv · 4,941,944
+CRVEUR.csv · 60,802,458
+CRVUSD.csv · 191,560,917
+CRVXBT.csv · 13,598,689
+CSMEUR.csv · 2,395,725
+CSMUSD.csv · 2,386,504
+CTCEUR.csv · 1,385,924
+CTCUSD.csv · 3,282,802
+CTRUSD.csv · 2,945,213
+CTSIEUR.csv · 11,336,312
+CTSIUSD.csv · 13,583,851
+CVCEUR.csv · 2,084,628
+CVCUSD.csv · 7,352,096
+CVXEUR.csv · 4,264,202
+CVXUSD.csv · 35,916,860
+CXTEUR.csv · 9,417,694
+CXTUSD.csv · 22,842,126
+CYBEREUR.csv · 243,719
+CYBERUSD.csv · 1,508,697
+DAGEUR.csv · 532,024
+DAGUSD.csv · 4,315,825
+DAIEUR.csv · 266,454,528
+DAIUSD.csv · 338,946,880
+DAIUSDT.csv · 110,587,454
+DASHEUR.csv · 168,946,080
+DASHUSD.csv · 240,883,067
+DASHXBT.csv · 51,824,971
+DBREUR.csv · 4,743,672
+DBRUSD.csv · 9,550,683
+DCRUSD.csv · 1,684,068
+DEEPEUR.csv · 1,969,427
+DEEPUSD.csv · 9,126,404
+DEGENEUR.csv · 449,445
+DEGENUSD.csv · 2,999,047
+DENTEUR.csv · 3,969,264
+DENTUSD.csv · 15,922,630
+DMCEUR.csv · 3,819,975
+DMCUSD.csv · 8,229,399
+DOGEUR.csv · 3,141,832
+DOGSEUR.csv · 1,253,562
+DOGSUSD.csv · 4,929,604
+DOGUSD.csv · 40,220,288
+DOLOEUR.csv · 184,022
+DOLOUSD.csv · 1,848,551
+DOTAUD.csv · 2,215,326
+DOTETH.csv · 70,536,490
+DOTEUR.csv · 415,695,799
+DOTGBP.csv · 36,154,287
+DOTJPY.csv · 699,358
+DOTUSD.csv · 771,609,744
+DOTUSDC.csv · 4,735,265
+DOTUSDT.csv · 165,986,749
+DOTXBT.csv · 138,028,377
+DOVUUSD.csv · 1,859,861
+DRIFTEUR.csv · 2,553,751
+DRIFTUSD.csv · 24,164,002
+DRVEUR.csv · 3,368,488
+DRVUSD.csv · 15,647,571
+DUALEUR.csv · 506,742
+DUALUSD.csv · 2,415,312
+DUCKEUR.csv · 580,304
+DUCKUSD.csv · 2,119,481
+DYDXEUR.csv · 22,605,199
+DYDXUSD.csv · 39,666,218
+DYMEUR.csv · 4,364,336
+DYMUSD.csv · 24,158,296
+EATEUR.csv · 3,116,372
+EATUSD.csv · 7,391,466
+EDGEEUR.csv · 911,514
+EDGEUSD.csv · 49,538,622
+EDGEXEUR.csv · 1,619,346
+EDGEXUSD.csv · 2,750,421
+EDUEUR.csv · 685,530
+EDUUSD.csv · 1,260,696
+EGLDEUR.csv · 19,009,549
+EGLDUSD.csv · 30,712,772
+EIGENEUR.csv · 4,418,641
+EIGENUSD.csv · 41,185,529
+ELIZAOSEUR.csv · 1,889,186
+ELIZAOSUSD.csv · 5,280,908
+ELXEUR.csv · 1,908,458
+ELXUSD.csv · 13,315,924
+ENAEUR.csv · 20,967,143
+ENAUSD.csv · 92,369,010
+ENJEUR.csv · 30,388,053
+ENJGBP.csv · 1,563,372
+ENJJPY.csv · 109,542
+ENJUSD.csv · 101,984,613
+ENJXBT.csv · 12,415,721
+ENSEUR.csv · 5,379,853
+ENSOEUR.csv · 3,235,182
+ENSOUSD.csv · 7,785,075
+ENSUSD.csv · 22,495,883
+EOSETH.csv · 34,888,484
+EOSEUR.csv · 108,326,874
+EOSUSD.csv · 138,412,045
+EOSUSDC.csv · 425,855
+EOSUSDT.csv · 25,770,584
+EOSXBT.csv · 62,388,528
+EPTEUR.csv · 890,806
+EPTUSD.csv · 1,898,434
+ESEUR.csv · 3,205,424
+ESPEUR.csv · 735,517
+ESPORTSUSD.csv · 29,638,749
+ESPUSD.csv · 3,015,136
+ESUSD.csv · 10,874,173
+ESXUSD.csv · 2,617
+ETCETH.csv · 60,744,318
+ETCEUR.csv · 241,045,291
+ETCUSD.csv · 255,845,099
+ETCXBT.csv · 118,584,548
+ETH2.SETH.csv · 3,475,372
+ETHAED.csv · 1,365
+ETHAUD.csv · 58,618,331
+ETHCAD.csv · 138,272,752
+ETHCHF.csv · 75,836,441
+ETHDAI.csv · 15,627,967
+ETHEUR.csv · 3,010,394,106
+ETHEURC.csv · 1,023,747
+ETHEUROP.csv · 46,786
+ETHFIDD.csv · 2,076,148
+ETHFIEUR.csv · 2,324,149
+ETHFIUSD.csv · 10,246,114
+ETHGBP.csv · 198,323,987
+ETHJPY.csv · 15,255,874
+ETHPYUSD.csv · 27,028,315
+ETHUSD.csv · 3,477,410,619
+ETHUSD1.csv · 3,150,758
+ETHUSDC.csv · 229,198,466
+ETHUSDT.csv · 362,056,218
+ETHWETH.csv · 1,754,410
+ETHWEUR.csv · 9,599,881
+ETHWUSD.csv · 13,666,122
+ETHXBT.csv · 2,431,637,578
+EULEUR.csv · 6,475,968
+EULUSD.csv · 27,919,869
+EURAUD.csv · 18,856,383
+EURCAD.csv · 15,798,016
+EURCEUR.csv · 9,087,664
+EURCHF.csv · 225,637,665
+EURCUSD.csv · 5,791,766
+EURCUSDC.csv · 7,386,508
+EURGBP.csv · 272,040,177
+EURJPY.csv · 5,604,099
+EUROPEUR.csv · 1,195,777
+EUROPUSD.csv · 769,020
+EUROPUSDC.csv · 862,307
+EURQEUR.csv · 823,792
+EURQUSD.csv · 2,795,888
+EURREUR.csv · 1,391,255
+EURRUSD.csv · 1,436,725
+EURRUSDC.csv · 488,394
+EURRUSDT.csv · 393,616
+EURTEUR.csv · 3,023,643
+EURTUSD.csv · 6,052,790
+EURTUSDT.csv · 1,945,575
+EURUSD.csv · 2,576,048,655
+EVAAUSD.csv · 2,547,551
+EVEUR.csv · 329,920
+EVUSD.csv · 861,427
+EWTEUR.csv · 53,121,207
+EWTGBP.csv · 4,730,726
+EWTUSD.csv · 75,239,351
+EWTXBT.csv · 16,565,256
+FARMEUR.csv · 1,380,402
+FARMUSD.csv · 5,857,824
+FARTCOINEUR.csv · 24,966,671
+FARTCOINUSD.csv · 183,319,300
+FARTCOINUSDC.csv · 11,999,380
+FARTCOINUSDT.csv · 15,693,479
+FETEUR.csv · 64,088,155
+FETUSD.csv · 245,950,347
+FFUSD.csv · 3,449,434
+FHEEUR.csv · 7,970,799
+FHEUSD.csv · 21,308,641
+FIDAEUR.csv · 4,540,221
+FIDAUSD.csv · 18,972,423
+FIDDUSD.csv · 1,736,113
+FIDDUSDC.csv · 419,071
+FIDDUSDT.csv · 796,691
+FIGHTEUR.csv · 456,980
+FIGHTUSD.csv · 3,788,715
+FILAUD.csv · 162,870
+FILETH.csv · 9,283,550
+FILEUR.csv · 66,094,610
+FILGBP.csv · 7,253,465
+FILUSD.csv · 299,280,067
+FILXBT.csv · 24,507,064
+FISEUR.csv · 3,005,291
+FISUSD.csv · 15,306,711
+FLOCKEUR.csv · 326,718
+FLOCKUSD.csv · 1,184,938
+FLOKIEUR.csv · 6,410,512
+FLOKIUSD.csv · 24,420,751
+FLOWETH.csv · 28,125,545
+FLOWEUR.csv · 98,664,703
+FLOWGBP.csv · 11,727,673
+FLOWUSD.csv · 157,859,825
+FLOWXBT.csv · 38,819,455
+FLREUR.csv · 24,068,381
+FLRUSD.csv · 184,747,621
+FLUXEUR.csv · 17,150,038
+FLUXUSD.csv · 26,628,435
+FOLKSUSD.csv · 4,456,272
+FORESTUSD.csv · 647,237
+FORTHEUR.csv · 8,099,625
+FORTHUSD.csv · 22,023,353
+FRNTUSD.csv · 74,911
+FRNTUSDC.csv · 2,715
+FTMEUR.csv · 16,480,793
+FTMUSD.csv · 90,796,042
+FUNEUR.csv · 8,756,929
+FUNUSD.csv · 19,631,107
+FWOGEUR.csv · 13,168,810
+FWOGUSD.csv · 77,174,389
+FXSEUR.csv · 4,278,679
+FXSUSD.csv · 19,979,516
+GAIAEUR.csv · 579,870
+GAIAUSD.csv · 4,049,851
+GAIBUSD.csv · 1,894,154
+GALAEUR.csv · 21,472,438
+GALAUSD.csv · 94,877,957
+GALEUR.csv · 1,425,842
+GALUSD.csv · 9,138,617
+GAME2EUR.csv · 1,561,218
+GAME2USD.csv · 3,307,724
+GARIEUR.csv · 3,473,868
+GARIUSD.csv · 26,137,429
+GASEUR.csv · 44,877
+GASUSD.csv · 111,973
+GBPUSD.csv · 530,462,799
+GENIUSEUR.csv · 345,619
+GENIUSUSD.csv · 1,124,538
+GEUR.csv · 73,921
+GFIEUR.csv · 4,017,816
+GFIUSD.csv · 14,920,268
+GHIBLIEUR.csv · 551,823
+GHIBLIUSD.csv · 12,104,358
+GHSTEUR.csv · 5,953,210
+GHSTGBP.csv · 113,664
+GHSTUSD.csv · 13,119,904
+GHSTXBT.csv · 1,105,535
+GIBUSD.csv · 745,206
+GIGAEUR.csv · 6,209,622
+GIGAUSD.csv · 68,048,723
+GLMREUR.csv · 17,295,009
+GLMRUSD.csv · 24,985,984
+GMTEUR.csv · 3,586,680
+GMTUSD.csv · 15,406,169
+GMXEUR.csv · 3,235,547
+GMXUSD.csv · 13,179,587
+GNOETH.csv · 20,889,416
+GNOEUR.csv · 36,474,521
+GNOUSD.csv · 50,335,290
+GNOXBT.csv · 26,102,624
+GOATEUR.csv · 1,987,843
+GOATUSD.csv · 19,492,498
+GOMININGEUR.csv · 3,717,189
+GOMININGUSD.csv · 8,459,349
+GRASSEUR.csv · 1,061,134
+GRASSUSD.csv · 5,393,069
+GRIFFAINEUR.csv · 2,301,934
+GRIFFAINUSD.csv · 14,104,500
+GRTAUD.csv · 142,742
+GRTETH.csv · 3,347,415
+GRTEUR.csv · 90,369,669
+GRTGBP.csv · 6,727,495
+GRTUSD.csv · 114,811,153
+GRTXBT.csv · 18,881,538
+GSTEUR.csv · 6,138,460
+GSTUSD.csv · 28,831,570
+GTCEUR.csv · 2,291,204
+GTCUSD.csv · 7,367,324
+GUNEUR.csv · 1,285,606
+GUNUSD.csv · 26,804,349
+GUSD.csv · 2,868,333
+GWEIUSD.csv · 21,167,747
+HBAREUR.csv · 15,955,537
+HBARUSD.csv · 85,857,830
+HDXEUR.csv · 4,506,107
+HDXUSD.csv · 20,909,049
+HFTEUR.csv · 3,562,932
+HFTUSD.csv · 17,401,808
+HIPPOEUR.csv · 262,957
+HIPPOUSD.csv · 2,217,644
+HMSTREUR.csv · 414,555
+HMSTRUSD.csv · 1,216,418
+HNTEUR.csv · 7,186,315
+HNTUSD.csv · 44,922,723
+HOLOUSD.csv · 160,042
+HONEYEUR.csv · 9,243,353
+HONEYUSD.csv · 39,646,867
+HOUSEEUR.csv · 39,439
+HOUSEUSD.csv · 821,801
+HPOS10IEUR.csv · 695,880
+HPOS10IUSD.csv · 3,824,175
+HSKEUR.csv · 149,122
+HSKUSD.csv · 1,518,602
+HYPEEUR.csv · 10,721,539
+HYPEUSD.csv · 83,308,945
+IAGEUR.csv · 2,288,439
+IAGUSD.csv · 3,190,861
+ICNTEUR.csv · 1,997,054
+ICNTUSD.csv · 12,859,622
+ICPEUR.csv · 37,318,876
+ICPUSD.csv · 191,238,494
+ICXETH.csv · 4,815,349
+ICXEUR.csv · 32,305,930
+ICXUSD.csv · 34,156,241
+ICXXBT.csv · 14,200,620
+IDEXEUR.csv · 2,142,533
+IDEXUSD.csv · 20,227,227
+IDOSEUR.csv · 1,022,890
+IDOSUSD.csv · 6,728,591
+IMXEUR.csv · 16,352,340
+IMXUSD.csv · 58,296,838
+INEUR.csv · 1,082,925
+INITEUR.csv · 1,738,801
+INITUSD.csv · 13,399,529
+INJEUR.csv · 38,023,372
+INJUSD.csv · 178,084,095
+INTREUR.csv · 13,106,744
+INTRUSD.csv · 4,134,743
+INUSD.csv · 5,207,337
+INXEUR.csv · 6,830,761
+INXUSD.csv · 9,773,774
+IPEUR.csv · 1,797,593
+IPUSD.csv · 27,637,933
+IREUR.csv · 335,044
+IRUSD.csv · 874,194
+JAILSTOOLEUR.csv · 903,294
+JAILSTOOLUSD.csv · 25,183,866
+JASMYEUR.csv · 16,811,613
+JASMYUSD.csv · 57,499,972
+JITOSOLEUR.csv · 301,487
+JITOSOLSOL.csv · 54,950
+JITOSOLUSD.csv · 1,672,811
+JOEEUR.csv · 312,351
+JOEUSD.csv · 2,544,229
+JSTEUR.csv · 601,915
+JSTUSD.csv · 1,983,531
+JTOEUR.csv · 3,843,277
+JTOUSD.csv · 28,798,448
+JUNOEUR.csv · 5,649,973
+JUNOUSD.csv · 32,377,564
+JUPEUR.csv · 11,750,983
+JUPUSD.csv · 66,037,834
+KAITOEUR.csv · 11,131,564
+KAITOUSD.csv · 26,722,456
+KAREUR.csv · 8,565,355
+KARUSD.csv · 13,361,961
+KASEUR.csv · 33,487,612
+KASUSD.csv · 144,352,044
+KASUSDT.csv · 3,553,662
+KATEUR.csv · 1,726,269
+KATUSD.csv · 6,356,941
+KAVAETH.csv · 7,524,045
+KAVAEUR.csv · 86,254,200
+KAVAUSD.csv · 109,788,653
+KAVAXBT.csv · 20,427,232
+KEEPETH.csv · 8,383,412
+KEEPEUR.csv · 27,924,754
+KEEPUSD.csv · 119,700,466
+KEEPXBT.csv · 16,668,455
+KERNELEUR.csv · 2,250,465
+KERNELUSD.csv · 4,631,704
+KEUR.csv · 22,463
+KEYEUR.csv · 5,992,078
+KEYUSD.csv · 21,086,796
+KGENUSD.csv · 2,279,898
+KILTEUR.csv · 8,194,286
+KILTUSD.csv · 12,580,056
+KINEUR.csv · 10,645,848
+KINTEUR.csv · 3,538,868
+KINTUSD.csv · 10,166,265
+KINUSD.csv · 20,163,979
+KMNOEUR.csv · 3,878,614
+KMNOUSD.csv · 9,673,264
+KNCETH.csv · 2,647,754
+KNCEUR.csv · 28,313,499
+KNCUSD.csv · 50,729,407
+KNCXBT.csv · 7,572,311
+KNTQEUR.csv · 810,644
+KNTQUSD.csv · 8,623,497
+KOBANEUR.csv · 367,663
+KOBANUSD.csv · 613,584
+KP3REUR.csv · 3,395,282
+KP3RUSD.csv · 7,566,686
+KSMAUD.csv · 584,386
+KSMDOT.csv · 11,310,307
+KSMETH.csv · 9,046,737
+KSMEUR.csv · 92,889,984
+KSMGBP.csv · 10,036,177
+KSMUSD.csv · 187,831,286
+KSMXBT.csv · 23,544,529
+KTAEUR.csv · 4,169,480
+KTAUSD.csv · 36,985,625
+KUJIEUR.csv · 325,821
+KUJIUSD.csv · 4,431,284
+KULAEUR.csv · 541,657
+KULAUSD.csv · 1,692,664
+KUSD.csv · 138,392
+L3EUR.csv · 617,951
+L3USD.csv · 13,695,883
+LAVAEUR.csv · 3,069,203
+LAVAUSD.csv · 7,658,143
+LAYEREUR.csv · 503,209
+LAYERUSD.csv · 3,011,973
+LCAPEUR.csv · 344,801
+LCAPUSD.csv · 2,816,863
+LCXEUR.csv · 17,116,377
+LCXUSD.csv · 75,861,880
+LDOEUR.csv · 20,032,149
+LDOUSD.csv · 108,052,596
+LINEAEUR.csv · 951,329
+LINEAUSD.csv · 8,874,755
+LINKAUD.csv · 6,040,973
+LINKETH.csv · 36,860,981
+LINKEUR.csv · 286,039,180
+LINKGBP.csv · 20,588,488
+LINKJPY.csv · 487,066
+LINKUSD.csv · 684,164,594
+LINKUSDC.csv · 15,174,424
+LINKUSDT.csv · 122,462,252
+LINKXBT.csv · 111,430,054
+LIONEUR.csv · 866,856
+LIONUSD.csv · 7,193,007
+LITEUR.csv · 2,340,522
+LITUSD.csv · 17,603,407
+LMWREUR.csv · 29,675,562
+LMWRUSD.csv · 50,719,388
+LOCKINEUR.csv · 5,417,109
+LOCKINUSD.csv · 14,018,002
+LOFIEUR.csv · 2,443,551
+LOFIUSD.csv · 9,873,305
+LPTEUR.csv · 16,693,274
+LPTGBP.csv · 1,214,669
+LPTUSD.csv · 30,023,830
+LPTXBT.csv · 2,078,769
+LQTYEUR.csv · 328,457
+LQTYUSD.csv · 2,780,596
+LRCEUR.csv · 26,682,611
+LRCUSD.csv · 36,922,739
+LSETHETH.csv · 561,447
+LSETHEUR.csv · 161,475
+LSETHUSD.csv · 902,451
+LSKETH.csv · 3,850,560
+LSKEUR.csv · 37,201,317
+LSKUSD.csv · 42,226,221
+LSKXBT.csv · 16,741,985
+LSSOLEUR.csv · 463,399
+LSSOLSOL.csv · 398,098
+LSSOLUSD.csv · 335,606
+LTCAUD.csv · 12,118,958
+LTCETH.csv · 26,609,826
+LTCEUR.csv · 1,102,836,299
+LTCGBP.csv · 81,784,848
+LTCJPY.csv · 3,119,327
+LTCUSD.csv · 900,246,034
+LTCUSDC.csv · 11,557,707
+LTCUSDT.csv · 138,227,463
+LTCXBT.csv · 266,521,770
+LUNA2EUR.csv · 16,726,490
+LUNA2USD.csv · 29,907,772
+LUNAEUR.csv · 174,466,709
+LUNAUSD.csv · 417,950,167
+MANAETH.csv · 11,546,739
+MANAEUR.csv · 107,042,661
+MANAUSD.csv · 221,817,838
+MANAUSDC.csv · 567,282
+MANAUSDT.csv · 10,954,958
+MANAXBT.csv · 42,957,572
+MANTRAEUR.csv · 1,544,500
+MANTRAUSD.csv · 1,963,414
+MASKEUR.csv · 3,085,172
+MASKUSD.csv · 19,297,234
+MATEUR.csv · 1,731,004
+MATICEUR.csv · 71,451,584
+MATICGBP.csv · 7,712,357
+MATICPOL.csv · 369,479
+MATICUSD.csv · 213,863,687
+MATICUSDC.csv · 144,093
+MATICUSDT.csv · 17,511,215
+MATICXBT.csv · 40,168,853
+MATUSD.csv · 5,566,883
+MCEUR.csv · 2,022,802
+MCUSD.csv · 3,203,484
+MEEUR.csv · 262,601
+MEGAEUR.csv · 573,840
+MEGAUSD.csv · 6,390,076
+MELANIAEUR.csv · 5,932,067
+MELANIAUSD.csv · 33,399,156
+MELANIAUSDC.csv · 1,485,035
+MELANIAUSDT.csv · 4,214,249
+MEMEEUR.csv · 2,095,465
+MEMEUSD.csv · 6,658,315
+MERLEUR.csv · 1,693,453
+MERLUSD.csv · 10,140,481
+METEUR.csv · 465,153
+METHETH.csv · 1,075,396
+METHUSD.csv · 1,066,598
+METISEUR.csv · 249,113
+METISUSD.csv · 2,577,236
+METUSD.csv · 2,473,743
+MEUR.csv · 32,514,412
+MEUSD.csv · 3,630,825
+MEWEUR.csv · 3,139,778
+MEWUSD.csv · 11,148,201
+MEZOUSD.csv · 3,991,879
+MFEUR.csv · 1,656,425
+MFUSD.csv · 4,534,776
+MICHIEUR.csv · 434,332
+MICHIUSD.csv · 2,557,198
+MIMEUR.csv · 352,429
+MIMUSD.csv · 5,276,806
+MINAEUR.csv · 54,748,312
+MINAGBP.csv · 9,031,785
+MINAUSD.csv · 111,800,295
+MINAXBT.csv · 20,365,660
+MIRAEUR.csv · 1,657,597
+MIRAUSD.csv · 3,824,720
+MIREUR.csv · 12,339,743
+MIRUSD.csv · 38,474,794
+MKREUR.csv · 8,532,699
+MKRGBP.csv · 254,569
+MKRUSD.csv · 26,635,119
+MKRXBT.csv · 4,548,207
+MLNETH.csv · 20,531,405
+MLNEUR.csv · 49,791,644
+MLNUSD.csv · 70,921,740
+MLNXBT.csv · 49,641,383
+MNGOEUR.csv · 2,386,755
+MNGOUSD.csv · 8,739,061
+MNTEUR.csv · 2,892,738
+MNTUSD.csv · 26,538,898
+MOCAEUR.csv · 4,137,793
+MOCAUSD.csv · 3,178,193
+MOGEUR.csv · 8,517,792
+MOGUSD.csv · 58,714,603
+MONAUSD.csv · 1,080,865
+MONEUR.csv · 11,822,351
+MONUSD.csv · 50,836,261
+MOODENGEUR.csv · 5,150,921
+MOODENGUSD.csv · 34,790,542
+MOONEUR.csv · 3,689,075
+MOONUSD.csv · 20,964,970
+MORPHOEUR.csv · 12,407,130
+MORPHOUSD.csv · 49,532,994
+MOVEEUR.csv · 347,459
+MOVEUSD.csv · 3,175,996
+MOVREUR.csv · 38,253,287
+MOVRUSD.csv · 56,821,931
+MPLEUR.csv · 206,823
+MPLUSD.csv · 912,619
+MSOLEUR.csv · 1,233,420
+MSOLUSD.csv · 23,363,006
+MUBARAKUSD.csv · 1,715,098
+MULTIEUR.csv · 6,849,017
+MULTIUSD.csv · 31,835,715
+MUSD.csv · 75,257,008
+MVEUR.csv · 4,760,057
+MVUSD.csv · 12,466,057
+MXCEUR.csv · 5,120,572
+MXCUSD.csv · 26,897,292
+MXNBUSD.csv · 39,898
+MYXEUR.csv · 1,843,667
+MYXUSD.csv · 14,519,308
+NANOETH.csv · 10,581,497
+NANOEUR.csv · 84,523,385
+NANOUSD.csv · 130,214,431
+NANOXBT.csv · 21,662,053
+NEAREUR.csv · 54,893,729
+NEARUSD.csv · 202,128,323
+NEIROEUR.csv · 2,803,963
+NEIROUSD.csv · 11,400,384
+NEOEUR.csv · 697,859
+NEOUSD.csv · 8,141,926
+NESUSD.csv · 2,114,349
+NEXEUR.csv · 2,443,190
+NEXUSD.csv · 5,886,623
+NIGHTEUR.csv · 19,287,382
+NIGHTUSD.csv · 80,702,849
+NILEUR.csv · 742,832
+NILUSD.csv · 6,186,874
+NMREUR.csv · 4,256,830
+NMRUSD.csv · 11,110,891
+NOBODYEUR.csv · 2,424,837
+NOBODYUSD.csv · 6,543,392
+NOCKUSD.csv · 81,565
+NODEUSD.csv · 4,801,213
+NODLEUR.csv · 3,527,648
+NODLUSD.csv · 8,661,504
+NOSEUR.csv · 18,835,898
+NOSUSD.csv · 42,753,212
+NOTEUR.csv · 460,056
+NOTUSD.csv · 4,407,557
+NPCEUR.csv · 29,413,572
+NPCUSD.csv · 41,434,313
+NTRNEUR.csv · 423,759
+NTRNUSD.csv · 2,863,822
+NYMEUR.csv · 1,899,037
+NYMUSD.csv · 7,499,617
+NYMXBT.csv · 1,791,607
+OBOLEUR.csv · 2,645,501
+OBOLUSD.csv · 3,324,921
+OBOLUSDT.csv · 1,161,579
+OCEANEUR.csv · 47,922,751
+OCEANGBP.csv · 3,192,046
+OCEANUSD.csv · 99,628,049
+OCEANXBT.csv · 9,390,237
+ODOSEUR.csv · 147,788
+ODOSUSD.csv · 3,763,939
+OGNEUR.csv · 11,593,808
+OGNUSD.csv · 14,213,250
+OKBUSD.csv · 194,148
+OMEUR.csv · 3,912,924
+OMGETH.csv · 4,727,722
+OMGEUR.csv · 53,715,761
+OMGJPY.csv · 204,130
+OMGUSD.csv · 119,195,866
+OMGXBT.csv · 13,652,265
+OMIEUR.csv · 1,335,632
+OMIUSD.csv · 5,602,844
+OMNIEUR.csv · 197,936
+OMNIUSD.csv · 765,917
+OMUSD.csv · 15,342,184
+ONDOEUR.csv · 31,666,632
+ONDOUSD.csv · 146,607,365
+OOBEUR.csv · 3,149,977
+OOBUSD.csv · 14,087,973
+OPENEUR.csv · 4,005,216
+OPENUSD.csv · 8,810,607
+OPEUR.csv · 10,742,098
+OPNUSD.csv · 3,033,721
+OPUSD.csv · 56,734,063
+ORCAEUR.csv · 8,074,714
+ORCAUSD.csv · 19,704,790
+ORDERUSD.csv · 2,370,276
+OSMOEUR.csv · 1,165,491
+OSMOUSD.csv · 12,697,568
+OXTETH.csv · 5,733,585
+OXTEUR.csv · 52,022,067
+OXTUSD.csv · 86,084,466
+OXTXBT.csv · 16,456,296
+OXYEUR.csv · 6,875,772
+OXYUSD.csv · 6,049,758
+PACKUSD.csv · 385,209
+PACTUSD.csv · 4,130,999
+PARAEUR.csv · 587,674
+PARAUSD.csv · 888,133
+PARTIEUR.csv · 893,837
+PARTIUSD.csv · 3,599,503
+PAXGETH.csv · 19,288,592
+PAXGEUR.csv · 69,045,353
+PAXGUSD.csv · 127,238,659
+PAXGXBT.csv · 55,183,186
+PDAEUR.csv · 534,665
+PDAUSD.csv · 1,515,898
+PEAQEUR.csv · 12,045,238
+PEAQUSD.csv · 28,693,992
+PEAQUSDC.csv · 6,672,819
+PENDLEEUR.csv · 3,526,474
+PENDLEUSD.csv · 23,160,037
+PENGUEUR.csv · 19,643,743
+PENGUUSD.csv · 166,542,402
+PENGUUSDC.csv · 4,670,483
+PENGUUSDT.csv · 7,157,018
+PEPEAUD.csv · 886,489
+PEPECAD.csv · 4,171,854
+PEPECOINUSD.csv · 468,486
+PEPEEUR.csv · 122,135,671
+PEPEGBP.csv · 5,196,675
+PEPEUR.csv · 34,822
+PEPEUSD.csv · 339,463,071
+PEPUSD.csv · 3,026,222
+PERPEUR.csv · 15,731,826
+PERPUSD.csv · 21,525,839
+PHAEUR.csv · 15,801,732
+PHAUSD.csv · 68,981,609
+PIEUR.csv · 1,369,248
+PIEVERSEUSD.csv · 1,795,181
+PIPEEUR.csv · 1,598,739
+PIPEUSD.csv · 4,372,555
+PIUSD.csv · 3,525,170
+PLAEUR.csv · 297,777
+PLAUSD.csv · 626,190
+PLAYEUR.csv · 4,974,116
+PLAYUSD.csv · 37,098,490
+PLUMEEUR.csv · 9,048,212
+PLUMEUSD.csv · 47,702,775
+PNUTEUR.csv · 2,494,446
+PNUTUSD.csv · 26,149,349
+POLEUR.csv · 25,000,489
+POLISEUR.csv · 4,627,801
+POLISUSD.csv · 20,844,068
+POLSEUR.csv · 2,566,431
+POLSUSD.csv · 16,532,235
+POLUSD.csv · 53,339,238
+PONDEUR.csv · 1,934,453
+PONDUSD.csv · 16,092,909
+PONKEEUR.csv · 2,456,459
+PONKEUSD.csv · 21,344,447
+POPCATEUR.csv · 9,801,908
+POPCATGBP.csv · 1,715,197
+POPCATUSD.csv · 92,746,395
+PORTALEUR.csv · 1,408,630
+PORTALUSD.csv · 3,870,686
+POWREUR.csv · 3,215,146
+POWRUSD.csv · 8,542,641
+PRCLEUR.csv · 4,846,074
+PRCLUSD.csv · 8,652,335
+PRIMEEUR.csv · 10,671,967
+PRIMEUSD.csv · 42,043,167
+PROEUR.csv · 1,468,152
+PROMPTEUR.csv · 6,540,886
+PROMPTUSD.csv · 31,262,290
+PROSEUR.csv · 639,528
+PROSUSD.csv · 2,483,207
+PROUSD.csv · 5,273,127
+PROVEEUR.csv · 6,017,973
+PROVEUSD.csv · 11,882,574
+PSTAKEEUR.csv · 2,210,238
+PSTAKEUSD.csv · 3,346,438
+PTBEUR.csv · 4,792,464
+PTBUSD.csv · 39,466,979
+PUFFEREUR.csv · 2,023,102
+PUFFERUSD.csv · 29,905,417
+PUMPEUR.csv · 36,457,711
+PUMPSOL.csv · 777,609
+PUMPUSD.csv · 97,276,637
+PUPSEUR.csv · 1,383,418
+PUPSUSD.csv · 6,019,637
+PYTHEUR.csv · 10,317,587
+PYTHUSD.csv · 52,251,248
+PYUSDEUR.csv · 309,762
+PYUSDUSD.csv · 14,450,619
+QCADUSD.csv · 106,931
+QEUR.csv · 6,169,691
+QIUSD.csv · 1,293,574
+QNTEUR.csv · 25,055,245
+QNTUSD.csv · 84,106,600
+QTUMETH.csv · 4,203,560
+QTUMEUR.csv · 49,423,135
+QTUMUSD.csv · 59,163,918
+QTUMXBT.csv · 21,167,644
+QUAIEUR.csv · 221,389
+QUAIUSD.csv · 996,411
+QUSD.csv · 10,232,880
+RADEUR.csv · 2,258,607
+RADUSD.csv · 8,767,009
+RAILSEUR.csv · 506,934
+RAILSUSD.csv · 3,605,976
+RAREEUR.csv · 4,903,658
+RAREUSD.csv · 36,961,273
+RARIEUR.csv · 28,426,848
+RARIGBP.csv · 466,297
+RARIUSD.csv · 71,303,427
+RARIXBT.csv · 3,511,343
+RAYEUR.csv · 12,693,444
+RAYUSD.csv · 34,790,830
+RBCEUR.csv · 3,597,311
+RBCUSD.csv · 25,418,264
+REDEUR.csv · 2,133,225
+REDUSD.csv · 10,326,109
+REKTEUR.csv · 1,750,078
+REKTUSD.csv · 7,151,088
+RENDEREUR.csv · 23,651,509
+RENDERUSD.csv · 125,363,149
+RENEUR.csv · 17,163,329
+RENGBP.csv · 448,917
+RENUSD.csv · 35,054,637
+RENXBT.csv · 1,791,415
+REPETH.csv · 24,559,723
+REPEUR.csv · 71,616,686
+REPPOEUR.csv · 557,111
+REPPOUSD.csv · 2,664,613
+REPUSD.csv · 27,704,380
+REPV2ETH.csv · 2,896,084
+REPV2EUR.csv · 13,205,300
+REPV2USD.csv · 27,416,360
+REPV2XBT.csv · 11,781,607
+REPXBT.csv · 43,569,287
+REQEUR.csv · 1,984,650
+REQUSD.csv · 7,821,252
+REUSD.csv · 4,469,251
+REZEUR.csv · 959,510
+REZUSD.csv · 9,586,270
+RIVEREUR.csv · 1,529,009
+RIVERUSD.csv · 43,810,579
+RIZEEUR.csv · 8,195,365
+RIZEUSD.csv · 42,712,333
+RLCEUR.csv · 3,378,741
+RLCUSD.csv · 11,424,453
+RLSEUR.csv · 4,089,586
+RLSUSD.csv · 17,259,003
+RLUSDUSD.csv · 8,296,460
+RLUSDUSDC.csv · 3,547,724
+RLUSDUSDT.csv · 4,888,225
+RNBWUSD.csv · 2,202,255
+RNDREUR.csv · 14,738,781
+RNDRUSD.csv · 79,013,610
+ROBOUSD.csv · 3,532,361
+ROLLEUR.csv · 988,904
+ROLLUSD.csv · 5,787,073
+ROOKEUR.csv · 1,831,565
+ROOKUSD.csv · 1,526,736
+RPLEUR.csv · 4,148,022
+RPLUSD.csv · 15,364,612
+RSCEUR.csv · 528,052
+RSCUSD.csv · 1,933,832
+RSREUR.csv · 2,358,817
+RSRUSD.csv · 11,083,679
+RUJIEUR.csv · 4,713,934
+RUJIUSD.csv · 8,547,019
+RUNEEUR.csv · 14,362,271
+RUNEUSD.csv · 72,281,189
+RVVUSD.csv · 1,865,145
+SAFEEUR.csv · 1,230,376
+SAFEUSD.csv · 4,315,052
+SAGAEUR.csv · 1,547,961
+SAGAUSD.csv · 27,092,724
+SAHARAEUR.csv · 3,257,774
+SAHARAUSD.csv · 9,470,474
+SAMOEUR.csv · 8,628,665
+SAMOUSD.csv · 33,176,916
+SANDEUR.csv · 60,614,431
+SANDGBP.csv · 6,996,851
+SANDUSD.csv · 120,610,436
+SANDXBT.csv · 14,106,232
+SAPIENEUR.csv · 15,569,072
+SAPIENUSD.csv · 50,176,956
+SAUCEEUR.csv · 240,361
+SAUCEUSD.csv · 629,559
+SBREUR.csv · 13,469,072
+SBRUSD.csv · 47,810,827
+SCAUSD.csv · 296,130
+SCETH.csv · 10,551,376
+SCEUR.csv · 161,444,710
+SCOREUR.csv · 857,487
+SCORUSD.csv · 2,791,363
+SCRTEUR.csv · 28,075,101
+SCRTUSD.csv · 131,072,947
+SCUSD.csv · 218,824,757
+SCXBT.csv · 69,106,401
+SDNEUR.csv · 9,517,635
+SDNUSD.csv · 6,968,428
+SEIEUR.csv · 23,803,985
+SEIUSD.csv · 160,240,590
+SENTEUR.csv · 6,871,826
+SENTUSD.csv · 23,225,057
+SEUR.csv · 3,905,838
+SGBEUR.csv · 25,522,402
+SGBUSD.csv · 108,042,168
+SHAPEUSD.csv · 2,803,475
+SHIBEUR.csv · 88,863,056
+SHIBUSD.csv · 246,183,900
+SHIBUSDC.csv · 2,764,509
+SHIBUSDT.csv · 30,674,440
+SHXEUR.csv · 4,061,664
+SHXUSD.csv · 18,683,380
+SIDEKICKEUR.csv · 127,702
+SIDEKICKUSD.csv · 196,552
+SIDEKICKUSDT.csv · 6,309
+SIGMAEUR.csv · 920,665
+SIGMAUSD.csv · 6,918,813
+SIGNEUR.csv · 76,364
+SIGNUSD.csv · 338,606
+SKREUR.csv · 5,487,912
+SKRUSD.csv · 21,397,862
+SKYEUR.csv · 4,313,250
+SKYUSD.csv · 25,703,452
+SLAYEUR.csv · 106,764
+SLAYUSD.csv · 790,847
+SLXEUR.csv · 225,872
+SLXUSD.csv · 5,657,053
+SNEKEUR.csv · 4,228,428
+SNEKUSD.csv · 11,080,624
+SNXAUD.csv · 573,291
+SNXETH.csv · 4,555,802
+SNXEUR.csv · 49,066,744
+SNXGBP.csv · 2,282,407
+SNXUSD.csv · 94,922,281
+SNXXBT.csv · 26,415,217
+SOLAUD.csv · 21,806,317
+SOLCAD.csv · 37,942,275
+SOLETH.csv · 50,051,784
+SOLEUR.csv · 745,289,999
+SOLEURC.csv · 722,828
+SOLGBP.csv · 150,703,843
+SOLUSD.csv · 1,681,131,494
+SOLUSD1.csv · 354,032
+SOLUSDC.csv · 78,013,972
+SOLUSDT.csv · 208,841,340
+SOLVEUR.csv · 859,520
+SOLVUSD.csv · 1,577,944
+SOLXBT.csv · 229,235,087
+SOMIEUR.csv · 171,119
+SOMIUSD.csv · 782,719
+SONICEUR.csv · 433,430
+SONICUSD.csv · 2,101,927
+SOONEUR.csv · 680,881
+SOONUSD.csv · 9,137,645
+SOSOEUR.csv · 2,028,228
+SOSOUSD.csv · 7,243,013
+SPACEEUR.csv · 7,269,388
+SPACEUSD.csv · 16,286,859
+SPELLEUR.csv · 4,956,308
+SPELLUSD.csv · 21,058,357
+SPICEEUR.csv · 1,292,938
+SPICEUSD.csv · 1,938,417
+SPKEUR.csv · 448,130
+SPKUSD.csv · 11,506,912
+SPXEUR.csv · 24,299,626
+SPXUSD.csv · 133,765,190
+SRMEUR.csv · 21,770,051
+SRMGBP.csv · 323,887
+SRMUSD.csv · 45,637,479
+SRMXBT.csv · 3,820,945
+SSVEUR.csv · 356,756
+SSVUSD.csv · 1,577,636
+STABLEUSD.csv · 8,440,416
+STBLEUR.csv · 28,574,521
+STBLUSD.csv · 49,264,930
+STEPEUR.csv · 4,283,885
+STEPUSD.csv · 3,709,014
+STEUR.csv · 203,299
+STGEUR.csv · 2,163,312
+STGUSD.csv · 23,001,596
+STORJETH.csv · 3,328,907
+STORJEUR.csv · 50,182,053
+STORJUSD.csv · 76,810,563
+STORJXBT.csv · 12,974,064
+STRDEUR.csv · 658,289
+STRDUSD.csv · 6,007,134
+STRKEUR.csv · 13,632,813
+STRKUSD.csv · 48,653,817
+STUSD.csv · 872,719
+STXEUR.csv · 15,124,793
+STXUSD.csv · 78,778,531
+SUIEUR.csv · 79,939,904
+SUIGBP.csv · 20,351,680
+SUIUSD.csv · 368,411,701
+SUKUEUR.csv · 1,372,924
+SUKUUSD.csv · 3,193,454
+SUNDOGEUR.csv · 266,815
+SUNDOGUSD.csv · 4,886,476
+SUNEUR.csv · 527,879
+SUNUSD.csv · 2,754,052
+SUPEREUR.csv · 7,774,326
+SUPERUSD.csv · 39,812,531
+SUPEUR.csv · 348,119
+SUPUSD.csv · 3,572,465
+SUSD.csv · 19,136,082
+SUSDC.csv · 672,135
+SUSDT.csv · 470,067
+SUSHIEUR.csv · 18,176,392
+SUSHIGBP.csv · 686,113
+SUSHIUSD.csv · 31,033,820
+SUSHIXBT.csv · 2,296,584
+SWARMSEUR.csv · 338,240
+SWARMSUSD.csv · 2,131,609
+SWEATEUR.csv · 3,075,151
+SWEATUSD.csv · 10,683,724
+SWELLEUR.csv · 1,338,950
+SWELLUSD.csv · 19,491,969
+SXTEUR.csv · 2,038,765
+SXTUSD.csv · 10,894,075
+SYNDEUR.csv · 3,611,629
+SYNDUSD.csv · 8,638,201
+SYNEUR.csv · 4,945,016
+SYNUSD.csv · 58,925,217
+SYRUPEUR.csv · 10,733,560
+SYRUPUSD.csv · 71,762,510
+TACUSD.csv · 2,002,800
+TAKEEUR.csv · 1,073,469
+TAKEUSD.csv · 3,557,634
+TAOEUR.csv · 64,537,465
+TAOUSD.csv · 270,221,430
+TBTCETH.csv · 694,663
+TBTCEUR.csv · 3,336,147
+TBTCUSD.csv · 2,862,539
+TBTCXBT.csv · 5,105,924
+TEEREUR.csv · 4,575,677
+TEERUSD.csv · 5,904,367
+TELEUR.csv · 3,554,730
+TELUSD.csv · 7,137,310
+TERMEUR.csv · 143,926
+TERMUSD.csv · 556,953
+TEUR.csv · 1,716,104
+TGBPUSD.csv · 565,259
+THQEUR.csv · 3,065,414
+THQUSD.csv · 5,549,552
+TIAEUR.csv · 27,840,514
+TIAUSD.csv · 151,986,494
+TITCOINEUR.csv · 2,031,578
+TITCOINUSD.csv · 19,332,650
+TLMEUR.csv · 2,707,751
+TLMUSD.csv · 7,259,505
+TNSREUR.csv · 3,719,204
+TNSRUSD.csv · 19,015,583
+TOKEEUR.csv · 1,118,066
+TOKENEUR.csv · 710,556
+TOKENUSD.csv · 4,665,165
+TOKEUSD.csv · 6,032,866
+TONEUR.csv · 32,368,568
+TONUSD.csv · 61,456,077
+TONUSDC.csv · 2,180,269
+TONUSDT.csv · 3,366,186
+TOSHIEUR.csv · 3,255,076
+TOSHIUSD.csv · 51,807,309
+TRACEUR.csv · 8,588,909
+TRACUSD.csv · 27,565,541
+TREEEUR.csv · 1,877,456
+TREEUSD.csv · 3,739,152
+TREMPEUR.csv · 2,247,967
+TREMPUSD.csv · 25,172,771
+TRIAEUR.csv · 572,566
+TRIAUSD.csv · 19,703,972
+TRIBEEUR.csv · 247,235
+TRIBEUSD.csv · 349,037
+TRUEUR.csv · 5,009,602
+TRUMPEUR.csv · 33,939,413
+TRUMPUSD.csv · 144,311,017
+TRUMPUSDC.csv · 15,133,657
+TRUMPUSDT.csv · 18,912,884
+TRUSTEUR.csv · 4,287,179
+TRUSTUSD.csv · 11,726,641
+TRUUSD.csv · 29,592,150
+TRXETH.csv · 16,002,958
+TRXEUR.csv · 226,931,488
+TRXUSD.csv · 265,220,299
+TRXUSDD.csv · 300,720
+TRXXBT.csv · 57,359,880
+TURBOEUR.csv · 6,522,431
+TURBOUSD.csv · 67,728,944
+TUSD.csv · 8,120,502
+TUSDEUR.csv · 469,584
+TUSDUSD.csv · 437,751
+TVKEUR.csv · 2,518,746
+TVKUSD.csv · 15,898,826
+TXEUR.csv · 2,456,303
+TXUSD.csv · 7,773,779
+U2UUSD.csv · 136,724
+UAIEUR.csv · 14,489,239
+UAIUSD.csv · 25,352,631
+UEUR.csv · 2,509,353
+UFDEUR.csv · 407,056
+UFDUSD.csv · 8,300,112
+UMAEUR.csv · 3,662,356
+UMAUSD.csv · 10,959,253
+UMXMUSD.csv · 334,232
+UNFIEUR.csv · 4,673,159
+UNFIUSD.csv · 23,137,972
+UNIETH.csv · 14,645,123
+UNIEUR.csv · 150,197,576
+UNITASUSD.csv · 3,053,741
+UNITASUSDT.csv · 1,543,883
+UNIUSD.csv · 245,981,221
+UNIXBT.csv · 43,357,539
+UPEUR.csv · 2,651,076
+UPUSD.csv · 5,512,229
+USATUSD.csv · 110,390
+USATUSDT.csv · 63,147
+USD1USD.csv · 12,554,229
+USD1USDC.csv · 10,762,550
+USDAED.csv · 20,501
+USDCAD.csv · 310,034,495
+USDCAUD.csv · 83,816,718
+USDCCAD.csv · 103,160,074
+USDCCHF.csv · 95,704,065
+USDCEUR.csv · 2,113,092,834
+USDCGBP.csv · 302,528,466
+USDCHF.csv · 411,513,475
+USDCUSD.csv · 1,259,760,427
+USDCUSDT.csv · 786,489,466
+USDDEUR.csv · 141,674
+USDDUSD.csv · 710,479
+USDEEUR.csv · 2,290,955
+USDEUSD.csv · 1,786,016
+USDEUSDC.csv · 1,614,198
+USDEUSDT.csv · 1,540,223
+USDGEUR.csv · 178,928
+USDGUSD.csv · 82,032,596
+USDGUSDC.csv · 9,000,502
+USDGUSDT.csv · 8,209,155
+USDJPY.csv · 14,062,614
+USDQEUR.csv · 219,839
+USDQUSD.csv · 8,133,997
+USDQUSDC.csv · 7,233,667
+USDQUSDT.csv · 221,630
+USDREUR.csv · 777,849
+USDRUSD.csv · 569,454
+USDRUSDC.csv · 536,207
+USDRUSDT.csv · 348,215
+USDSEUR.csv · 81,012
+USDSUSD.csv · 1,155,837
+USDTAUD.csv · 244,281,275
+USDTCAD.csv · 204,001,145
+USDTCHF.csv · 392,013,298
+USDTEUR.csv · 4,395,658,674
+USDTGBP.csv · 1,024,821,713
+USDTJPY.csv · 7,865,104
+USDTUSD.csv · 4,621,550,091
+USDUCEUR.csv · 1,765,132
+USDUCUSD.csv · 23,240,100
+USELESSEUR.csv · 14,727,771
+USELESSUSD.csv · 55,234,983
+USEUR.csv · 87,180
+USTEUR.csv · 21,523,690
+USTUSD.csv · 47,515,873
+USTUSDC.csv · 4,894,088
+USTUSDT.csv · 12,475,017
+USUALEUR.csv · 1,304,417
+USUALUSD.csv · 16,065,547
+USUSD.csv · 3,854,177
+UUSD.csv · 18,383,348
+UXLINKUSD.csv · 1,981,251
+VANRYEUR.csv · 777,290
+VANRYUSD.csv · 4,183,984
+VELODROMEEUR.csv · 215,646
+VELODROMEUSD.csv · 1,737,454
+VELOEUR.csv · 305,770
+VELOUSD.csv · 1,811,467
+VELVETUSD.csv · 1,840,012
+VETEUR.csv · 1,028,211
+VETUSD.csv · 14,430,400
+VETUSDC.csv · 329,538
+VETUSDT.csv · 969,594
+VFYEUR.csv · 899,322
+VFYUSD.csv · 3,810,458
+VINEEUR.csv · 2,182,689
+VINEUSD.csv · 13,955,273
+VIRTUALEUR.csv · 4,923,627
+VIRTUALUSD.csv · 49,389,504
+VIRTUALUSDC.csv · 1,847,030
+VIRTUALUSDT.csv · 1,727,543
+VOOIUSD.csv · 1,131,706
+VSNEUR.csv · 22,730,440
+VSNUSD.csv · 28,712,669
+VTHOEUR.csv · 148,889
+VTHOUSD.csv · 773,961
+VULTEUR.csv · 475,338
+VULTUSD.csv · 1,620,626
+VVVEUR.csv · 19,080,784
+VVVUSD.csv · 26,777,847
+WALEUR.csv · 8,982,536
+WALUSD.csv · 24,546,158
+WARDEUR.csv · 4,217,053
+WARDUSD.csv · 14,046,577
+WARUSD.csv · 14,060,721
+WAVESETH.csv · 4,571,162
+WAVESEUR.csv · 34,456,409
+WAVESUSD.csv · 36,160,822
+WAVESXBT.csv · 15,426,505
+WAXLEUR.csv · 2,817,209
+WAXLUSD.csv · 26,534,284
+WBTCEUR.csv · 7,526,169
+WBTCUSD.csv · 14,867,280
+WBTCXBT.csv · 25,710,573
+WBTEUR.csv · 363,370
+WBTUSD.csv · 685,067
+WCTEUR.csv · 2,969,156
+WCTUSD.csv · 8,719,321
+WELLEUR.csv · 924,779
+WELLUSD.csv · 6,010,019
+WENEUR.csv · 1,861,399
+WENUSD.csv · 3,163,584
+WEUR.csv · 8,586,922
+WFBEUR.csv · 25,538
+WFBUSD.csv · 220,755
+WIFEUR.csv · 24,444,264
+WIFGBP.csv · 1,521,888
+WIFUSD.csv · 145,507,570
+WINEUR.csv · 1,102,502
+WINGSUSD.csv · 598,222
+WINUSD.csv · 3,403,497
+WLDEUR.csv · 6,618,356
+WLDUSD.csv · 44,958,188
+WLFIEUR.csv · 3,499,240
+WLFIUSD.csv · 36,206,710
+WMTXEUR.csv · 824,931
+WMTXUSD.csv · 4,204,710
+WOOEUR.csv · 6,258,334
+WOOUSD.csv · 13,193,442
+WUSD.csv · 24,452,767
+XANEUR.csv · 3,016,144
+XANUSD.csv · 8,737,320
+XAUTUSD.csv · 21,375,115
+XAUTUSDT.csv · 8,589,377
+XBTAED.csv · 2,238
+XBTAUD.csv · 126,566,300
+XBTAUSD.csv · 147,249
+XBTCAD.csv · 289,136,270
+XBTCHF.csv · 240,332,156
+XBTDAI.csv · 15,581,735
+XBTEUR.csv · 5,960,241,100
+XBTEURC.csv · 3,481,846
+XBTEUROP.csv · 188,910
+XBTFIDD.csv · 753,310
+XBTGBP.csv · 389,228,224
+XBTJPY.csv · 37,189,247
+XBTPYUSD.csv · 29,486,746
+XBTUSD.csv · 5,726,801,486
+XBTUSD1.csv · 574,606
+XBTUSDC.csv · 374,865,370
+XBTUSDQ.csv · 1,823,515
+XBTUSDR.csv · 282,383
+XBTUSDT.csv · 634,655,424
+XCNEUR.csv · 18,090,614
+XCNUSD.csv · 190,605,471
+XDCCAD.csv · 2,983,114
+XDCEUR.csv · 15,250,299
+XDCUSD.csv · 42,324,013
+XDCUSDC.csv · 6,287,769
+XDGAUD.csv · 3,463,284
+XDGCAD.csv · 7,434,371
+XDGEUR.csv · 565,061,209
+XDGGBP.csv · 14,899,008
+XDGUSD.csv · 1,367,454,319
+XDGUSDC.csv · 27,107,930
+XDGUSDT.csv · 171,793,019
+XDGXBT.csv · 210,495,885
+XIONEUR.csv · 2,728,804
+XIONUSD.csv · 5,670,740
+XL1EUR.csv · 1,927,161
+XL1USD.csv · 7,913,181
+XLMAUD.csv · 824,609
+XLMEUR.csv · 356,664,825
+XLMGBP.csv · 23,390,895
+XLMUSD.csv · 539,582,002
+XLMXBT.csv · 205,611,696
+XMNEUR.csv · 12,971,024
+XMNUSD.csv · 25,011,489
+XMREUR.csv · 307,039,548
+XMRUSD.csv · 640,881,503
+XMRUSDC.csv · 10,601,213
+XMRUSDT.csv · 201,431,125
+XMRXBT.csv · 385,349,933
+XNYEUR.csv · 9,582,499
+XNYUSD.csv · 45,311,760
+XPLEUR.csv · 18,976,893
+XPLUSD.csv · 62,587,911
+XRPAUD.csv · 35,143,306
+XRPCAD.csv · 97,628,567
+XRPETH.csv · 65,128,698
+XRPEUR.csv · 1,554,244,129
+XRPGBP.csv · 169,832,514
+XRPJPY.csv · 6,659,553
+XRPRLUSD.csv · 2,655,871
+XRPUSD.csv · 2,024,858,712
+XRPUSDC.csv · 58,574,816
+XRPUSDT.csv · 254,851,156
+XRPXBT.csv · 454,584,634
+XRTEUR.csv · 3,413,044
+XRTUSD.csv · 3,535,040
+XTEREUR.csv · 1,745,177
+XTERUSD.csv · 5,316,440
+XTZAUD.csv · 1,529,893
+XTZETH.csv · 18,438,979
+XTZEUR.csv · 177,513,297
+XTZGBP.csv · 2,393,662
+XTZUSD.csv · 257,380,825
+XTZUSDC.csv · 1,190,680
+XTZUSDT.csv · 10,428,871
+XTZXBT.csv · 61,317,020
+XYOEUR.csv · 1,342,150
+XYOUSD.csv · 4,495,476
+YALAEUR.csv · 162,568
+YALAUSD.csv · 249,811
+YBEUR.csv · 3,845,865
+YBUSD.csv · 2,721,622
+YFIAUD.csv · 116,974
+YFIETH.csv · 4,756,589
+YFIEUR.csv · 36,501,993
+YFIGBP.csv · 570,516
+YFIUSD.csv · 42,079,432
+YFIXBT.csv · 26,144,022
+YGGEUR.csv · 3,403,396
+YGGUSD.csv · 8,362,402
+YOMUSD.csv · 451,120
+ZAMAEUR.csv · 1,869,497
+ZAMAUSD.csv · 5,240,008
+ZBCNEUR.csv · 1,365,690
+ZBCNUSD.csv · 38,059,014
+ZBTEUR.csv · 4,125,556
+ZBTUSD.csv · 9,272,455
+ZECEUR.csv · 216,891,622
+ZECUSD.csv · 496,636,273
+ZECXBT.csv · 58,037,532
+ZEREBROEUR.csv · 2,295,920
+ZEREBROUSD.csv · 19,951,236
+ZETAEUR.csv · 1,986,813
+ZETAUSD.csv · 8,125,290
+ZEUSEUR.csv · 3,448,924
+ZEUSUSD.csv · 47,182,952
+ZEXEUR.csv · 4,150,746
+ZEXUSD.csv · 6,826,045
+ZIGEUR.csv · 2,663,723
+ZIGUSD.csv · 8,799,461
+ZKEUR.csv · 2,921,106
+ZKPEUR.csv · 3,406,007
+ZKPUSD.csv · 7,603,939
+ZKUSD.csv · 21,047,374
+ZORAEUR.csv · 9,787,586
+ZORAUSD.csv · 49,301,219
+ZRCEUR.csv · 2,157,600
+ZRCUSD.csv · 2,366,312
+ZROEUR.csv · 4,143,846
+ZROUSD.csv · 38,113,602
+ZRXEUR.csv · 13,122,784
+ZRXGBP.csv · 229,055
+ZRXUSD.csv · 24,934,637
+ZRXXBT.csv · 7,648,107
+MANIFEST.json · 618
+README.md · 1,435
