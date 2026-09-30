@@ -732,3 +732,6 @@
 {"type": "entry", "asset": "TRUMP", "strategy": "pullback_tendencia", "version": "P4-v1", "t": "2026-09-30 13:55", "ts": 1790776500, "price": 1.837, "qty": 22.95, "spread": 0.00109}
 {"type": "entry", "asset": "BNB", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 13:55", "ts": 1790776500, "price": 678.69, "qty": 23.08, "spread": 0.00066}
 {"type": "entry", "asset": "TON", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 13:55", "ts": 1790776500, "price": 1.336, "qty": 23.08, "spread": 0.00224}
+{"type": "entry", "asset": "ALGO", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 14:00", "ts": 1790776800, "price": 0.11009, "qty": 23.08, "spread": 0.00118}
+{"type": "entry", "asset": "NIGHT", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 14:00", "ts": 1790776800, "price": 0.03281, "qty": 23.08, "spread": 0.00393}
+{"type": "entry", "asset": "APT", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 14:00", "ts": 1790776800, "price": 0.7072, "qty": 23.08, "spread": 0.00127}

@@ -1,23 +1,23 @@
 # Simulación P4 (sin dinero real)
 
-Config `P4-v1` · inicio 2026-09-30 12:23 UTC · última vuelta 2026-09-30 14:01 UTC · vueltas 21 · 60 activos · velas 5 min · comisión por tramos de volumen 30 d (ida+vuelta 1.10% / 0.50% / 0.42%)
+Config `P4-v1` · inicio 2026-09-30 12:23 UTC · última vuelta 2026-09-30 14:06 UTC · vueltas 22 · 60 activos · velas 5 min · comisión por tramos de volumen 30 d (ida+vuelta 1.10% / 0.50% / 0.42%)
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 915.96 € (-0.90%) | 26 | 8 | 38% | -0.135% | -1.235% | -1.401% | -7.42 € |
-| reversion_bb | 924.62 € (+0.04%) | 1 | 2 | 100% | +1.500% | +0.400% | +0.231% | +0.09 € |
-| ruptura_volumen | 910.62 € (-1.47%) | 37 | 13 | 22% | -0.430% | -1.530% | -1.696% | -13.03 € |
+| c_banda_atr | 916.05 € (-0.89%) | 26 | 8 | 38% | -0.135% | -1.235% | -1.401% | -7.42 € |
+| reversion_bb | 924.56 € (+0.03%) | 1 | 2 | 100% | +1.500% | +0.400% | +0.231% | +0.09 € |
+| ruptura_volumen | 910.81 € (-1.45%) | 37 | 13 | 22% | -0.430% | -1.530% | -1.696% | -13.03 € |
 | rebote_extremo | 924.24 € (+0.00%) | 0 | 0 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
-| pullback_tendencia | 917.96 € (-0.68%) | 21 | 6 | 29% | -0.149% | -1.249% | -1.376% | -6.06 € |
+| pullback_tendencia | 918.29 € (-0.64%) | 21 | 6 | 29% | -0.149% | -1.249% | -1.376% | -6.06 € |
 | macd_momentum | 913.27 € (-1.19%) | 46 | 1 | 30% | +0.022% | -1.039% | -1.175% | -11.04 € |
-| estocastico_rebote | 922.92 € (-0.14%) | 12 | 16 | 67% | +0.750% | -0.350% | -0.533% | -0.97 € |
-| ruptura_estricta | 917.32 € (-0.75%) | 10 | 29 | 40% | +0.049% | -1.051% | -1.277% | -2.43 € |
-| macd_sin_salida | 914.06 € (-1.10%) | 35 | 11 | 40% | -0.105% | -1.205% | -1.355% | -9.75 € |
+| estocastico_rebote | 922.53 € (-0.19%) | 12 | 19 | 67% | +0.750% | -0.350% | -0.533% | -0.97 € |
+| ruptura_estricta | 917.98 € (-0.68%) | 10 | 29 | 40% | +0.049% | -1.051% | -1.277% | -2.43 € |
+| macd_sin_salida | 914.18 € (-1.09%) | 35 | 11 | 40% | -0.105% | -1.205% | -1.355% | -9.75 € |
 | c_banda_atr_tope | 923.07 € (-0.13%) | 7 | 1 | 57% | +0.502% | -0.598% | -0.771% | -0.97 € |
-| ruptura_volumen_tope | 922.17 € (-0.22%) | 7 | 2 | 29% | -0.161% | -1.261% | -1.367% | -2.04 € |
-| c_banda_atr_regimen | 915.96 € (-0.90%) | 26 | 8 | 38% | -0.135% | -1.235% | -1.401% | -7.42 € |
+| ruptura_volumen_tope | 922.14 € (-0.23%) | 7 | 2 | 29% | -0.161% | -1.261% | -1.367% | -2.04 € |
+| c_banda_atr_regimen | 916.05 € (-0.89%) | 26 | 8 | 38% | -0.135% | -1.235% | -1.401% | -7.42 € |
 | macd_momentum_regimen | 913.27 € (-1.19%) | 46 | 1 | 30% | +0.022% | -1.039% | -1.175% | -11.04 € |
-| ruptura_volumen_regimen | 910.62 € (-1.47%) | 37 | 13 | 22% | -0.430% | -1.530% | -1.696% | -13.03 € |
+| ruptura_volumen_regimen | 910.81 € (-1.45%) | 37 | 13 | 22% | -0.430% | -1.530% | -1.696% | -13.03 € |
 | c_banda_atr_evento | 924.24 € (+0.00%) | 0 | 0 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
 | macd_momentum_evento | 924.24 € (+0.00%) | 0 | 0 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
 | ruptura_volumen_evento | 924.24 € (+0.00%) | 0 | 0 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
@@ -46,15 +46,8 @@ Config `P4-v1` · inicio 2026-09-30 12:23 UTC · última vuelta 2026-09-30 14:01
 
 ## Eventos de la última vuelta
 
-- 2026-09-30 13:55 [estocastico_rebote] ENTRADA AAVE @ 142.99 (23.08 €, apertura)
-- 2026-09-30 13:55 [estocastico_rebote] ENTRADA ICP @ 3.047 (23.08 €, apertura)
-- 2026-09-30 13:55 [estocastico_rebote] ENTRADA JUP @ 0.29288 (23.08 €, apertura)
-- 2026-09-30 14:00 [ruptura_volumen] CIERRE MINA stop-loss bruto -1.83% neto -2.93%
-- 2026-09-30 14:00 [ruptura_volumen_regimen] CIERRE MINA stop-loss bruto -1.83% neto -2.93%
-- 2026-09-30 13:55 [estocastico_rebote] ENTRADA FIL @ 0.94 (23.08 €, apertura)
-- 2026-09-30 13:55 [estocastico_rebote] ENTRADA ASTER @ 0.6815 (23.08 €, apertura)
-- 2026-09-30 13:55 [pullback_tendencia] ENTRADA TRUMP @ 1.837 (22.95 €, apertura)
-- 2026-09-30 13:55 [estocastico_rebote] ENTRADA BNB @ 678.69 (23.08 €, apertura)
-- 2026-09-30 13:55 [estocastico_rebote] ENTRADA TON @ 1.336 (23.08 €, apertura)
+- 2026-09-30 14:00 [estocastico_rebote] ENTRADA ALGO @ 0.11009 (23.08 €, apertura)
+- 2026-09-30 14:00 [estocastico_rebote] ENTRADA NIGHT @ 0.03281 (23.08 €, apertura)
+- 2026-09-30 14:00 [estocastico_rebote] ENTRADA APT @ 0.7072 (23.08 €, apertura)
 
 Universo: BTC, XRP, ETH, SOL, QNT, NEAR, LINK, ADA, SUI, AVAX, HBAR, AAVE, ZEC, PUMP, HYPE, XLM, TAO, UNI, LTC, ZRO, DOGE, DOT, ARB, ENA, ICP, FET, TRX, POL, ALGO, ONDO, CRV, WLD, XDC, NIGHT, USELESS, BCH, JUP, PEPE, MON, RENDER, INJ, OP, MINA, FIL, VVV, ASTER, WLFI, SHIB, DASH, PENGU, KSM, TRUMP, BNB, TON, KAS, SKY, XMR, SEI, APT, SPX
