@@ -889,3 +889,12 @@
 {"type": "entry", "asset": "VVV", "strategy": "c_banda_atr", "version": "P4-v1", "t": "2026-09-30 14:50", "ts": 1790779800, "price": 24.422, "qty": 22.86, "spread": 0.0011}
 {"type": "entry", "asset": "VVV", "strategy": "c_banda_atr_tope", "version": "P4-v1", "t": "2026-09-30 14:50", "ts": 1790779800, "price": 24.422, "qty": 23.07, "spread": 0.0011}
 {"type": "entry", "asset": "VVV", "strategy": "c_banda_atr_evento", "version": "P4-v1", "t": "2026-09-30 14:50", "ts": 1790779800, "price": 24.422, "qty": 23.11, "spread": 0.0011}
+{"type": "entry", "asset": "ASTER", "strategy": "c_banda_atr", "version": "P4-v1", "t": "2026-09-30 14:55", "ts": 1790780100, "price": 0.68136, "qty": 22.86, "spread": 0.00059}
+{"type": "entry", "asset": "ASTER", "strategy": "c_banda_atr_tope", "version": "P4-v1", "t": "2026-09-30 14:55", "ts": 1790780100, "price": 0.68136, "qty": 23.07, "spread": 0.00059}
+{"type": "entry", "asset": "ASTER", "strategy": "c_banda_atr_evento", "version": "P4-v1", "t": "2026-09-30 14:55", "ts": 1790780100, "price": 0.68136, "qty": 23.11, "spread": 0.00059}
+{"type": "entry", "asset": "KSM", "strategy": "c_banda_atr", "version": "P4-v1", "t": "2026-09-30 14:55", "ts": 1790780100, "price": 4.5, "qty": 22.86, "spread": 0.00222}
+{"type": "entry", "asset": "KSM", "strategy": "macd_momentum", "version": "P4-v1", "t": "2026-09-30 14:55", "ts": 1790780100, "price": 4.5, "qty": 22.8, "spread": 0.00222}
+{"type": "entry", "asset": "KSM", "strategy": "macd_sin_salida", "version": "P4-v1", "t": "2026-09-30 14:55", "ts": 1790780100, "price": 4.5, "qty": 22.76, "spread": 0.00222}
+{"type": "entry", "asset": "KSM", "strategy": "c_banda_atr_tope", "version": "P4-v1", "t": "2026-09-30 14:55", "ts": 1790780100, "price": 4.5, "qty": 23.07, "spread": 0.00222}
+{"type": "entry", "asset": "KSM", "strategy": "c_banda_atr_evento", "version": "P4-v1", "t": "2026-09-30 14:55", "ts": 1790780100, "price": 4.5, "qty": 23.11, "spread": 0.00222}
+{"type": "entry", "asset": "KSM", "strategy": "macd_momentum_evento", "version": "P4-v1", "t": "2026-09-30 14:55", "ts": 1790780100, "price": 4.5, "qty": 23.07, "spread": 0.00222}
