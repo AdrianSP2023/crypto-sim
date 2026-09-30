@@ -4646,3 +4646,11 @@
 {"type": "entry", "asset": "KAS", "strategy": "macd_momentum", "version": "P3-v2", "t": "2026-09-30 07:40", "ts": 1790754000, "price": 0.03877, "qty": 21.86, "spread": 0.00077}
 {"type": "exit", "asset": "KAS", "strategy": "c_banda_atr_evento", "version": "P3-v2", "entry_t": "2026-09-30 03:45", "exit_t": "2026-09-30 07:45", "entry_ts": 1790739900, "exit_ts": 1790754300, "entry": 0.03834, "exit": 0.03881, "qty": 22.53, "gross_pct": 1.226, "net_pct": 0.726, "net_spread_pct": 0.623, "pnl_eur": 0.164, "reason": "timeout", "candles": 48, "fee_pct": 0.5, "ctx": {"close": 0.03836, "vwap": 0.03834, "volume": 26079.5, "count": 5.0, "ef": 0.0382615, "es": 0.0382461, "r": 61.2682, "atr": 4.37859e-05, "amplitud_ema200": 0.25, "amplitud_ema50": 0.367}}
 {"type": "entry", "asset": "KAS", "strategy": "macd_momentum_evento", "version": "P3-v2", "t": "2026-09-30 07:40", "ts": 1790754000, "price": 0.03877, "qty": 22.17, "spread": 0.00077}
+{"type": "entry", "asset": "SUI", "strategy": "macd_momentum", "version": "P3-v2", "t": "2026-09-30 07:45", "ts": 1790754300, "price": 1.03, "qty": 21.86, "spread": 0.00019}
+{"type": "entry", "asset": "SUI", "strategy": "macd_sin_salida", "version": "P3-v2", "t": "2026-09-30 07:45", "ts": 1790754300, "price": 1.03, "qty": 22.16, "spread": 0.00019}
+{"type": "entry", "asset": "SUI", "strategy": "macd_momentum_evento", "version": "P3-v2", "t": "2026-09-30 07:45", "ts": 1790754300, "price": 1.03, "qty": 22.17, "spread": 0.00019}
+{"type": "entry", "asset": "CRV", "strategy": "pullback_tendencia", "version": "P3-v2", "t": "2026-09-30 07:45", "ts": 1790754300, "price": 0.3455, "qty": 22.57, "spread": 0.00096}
+{"type": "entry", "asset": "CRV", "strategy": "macd_momentum", "version": "P3-v2", "t": "2026-09-30 07:45", "ts": 1790754300, "price": 0.3455, "qty": 21.86, "spread": 0.00096}
+{"type": "entry", "asset": "CRV", "strategy": "macd_sin_salida", "version": "P3-v2", "t": "2026-09-30 07:45", "ts": 1790754300, "price": 0.3455, "qty": 22.16, "spread": 0.00096}
+{"type": "entry", "asset": "CRV", "strategy": "macd_momentum_evento", "version": "P3-v2", "t": "2026-09-30 07:45", "ts": 1790754300, "price": 0.3455, "qty": 22.17, "spread": 0.00096}
+{"type": "entry", "asset": "ZRO", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-30 07:45", "ts": 1790754300, "price": 1.571, "qty": 22.17, "spread": 0.00126}
