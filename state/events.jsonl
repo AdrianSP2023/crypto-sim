@@ -1498,3 +1498,6 @@
 {"type": "entry", "asset": "TON", "strategy": "ruptura_volumen_tope", "version": "P4-v1", "t": "2026-09-30 18:55", "ts": 1790794500, "price": 1.351, "qty": 22.97, "spread": 0.00148}
 {"type": "entry", "asset": "TON", "strategy": "macd_momentum_evento", "version": "P4-v1", "t": "2026-09-30 18:55", "ts": 1790794500, "price": 1.351, "qty": 22.93, "spread": 0.00148}
 {"type": "entry", "asset": "TON", "strategy": "ruptura_volumen_evento", "version": "P4-v1", "t": "2026-09-30 18:55", "ts": 1790794500, "price": 1.351, "qty": 22.87, "spread": 0.00148}
+{"type": "entry", "asset": "XLM", "strategy": "macd_momentum", "version": "P4-v1", "t": "2026-09-30 19:00", "ts": 1790794800, "price": 0.199623, "qty": 22.74, "spread": 0.00054}
+{"type": "entry", "asset": "XLM", "strategy": "macd_momentum_evento", "version": "P4-v1", "t": "2026-09-30 19:00", "ts": 1790794800, "price": 0.199623, "qty": 22.93, "spread": 0.00054}
+{"type": "entry", "asset": "MON", "strategy": "pullback_tendencia", "version": "P4-v1", "t": "2026-09-30 19:00", "ts": 1790794800, "price": 0.02566, "qty": 22.68, "spread": 0.00195}
