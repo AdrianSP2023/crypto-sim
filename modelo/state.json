@@ -4,32 +4,32 @@
  "open": [],
  "volume": [],
  "n_closed": 0,
- "last_run": "2026-09-30 00:05:29",
+ "last_run": "2026-09-30 01:04:46",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 8,
+ "runs": 9,
  "ultimo_top": [
   [
    "ICP",
-   0.295
-  ],
-  [
-   "CRV",
-   0.206
-  ],
-  [
-   "ARB",
-   0.203
+   0.288
   ],
   [
    "ALGO",
-   0.179
+   0.242
   ],
   [
-   "AVAX",
-   0.168
+   "NEAR",
+   0.212
+  ],
+  [
+   "CRV",
+   0.205
+  ],
+  [
+   "ARB",
+   0.177
   ]
  ],
  "n_puntuados": 41
