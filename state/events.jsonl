@@ -4670,3 +4670,13 @@
 {"type": "entry", "asset": "NIGHT", "strategy": "ruptura_volumen", "version": "P3-v2", "t": "2026-09-30 07:50", "ts": 1790754600, "price": 0.02875, "qty": 22.13, "spread": 0.00208}
 {"type": "entry", "asset": "NIGHT", "strategy": "ruptura_volumen_regimen", "version": "P3-v2", "t": "2026-09-30 07:50", "ts": 1790754600, "price": 0.02875, "qty": 22.38, "spread": 0.00208}
 {"type": "entry", "asset": "NIGHT", "strategy": "ruptura_volumen_evento", "version": "P3-v2", "t": "2026-09-30 07:50", "ts": 1790754600, "price": 0.02875, "qty": 22.26, "spread": 0.00208}
+{"type": "entry", "asset": "ZEC", "strategy": "ruptura_volumen", "version": "P3-v2", "t": "2026-09-30 07:55", "ts": 1790754900, "price": 1245.0, "qty": 22.13, "spread": 0.00042}
+{"type": "entry", "asset": "ZEC", "strategy": "ruptura_volumen_regimen", "version": "P3-v2", "t": "2026-09-30 07:55", "ts": 1790754900, "price": 1245.0, "qty": 22.38, "spread": 0.00042}
+{"type": "entry", "asset": "ZEC", "strategy": "ruptura_volumen_evento", "version": "P3-v2", "t": "2026-09-30 07:55", "ts": 1790754900, "price": 1245.0, "qty": 22.26, "spread": 0.00042}
+{"type": "entry", "asset": "MON", "strategy": "ruptura_volumen", "version": "P3-v2", "t": "2026-09-30 07:55", "ts": 1790754900, "price": 0.02404, "qty": 22.13, "spread": 0.00083}
+{"type": "entry", "asset": "MON", "strategy": "ruptura_estricta", "version": "P3-v2", "t": "2026-09-30 07:55", "ts": 1790754900, "price": 0.02404, "qty": 22.54, "spread": 0.00083}
+{"type": "entry", "asset": "MON", "strategy": "ruptura_volumen_regimen", "version": "P3-v2", "t": "2026-09-30 07:55", "ts": 1790754900, "price": 0.02404, "qty": 22.38, "spread": 0.00083}
+{"type": "entry", "asset": "MON", "strategy": "ruptura_volumen_evento", "version": "P3-v2", "t": "2026-09-30 07:55", "ts": 1790754900, "price": 0.02404, "qty": 22.26, "spread": 0.00083}
+{"type": "entry", "asset": "PENGU", "strategy": "ruptura_volumen", "version": "P3-v2", "t": "2026-09-30 07:55", "ts": 1790754900, "price": 0.008691, "qty": 22.13, "spread": 0.0008}
+{"type": "entry", "asset": "PENGU", "strategy": "ruptura_volumen_regimen", "version": "P3-v2", "t": "2026-09-30 07:55", "ts": 1790754900, "price": 0.008691, "qty": 22.38, "spread": 0.0008}
+{"type": "entry", "asset": "PENGU", "strategy": "ruptura_volumen_evento", "version": "P3-v2", "t": "2026-09-30 07:55", "ts": 1790754900, "price": 0.008691, "qty": 22.26, "spread": 0.0008}
