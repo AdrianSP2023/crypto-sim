@@ -1180,3 +1180,13 @@
 {"type": "entry", "asset": "SEI", "strategy": "ruptura_volumen", "version": "P4-v1", "t": "2026-09-30 16:50", "ts": 1790787000, "price": 0.06564, "qty": 22.63, "spread": 0.00122}
 {"type": "entry", "asset": "SEI", "strategy": "ruptura_volumen_regimen", "version": "P4-v1", "t": "2026-09-30 16:50", "ts": 1790787000, "price": 0.06564, "qty": 22.62, "spread": 0.00122}
 {"type": "entry", "asset": "SEI", "strategy": "ruptura_volumen_evento", "version": "P4-v1", "t": "2026-09-30 16:50", "ts": 1790787000, "price": 0.06564, "qty": 23.1, "spread": 0.00122}
+{"type": "entry", "asset": "PUMP", "strategy": "ruptura_volumen", "version": "P4-v1", "t": "2026-09-30 16:55", "ts": 1790787300, "price": 0.005211, "qty": 22.63, "spread": 0.00116}
+{"type": "entry", "asset": "PUMP", "strategy": "ruptura_volumen_regimen", "version": "P4-v1", "t": "2026-09-30 16:55", "ts": 1790787300, "price": 0.005211, "qty": 22.62, "spread": 0.00116}
+{"type": "entry", "asset": "PUMP", "strategy": "ruptura_volumen_evento", "version": "P4-v1", "t": "2026-09-30 16:55", "ts": 1790787300, "price": 0.005211, "qty": 23.1, "spread": 0.00116}
+{"type": "entry", "asset": "VVV", "strategy": "macd_momentum", "version": "P4-v1", "t": "2026-09-30 16:55", "ts": 1790787300, "price": 24.584, "qty": 22.8, "spread": 0.00243}
+{"type": "entry", "asset": "VVV", "strategy": "macd_momentum_regimen", "version": "P4-v1", "t": "2026-09-30 16:55", "ts": 1790787300, "price": 24.584, "qty": 22.81, "spread": 0.00243}
+{"type": "entry", "asset": "VVV", "strategy": "macd_momentum_evento", "version": "P4-v1", "t": "2026-09-30 16:55", "ts": 1790787300, "price": 24.584, "qty": 23.03, "spread": 0.00243}
+{"type": "entry", "asset": "WLFI", "strategy": "c_banda_atr", "version": "P4-v1", "t": "2026-09-30 16:55", "ts": 1790787300, "price": 0.0496, "qty": 22.84, "spread": 0.00202}
+{"type": "entry", "asset": "WLFI", "strategy": "c_banda_atr_regimen", "version": "P4-v1", "t": "2026-09-30 16:55", "ts": 1790787300, "price": 0.0496, "qty": 22.83, "spread": 0.00202}
+{"type": "entry", "asset": "WLFI", "strategy": "c_banda_atr_evento", "version": "P4-v1", "t": "2026-09-30 16:55", "ts": 1790787300, "price": 0.0496, "qty": 23.12, "spread": 0.00202}
+{"type": "entry", "asset": "TRUMP", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 16:55", "ts": 1790787300, "price": 1.834, "qty": 22.89, "spread": 0.00055}
