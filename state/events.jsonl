@@ -3309,3 +3309,11 @@
 {"type": "entry", "asset": "INJ", "strategy": "c_banda_atr_evento", "version": "P3-v2", "t": "2026-09-30 00:45", "ts": 1790729100, "price": 6.73, "qty": 22.59, "spread": 0.00178}
 {"type": "entry", "asset": "SPX", "strategy": "ruptura_volumen", "version": "P3-v2", "t": "2026-09-30 00:45", "ts": 1790729100, "price": 0.3706, "qty": 22.5, "spread": 0.00108}
 {"type": "entry", "asset": "SPX", "strategy": "ruptura_volumen_evento", "version": "P3-v2", "t": "2026-09-30 00:45", "ts": 1790729100, "price": 0.3706, "qty": 22.64, "spread": 0.00108}
+{"type": "entry", "asset": "QNT", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-30 00:50", "ts": 1790729400, "price": 237.41, "qty": 22.32, "spread": 0.00316}
+{"type": "entry", "asset": "ZEC", "strategy": "pullback_tendencia", "version": "P3-v2", "t": "2026-09-30 00:50", "ts": 1790729400, "price": 1250.503, "qty": 22.62, "spread": 0.00069}
+{"type": "entry", "asset": "RAY", "strategy": "c_banda_atr", "version": "P3-v2", "t": "2026-09-30 00:50", "ts": 1790729400, "price": 1.686, "qty": 22.5, "spread": 0.00297}
+{"type": "entry", "asset": "RAY", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-30 00:50", "ts": 1790729400, "price": 1.686, "qty": 22.32, "spread": 0.00297}
+{"type": "entry", "asset": "RAY", "strategy": "c_banda_atr_evento", "version": "P3-v2", "t": "2026-09-30 00:50", "ts": 1790729400, "price": 1.686, "qty": 22.59, "spread": 0.00297}
+{"type": "entry", "asset": "NIGHT", "strategy": "macd_momentum", "version": "P3-v2", "t": "2026-09-30 00:50", "ts": 1790729400, "price": 0.02866, "qty": 22.07, "spread": 0.00349}
+{"type": "entry", "asset": "NIGHT", "strategy": "macd_momentum_evento", "version": "P3-v2", "t": "2026-09-30 00:50", "ts": 1790729400, "price": 0.02866, "qty": 22.38, "spread": 0.00349}
+{"type": "exit", "asset": "SPX", "strategy": "estocastico_rebote", "version": "P3-v2", "entry_t": "2026-09-29 21:55", "exit_t": "2026-09-30 00:55", "entry_ts": 1790718900, "exit_ts": 1790729700, "entry": 0.3692, "exit": 0.3706, "qty": 22.31, "gross_pct": 0.379, "net_pct": -0.121, "net_spread_pct": -2.641, "pnl_eur": -0.027, "reason": "timeout", "candles": 36, "fee_pct": 0.5, "ctx": {"close": 0.3692, "vwap": 0.3689, "volume": 5000.0, "count": 3.0, "k": 24.321, "dd": 11.6379, "e1": 0.365554, "e2": 0.364909, "amplitud_ema200": 0.383, "amplitud_ema50": 0.35}}
