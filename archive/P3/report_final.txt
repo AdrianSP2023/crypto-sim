@@ -1,0 +1,38 @@
+Fase P3 · vueltas 208 · última 2026-09-30T10:11:58.140642+00:00
+estrategia                n acierto    bruto     neto  neto+sp     PnL€ abiertas sin caja filtradas
+c_banda_atr             161     29%  -0.161%  -0.823%  -0.951%   -30.28       24        0         0
+reversion_bb             43     42%  +0.124%  -0.962%  -1.072%    -9.52        3        0         0
+ruptura_volumen         197     20%  -0.241%  -0.873%  -1.004%   -39.04       24        0         0
+rebote_extremo           10     60%  +0.710%  -0.389%  -0.540%    -0.90        0        0         0
+pullback_tendencia      124     23%  -0.093%  -0.804%  -0.930%   -22.80        6        0         0
+macd_momentum           362     17%  -0.064%  -0.636%  -0.747%   -51.88       11        4         0
+estocastico_rebote      235     37%  -0.069%  -0.680%  -0.813%   -36.41        7        5         0
+ruptura_estricta         81     22%  -0.396%  -1.218%  -1.368%   -22.60       18        0         0
+macd_sin_salida         218     29%  -0.117%  -0.736%  -0.857%   -36.49       29        6         0
+c_banda_atr_tope         42     19%  -0.440%  -1.540%  -1.669%   -14.85        5        0       200
+ruptura_volumen_tope     70     20%  -0.118%  -0.995%  -1.117%   -15.97        5        0       230
+c_banda_atr_regimen      78     22%  -0.483%  -1.317%  -1.445%   -23.56        6        0       142
+macd_momentum_regimen   213     14%  -0.216%  -0.838%  -0.950%   -40.49        3        4       169
+ruptura_volumen_regimen  136     18%  -0.285%  -0.977%  -1.107%   -30.28       21        0       119
+c_banda_atr_evento      129     26%  -0.218%  -0.922%  -1.051%   -27.23       24        0         0
+macd_momentum_evento    242     15%  -0.113%  -0.722%  -0.830%   -39.60       11        0         0
+ruptura_volumen_evento  138     15%  -0.378%  -1.069%  -1.201%   -33.59       24        0         0
+rebote_desplome           0      0%  +0.000%  +0.000%  +0.000%    +0.00        0        0         0
+
+c_banda_atr: salidas [stop-loss: 65 (-1.55%) · take-profit: 40 (+2.06%) · timeout: 56 (-0.13%)] | versiones [P3-v1: 40 ops, bruto -0.166% · P3-v2: 121 ops, bruto -0.159%]
+reversion_bb: salidas [stop-loss: 16 (-1.58%) · take-profit: 18 (+1.63%) · timeout: 9 (+0.13%)] | versiones [P3-v1: 2 ops, bruto -1.500% · P3-v2: 41 ops, bruto +0.204%]
+ruptura_volumen: salidas [stop-loss: 87 (-1.31%) · take-profit: 24 (+2.50%) · timeout: 86 (+0.07%)] | versiones [P3-v1: 60 ops, bruto +0.057% · P3-v2: 137 ops, bruto -0.372%]
+rebote_extremo: salidas [stop-loss: 2 (-2.00%) · take-profit: 6 (+2.01%) · timeout: 2 (-0.49%)] | versiones [P3-v1: 1 ops, bruto -1.619% · P3-v2: 9 ops, bruto +0.969%]
+pullback_tendencia: salidas [rotura de tendencia: 76 (-0.57%) · stop-loss: 19 (-1.52%) · take-profit: 29 (+2.08%)] | versiones [P3-v1: 46 ops, bruto +0.077% · P3-v2: 78 ops, bruto -0.194%]
+macd_momentum: salidas [momentum perdido: 292 (-0.29%) · stop-loss: 23 (-1.55%) · take-profit: 47 (+2.04%)] | versiones [P3-v1: 118 ops, bruto +0.013% · P3-v2: 244 ops, bruto -0.101%]
+estocastico_rebote: salidas [stop-loss: 97 (-1.52%) · take-profit: 63 (+1.87%) · timeout: 75 (+0.18%)] | versiones [P3-v1: 71 ops, bruto +0.275% · P3-v2: 164 ops, bruto -0.218%]
+ruptura_estricta: salidas [stop-loss: 31 (-2.06%) · take-profit: 13 (+3.03%) · timeout: 37 (-0.21%)] | versiones [P3-v1: 37 ops, bruto -0.122% · P3-v2: 44 ops, bruto -0.627%]
+macd_sin_salida: salidas [stop-loss: 81 (-1.53%) · take-profit: 49 (+2.03%) · timeout: 88 (-0.02%)] | versiones [P3-v1: 76 ops, bruto +0.052% · P3-v2: 142 ops, bruto -0.207%]
+c_banda_atr_tope: salidas [stop-loss: 20 (-1.60%) · take-profit: 8 (+2.03%) · timeout: 14 (-0.20%)] | versiones [P3-v1: 13 ops, bruto -0.623% · P3-v2: 29 ops, bruto -0.358%]
+ruptura_volumen_tope: salidas [stop-loss: 31 (-1.25%) · take-profit: 10 (+2.50%) · timeout: 29 (+0.19%)] | versiones [P3-v1: 18 ops, bruto +0.050% · P3-v2: 52 ops, bruto -0.176%]
+c_banda_atr_regimen: salidas [stop-loss: 40 (-1.55%) · take-profit: 17 (+2.04%) · timeout: 21 (-0.49%)] | versiones [P3-v1: 40 ops, bruto -0.166% · P3-v2: 38 ops, bruto -0.816%]
+macd_momentum_regimen: salidas [momentum perdido: 168 (-0.39%) · stop-loss: 20 (-1.56%) · take-profit: 25 (+2.02%)] | versiones [P3-v1: 118 ops, bruto +0.013% · P3-v2: 95 ops, bruto -0.500%]
+ruptura_volumen_regimen: salidas [stop-loss: 62 (-1.30%) · take-profit: 15 (+2.50%) · timeout: 59 (+0.07%)] | versiones [P3-v1: 60 ops, bruto +0.057% · P3-v2: 76 ops, bruto -0.556%]
+c_banda_atr_evento: salidas [stop-loss: 52 (-1.56%) · take-profit: 28 (+2.08%) · timeout: 49 (-0.11%)] | versiones [P3-v2: 129 ops, bruto -0.218%]
+macd_momentum_evento: salidas [momentum perdido: 199 (-0.29%) · stop-loss: 16 (-1.57%) · take-profit: 27 (+2.07%)] | versiones [P3-v2: 242 ops, bruto -0.113%]
+ruptura_volumen_evento: salidas [stop-loss: 64 (-1.34%) · take-profit: 14 (+2.50%) · timeout: 60 (-0.02%)] | versiones [P3-v2: 138 ops, bruto -0.378%]

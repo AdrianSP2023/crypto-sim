@@ -1,0 +1,100 @@
+{
+ "commit": "cb7a8fb03a6c511a67de72085c873865d268e40b",
+ "version": "P3-v2",
+ "phase": "P3",
+ "ultima_vuelta": "2026-09-30T10:11:58.140642+00:00",
+ "estrategias": {
+  "c_banda_atr": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "reversion_bb": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "ruptura_volumen": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "rebote_extremo": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "pullback_tendencia": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "macd_momentum": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "estocastico_rebote": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "ruptura_estricta": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "macd_sin_salida": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "c_banda_atr_tope": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "ruptura_volumen_tope": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "c_banda_atr_regimen": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "macd_momentum_regimen": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "ruptura_volumen_regimen": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "c_banda_atr_evento": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "macd_momentum_evento": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "ruptura_volumen_evento": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  },
+  "rebote_desplome": {
+   "ciclos": [],
+   "diaria": false,
+   "semanal": false
+  }
+ },
+ "pasan_diaria": [],
+ "pasan_semanal": []
+}
