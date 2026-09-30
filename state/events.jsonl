@@ -1485,3 +1485,16 @@
 {"type": "exit", "asset": "NEAR", "strategy": "macd_momentum_evento", "version": "P4-v1", "entry_t": "2026-09-30 18:30", "exit_t": "2026-09-30 18:55", "entry_ts": 1790793000, "exit_ts": 1790794500, "entry": 4.8059, "exit": 4.7687, "qty": 22.96, "gross_pct": -0.774, "net_pct": -1.874, "net_spread_pct": -1.999, "pnl_eur": -0.43, "reason": "momentum perdido", "candles": 5, "fee_pct": 1.1, "ctx": {"close": 4.802, "vwap": 4.7877, "volume": 6073.57, "count": 94.0, "mh": 0.0017327, "et": 4.71735, "amplitud_ema200": 0.367, "amplitud_ema50": 0.15, "evento_min": -360.0}}
 {"type": "entry", "asset": "RENDER", "strategy": "reversion_bb", "version": "P4-v1", "t": "2026-09-30 18:50", "ts": 1790794200, "price": 1.685, "qty": 23.07, "spread": 0.00059}
 {"type": "entry", "asset": "TON", "strategy": "pullback_tendencia", "version": "P4-v1", "t": "2026-09-30 18:50", "ts": 1790794200, "price": 1.343, "qty": 22.68, "spread": 0.00148}
+{"type": "entry", "asset": "ZEC", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 18:55", "ts": 1790794500, "price": 1249.653, "qty": 22.72, "spread": 0.00132}
+{"type": "entry", "asset": "XLM", "strategy": "c_banda_atr", "version": "P4-v1", "t": "2026-09-30 18:55", "ts": 1790794500, "price": 0.19947, "qty": 22.74, "spread": 0.00034}
+{"type": "entry", "asset": "XLM", "strategy": "c_banda_atr_tope", "version": "P4-v1", "t": "2026-09-30 18:55", "ts": 1790794500, "price": 0.19947, "qty": 23.05, "spread": 0.00034}
+{"type": "entry", "asset": "XLM", "strategy": "c_banda_atr_evento", "version": "P4-v1", "t": "2026-09-30 18:55", "ts": 1790794500, "price": 0.19947, "qty": 22.99, "spread": 0.00034}
+{"type": "entry", "asset": "DOT", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 18:55", "ts": 1790794500, "price": 1.0846, "qty": 22.72, "spread": 0.00028}
+{"type": "entry", "asset": "USELESS", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 18:55", "ts": 1790794500, "price": 0.21181, "qty": 22.72, "spread": 0.00269}
+{"type": "entry", "asset": "TON", "strategy": "ruptura_volumen", "version": "P4-v1", "t": "2026-09-30 18:55", "ts": 1790794500, "price": 1.351, "qty": 22.47, "spread": 0.00148}
+{"type": "entry", "asset": "TON", "strategy": "macd_momentum", "version": "P4-v1", "t": "2026-09-30 18:55", "ts": 1790794500, "price": 1.351, "qty": 22.74, "spread": 0.00148}
+{"type": "entry", "asset": "TON", "strategy": "ruptura_estricta", "version": "P4-v1", "t": "2026-09-30 18:55", "ts": 1790794500, "price": 1.351, "qty": 22.49, "spread": 0.00148}
+{"type": "entry", "asset": "TON", "strategy": "macd_sin_salida", "version": "P4-v1", "t": "2026-09-30 18:55", "ts": 1790794500, "price": 1.351, "qty": 22.67, "spread": 0.00148}
+{"type": "entry", "asset": "TON", "strategy": "ruptura_volumen_tope", "version": "P4-v1", "t": "2026-09-30 18:55", "ts": 1790794500, "price": 1.351, "qty": 22.97, "spread": 0.00148}
+{"type": "entry", "asset": "TON", "strategy": "macd_momentum_evento", "version": "P4-v1", "t": "2026-09-30 18:55", "ts": 1790794500, "price": 1.351, "qty": 22.93, "spread": 0.00148}
+{"type": "entry", "asset": "TON", "strategy": "ruptura_volumen_evento", "version": "P4-v1", "t": "2026-09-30 18:55", "ts": 1790794500, "price": 1.351, "qty": 22.87, "spread": 0.00148}
