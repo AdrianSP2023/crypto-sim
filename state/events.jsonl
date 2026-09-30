@@ -875,3 +875,9 @@
 {"type": "entry", "asset": "VVV", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 14:40", "ts": 1790779200, "price": 24.391, "qty": 22.86, "spread": 0.00176}
 {"type": "entry", "asset": "SHIB", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 14:40", "ts": 1790779200, "price": 5.11e-06, "qty": 22.86, "spread": 0.00059}
 {"type": "entry", "asset": "TON", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 14:40", "ts": 1790779200, "price": 1.306, "qty": 22.86, "spread": 0.00305}
+{"type": "entry", "asset": "ETH", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 14:45", "ts": 1790779500, "price": 2354.21, "qty": 22.86, "spread": 0.00012}
+{"type": "entry", "asset": "NEAR", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 14:45", "ts": 1790779500, "price": 4.6009, "qty": 22.86, "spread": 0.00091}
+{"type": "entry", "asset": "ADA", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 14:45", "ts": 1790779500, "price": 0.214982, "qty": 22.86, "spread": 0.00103}
+{"type": "entry", "asset": "AAVE", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 14:45", "ts": 1790779500, "price": 140.1, "qty": 22.86, "spread": 0.00078}
+{"type": "entry", "asset": "ZEC", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 14:45", "ts": 1790779500, "price": 1259.959, "qty": 20.19, "spread": 0.00194}
+{"type": "entry", "asset": "NIGHT", "strategy": "pullback_tendencia", "version": "P4-v1", "t": "2026-09-30 14:45", "ts": 1790779500, "price": 0.03322, "qty": 22.84, "spread": 0.00544}
