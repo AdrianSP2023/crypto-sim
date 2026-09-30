@@ -280,3 +280,10 @@ Cambios (Maestro pidió las dos ideas; las cuentas de las 14 estrategias existen
 - Calendario verificado en fuentes oficiales (BLS, BEA, Fed): PCE 30/09 12:30Z, NFP 02/10 12:30Z, IPC 14/10 12:30Z, FOMC 28/10 18:00Z (las dos últimas fuera de fase). `datos/eventos/calendario.csv` actualizado.
 - `state/state.json` y `state/events.jsonl` de P3 retirados (archivados en `archive/P3/state/`): cuentas nuevas de 924,24 €.
 - Vigilar: `loops` solo debe subir de 1 en 1 (incidente del 30/09 en P3, causa desconocida).
+
+## P4 incidente del contador `loops` — 2026-09-30 18:09Z (sin cambio de código)
+- `loops` retrocedió de 70 (18:06:58Z, commit `d78a8719`) a 42 (18:09:07Z, `91b53e8e`) y `loop_gaps` añadió [1790791646, 147.2]. Mismo patrón que los dos incidentes de P3.
+- [Seguro] Coincide con el relevo entre ejecuciones del motor: la ejecución por `push` (run 26, 12:22:41Z) terminó a las 18:07Z por su tope de 345 min; la ejecución de cron (run 27) llevaba encolada desde las 15:43:54Z (`concurrency: engine`, sin cancelar) con `head_sha` `2d42dbb` (estado de las 15:41Z, `loops` 41). La gap de 147,2 min es exactamente last_loop de 15:41:57Z hasta 18:09Z.
+- [Seguro] Sin efecto en operaciones: caja (macd_momentum 842,60 € antes y después), cierres (666 → 666) y eventos `exit` (678 = 678) intactos. Se pierde una foto horaria (`snapshots` 6 → 5) y `loop_gaps` tiene un hueco falso; `decide_p7.py` marcaría `motor_sano = false` en el ciclo que lo contenga: ignorar a mano.
+- [Probable] Causa: en `engine.py` la primera vuelta de cada ejecución no hace `git pull` (`first = True` salta el pull) y `actions/checkout` parte del SHA de cuando se encoló la ejecución; los campos `loops`, `last_loop`, `snapshots` y `loop_gaps` se cargan de ese estado antiguo. No explico aún por qué caja y cierres salen actuales.
+- Arreglo propuesto (NO aplicado; tocaría `engine.py` y relanzaría el motor): hacer `git pull --rebase -X theirs` también antes de la primera vuelta. Próximos relevos previstos ≈ 23:52Z y 05:37Z.
