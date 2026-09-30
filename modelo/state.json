@@ -4,32 +4,32 @@
  "open": [],
  "volume": [],
  "n_closed": 0,
- "last_run": "2026-09-30 17:04:24",
+ "last_run": "2026-09-30 18:04:22",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 27,
+ "runs": 28,
  "ultimo_top": [
   [
-   "SPX",
-   0.269
-  ],
-  [
    "NEAR",
-   0.267
-  ],
-  [
-   "ENA",
-   0.181
-  ],
-  [
-   "ALGO",
-   0.17
+   0.22
   ],
   [
    "CRV",
-   0.163
+   0.156
+  ],
+  [
+   "ALGO",
+   0.155
+  ],
+  [
+   "SPX",
+   0.14
+  ],
+  [
+   "ENA",
+   0.138
   ]
  ],
  "n_puntuados": 41
