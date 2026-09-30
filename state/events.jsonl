@@ -1004,3 +1004,10 @@
 {"type": "entry", "asset": "DASH", "strategy": "c_banda_atr", "version": "P4-v1", "t": "2026-09-30 15:50", "ts": 1790783400, "price": 54.138, "qty": 22.86, "spread": 0.00302}
 {"type": "entry", "asset": "DASH", "strategy": "c_banda_atr_regimen", "version": "P4-v1", "t": "2026-09-30 15:50", "ts": 1790783400, "price": 54.138, "qty": 22.86, "spread": 0.00302}
 {"type": "entry", "asset": "DASH", "strategy": "c_banda_atr_evento", "version": "P4-v1", "t": "2026-09-30 15:50", "ts": 1790783400, "price": 54.138, "qty": 23.11, "spread": 0.00302}
+{"type": "entry", "asset": "ONDO", "strategy": "c_banda_atr", "version": "P4-v1", "t": "2026-09-30 15:55", "ts": 1790783700, "price": 0.44205, "qty": 22.86, "spread": 0.00052}
+{"type": "entry", "asset": "ONDO", "strategy": "c_banda_atr_regimen", "version": "P4-v1", "t": "2026-09-30 15:55", "ts": 1790783700, "price": 0.44205, "qty": 22.86, "spread": 0.00052}
+{"type": "entry", "asset": "ONDO", "strategy": "c_banda_atr_evento", "version": "P4-v1", "t": "2026-09-30 15:55", "ts": 1790783700, "price": 0.44205, "qty": 23.11, "spread": 0.00052}
+{"type": "entry", "asset": "VVV", "strategy": "macd_momentum", "version": "P4-v1", "t": "2026-09-30 15:55", "ts": 1790783700, "price": 24.725, "qty": 22.78, "spread": 0.00303}
+{"type": "entry", "asset": "VVV", "strategy": "macd_sin_salida", "version": "P4-v1", "t": "2026-09-30 15:55", "ts": 1790783700, "price": 24.725, "qty": 22.7, "spread": 0.00303}
+{"type": "entry", "asset": "VVV", "strategy": "macd_momentum_regimen", "version": "P4-v1", "t": "2026-09-30 15:55", "ts": 1790783700, "price": 24.725, "qty": 22.8, "spread": 0.00303}
+{"type": "entry", "asset": "VVV", "strategy": "macd_momentum_evento", "version": "P4-v1", "t": "2026-09-30 15:55", "ts": 1790783700, "price": 24.725, "qty": 23.04, "spread": 0.00303}
