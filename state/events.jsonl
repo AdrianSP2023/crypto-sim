@@ -1427,3 +1427,4 @@
 {"type": "entry", "asset": "KSM", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 18:05", "ts": 1790791500, "price": 4.49, "qty": 22.84, "spread": 0.00221}
 {"type": "entry", "asset": "USELESS", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-09-30 18:10", "ts": 1790791800, "price": 0.21624, "qty": 22.84, "spread": 0.00237}
 {"type": "entry", "asset": "XMR", "strategy": "c_banda_atr", "version": "P4-v1", "t": "2026-09-30 18:10", "ts": 1790791800, "price": 481.1, "qty": 22.76, "spread": 0.00177}
+{"type": "entry", "asset": "NIGHT", "strategy": "pullback_tendencia", "version": "P4-v1", "t": "2026-09-30 18:15", "ts": 1790792100, "price": 0.03383, "qty": 22.68, "spread": 0.00385}
