@@ -269,3 +269,8 @@ Cambios (Maestro pidió las dos ideas; las cuentas de las 14 estrategias existen
 ## Paper trader del modelo de precursores — 2026-09-29
 - Nuevo flujo `.github/workflows/modelo.yml` (cron :02 de cada hora) y `modelo/` (features.py, entrenar.py, paper.py, report.py, modelo.joblib, meta.json). Modelo HistGradientBoosting entrenado 2018-2021, umbral = p99,5 de 2022 (0,686). Opera en papel con cuenta propia de 924,24: compra al ASK si p >= umbral, TP +8 % sin stop-loss, salida por tiempo a las 4 h al BID, 2,5 % del patrimonio por posición, máx. 8 abiertas, comisión por tramos como el motor. Sin cambios en el motor de 5 min ni en `config.json`.
 - Pruebas: `tests/test_modelo.py` (rasgos idénticos a tools/, puntuaciones en vivo = entrenamiento, máquina de estados).
+
+## P4 preparación — 2026-09-30 (sin lanzar)
+- `core.py`: `event_dist_min(cfg, ts)` y `ctx["evento_min"]` en cada entrada (minutos al evento del calendario más cercano, con signo; va a `contexto_senal` del registro); nuevo parámetro de estrategia `market_filter_max` (solo entra con amplitud ≤ umbral). Sin cambio de comportamiento con la config P3-v2 (no usa el filtro máximo; `evento_min` solo añade una clave al contexto).
+- `tests/test_core.py`: `test_evento_min_y_filtro_maximo`.
+- `tools/p4/config_p4.json`: configuración propuesta P4-v1 (19 estrategias: las 18 de P3-v2 + `rebote_desplome_mercado`, amplitud EMA50 ≤ 0,30; calendario con PCE 30/09, NFP 02/10 y FOMC 28/10, estos dos por verificar). NO copiada a `config.json`: el motor sigue parado (P3 terminada). Pasos de lanzamiento en el traspaso `traspaso-p4.md` del proyecto.

@@ -291,9 +291,37 @@ def test_rebote_desplome():
     assert abs(e0["entry"] - float(df.open.iat[sig[0] + 1])) < 1e-6, (e0["entry"], df.open.iat[sig[0] + 1])
     print("rebote_desplome OK · señales", list(sig), "entradas", len(ents))
 
+def test_evento_min_y_filtro_maximo():
+    """P4: cada operación guarda `evento_min` (minutos al evento más cercano, con signo) y `market_filter_max`
+    solo deja entrar con amplitud <= umbral."""
+    import copy
+    from datetime import datetime, timezone
+    frames = {a: synth(200 + k) for k, a in enumerate("ABCDEF")}
+    cfg = copy.deepcopy(CFG_RAW)
+    t0 = int(frames["A"].time.iat[350])
+    cfg["event_calendar"] = [{"ts": datetime.fromtimestamp(t0, timezone.utc).isoformat(), "label": "prueba"}]
+    cfg["strategies"]["c_banda_atr_bajista"] = {**cfg["strategies"]["c_banda_atr"], "base": "c_banda_atr",
+                                                 "market_filter_max": 0.5, "market_filter_ema": 200}
+    st = run_batch(frames, cfg)
+    n = 0
+    for c in st["strategies"]["c_banda_atr"]["closed"]:
+        assert "evento_min" in c["ctx"], c
+        assert abs(c["ctx"]["evento_min"] - (t0 - c["entry_ts"]) / 60.0) < 0.11, c
+        n += 1
+    assert n > 0
+    br = core.market_breadth(frames, cfg, 200)
+    f = st["strategies"]["c_banda_atr_bajista"]
+    for c in f["closed"]:
+        assert br[c["entry_ts"] - 300] <= 0.5, c
+    assert f["blocked_filter"] > 0
+    cfg["event_calendar"] = []
+    assert core.event_dist_min(cfg, t0) is None
+    print("evento_min y filtro máximo OK · operaciones con etiqueta:", n, "· bloqueadas por filtro máximo:", f["blocked_filter"])
+
 if __name__ == "__main__":
     test_next_open_reference(); test_fee_tiers_and_volume(); test_incremental_next_open()
     test_max_open()
     test_blackout(); test_rebote_desplome()
     test_market_filter()
+    test_evento_min_y_filtro_maximo()
     test_no_lookahead(); test_reference_and_coverage(); test_incremental_equals_batch()

@@ -84,6 +84,17 @@ def in_blackout(cfg, ts):
     return False
 
 
+def event_dist_min(cfg, ts):
+    """Minutos hasta el evento del calendario más cercano (con signo: + el evento aún no ha pasado, − ya pasó).
+    None si el calendario está vacío. Se guarda en `ctx["evento_min"]` de cada operación para el análisis posterior."""
+    best = None
+    for ev in cfg.get("event_calendar", []):
+        d = (int(datetime.fromisoformat(ev["ts"]).timestamp()) - ts) / 60.0
+        if best is None or abs(d) < abs(best):
+            best = d
+    return None if best is None else round(best, 1)
+
+
 def market_breadth(frames, cfg, n=None):
     """Fracción de activos con cierre > EMA(n) en cada vela (timestamp -> 0..1).
     Solo usa datos hasta esa vela (la EMA es causal)."""
@@ -229,8 +240,16 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadths=Non
         if mf and (breadth is None or breadth < mf):
             st["blocked_filter"] += 1
             continue
+        mfx = p.get("market_filter_max")
+        if mfx is not None and (breadth is None or breadth > mfx):
+            st["blocked_filter"] += 1
+            continue
         if next_open:
-            st["pending"][asset] = {"signal_candle": ct, "ctx": signal_ctx(d, i, breadths, bt)}
+            ctx = signal_ctx(d, i, breadths, bt)
+            ev = event_dist_min(cfg, close_t)
+            if ev is not None:
+                ctx["evento_min"] = ev
+            st["pending"][asset] = {"signal_candle": ct, "ctx": ctx}
             continue
         mo = p.get("max_open")
         if mo and len(st["positions"]) >= mo:
@@ -247,7 +266,7 @@ def step(state, cfg, asset, prepared_asset, i, log, spread, events, breadths=Non
             "tp": p["tp"], "sl": p["sl"], "max_hold": p["max_hold"],
             "spread_in": spread, "version": cfg["version"],
             "fee_in": side_fee(st, cfg, close_t),
-            "ctx": signal_ctx(d, i, breadths, bt),
+            "ctx": {**signal_ctx(d, i, breadths, bt), **({"evento_min": event_dist_min(cfg, close_t)} if event_dist_min(cfg, close_t) is not None else {})},
         }
         add_volume(st, close_t, qty)
         log.append(f"{iso(close_t)} [{name}] ENTRADA {asset} @ {d.close.iat[i]:.6g} ({qty:.2f} €)")
