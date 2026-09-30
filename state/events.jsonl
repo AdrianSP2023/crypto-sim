@@ -3840,3 +3840,11 @@
 {"type": "entry", "asset": "SPX", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-30 03:30", "ts": 1790739000, "price": 0.3722, "qty": 22.28, "spread": 0.00081}
 {"type": "exit", "asset": "SPX", "strategy": "macd_sin_salida", "version": "P3-v2", "entry_t": "2026-09-30 00:35", "exit_t": "2026-09-30 03:35", "entry_ts": 1790728500, "exit_ts": 1790739300, "entry": 0.3692, "exit": 0.3722, "qty": 22.41, "gross_pct": 0.813, "net_pct": 0.313, "net_spread_pct": 0.206, "pnl_eur": 0.07, "reason": "timeout", "candles": 36, "fee_pct": 0.5, "ctx": {"close": 0.3694, "vwap": 0.3694, "volume": 676.773, "count": 1.0, "mh": 0.000146322, "et": 0.366388, "amplitud_ema200": 0.317, "amplitud_ema50": 0.35}}
 {"type": "entry", "asset": "SOL", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-30 03:35", "ts": 1790739300, "price": 105.32, "qty": 22.28, "spread": 9e-05}
+{"type": "entry", "asset": "HBAR", "strategy": "macd_momentum", "version": "P3-v2", "t": "2026-09-30 03:40", "ts": 1790739600, "price": 0.09166, "qty": 22.02, "spread": 0.00087}
+{"type": "entry", "asset": "HBAR", "strategy": "macd_momentum_evento", "version": "P3-v2", "t": "2026-09-30 03:40", "ts": 1790739600, "price": 0.09166, "qty": 22.33, "spread": 0.00087}
+{"type": "entry", "asset": "PUMP", "strategy": "reversion_bb", "version": "P3-v2", "t": "2026-09-30 03:40", "ts": 1790739600, "price": 0.005052, "qty": 22.96, "spread": 0.00217}
+{"type": "entry", "asset": "PUMP", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-30 03:40", "ts": 1790739600, "price": 0.005052, "qty": 22.28, "spread": 0.00217}
+{"type": "entry", "asset": "SEI", "strategy": "macd_momentum", "version": "P3-v2", "t": "2026-09-30 03:40", "ts": 1790739600, "price": 0.0651, "qty": 22.02, "spread": 0.00092}
+{"type": "entry", "asset": "SEI", "strategy": "macd_sin_salida", "version": "P3-v2", "t": "2026-09-30 03:40", "ts": 1790739600, "price": 0.0651, "qty": 22.35, "spread": 0.00092}
+{"type": "entry", "asset": "SEI", "strategy": "macd_momentum_evento", "version": "P3-v2", "t": "2026-09-30 03:40", "ts": 1790739600, "price": 0.0651, "qty": 22.33, "spread": 0.00092}
+{"type": "entry", "asset": "BNB", "strategy": "estocastico_rebote", "version": "P3-v2", "t": "2026-09-30 03:40", "ts": 1790739600, "price": 671.32, "qty": 22.28, "spread": 1e-05}
