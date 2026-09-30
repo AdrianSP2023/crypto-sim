@@ -1567,3 +1567,14 @@
 {"type": "entry", "asset": "MINA", "strategy": "c_banda_atr", "version": "P4-v1", "t": "2026-09-30 19:35", "ts": 1790796900, "price": 0.1274, "qty": 22.71, "spread": 0.00312}
 {"type": "entry", "asset": "MINA", "strategy": "c_banda_atr_tope", "version": "P4-v1", "t": "2026-09-30 19:35", "ts": 1790796900, "price": 0.1274, "qty": 23.03, "spread": 0.00312}
 {"type": "entry", "asset": "MINA", "strategy": "c_banda_atr_evento", "version": "P4-v1", "t": "2026-09-30 19:35", "ts": 1790796900, "price": 0.1274, "qty": 22.96, "spread": 0.00312}
+{"type": "entry", "asset": "DOT", "strategy": "c_banda_atr", "version": "P4-v1", "t": "2026-09-30 19:40", "ts": 1790797200, "price": 1.087, "qty": 22.71, "spread": 0.00074}
+{"type": "entry", "asset": "DOT", "strategy": "c_banda_atr_evento", "version": "P4-v1", "t": "2026-09-30 19:40", "ts": 1790797200, "price": 1.087, "qty": 22.96, "spread": 0.00074}
+{"type": "entry", "asset": "ICP", "strategy": "c_banda_atr", "version": "P4-v1", "t": "2026-09-30 19:40", "ts": 1790797200, "price": 3.013, "qty": 22.71, "spread": 0.001}
+{"type": "entry", "asset": "ICP", "strategy": "c_banda_atr_evento", "version": "P4-v1", "t": "2026-09-30 19:40", "ts": 1790797200, "price": 3.013, "qty": 22.96, "spread": 0.001}
+{"type": "exit", "asset": "CRV", "strategy": "reversion_bb", "version": "P4-v1", "entry_t": "2026-09-30 18:05", "exit_t": "2026-09-30 19:45", "entry_ts": 1790791500, "exit_ts": 1790797500, "entry": 0.34078, "exit": 0.3458917, "qty": 23.1, "gross_pct": 1.5, "net_pct": 0.4, "net_spread_pct": 0.3, "pnl_eur": 0.092, "reason": "take-profit", "candles": 20, "fee_pct": 1.1, "ctx": {"close": 0.34078, "vwap": 0.34101, "volume": 3295.57, "count": 10.0, "sma": 0.344943, "lb": 0.342089, "r": 29.7895, "adx": 19.4698, "amplitud_ema200": 0.35, "amplitud_ema50": 0.2, "evento_min": -335.0}}
+{"type": "entry", "asset": "FIL", "strategy": "c_banda_atr", "version": "P4-v1", "t": "2026-09-30 19:40", "ts": 1790797200, "price": 0.913, "qty": 22.71, "spread": 0.0011}
+{"type": "entry", "asset": "FIL", "strategy": "c_banda_atr_evento", "version": "P4-v1", "t": "2026-09-30 19:40", "ts": 1790797200, "price": 0.913, "qty": 22.96, "spread": 0.0011}
+{"type": "entry", "asset": "TON", "strategy": "macd_momentum", "version": "P4-v1", "t": "2026-09-30 19:40", "ts": 1790797200, "price": 1.345, "qty": 22.72, "spread": 0.00223}
+{"type": "entry", "asset": "TON", "strategy": "macd_momentum_evento", "version": "P4-v1", "t": "2026-09-30 19:40", "ts": 1790797200, "price": 1.345, "qty": 22.9, "spread": 0.00223}
+{"type": "entry", "asset": "SPX", "strategy": "c_banda_atr", "version": "P4-v1", "t": "2026-09-30 19:40", "ts": 1790797200, "price": 0.3844, "qty": 22.71, "spread": 0.00078}
+{"type": "entry", "asset": "SPX", "strategy": "c_banda_atr_evento", "version": "P4-v1", "t": "2026-09-30 19:40", "ts": 1790797200, "price": 0.3844, "qty": 22.96, "spread": 0.00078}
