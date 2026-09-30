@@ -274,3 +274,9 @@ Cambios (Maestro pidió las dos ideas; las cuentas de las 14 estrategias existen
 - `core.py`: `event_dist_min(cfg, ts)` y `ctx["evento_min"]` en cada entrada (minutos al evento del calendario más cercano, con signo; va a `contexto_senal` del registro); nuevo parámetro de estrategia `market_filter_max` (solo entra con amplitud ≤ umbral). Sin cambio de comportamiento con la config P3-v2 (no usa el filtro máximo; `evento_min` solo añade una clave al contexto).
 - `tests/test_core.py`: `test_evento_min_y_filtro_maximo`.
 - `tools/p4/config_p4.json`: configuración propuesta P4-v1 (19 estrategias: las 18 de P3-v2 + `rebote_desplome_mercado`, amplitud EMA50 ≤ 0,30; calendario con PCE 30/09, NFP 02/10 y FOMC 28/10, estos dos por verificar). NO copiada a `config.json`: el motor sigue parado (P3 terminada). Pasos de lanzamiento en el traspaso `traspaso-p4.md` del proyecto.
+
+## P4-v1 lanzada — 2026-09-30 (hora UTC en el commit)
+- `config.json` = `tools/p4/config_p4.json` (versión `P4-v1`, fase `P4`, 19 estrategias, sin recortes por decisión de Maestro). `phase_end_utc` = inicio + 51 h.
+- Calendario verificado en fuentes oficiales (BLS, BEA, Fed): PCE 30/09 12:30Z, NFP 02/10 12:30Z, IPC 14/10 12:30Z, FOMC 28/10 18:00Z (las dos últimas fuera de fase). `datos/eventos/calendario.csv` actualizado.
+- `state/state.json` y `state/events.jsonl` de P3 retirados (archivados en `archive/P3/state/`): cuentas nuevas de 924,24 €.
+- Vigilar: `loops` solo debe subir de 1 en 1 (incidente del 30/09 en P3, causa desconocida).

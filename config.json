@@ -1,8 +1,8 @@
 {
-  "version": "P3-v2",
-  "phase": "P3",
+  "version": "P4-v1",
+  "phase": "P4",
   "enabled": true,
-  "phase_end_utc": "2026-09-30T10:13:00+00:00",
+  "phase_end_utc": "2026-10-02T15:26:00+00:00",
   "candle_minutes": 5,
   "fee_round_trip": 0.011,
   "initial_cash": 924.24,
@@ -262,6 +262,19 @@
       "tp": 0.08,
       "sl": 0.5,
       "max_hold": 72
+    },
+    "rebote_desplome_mercado": {
+      "enabled": true,
+      "lookback": 48,
+      "drop_min": 0.12,
+      "cooldown": 288,
+      "delay": 1,
+      "tp": 0.08,
+      "sl": 0.5,
+      "max_hold": 72,
+      "base": "rebote_desplome",
+      "market_filter_max": 0.3,
+      "market_filter_ema": 50
     }
   },
   "breadth_ema": 50,
@@ -286,6 +299,21 @@
     {
       "ts": "2026-09-30T12:30:00+00:00",
       "label": "PCE de agosto (EE. UU.)",
+      "importancia": "alta"
+    },
+    {
+      "ts": "2026-10-02T12:30:00+00:00",
+      "label": "Empleo no agrícola (NFP) de septiembre (EE. UU.)",
+      "importancia": "alta"
+    },
+    {
+      "ts": "2026-10-14T12:30:00+00:00",
+      "label": "IPC de septiembre (EE. UU.)",
+      "importancia": "alta"
+    },
+    {
+      "ts": "2026-10-28T18:00:00+00:00",
+      "label": "Decisión de tipos de la Fed (FOMC)",
       "importancia": "alta"
     }
   ]
