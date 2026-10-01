@@ -1,26 +1,26 @@
 # Simulación P4 (sin dinero real)
 
-Config `P4-v1` · inicio 2026-09-30 12:23 UTC · última vuelta 2026-10-01 09:16 UTC · vueltas 181 · 60 activos · velas 5 min · comisión por tramos de volumen 30 d (ida+vuelta 1.10% / 0.50% / 0.42%)
+Config `P4-v1` · inicio 2026-09-30 12:23 UTC · última vuelta 2026-10-01 09:21 UTC · vueltas 182 · 60 activos · velas 5 min · comisión por tramos de volumen 30 d (ida+vuelta 1.10% / 0.50% / 0.42%)
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 899.52 € (-2.67%) | 167 | 12 | 35% | -0.015% | -0.671% | -0.793% | -25.67 € |
-| reversion_bb | 920.45 € (-0.41%) | 21 | 9 | 38% | +0.128% | -0.972% | -1.079% | -4.71 € |
-| ruptura_volumen | 885.22 € (-4.22%) | 205 | 3 | 23% | -0.208% | -0.835% | -0.945% | -38.90 € |
-| rebote_extremo | 924.45 € (+0.02%) | 4 | 5 | 50% | +0.185% | -0.915% | -1.054% | -0.84 € |
+| c_banda_atr | 899.20 € (-2.71%) | 167 | 13 | 35% | -0.015% | -0.671% | -0.793% | -25.67 € |
+| reversion_bb | 920.21 € (-0.44%) | 21 | 9 | 38% | +0.128% | -0.972% | -1.079% | -4.71 € |
+| ruptura_volumen | 885.12 € (-4.23%) | 205 | 3 | 23% | -0.208% | -0.835% | -0.945% | -38.90 € |
+| rebote_extremo | 924.28 € (+0.00%) | 4 | 5 | 50% | +0.185% | -0.915% | -1.054% | -0.84 € |
 | pullback_tendencia | 897.16 € (-2.93%) | 122 | 1 | 16% | -0.257% | -0.973% | -1.078% | -27.09 € |
-| macd_momentum | 884.68 € (-4.28%) | 293 | 6 | 22% | -0.011% | -0.600% | -0.708% | -39.83 € |
-| estocastico_rebote | 889.31 € (-3.78%) | 219 | 34 | 33% | -0.122% | -0.741% | -0.857% | -36.99 € |
-| ruptura_estricta | 890.75 € (-3.62%) | 121 | 3 | 26% | -0.481% | -1.199% | -1.325% | -33.21 € |
-| macd_sin_salida | 888.41 € (-3.88%) | 216 | 8 | 36% | -0.105% | -0.726% | -0.839% | -35.80 € |
-| c_banda_atr_tope | 915.60 € (-0.93%) | 37 | 5 | 27% | +0.001% | -1.099% | -1.216% | -9.36 € |
-| ruptura_volumen_tope | 912.15 € (-1.31%) | 58 | 3 | 28% | +0.057% | -0.898% | -1.015% | -11.97 € |
-| c_banda_atr_regimen | 902.98 € (-2.30%) | 108 | 1 | 34% | -0.118% | -0.859% | -1.000% | -21.32 € |
+| macd_momentum | 884.55 € (-4.29%) | 293 | 6 | 22% | -0.011% | -0.600% | -0.708% | -39.83 € |
+| estocastico_rebote | 888.33 € (-3.89%) | 219 | 35 | 33% | -0.122% | -0.741% | -0.857% | -36.99 € |
+| ruptura_estricta | 890.65 € (-3.63%) | 121 | 3 | 26% | -0.481% | -1.199% | -1.325% | -33.21 € |
+| macd_sin_salida | 888.30 € (-3.89%) | 216 | 8 | 36% | -0.105% | -0.726% | -0.839% | -35.80 € |
+| c_banda_atr_tope | 915.36 € (-0.96%) | 37 | 5 | 27% | +0.001% | -1.099% | -1.216% | -9.36 € |
+| ruptura_volumen_tope | 912.05 € (-1.32%) | 58 | 3 | 28% | +0.057% | -0.898% | -1.015% | -11.97 € |
+| c_banda_atr_regimen | 902.94 € (-2.30%) | 108 | 1 | 34% | -0.118% | -0.859% | -1.000% | -21.32 € |
 | macd_momentum_regimen | 894.12 € (-3.26%) | 203 | 0 | 22% | -0.022% | -0.651% | -0.763% | -30.12 € |
 | ruptura_volumen_regimen | 886.57 € (-4.08%) | 177 | 0 | 20% | -0.288% | -0.936% | -1.049% | -37.67 € |
-| c_banda_atr_evento | 905.51 € (-2.03%) | 134 | 12 | 37% | +0.058% | -0.639% | -0.753% | -19.69 € |
-| macd_momentum_evento | 889.58 € (-3.75%) | 246 | 6 | 19% | -0.018% | -0.625% | -0.728% | -34.92 € |
-| ruptura_volumen_evento | 897.82 € (-2.86%) | 155 | 3 | 24% | -0.072% | -0.743% | -0.840% | -26.30 € |
+| c_banda_atr_evento | 905.19 € (-2.06%) | 134 | 13 | 37% | +0.058% | -0.639% | -0.753% | -19.69 € |
+| macd_momentum_evento | 889.45 € (-3.76%) | 246 | 6 | 19% | -0.018% | -0.625% | -0.728% | -34.92 € |
+| ruptura_volumen_evento | 897.72 € (-2.87%) | 155 | 3 | 24% | -0.072% | -0.743% | -0.840% | -26.30 € |
 | rebote_desplome | 924.24 € (+0.00%) | 0 | 0 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
 | rebote_desplome_mercado | 924.24 € (+0.00%) | 0 | 0 | 0% | +0.000% | +0.000% | +0.000% | +0.00 € |
 
@@ -46,7 +46,8 @@ Config `P4-v1` · inicio 2026-09-30 12:23 UTC · última vuelta 2026-10-01 09:16
 
 ## Eventos de la última vuelta
 
-- 2026-10-01 09:15 [c_banda_atr] CIERRE TRX timeout bruto -0.16% neto -0.66%
-- 2026-10-01 09:15 [c_banda_atr_evento] CIERRE TRX timeout bruto -0.16% neto -0.66%
+- 2026-10-01 09:15 [c_banda_atr] ENTRADA CRV @ 0.343 (22.46 €, apertura)
+- 2026-10-01 09:15 [c_banda_atr_evento] ENTRADA CRV @ 0.343 (22.61 €, apertura)
+- 2026-10-01 09:15 [estocastico_rebote] ENTRADA KSM @ 4.54 (22.18 €, apertura)
 
 Universo: BTC, XRP, ETH, SOL, QNT, NEAR, LINK, ADA, SUI, AVAX, HBAR, AAVE, ZEC, PUMP, HYPE, XLM, TAO, UNI, LTC, ZRO, DOGE, DOT, ARB, ENA, ICP, FET, TRX, POL, ALGO, ONDO, CRV, WLD, XDC, NIGHT, USELESS, BCH, JUP, PEPE, MON, RENDER, INJ, OP, MINA, FIL, VVV, ASTER, WLFI, SHIB, DASH, PENGU, KSM, TRUMP, BNB, TON, KAS, SKY, XMR, SEI, APT, SPX
