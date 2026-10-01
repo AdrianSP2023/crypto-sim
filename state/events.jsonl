@@ -7661,3 +7661,4 @@
 {"type": "entry", "asset": "BCH", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-10-01 21:50", "ts": 1790891400, "price": 274.02, "qty": 21.84, "spread": 0.00073}
 {"type": "entry", "asset": "JUP", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-10-01 21:50", "ts": 1790891400, "price": 0.28779, "qty": 21.84, "spread": 0.00108}
 {"type": "entry", "asset": "MON", "strategy": "estocastico_rebote", "version": "P4-v1", "t": "2026-10-01 21:50", "ts": 1790891400, "price": 0.02994, "qty": 21.84, "spread": 0.00033}
+{"type": "entry", "asset": "APT", "strategy": "reversion_bb", "version": "P4-v1", "t": "2026-10-01 21:55", "ts": 1790891700, "price": 0.6839, "qty": 22.91, "spread": 0.01488}
