@@ -4,32 +4,32 @@
  "open": [],
  "volume": [],
  "n_closed": 0,
- "last_run": "2026-10-01 12:24:10",
+ "last_run": "2026-10-01 17:14:08",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 50,
+ "runs": 51,
  "ultimo_top": [
   [
    "FET",
-   0.244
+   0.166
+  ],
+  [
+   "NEAR",
+   0.164
   ],
   [
    "AAVE",
-   0.197
+   0.14
   ],
   [
-   "PEPE",
-   0.181
+   "ONDO",
+   0.127
   ],
   [
-   "ICP",
-   0.155
-  ],
-  [
-   "CRV",
-   0.153
+   "ENA",
+   0.119
   ]
  ],
  "n_puntuados": 41
