@@ -8705,3 +8705,6 @@
 {"type": "entry", "asset": "KSM", "strategy": "macd_sin_salida", "version": "P4-v1", "t": "2026-10-02 02:40", "ts": 1790908800, "price": 4.54, "qty": 21.79, "spread": 0.00441}
 {"type": "entry", "asset": "KSM", "strategy": "macd_momentum_regimen", "version": "P4-v1", "t": "2026-10-02 02:40", "ts": 1790908800, "price": 4.54, "qty": 22.08, "spread": 0.00441}
 {"type": "entry", "asset": "KSM", "strategy": "macd_momentum_evento", "version": "P4-v1", "t": "2026-10-02 02:40", "ts": 1790908800, "price": 4.54, "qty": 21.6, "spread": 0.00441}
+{"type": "entry", "asset": "HYPE", "strategy": "pullback_tendencia", "version": "P4-v1", "t": "2026-10-02 02:45", "ts": 1790909100, "price": 78.49, "qty": 22.21, "spread": 0.00025}
+{"type": "entry", "asset": "ALGO", "strategy": "ruptura_volumen_tope", "version": "P4-v1", "t": "2026-10-02 02:45", "ts": 1790909100, "price": 0.11152, "qty": 22.59, "spread": 0.00126}
+{"type": "entry", "asset": "BNB", "strategy": "pullback_tendencia", "version": "P4-v1", "t": "2026-10-02 02:45", "ts": 1790909100, "price": 687.29, "qty": 22.21, "spread": 0.00017}
