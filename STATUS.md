@@ -1,24 +1,24 @@
 # Simulación P4 (sin dinero real)
 
-Config `P4-v1` · inicio 2026-09-30 12:23 UTC · última vuelta 2026-10-02 14:06 UTC · vueltas 418 · 60 activos · velas 5 min · comisión por tramos de volumen 30 d (ida+vuelta 1.10% / 0.50% / 0.42%)
+Config `P4-v1` · inicio 2026-09-30 12:23 UTC · última vuelta 2026-10-02 14:11 UTC · vueltas 419 · 60 activos · velas 5 min · comisión por tramos de volumen 30 d (ida+vuelta 1.10% / 0.50% / 0.42%)
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 885.18 € (-4.23%) | 378 | 25 | 40% | +0.137% | -0.432% | -0.554% | -37.18 € |
-| reversion_bb | 919.88 € (-0.47%) | 74 | 2 | 62% | +0.594% | -0.259% | -0.363% | -4.43 € |
-| ruptura_volumen | 855.16 € (-7.47%) | 479 | 17 | 26% | -0.094% | -0.648% | -0.759% | -69.29 € |
+| c_banda_atr | 882.43 € (-4.52%) | 383 | 20 | 39% | +0.120% | -0.448% | -0.569% | -38.98 € |
+| reversion_bb | 919.72 € (-0.49%) | 74 | 2 | 62% | +0.594% | -0.259% | -0.363% | -4.43 € |
+| ruptura_volumen | 853.28 € (-7.68%) | 480 | 16 | 26% | -0.096% | -0.651% | -0.761% | -69.66 € |
 | rebote_extremo | 922.62 € (-0.17%) | 16 | 0 | 62% | +0.663% | -0.437% | -0.608% | -1.62 € |
-| pullback_tendencia | 882.01 € (-4.57%) | 295 | 4 | 19% | -0.044% | -0.633% | -0.719% | -42.25 € |
-| macd_momentum | 839.65 € (-9.15%) | 798 | 6 | 23% | +0.050% | -0.483% | -0.582% | -85.05 € |
-| estocastico_rebote | 875.12 € (-5.31%) | 474 | 18 | 37% | +0.110% | -0.445% | -0.551% | -47.71 € |
-| ruptura_estricta | 880.44 € (-4.74%) | 258 | 18 | 32% | -0.132% | -0.734% | -0.849% | -43.05 € |
-| macd_sin_salida | 872.72 € (-5.57%) | 508 | 30 | 40% | +0.130% | -0.421% | -0.530% | -48.55 € |
-| c_banda_atr_tope | 912.92 € (-1.22%) | 84 | 5 | 38% | +0.258% | -0.556% | -0.676% | -10.75 € |
-| ruptura_volumen_tope | 898.64 € (-2.77%) | 143 | 4 | 23% | -0.102% | -0.787% | -0.902% | -25.67 € |
-| c_banda_atr_regimen | 897.66 € (-2.88%) | 230 | 25 | 41% | +0.149% | -0.464% | -0.593% | -24.54 € |
-| macd_momentum_regimen | 862.13 € (-6.72%) | 561 | 6 | 23% | +0.048% | -0.498% | -0.599% | -62.55 € |
-| ruptura_volumen_regimen | 859.81 € (-6.97%) | 402 | 17 | 24% | -0.154% | -0.719% | -0.834% | -64.66 € |
-| c_banda_atr_evento | 893.90 € (-3.28%) | 340 | 3 | 41% | +0.184% | -0.394% | -0.509% | -30.61 € |
+| pullback_tendencia | 881.23 € (-4.65%) | 297 | 2 | 19% | -0.050% | -0.639% | -0.724% | -42.91 € |
+| macd_momentum | 838.90 € (-9.23%) | 799 | 5 | 23% | +0.050% | -0.483% | -0.583% | -85.20 € |
+| estocastico_rebote | 873.32 € (-5.51%) | 477 | 15 | 37% | +0.100% | -0.454% | -0.560% | -49.02 € |
+| ruptura_estricta | 878.63 € (-4.94%) | 258 | 18 | 32% | -0.132% | -0.734% | -0.849% | -43.05 € |
+| macd_sin_salida | 869.26 € (-5.95%) | 516 | 22 | 39% | +0.106% | -0.445% | -0.553% | -51.96 € |
+| c_banda_atr_tope | 912.16 € (-1.31%) | 85 | 4 | 38% | +0.237% | -0.573% | -0.693% | -11.21 € |
+| ruptura_volumen_tope | 898.24 € (-2.81%) | 144 | 3 | 23% | -0.106% | -0.789% | -0.905% | -25.92 € |
+| c_banda_atr_regimen | 894.76 € (-3.19%) | 236 | 19 | 40% | +0.115% | -0.495% | -0.624% | -26.81 € |
+| macd_momentum_regimen | 861.36 € (-6.80%) | 562 | 5 | 23% | +0.048% | -0.499% | -0.599% | -62.72 € |
+| ruptura_volumen_regimen | 857.91 € (-7.18%) | 403 | 16 | 24% | -0.156% | -0.721% | -0.836% | -65.02 € |
+| c_banda_atr_evento | 893.36 € (-3.34%) | 341 | 2 | 41% | +0.184% | -0.393% | -0.508% | -30.62 € |
 | macd_momentum_evento | 851.50 € (-7.87%) | 700 | 0 | 23% | +0.070% | -0.468% | -0.564% | -72.75 € |
 | ruptura_volumen_evento | 867.02 € (-6.19%) | 414 | 0 | 26% | -0.052% | -0.616% | -0.719% | -57.21 € |
 | rebote_desplome | 925.83 € (+0.17%) | 1 | 0 | 100% | +8.000% | +6.900% | +6.571% | +1.59 € |
@@ -28,48 +28,54 @@ Config `P4-v1` · inicio 2026-09-30 12:23 UTC · última vuelta 2026-10-02 14:06
 
 | Salida (UTC) | Estrategia | Activo | Motivo | Bruto | Neto | € |
 |---|---|---|---|---|---|---|
-| 2026-10-02 14:05 | ruptura_volumen_regimen | TON | stop-loss | -1.20% | -1.70% | -0.37 |
-| 2026-10-02 14:05 | ruptura_volumen_regimen | ASTER | stop-loss | -1.29% | -1.79% | -0.39 |
-| 2026-10-02 14:05 | ruptura_volumen_regimen | FET | stop-loss | -1.25% | -1.75% | -0.38 |
-| 2026-10-02 14:05 | macd_momentum_regimen | TON | momentum perdido | -1.01% | -1.51% | -0.33 |
-| 2026-10-02 14:05 | macd_momentum_regimen | SHIB | momentum perdido | -0.55% | -1.05% | -0.23 |
-| 2026-10-02 14:05 | macd_momentum_regimen | JUP | momentum perdido | +0.07% | -0.42% | -0.09 |
-| 2026-10-02 14:05 | macd_momentum_regimen | CRV | momentum perdido | -0.80% | -1.29% | -0.28 |
-| 2026-10-02 14:05 | macd_momentum_regimen | DOT | momentum perdido | -0.27% | -0.77% | -0.17 |
-| 2026-10-02 14:05 | macd_momentum_regimen | ZEC | momentum perdido | -0.24% | -0.74% | -0.16 |
-| 2026-10-02 14:05 | c_banda_atr_regimen | NEAR | stop-loss | -1.50% | -2.00% | -0.45 |
-| 2026-10-02 14:05 | ruptura_volumen_tope | TON | stop-loss | -1.20% | -1.70% | -0.38 |
-| 2026-10-02 14:05 | macd_momentum | TON | momentum perdido | -1.01% | -1.51% | -0.32 |
-| 2026-10-02 14:05 | macd_momentum | SHIB | momentum perdido | -0.55% | -1.05% | -0.22 |
-| 2026-10-02 14:05 | macd_momentum | JUP | momentum perdido | +0.07% | -0.42% | -0.09 |
-| 2026-10-02 14:05 | macd_momentum | CRV | momentum perdido | -0.80% | -1.29% | -0.27 |
+| 2026-10-02 14:10 | c_banda_atr_evento | FIL | timeout | +0.43% | -0.07% | -0.01 |
+| 2026-10-02 14:10 | ruptura_volumen_regimen | ADA | stop-loss | -1.20% | -1.70% | -0.37 |
+| 2026-10-02 14:10 | macd_momentum_regimen | TAO | momentum perdido | -0.25% | -0.75% | -0.16 |
+| 2026-10-02 14:10 | c_banda_atr_regimen | SPX | stop-loss | -1.50% | -2.00% | -0.45 |
+| 2026-10-02 14:10 | c_banda_atr_regimen | FIL | timeout | +0.43% | -0.07% | -0.01 |
+| 2026-10-02 14:10 | c_banda_atr_regimen | ENA | stop-loss | -1.50% | -2.00% | -0.45 |
+| 2026-10-02 14:10 | c_banda_atr_regimen | TAO | stop-loss | -1.50% | -2.00% | -0.45 |
+| 2026-10-02 14:10 | c_banda_atr_regimen | HBAR | stop-loss | -1.50% | -2.00% | -0.45 |
+| 2026-10-02 14:10 | c_banda_atr_regimen | AVAX | stop-loss | -1.50% | -2.00% | -0.45 |
+| 2026-10-02 14:10 | ruptura_volumen_tope | DASH | timeout | -0.61% | -1.11% | -0.25 |
+| 2026-10-02 14:10 | c_banda_atr_tope | SPX | stop-loss | -1.50% | -2.00% | -0.46 |
+| 2026-10-02 14:10 | macd_sin_salida | USELESS | stop-loss | -2.03% | -2.53% | -0.55 |
+| 2026-10-02 14:10 | macd_sin_salida | CRV | stop-loss | -1.68% | -2.18% | -0.48 |
+| 2026-10-02 14:10 | macd_sin_salida | ENA | stop-loss | -1.50% | -2.00% | -0.44 |
+| 2026-10-02 14:10 | macd_sin_salida | HBAR | stop-loss | -1.50% | -2.00% | -0.44 |
 
 ## Eventos de la última vuelta
 
-- 2026-10-02 14:05 [c_banda_atr] CIERRE NEAR stop-loss bruto -1.50% neto -2.00%
-- 2026-10-02 14:05 [c_banda_atr_regimen] CIERRE NEAR stop-loss bruto -1.50% neto -2.00%
-- 2026-10-02 14:05 [macd_momentum] CIERRE ZEC momentum perdido bruto -0.24% neto -0.74%
-- 2026-10-02 14:05 [macd_momentum_regimen] CIERRE ZEC momentum perdido bruto -0.24% neto -0.74%
-- 2026-10-02 14:05 [macd_momentum] CIERRE DOT momentum perdido bruto -0.27% neto -0.77%
-- 2026-10-02 14:05 [macd_momentum_regimen] CIERRE DOT momentum perdido bruto -0.27% neto -0.77%
-- 2026-10-02 14:05 [ruptura_volumen] CIERRE FET stop-loss bruto -1.25% neto -1.75%
-- 2026-10-02 14:05 [ruptura_volumen_regimen] CIERRE FET stop-loss bruto -1.25% neto -1.75%
-- 2026-10-02 14:05 [macd_momentum] CIERRE CRV momentum perdido bruto -0.80% neto -1.30%
-- 2026-10-02 14:05 [macd_momentum_regimen] CIERRE CRV momentum perdido bruto -0.80% neto -1.30%
-- 2026-10-02 14:00 [pullback_tendencia] ENTRADA NIGHT @ 0.04339 (22.07 €, apertura)
-- 2026-10-02 14:05 [pullback_tendencia] CIERRE NIGHT stop-loss bruto -1.50% neto -2.00%
-- 2026-10-02 14:05 [pullback_tendencia] CIERRE JUP rotura de tendencia bruto -0.86% neto -1.36%
-- 2026-10-02 14:05 [macd_momentum] CIERRE JUP momentum perdido bruto +0.07% neto -0.43%
-- 2026-10-02 14:05 [macd_momentum_regimen] CIERRE JUP momentum perdido bruto +0.07% neto -0.43%
-- 2026-10-02 14:05 [ruptura_volumen] CIERRE ASTER stop-loss bruto -1.29% neto -1.79%
-- 2026-10-02 14:05 [ruptura_volumen_regimen] CIERRE ASTER stop-loss bruto -1.29% neto -1.79%
-- 2026-10-02 14:05 [macd_momentum] CIERRE SHIB momentum perdido bruto -0.55% neto -1.05%
-- 2026-10-02 14:05 [macd_momentum_regimen] CIERRE SHIB momentum perdido bruto -0.55% neto -1.05%
-- 2026-10-02 14:05 [pullback_tendencia] CIERRE BNB timeout bruto +0.43% neto -0.07%
-- 2026-10-02 14:05 [ruptura_volumen] CIERRE TON stop-loss bruto -1.20% neto -1.70%
-- 2026-10-02 14:05 [macd_momentum] CIERRE TON momentum perdido bruto -1.01% neto -1.51%
-- 2026-10-02 14:05 [ruptura_volumen_tope] CIERRE TON stop-loss bruto -1.20% neto -1.70%
-- 2026-10-02 14:05 [macd_momentum_regimen] CIERRE TON momentum perdido bruto -1.01% neto -1.51%
-- 2026-10-02 14:05 [ruptura_volumen_regimen] CIERRE TON stop-loss bruto -1.20% neto -1.70%
+- 2026-10-02 14:10 [macd_sin_salida] CIERRE BTC timeout bruto -0.35% neto -0.85%
+- 2026-10-02 14:10 [macd_sin_salida] CIERRE XRP stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [ruptura_volumen] CIERRE ADA stop-loss bruto -1.20% neto -1.70%
+- 2026-10-02 14:10 [estocastico_rebote] CIERRE ADA stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [macd_sin_salida] CIERRE ADA stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [ruptura_volumen_regimen] CIERRE ADA stop-loss bruto -1.20% neto -1.70%
+- 2026-10-02 14:10 [pullback_tendencia] CIERRE SUI rotura de tendencia bruto -1.12% neto -1.62%
+- 2026-10-02 14:10 [c_banda_atr] CIERRE AVAX stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [macd_sin_salida] CIERRE AVAX stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [c_banda_atr_regimen] CIERRE AVAX stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [c_banda_atr] CIERRE HBAR stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [macd_sin_salida] CIERRE HBAR stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [c_banda_atr_regimen] CIERRE HBAR stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [estocastico_rebote] CIERRE HYPE stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [c_banda_atr] CIERRE TAO stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [macd_momentum] CIERRE TAO momentum perdido bruto -0.25% neto -0.75%
+- 2026-10-02 14:10 [c_banda_atr_regimen] CIERRE TAO stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [macd_momentum_regimen] CIERRE TAO momentum perdido bruto -0.25% neto -0.75%
+- 2026-10-02 14:10 [c_banda_atr] CIERRE ENA stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [estocastico_rebote] CIERRE ENA stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [macd_sin_salida] CIERRE ENA stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [c_banda_atr_regimen] CIERRE ENA stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [macd_sin_salida] CIERRE CRV stop-loss bruto -1.68% neto -2.18%
+- 2026-10-02 14:10 [macd_sin_salida] CIERRE USELESS stop-loss bruto -2.03% neto -2.53%
+- 2026-10-02 14:10 [pullback_tendencia] CIERRE OP rotura de tendencia bruto -0.84% neto -1.34%
+- 2026-10-02 14:10 [c_banda_atr] CIERRE FIL timeout bruto +0.43% neto -0.07%
+- 2026-10-02 14:10 [c_banda_atr_regimen] CIERRE FIL timeout bruto +0.43% neto -0.07%
+- 2026-10-02 14:10 [c_banda_atr_evento] CIERRE FIL timeout bruto +0.43% neto -0.07%
+- 2026-10-02 14:10 [ruptura_volumen_tope] CIERRE DASH timeout bruto -0.61% neto -1.11%
+- 2026-10-02 14:10 [c_banda_atr_tope] CIERRE SPX stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 14:10 [c_banda_atr_regimen] CIERRE SPX stop-loss bruto -1.50% neto -2.00%
 
 Universo: BTC, XRP, ETH, SOL, QNT, NEAR, LINK, ADA, SUI, AVAX, HBAR, AAVE, ZEC, PUMP, HYPE, XLM, TAO, UNI, LTC, ZRO, DOGE, DOT, ARB, ENA, ICP, FET, TRX, POL, ALGO, ONDO, CRV, WLD, XDC, NIGHT, USELESS, BCH, JUP, PEPE, MON, RENDER, INJ, OP, MINA, FIL, VVV, ASTER, WLFI, SHIB, DASH, PENGU, KSM, TRUMP, BNB, TON, KAS, SKY, XMR, SEI, APT, SPX
