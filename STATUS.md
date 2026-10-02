@@ -1,26 +1,26 @@
 # Simulación P4 (sin dinero real)
 
-Config `P4-v1` · inicio 2026-09-30 12:23 UTC · última vuelta 2026-10-02 12:21 UTC · vueltas 397 · 60 activos · velas 5 min · comisión por tramos de volumen 30 d (ida+vuelta 1.10% / 0.50% / 0.42%)
+Config `P4-v1` · inicio 2026-09-30 12:23 UTC · última vuelta 2026-10-02 12:26 UTC · vueltas 398 · 60 activos · velas 5 min · comisión por tramos de volumen 30 d (ida+vuelta 1.10% / 0.50% / 0.42%)
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 888.13 € (-3.91%) | 367 | 17 | 40% | +0.139% | -0.432% | -0.551% | -36.13 € |
+| c_banda_atr | 888.01 € (-3.92%) | 368 | 19 | 40% | +0.144% | -0.427% | -0.546% | -35.80 € |
 | reversion_bb | 920.00 € (-0.46%) | 73 | 3 | 62% | +0.581% | -0.276% | -0.381% | -4.66 € |
-| ruptura_volumen | 855.56 € (-7.43%) | 456 | 12 | 26% | -0.125% | -0.682% | -0.789% | -69.36 € |
-| rebote_extremo | 922.57 € (-0.18%) | 15 | 1 | 60% | +0.574% | -0.526% | -0.706% | -1.82 € |
-| pullback_tendencia | 888.09 € (-3.91%) | 265 | 8 | 21% | -0.011% | -0.610% | -0.696% | -36.69 € |
-| macd_momentum | 847.32 € (-8.32%) | 743 | 10 | 24% | +0.064% | -0.471% | -0.569% | -77.55 € |
-| estocastico_rebote | 878.65 € (-4.93%) | 447 | 36 | 38% | +0.104% | -0.454% | -0.561% | -46.03 € |
-| ruptura_estricta | 880.90 € (-4.69%) | 249 | 9 | 32% | -0.159% | -0.765% | -0.880% | -43.27 € |
-| macd_sin_salida | 876.48 € (-5.17%) | 484 | 25 | 39% | +0.117% | -0.437% | -0.545% | -48.04 € |
-| c_banda_atr_tope | 913.14 € (-1.20%) | 83 | 4 | 37% | +0.237% | -0.581% | -0.698% | -11.09 € |
-| ruptura_volumen_tope | 898.41 € (-2.79%) | 139 | 5 | 22% | -0.129% | -0.819% | -0.932% | -25.96 € |
-| c_banda_atr_regimen | 900.72 € (-2.55%) | 219 | 18 | 42% | +0.153% | -0.466% | -0.591% | -23.48 € |
-| macd_momentum_regimen | 870.01 € (-5.87%) | 506 | 10 | 24% | +0.069% | -0.483% | -0.581% | -54.86 € |
-| ruptura_volumen_regimen | 860.21 € (-6.93%) | 379 | 12 | 23% | -0.194% | -0.763% | -0.875% | -64.72 € |
-| c_banda_atr_evento | 893.93 € (-3.28%) | 334 | 9 | 41% | +0.183% | -0.396% | -0.510% | -30.23 € |
-| macd_momentum_evento | 851.90 € (-7.83%) | 696 | 4 | 23% | +0.067% | -0.471% | -0.567% | -72.86 € |
-| ruptura_volumen_evento | 867.54 € (-6.14%) | 406 | 8 | 26% | -0.063% | -0.628% | -0.730% | -57.19 € |
+| ruptura_volumen | 855.48 € (-7.44%) | 458 | 12 | 26% | -0.118% | -0.675% | -0.782% | -68.99 € |
+| rebote_extremo | 922.63 € (-0.17%) | 15 | 1 | 60% | +0.574% | -0.526% | -0.706% | -1.82 € |
+| pullback_tendencia | 887.60 € (-3.96%) | 266 | 7 | 21% | -0.012% | -0.611% | -0.697% | -36.89 € |
+| macd_momentum | 846.94 € (-8.36%) | 744 | 17 | 24% | +0.067% | -0.468% | -0.567% | -77.24 € |
+| estocastico_rebote | 877.93 € (-5.01%) | 448 | 36 | 38% | +0.103% | -0.455% | -0.561% | -46.18 € |
+| ruptura_estricta | 880.92 € (-4.69%) | 249 | 10 | 32% | -0.159% | -0.765% | -0.880% | -43.27 € |
+| macd_sin_salida | 876.41 € (-5.18%) | 484 | 28 | 39% | +0.117% | -0.437% | -0.545% | -48.04 € |
+| c_banda_atr_tope | 913.17 € (-1.20%) | 84 | 5 | 38% | +0.258% | -0.556% | -0.676% | -10.75 € |
+| ruptura_volumen_tope | 898.43 € (-2.79%) | 139 | 5 | 22% | -0.129% | -0.819% | -0.932% | -25.96 € |
+| c_banda_atr_regimen | 900.58 € (-2.56%) | 220 | 20 | 42% | +0.161% | -0.457% | -0.583% | -23.14 € |
+| macd_momentum_regimen | 869.62 € (-5.91%) | 507 | 17 | 24% | +0.073% | -0.479% | -0.577% | -54.54 € |
+| ruptura_volumen_regimen | 860.12 € (-6.94%) | 381 | 12 | 23% | -0.186% | -0.755% | -0.866% | -64.35 € |
+| c_banda_atr_evento | 894.01 € (-3.27%) | 335 | 8 | 41% | +0.188% | -0.390% | -0.505% | -29.89 € |
+| macd_momentum_evento | 851.78 € (-7.84%) | 697 | 3 | 23% | +0.070% | -0.468% | -0.564% | -72.54 € |
+| ruptura_volumen_evento | 867.40 € (-6.15%) | 408 | 6 | 26% | -0.056% | -0.621% | -0.722% | -56.82 € |
 | rebote_desplome | 925.83 € (+0.17%) | 1 | 0 | 100% | +8.000% | +6.900% | +6.571% | +1.59 € |
 | rebote_desplome_mercado | 925.83 € (+0.17%) | 1 | 0 | 100% | +8.000% | +6.900% | +6.571% | +1.59 € |
 
@@ -28,56 +28,71 @@ Config `P4-v1` · inicio 2026-09-30 12:23 UTC · última vuelta 2026-10-02 12:21
 
 | Salida (UTC) | Estrategia | Activo | Motivo | Bruto | Neto | € |
 |---|---|---|---|---|---|---|
-| 2026-10-02 12:20 | c_banda_atr_evento | KSM | timeout | -0.65% | -1.15% | -0.26 |
-| 2026-10-02 12:20 | c_banda_atr_regimen | KSM | timeout | -0.65% | -1.15% | -0.26 |
-| 2026-10-02 12:20 | c_banda_atr_tope | KSM | timeout | -0.65% | -1.15% | -0.26 |
-| 2026-10-02 12:20 | ruptura_estricta | TRUMP | take-profit | +3.00% | +2.50% | +0.55 |
-| 2026-10-02 12:20 | estocastico_rebote | KSM | timeout | -0.22% | -0.72% | -0.16 |
-| 2026-10-02 12:20 | estocastico_rebote | BCH | timeout | -0.12% | -0.62% | -0.14 |
-| 2026-10-02 12:20 | estocastico_rebote | POL | timeout | +0.00% | -0.50% | -0.11 |
-| 2026-10-02 12:20 | estocastico_rebote | SUI | timeout | -0.07% | -0.57% | -0.12 |
-| 2026-10-02 12:20 | c_banda_atr | KSM | timeout | -0.65% | -1.15% | -0.26 |
-| 2026-10-02 12:15 | macd_sin_salida | WLD | take-profit | +2.00% | +1.50% | +0.33 |
-| 2026-10-02 12:15 | estocastico_rebote | OP | timeout | -0.84% | -1.34% | -0.30 |
-| 2026-10-02 12:15 | estocastico_rebote | ALGO | timeout | +0.21% | -0.29% | -0.07 |
-| 2026-10-02 12:15 | estocastico_rebote | ICP | timeout | -0.14% | -0.64% | -0.14 |
-| 2026-10-02 12:10 | macd_momentum_evento | MON | momentum perdido | +0.60% | +0.10% | +0.02 |
-| 2026-10-02 12:10 | macd_momentum_regimen | MON | momentum perdido | +0.60% | +0.10% | +0.02 |
+| 2026-10-02 12:25 | ruptura_volumen_evento | TRUMP | take-profit | +2.50% | +2.00% | +0.43 |
+| 2026-10-02 12:25 | ruptura_volumen_evento | TRX | timeout | +0.21% | -0.29% | -0.06 |
+| 2026-10-02 12:25 | macd_momentum_evento | WLD | take-profit | +2.00% | +1.50% | +0.32 |
+| 2026-10-02 12:25 | c_banda_atr_evento | WLD | take-profit | +2.00% | +1.50% | +0.34 |
+| 2026-10-02 12:25 | ruptura_volumen_regimen | TRUMP | take-profit | +2.50% | +2.00% | +0.43 |
+| 2026-10-02 12:25 | ruptura_volumen_regimen | TRX | timeout | +0.21% | -0.29% | -0.06 |
+| 2026-10-02 12:25 | macd_momentum_regimen | WLD | take-profit | +2.00% | +1.50% | +0.33 |
+| 2026-10-02 12:25 | c_banda_atr_regimen | WLD | take-profit | +2.00% | +1.50% | +0.34 |
+| 2026-10-02 12:25 | c_banda_atr_tope | WLD | take-profit | +2.00% | +1.50% | +0.34 |
+| 2026-10-02 12:25 | estocastico_rebote | DOT | timeout | -0.17% | -0.67% | -0.15 |
+| 2026-10-02 12:25 | macd_momentum | WLD | take-profit | +2.00% | +1.50% | +0.32 |
+| 2026-10-02 12:25 | pullback_tendencia | DOT | rotura de tendencia | -0.40% | -0.90% | -0.20 |
+| 2026-10-02 12:25 | ruptura_volumen | TRUMP | take-profit | +2.50% | +2.00% | +0.43 |
+| 2026-10-02 12:25 | ruptura_volumen | TRX | timeout | +0.21% | -0.29% | -0.06 |
+| 2026-10-02 12:25 | c_banda_atr | WLD | take-profit | +2.00% | +1.50% | +0.33 |
 
 ## Eventos de la última vuelta
 
-- 2026-10-02 12:15 [estocastico_rebote] ENTRADA LINK @ 12.7861 (21.97 €, apertura)
-- 2026-10-02 12:20 [estocastico_rebote] CIERRE SUI timeout bruto -0.07% neto -0.57%
-- 2026-10-02 12:15 [estocastico_rebote] ENTRADA AAVE @ 163.8 (21.97 €, apertura)
-- 2026-10-02 12:15 [estocastico_rebote] ENTRADA ENA @ 0.22 (21.97 €, apertura)
-- 2026-10-02 12:15 [c_banda_atr] ENTRADA ICP @ 2.924 (22.21 €, apertura)
-- 2026-10-02 12:15 [ruptura_volumen] ENTRADA ICP @ 2.924 (21.37 €, apertura)
-- 2026-10-02 12:15 [ruptura_volumen_tope] ENTRADA ICP @ 2.924 (22.46 €, apertura)
-- 2026-10-02 12:15 [c_banda_atr_regimen] ENTRADA ICP @ 2.924 (22.53 €, apertura)
-- 2026-10-02 12:15 [ruptura_volumen_regimen] ENTRADA ICP @ 2.924 (21.49 €, apertura)
-- 2026-10-02 12:15 [ruptura_volumen] ENTRADA POL @ 0.09837 (21.37 €, apertura)
-- 2026-10-02 12:20 [estocastico_rebote] CIERRE POL timeout bruto +0.00% neto -0.50%
-- 2026-10-02 12:15 [ruptura_volumen_tope] ENTRADA POL @ 0.09837 (22.46 €, apertura)
-- 2026-10-02 12:15 [ruptura_volumen_regimen] ENTRADA POL @ 0.09837 (21.49 €, apertura)
-- 2026-10-02 12:15 [macd_momentum] ENTRADA ALGO @ 0.11656 (21.17 €, apertura)
-- 2026-10-02 12:15 [macd_momentum_regimen] ENTRADA ALGO @ 0.11656 (21.73 €, apertura)
-- 2026-10-02 12:20 [estocastico_rebote] CIERRE BCH timeout bruto -0.12% neto -0.62%
-- 2026-10-02 12:15 [c_banda_atr] ENTRADA JUP @ 0.29437 (22.21 €, apertura)
-- 2026-10-02 12:15 [macd_momentum] ENTRADA JUP @ 0.29437 (21.17 €, apertura)
-- 2026-10-02 12:15 [macd_sin_salida] ENTRADA JUP @ 0.29437 (21.91 €, apertura)
-- 2026-10-02 12:15 [c_banda_atr_regimen] ENTRADA JUP @ 0.29437 (22.53 €, apertura)
-- 2026-10-02 12:15 [macd_momentum_regimen] ENTRADA JUP @ 0.29437 (21.73 €, apertura)
-- 2026-10-02 12:15 [reversion_bb] ENTRADA INJ @ 6.639 (22.99 €, apertura)
-- 2026-10-02 12:15 [macd_momentum] ENTRADA DASH @ 53.407 (21.17 €, apertura)
-- 2026-10-02 12:15 [macd_sin_salida] ENTRADA DASH @ 53.407 (21.91 €, apertura)
-- 2026-10-02 12:15 [macd_momentum_regimen] ENTRADA DASH @ 53.407 (21.73 €, apertura)
-- 2026-10-02 12:20 [c_banda_atr] CIERRE KSM timeout bruto -0.65% neto -1.15%
-- 2026-10-02 12:20 [estocastico_rebote] CIERRE KSM timeout bruto -0.22% neto -0.72%
-- 2026-10-02 12:20 [c_banda_atr_tope] CIERRE KSM timeout bruto -0.65% neto -1.15%
-- 2026-10-02 12:20 [c_banda_atr_regimen] CIERRE KSM timeout bruto -0.65% neto -1.15%
-- 2026-10-02 12:20 [c_banda_atr_evento] CIERRE KSM timeout bruto -0.65% neto -1.15%
-- 2026-10-02 12:20 [ruptura_estricta] CIERRE TRUMP take-profit bruto +3.00% neto +2.50%
-- 2026-10-02 12:15 [ruptura_volumen] ENTRADA APT @ 0.7341 (21.37 €, apertura)
-- 2026-10-02 12:15 [ruptura_volumen_regimen] ENTRADA APT @ 0.7341 (21.49 €, apertura)
+- 2026-10-02 12:20 [ruptura_volumen] ENTRADA BTC @ 77110.8 (21.37 €, apertura)
+- 2026-10-02 12:20 [macd_momentum] ENTRADA BTC @ 77110.8 (21.17 €, apertura)
+- 2026-10-02 12:20 [ruptura_estricta] ENTRADA BTC @ 77110.8 (22.02 €, apertura)
+- 2026-10-02 12:20 [macd_momentum_regimen] ENTRADA BTC @ 77110.8 (21.73 €, apertura)
+- 2026-10-02 12:20 [ruptura_volumen_regimen] ENTRADA BTC @ 77110.8 (21.49 €, apertura)
+- 2026-10-02 12:20 [c_banda_atr] ENTRADA XRP @ 1.37024 (22.20 €, apertura)
+- 2026-10-02 12:20 [c_banda_atr_tope] ENTRADA XRP @ 1.37024 (22.83 €, apertura)
+- 2026-10-02 12:20 [c_banda_atr_regimen] ENTRADA XRP @ 1.37024 (22.52 €, apertura)
+- 2026-10-02 12:20 [macd_momentum] ENTRADA ETH @ 2449.68 (21.17 €, apertura)
+- 2026-10-02 12:20 [macd_momentum_regimen] ENTRADA ETH @ 2449.68 (21.73 €, apertura)
+- 2026-10-02 12:20 [macd_momentum] ENTRADA ADA @ 0.228339 (21.17 €, apertura)
+- 2026-10-02 12:20 [macd_momentum_regimen] ENTRADA ADA @ 0.228339 (21.73 €, apertura)
+- 2026-10-02 12:20 [macd_momentum] ENTRADA SUI @ 1.0505 (21.17 €, apertura)
+- 2026-10-02 12:20 [macd_sin_salida] ENTRADA SUI @ 1.0505 (21.91 €, apertura)
+- 2026-10-02 12:20 [macd_momentum_regimen] ENTRADA SUI @ 1.0505 (21.73 €, apertura)
+- 2026-10-02 12:20 [macd_momentum] ENTRADA HBAR @ 0.09477 (21.17 €, apertura)
+- 2026-10-02 12:20 [macd_sin_salida] ENTRADA HBAR @ 0.09477 (21.91 €, apertura)
+- 2026-10-02 12:20 [macd_momentum_regimen] ENTRADA HBAR @ 0.09477 (21.73 €, apertura)
+- 2026-10-02 12:25 [pullback_tendencia] CIERRE DOT rotura de tendencia bruto -0.40% neto -0.90%
+- 2026-10-02 12:25 [estocastico_rebote] CIERRE DOT timeout bruto -0.17% neto -0.67%
+- 2026-10-02 12:20 [c_banda_atr] ENTRADA ARB @ 0.1821 (22.20 €, apertura)
+- 2026-10-02 12:20 [macd_momentum] ENTRADA ARB @ 0.1821 (21.17 €, apertura)
+- 2026-10-02 12:20 [macd_sin_salida] ENTRADA ARB @ 0.1821 (21.91 €, apertura)
+- 2026-10-02 12:20 [c_banda_atr_regimen] ENTRADA ARB @ 0.1821 (22.52 €, apertura)
+- 2026-10-02 12:20 [macd_momentum_regimen] ENTRADA ARB @ 0.1821 (21.73 €, apertura)
+- 2026-10-02 12:20 [c_banda_atr] ENTRADA FET @ 0.2062 (22.20 €, apertura)
+- 2026-10-02 12:20 [c_banda_atr_regimen] ENTRADA FET @ 0.2062 (22.52 €, apertura)
+- 2026-10-02 12:25 [ruptura_volumen] CIERRE TRX timeout bruto +0.21% neto -0.29%
+- 2026-10-02 12:25 [ruptura_volumen_regimen] CIERRE TRX timeout bruto +0.21% neto -0.29%
+- 2026-10-02 12:25 [ruptura_volumen_evento] CIERRE TRX timeout bruto +0.21% neto -0.29%
+- 2026-10-02 12:25 [c_banda_atr] CIERRE WLD take-profit bruto +2.00% neto +1.50%
+- 2026-10-02 12:20 [ruptura_volumen] ENTRADA WLD @ 0.4927 (21.37 €, apertura)
+- 2026-10-02 12:25 [macd_momentum] CIERRE WLD take-profit bruto +2.00% neto +1.50%
+- 2026-10-02 12:25 [c_banda_atr_tope] CIERRE WLD take-profit bruto +2.00% neto +1.50%
+- 2026-10-02 12:25 [c_banda_atr_regimen] CIERRE WLD take-profit bruto +2.00% neto +1.50%
+- 2026-10-02 12:25 [macd_momentum_regimen] CIERRE WLD take-profit bruto +2.00% neto +1.50%
+- 2026-10-02 12:20 [ruptura_volumen_regimen] ENTRADA WLD @ 0.4927 (21.49 €, apertura)
+- 2026-10-02 12:25 [c_banda_atr_evento] CIERRE WLD take-profit bruto +2.00% neto +1.50%
+- 2026-10-02 12:25 [macd_momentum_evento] CIERRE WLD take-profit bruto +2.00% neto +1.50%
+- 2026-10-02 12:20 [estocastico_rebote] ENTRADA USELESS @ 0.22252 (21.95 €, apertura)
+- 2026-10-02 12:20 [macd_momentum] ENTRADA OP @ 0.1182 (21.18 €, apertura)
+- 2026-10-02 12:20 [c_banda_atr_tope] ENTRADA OP @ 0.1182 (22.84 €, apertura)
+- 2026-10-02 12:20 [macd_momentum_regimen] ENTRADA OP @ 0.1182 (21.74 €, apertura)
+- 2026-10-02 12:20 [macd_momentum] ENTRADA FIL @ 0.923 (21.18 €, apertura)
+- 2026-10-02 12:20 [macd_momentum_regimen] ENTRADA FIL @ 0.923 (21.74 €, apertura)
+- 2026-10-02 12:25 [ruptura_volumen] CIERRE TRUMP take-profit bruto +2.50% neto +2.00%
+- 2026-10-02 12:25 [ruptura_volumen_regimen] CIERRE TRUMP take-profit bruto +2.50% neto +2.00%
+- 2026-10-02 12:25 [ruptura_volumen_evento] CIERRE TRUMP take-profit bruto +2.50% neto +2.00%
 
 Universo: BTC, XRP, ETH, SOL, QNT, NEAR, LINK, ADA, SUI, AVAX, HBAR, AAVE, ZEC, PUMP, HYPE, XLM, TAO, UNI, LTC, ZRO, DOGE, DOT, ARB, ENA, ICP, FET, TRX, POL, ALGO, ONDO, CRV, WLD, XDC, NIGHT, USELESS, BCH, JUP, PEPE, MON, RENDER, INJ, OP, MINA, FIL, VVV, ASTER, WLFI, SHIB, DASH, PENGU, KSM, TRUMP, BNB, TON, KAS, SKY, XMR, SEI, APT, SPX
