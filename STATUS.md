@@ -1,26 +1,26 @@
 # Simulación P4 (sin dinero real)
 
-Config `P4-v1` · inicio 2026-09-30 12:23 UTC · última vuelta 2026-10-02 04:06 UTC · vueltas 384 · 60 activos · velas 5 min · comisión por tramos de volumen 30 d (ida+vuelta 1.10% / 0.50% / 0.42%)
+Config `P4-v1` · inicio 2026-09-30 12:23 UTC · última vuelta 2026-10-02 04:11 UTC · vueltas 385 · 60 activos · velas 5 min · comisión por tramos de volumen 30 d (ida+vuelta 1.10% / 0.50% / 0.42%)
 
 | Estrategia | Patrimonio | Ops cerradas | Abiertas | Acierto neto | Bruto medio | Neto medio | Neto+spread | PnL realizado |
 |---|---|---|---|---|---|---|---|---|
-| c_banda_atr | 885.71 € (-4.17%) | 296 | 27 | 35% | +0.004% | -0.585% | -0.705% | -39.31 € |
-| reversion_bb | 919.57 € (-0.51%) | 70 | 3 | 60% | +0.530% | -0.343% | -0.445% | -5.55 € |
-| ruptura_volumen | 866.81 € (-6.21%) | 341 | 25 | 25% | -0.173% | -0.750% | -0.858% | -57.46 € |
+| c_banda_atr | 885.14 € (-4.23%) | 296 | 28 | 35% | +0.004% | -0.585% | -0.705% | -39.31 € |
+| reversion_bb | 919.53 € (-0.51%) | 70 | 3 | 60% | +0.530% | -0.343% | -0.445% | -5.55 € |
+| ruptura_volumen | 864.84 € (-6.43%) | 351 | 16 | 25% | -0.175% | -0.749% | -0.858% | -59.04 € |
 | rebote_extremo | 922.21 € (-0.22%) | 14 | 0 | 57% | +0.472% | -0.628% | -0.806% | -2.03 € |
-| pullback_tendencia | 889.65 € (-3.74%) | 199 | 14 | 16% | -0.160% | -0.793% | -0.881% | -35.81 € |
-| macd_momentum | 858.61 € (-7.10%) | 562 | 11 | 21% | +0.011% | -0.535% | -0.637% | -67.13 € |
-| estocastico_rebote | 873.59 € (-5.48%) | 351 | 22 | 32% | -0.078% | -0.653% | -0.762% | -51.71 € |
-| ruptura_estricta | 882.59 € (-4.51%) | 180 | 21 | 27% | -0.377% | -1.023% | -1.140% | -41.90 € |
-| macd_sin_salida | 876.10 € (-5.21%) | 374 | 31 | 35% | -0.043% | -0.613% | -0.723% | -51.85 € |
-| c_banda_atr_tope | 912.37 € (-1.28%) | 68 | 5 | 32% | +0.108% | -0.780% | -0.894% | -12.20 € |
-| ruptura_volumen_tope | 903.24 € (-2.27%) | 114 | 5 | 25% | -0.076% | -0.807% | -0.922% | -21.05 € |
-| c_banda_atr_regimen | 898.34 € (-2.80%) | 143 | 33 | 30% | -0.186% | -0.869% | -1.001% | -28.41 € |
-| macd_momentum_regimen | 881.60 € (-4.61%) | 325 | 11 | 19% | -0.021% | -0.601% | -0.705% | -44.17 € |
-| ruptura_volumen_regimen | 871.33 € (-5.72%) | 266 | 23 | 21% | -0.287% | -0.885% | -0.997% | -53.01 € |
-| c_banda_atr_evento | 891.60 € (-3.53%) | 263 | 27 | 36% | +0.043% | -0.558% | -0.673% | -33.42 € |
-| macd_momentum_evento | 863.37 € (-6.59%) | 515 | 11 | 19% | +0.009% | -0.542% | -0.640% | -62.39 € |
-| ruptura_volumen_evento | 879.15 € (-4.88%) | 291 | 25 | 26% | -0.096% | -0.686% | -0.787% | -45.12 € |
+| pullback_tendencia | 889.09 € (-3.80%) | 200 | 13 | 16% | -0.161% | -0.793% | -0.881% | -35.98 € |
+| macd_momentum | 858.23 € (-7.14%) | 562 | 18 | 21% | +0.011% | -0.535% | -0.637% | -67.13 € |
+| estocastico_rebote | 873.13 € (-5.53%) | 352 | 24 | 32% | -0.083% | -0.657% | -0.765% | -52.14 € |
+| ruptura_estricta | 881.96 € (-4.57%) | 181 | 20 | 27% | -0.381% | -1.027% | -1.143% | -42.25 € |
+| macd_sin_salida | 875.38 € (-5.29%) | 374 | 33 | 35% | -0.043% | -0.613% | -0.723% | -51.85 € |
+| c_banda_atr_tope | 912.31 € (-1.29%) | 68 | 5 | 32% | +0.108% | -0.780% | -0.894% | -12.20 € |
+| ruptura_volumen_tope | 902.99 € (-2.30%) | 115 | 4 | 25% | -0.076% | -0.806% | -0.921% | -21.20 € |
+| c_banda_atr_regimen | 897.43 € (-2.90%) | 143 | 33 | 30% | -0.186% | -0.869% | -1.001% | -28.41 € |
+| macd_momentum_regimen | 881.20 € (-4.66%) | 325 | 18 | 19% | -0.021% | -0.601% | -0.705% | -44.17 € |
+| ruptura_volumen_regimen | 869.54 € (-5.92%) | 274 | 16 | 21% | -0.286% | -0.881% | -0.994% | -54.35 € |
+| c_banda_atr_evento | 891.03 € (-3.59%) | 263 | 28 | 36% | +0.043% | -0.558% | -0.673% | -33.42 € |
+| macd_momentum_evento | 862.98 € (-6.63%) | 515 | 18 | 19% | +0.009% | -0.542% | -0.640% | -62.39 € |
+| ruptura_volumen_evento | 877.15 € (-5.10%) | 301 | 16 | 25% | -0.100% | -0.688% | -0.789% | -46.73 € |
 | rebote_desplome | 925.83 € (+0.17%) | 1 | 0 | 100% | +8.000% | +6.900% | +6.571% | +1.59 € |
 | rebote_desplome_mercado | 925.83 € (+0.17%) | 1 | 0 | 100% | +8.000% | +6.900% | +6.571% | +1.59 € |
 
@@ -28,37 +28,86 @@ Config `P4-v1` · inicio 2026-09-30 12:23 UTC · última vuelta 2026-10-02 04:06
 
 | Salida (UTC) | Estrategia | Activo | Motivo | Bruto | Neto | € |
 |---|---|---|---|---|---|---|
-| 2026-10-02 04:05 | macd_momentum_evento | SPX | momentum perdido | +0.08% | -0.42% | -0.09 |
-| 2026-10-02 04:05 | macd_momentum_regimen | SPX | momentum perdido | +0.08% | -0.42% | -0.09 |
-| 2026-10-02 04:05 | c_banda_atr_regimen | FET | take-profit | +2.00% | +1.50% | +0.34 |
-| 2026-10-02 04:05 | macd_sin_salida | FET | take-profit | +2.00% | +1.50% | +0.33 |
-| 2026-10-02 04:05 | macd_momentum | SPX | momentum perdido | +0.08% | -0.42% | -0.09 |
-| 2026-10-02 04:00 | ruptura_estricta | INJ | timeout | -0.06% | -0.56% | -0.12 |
-| 2026-10-02 04:00 | estocastico_rebote | SKY | timeout | +0.23% | -0.27% | -0.06 |
-| 2026-10-02 04:00 | estocastico_rebote | PUMP | take-profit | +1.80% | +1.30% | +0.28 |
-| 2026-10-02 04:00 | estocastico_rebote | AVAX | timeout | +0.27% | -0.23% | -0.05 |
-| 2026-10-02 03:55 | ruptura_volumen_evento | ZEC | stop-loss | -1.20% | -1.70% | -0.37 |
-| 2026-10-02 03:55 | ruptura_volumen_evento | ETH | timeout | +0.01% | -0.48% | -0.11 |
-| 2026-10-02 03:55 | macd_momentum_evento | AAVE | momentum perdido | -1.03% | -1.53% | -0.33 |
-| 2026-10-02 03:55 | c_banda_atr_evento | VVV | timeout | +1.57% | +1.07% | +0.24 |
-| 2026-10-02 03:55 | ruptura_volumen_regimen | ZEC | stop-loss | -1.20% | -1.70% | -0.37 |
-| 2026-10-02 03:55 | ruptura_volumen_regimen | ETH | timeout | +0.01% | -0.48% | -0.11 |
+| 2026-10-02 04:10 | ruptura_volumen_evento | SPX | timeout | -0.43% | -0.93% | -0.20 |
+| 2026-10-02 04:10 | ruptura_volumen_evento | SEI | timeout | -0.14% | -0.64% | -0.14 |
+| 2026-10-02 04:10 | ruptura_volumen_evento | SHIB | timeout | -0.04% | -0.54% | -0.12 |
+| 2026-10-02 04:10 | ruptura_volumen_evento | FIL | timeout | +0.00% | -0.50% | -0.11 |
+| 2026-10-02 04:10 | ruptura_volumen_evento | MINA | stop-loss | -2.21% | -2.71% | -0.60 |
+| 2026-10-02 04:10 | ruptura_volumen_evento | JUP | timeout | -0.17% | -0.67% | -0.15 |
+| 2026-10-02 04:10 | ruptura_volumen_evento | WLD | timeout | -0.13% | -0.63% | -0.14 |
+| 2026-10-02 04:10 | ruptura_volumen_evento | POL | timeout | +0.36% | -0.14% | -0.03 |
+| 2026-10-02 04:10 | ruptura_volumen_evento | TAO | timeout | +0.15% | -0.35% | -0.08 |
+| 2026-10-02 04:10 | ruptura_volumen_evento | XRP | timeout | +0.28% | -0.22% | -0.05 |
+| 2026-10-02 04:10 | ruptura_volumen_regimen | SPX | timeout | -0.43% | -0.93% | -0.20 |
+| 2026-10-02 04:10 | ruptura_volumen_regimen | SEI | timeout | -0.14% | -0.64% | -0.14 |
+| 2026-10-02 04:10 | ruptura_volumen_regimen | FIL | timeout | +0.00% | -0.50% | -0.11 |
+| 2026-10-02 04:10 | ruptura_volumen_regimen | MINA | stop-loss | -2.21% | -2.71% | -0.59 |
+| 2026-10-02 04:10 | ruptura_volumen_regimen | WLD | timeout | -0.13% | -0.63% | -0.14 |
 
 ## Eventos de la última vuelta
 
-- 2026-10-02 04:00 [macd_momentum] ENTRADA AAVE @ 156.69 (21.43 €, apertura)
-- 2026-10-02 04:00 [macd_momentum_regimen] ENTRADA AAVE @ 156.69 (22.00 €, apertura)
-- 2026-10-02 04:00 [macd_momentum_evento] ENTRADA AAVE @ 156.69 (21.55 €, apertura)
-- 2026-10-02 04:00 [pullback_tendencia] ENTRADA LTC @ 61.15 (22.21 €, apertura)
-- 2026-10-02 04:05 [macd_sin_salida] CIERRE FET take-profit bruto +2.00% neto +1.50%
-- 2026-10-02 04:05 [c_banda_atr_regimen] CIERRE FET take-profit bruto +2.00% neto +1.50%
-- 2026-10-02 04:00 [c_banda_atr] ENTRADA PENGU @ 0.00852 (22.12 €, apertura)
-- 2026-10-02 04:00 [c_banda_atr_regimen] ENTRADA PENGU @ 0.00852 (22.40 €, apertura)
-- 2026-10-02 04:00 [c_banda_atr_evento] ENTRADA PENGU @ 0.00852 (22.27 €, apertura)
-- 2026-10-02 04:00 [ruptura_estricta] ENTRADA TON @ 1.399 (22.06 €, apertura)
-- 2026-10-02 04:00 [ruptura_volumen_tope] ENTRADA TON @ 1.399 (22.58 €, apertura)
-- 2026-10-02 04:05 [macd_momentum] CIERRE SPX momentum perdido bruto +0.08% neto -0.42%
-- 2026-10-02 04:05 [macd_momentum_regimen] CIERRE SPX momentum perdido bruto +0.08% neto -0.42%
-- 2026-10-02 04:05 [macd_momentum_evento] CIERRE SPX momentum perdido bruto +0.08% neto -0.42%
+- 2026-10-02 04:10 [ruptura_volumen] CIERRE XRP timeout bruto +0.28% neto -0.22%
+- 2026-10-02 04:10 [ruptura_volumen_regimen] CIERRE XRP timeout bruto +0.28% neto -0.22%
+- 2026-10-02 04:10 [ruptura_volumen_evento] CIERRE XRP timeout bruto +0.28% neto -0.22%
+- 2026-10-02 04:05 [macd_momentum] ENTRADA SUI @ 1.0501 (21.43 €, apertura)
+- 2026-10-02 04:05 [macd_sin_salida] ENTRADA SUI @ 1.0501 (21.81 €, apertura)
+- 2026-10-02 04:05 [macd_momentum_regimen] ENTRADA SUI @ 1.0501 (22.00 €, apertura)
+- 2026-10-02 04:05 [macd_momentum_evento] ENTRADA SUI @ 1.0501 (21.55 €, apertura)
+- 2026-10-02 04:05 [estocastico_rebote] ENTRADA AVAX @ 9.774 (21.81 €, apertura)
+- 2026-10-02 04:05 [macd_momentum] ENTRADA ZEC @ 1186.23 (21.43 €, apertura)
+- 2026-10-02 04:05 [macd_sin_salida] ENTRADA ZEC @ 1186.23 (21.81 €, apertura)
+- 2026-10-02 04:05 [macd_momentum_regimen] ENTRADA ZEC @ 1186.23 (22.00 €, apertura)
+- 2026-10-02 04:05 [macd_momentum_evento] ENTRADA ZEC @ 1186.23 (21.55 €, apertura)
+- 2026-10-02 04:05 [macd_momentum] ENTRADA HYPE @ 78.88 (21.43 €, apertura)
+- 2026-10-02 04:05 [macd_momentum_regimen] ENTRADA HYPE @ 78.88 (22.00 €, apertura)
+- 2026-10-02 04:05 [macd_momentum_evento] ENTRADA HYPE @ 78.88 (21.55 €, apertura)
+- 2026-10-02 04:05 [macd_momentum] ENTRADA XLM @ 0.195908 (21.43 €, apertura)
+- 2026-10-02 04:05 [macd_momentum_regimen] ENTRADA XLM @ 0.195908 (22.00 €, apertura)
+- 2026-10-02 04:05 [macd_momentum_evento] ENTRADA XLM @ 0.195908 (21.55 €, apertura)
+- 2026-10-02 04:10 [ruptura_volumen] CIERRE TAO timeout bruto +0.15% neto -0.35%
+- 2026-10-02 04:10 [ruptura_volumen_regimen] CIERRE TAO timeout bruto +0.15% neto -0.35%
+- 2026-10-02 04:10 [ruptura_volumen_evento] CIERRE TAO timeout bruto +0.15% neto -0.35%
+- 2026-10-02 04:05 [macd_momentum] ENTRADA UNI @ 8.0519 (21.43 €, apertura)
+- 2026-10-02 04:05 [macd_momentum_regimen] ENTRADA UNI @ 8.0519 (22.00 €, apertura)
+- 2026-10-02 04:05 [macd_momentum_evento] ENTRADA UNI @ 8.0519 (21.55 €, apertura)
+- 2026-10-02 04:10 [pullback_tendencia] CIERRE LTC rotura de tendencia bruto -0.23% neto -0.73%
+- 2026-10-02 04:05 [ruptura_volumen] ENTRADA DOGE @ 0.0842713 (21.67 €, apertura)
+- 2026-10-02 04:05 [ruptura_volumen_regimen] ENTRADA DOGE @ 0.0842713 (21.78 €, apertura)
+- 2026-10-02 04:05 [ruptura_volumen_evento] ENTRADA DOGE @ 0.0842713 (21.97 €, apertura)
+- 2026-10-02 04:05 [estocastico_rebote] ENTRADA DOT @ 1.0626 (21.81 €, apertura)
+- 2026-10-02 04:10 [ruptura_estricta] CIERRE ICP timeout bruto -1.09% neto -1.59%
+- 2026-10-02 04:05 [c_banda_atr] ENTRADA FET @ 0.2119 (22.12 €, apertura)
+- 2026-10-02 04:05 [c_banda_atr_evento] ENTRADA FET @ 0.2119 (22.27 €, apertura)
+- 2026-10-02 04:10 [ruptura_volumen] CIERRE POL timeout bruto +0.36% neto -0.14%
+- 2026-10-02 04:10 [ruptura_volumen_regimen] CIERRE POL timeout bruto +0.36% neto -0.14%
+- 2026-10-02 04:10 [ruptura_volumen_evento] CIERRE POL timeout bruto +0.36% neto -0.14%
+- 2026-10-02 04:10 [ruptura_volumen] CIERRE WLD timeout bruto -0.13% neto -0.63%
+- 2026-10-02 04:10 [ruptura_volumen_regimen] CIERRE WLD timeout bruto -0.13% neto -0.63%
+- 2026-10-02 04:10 [ruptura_volumen_evento] CIERRE WLD timeout bruto -0.13% neto -0.63%
+- 2026-10-02 04:10 [ruptura_volumen] CIERRE JUP timeout bruto -0.17% neto -0.67%
+- 2026-10-02 04:05 [estocastico_rebote] ENTRADA JUP @ 0.29603 (21.81 €, apertura)
+- 2026-10-02 04:10 [ruptura_volumen_tope] CIERRE JUP timeout bruto -0.17% neto -0.67%
+- 2026-10-02 04:10 [ruptura_volumen_evento] CIERRE JUP timeout bruto -0.17% neto -0.67%
+- 2026-10-02 04:10 [estocastico_rebote] CIERRE MON stop-loss bruto -1.50% neto -2.00%
+- 2026-10-02 04:05 [macd_momentum] ENTRADA RENDER @ 1.722 (21.43 €, apertura)
+- 2026-10-02 04:05 [macd_momentum_regimen] ENTRADA RENDER @ 1.722 (22.00 €, apertura)
+- 2026-10-02 04:05 [macd_momentum_evento] ENTRADA RENDER @ 1.722 (21.55 €, apertura)
+- 2026-10-02 04:10 [ruptura_volumen] CIERRE MINA stop-loss bruto -2.21% neto -2.71%
+- 2026-10-02 04:10 [ruptura_volumen_regimen] CIERRE MINA stop-loss bruto -2.21% neto -2.71%
+- 2026-10-02 04:10 [ruptura_volumen_evento] CIERRE MINA stop-loss bruto -2.21% neto -2.71%
+- 2026-10-02 04:10 [ruptura_volumen] CIERRE FIL timeout bruto +0.00% neto -0.50%
+- 2026-10-02 04:10 [ruptura_volumen_regimen] CIERRE FIL timeout bruto +0.00% neto -0.50%
+- 2026-10-02 04:10 [ruptura_volumen_evento] CIERRE FIL timeout bruto +0.00% neto -0.50%
+- 2026-10-02 04:10 [ruptura_volumen] CIERRE SHIB timeout bruto -0.04% neto -0.54%
+- 2026-10-02 04:10 [ruptura_volumen_evento] CIERRE SHIB timeout bruto -0.04% neto -0.54%
+- 2026-10-02 04:05 [macd_momentum] ENTRADA PENGU @ 0.008521 (21.43 €, apertura)
+- 2026-10-02 04:05 [macd_momentum_regimen] ENTRADA PENGU @ 0.008521 (22.00 €, apertura)
+- 2026-10-02 04:05 [macd_momentum_evento] ENTRADA PENGU @ 0.008521 (21.55 €, apertura)
+- 2026-10-02 04:10 [ruptura_volumen] CIERRE SEI timeout bruto -0.14% neto -0.64%
+- 2026-10-02 04:10 [ruptura_volumen_regimen] CIERRE SEI timeout bruto -0.14% neto -0.64%
+- 2026-10-02 04:10 [ruptura_volumen_evento] CIERRE SEI timeout bruto -0.14% neto -0.64%
+- 2026-10-02 04:10 [ruptura_volumen] CIERRE SPX timeout bruto -0.43% neto -0.93%
+- 2026-10-02 04:10 [ruptura_volumen_regimen] CIERRE SPX timeout bruto -0.43% neto -0.93%
+- 2026-10-02 04:10 [ruptura_volumen_evento] CIERRE SPX timeout bruto -0.43% neto -0.93%
 
 Universo: BTC, XRP, ETH, SOL, QNT, NEAR, LINK, ADA, SUI, AVAX, HBAR, AAVE, ZEC, PUMP, HYPE, XLM, TAO, UNI, LTC, ZRO, DOGE, DOT, ARB, ENA, ICP, FET, TRX, POL, ALGO, ONDO, CRV, WLD, XDC, NIGHT, USELESS, BCH, JUP, PEPE, MON, RENDER, INJ, OP, MINA, FIL, VVV, ASTER, WLFI, SHIB, DASH, PENGU, KSM, TRUMP, BNB, TON, KAS, SKY, XMR, SEI, APT, SPX
