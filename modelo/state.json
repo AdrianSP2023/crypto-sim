@@ -4,32 +4,32 @@
  "open": [],
  "volume": [],
  "n_closed": 0,
- "last_run": "2026-10-10 10:22:56",
+ "last_run": "2026-10-10 16:05:20",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 90,
+ "runs": 91,
  "ultimo_top": [
   [
    "NEAR",
-   0.226
+   0.219
   ],
   [
-   "FIL",
-   0.187
-  ],
-  [
-   "INJ",
-   0.18
+   "ATOM",
+   0.19
   ],
   [
    "DOT",
-   0.157
+   0.168
   ],
   [
-   "ONDO",
-   0.157
+   "SEI",
+   0.12
+  ],
+  [
+   "FIL",
+   0.119
   ]
  ],
  "n_puntuados": 41
