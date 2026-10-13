@@ -4,32 +4,32 @@
  "open": [],
  "volume": [],
  "n_closed": 0,
- "last_run": "2026-10-13 01:04:45",
+ "last_run": "2026-10-13 08:50:55",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 101,
+ "runs": 102,
  "ultimo_top": [
   [
    "ENA",
-   0.342
+   0.222
   ],
   [
-   "FET",
-   0.293
-  ],
-  [
-   "SEI",
-   0.289
-  ],
-  [
-   "NEAR",
-   0.242
-  ],
-  [
-   "JUP",
+   "FIL",
    0.208
+  ],
+  [
+   "VIRTUAL",
+   0.19
+  ],
+  [
+   "INJ",
+   0.189
+  ],
+  [
+   "UNI",
+   0.187
   ]
  ],
  "n_puntuados": 41
