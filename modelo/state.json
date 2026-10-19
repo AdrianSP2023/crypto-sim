@@ -4,32 +4,32 @@
  "open": [],
  "volume": [],
  "n_closed": 0,
- "last_run": "2026-10-19 18:12:05",
+ "last_run": "2026-10-19 22:45:34",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 140,
+ "runs": 141,
  "ultimo_top": [
   [
+   "ARB",
+   0.226
+  ],
+  [
    "CRV",
-   0.249
-  ],
-  [
-   "DOT",
-   0.151
-  ],
-  [
-   "INJ",
-   0.15
-  ],
-  [
-   "PEPE",
-   0.081
+   0.165
   ],
   [
    "XMR",
-   0.08
+   0.125
+  ],
+  [
+   "INJ",
+   0.104
+  ],
+  [
+   "RENDER",
+   0.094
   ]
  ],
  "n_puntuados": 41
