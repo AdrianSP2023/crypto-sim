@@ -4,32 +4,32 @@
  "open": [],
  "volume": [],
  "n_closed": 0,
- "last_run": "2026-10-20 21:08:59",
+ "last_run": "2026-10-21 00:20:15",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 146,
+ "runs": 147,
  "ultimo_top": [
   [
-   "PEPE",
-   0.286
+   "INJ",
+   0.313
   ],
   [
    "CRV",
-   0.22
+   0.296
+  ],
+  [
+   "PEPE",
+   0.243
   ],
   [
    "PENGU",
-   0.217
-  ],
-  [
-   "SPX",
-   0.205
+   0.166
   ],
   [
    "JUP",
-   0.199
+   0.166
   ]
  ],
  "n_puntuados": 41
