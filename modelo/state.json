@@ -4,32 +4,32 @@
  "open": [],
  "volume": [],
  "n_closed": 0,
- "last_run": "2026-10-28 00:13:07",
+ "last_run": "2026-10-28 06:32:40",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 186,
+ "runs": 187,
  "ultimo_top": [
   [
-   "BCH",
-   0.121
+   "PEPE",
+   0.243
   ],
   [
-   "AAVE",
-   0.098
+   "BCH",
+   0.127
   ],
   [
    "SPX",
-   0.097
+   0.075
   ],
   [
-   "PEPE",
-   0.09
+   "INJ",
+   0.068
   ],
   [
    "ENA",
-   0.082
+   0.067
   ]
  ],
  "n_puntuados": 41
