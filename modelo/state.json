@@ -1,35 +1,55 @@
 {
  "initial": 924.24,
- "cash": 924.24,
- "open": [],
- "volume": [],
+ "cash": 901.006917,
+ "open": [
+  {
+   "activo": "PEPE",
+   "senal_utc": "2026-10-29 21:00:00",
+   "entrada_ts": 1793312440,
+   "entrada": 4.59e-06,
+   "tamano": 23.106,
+   "unidades": 5033986.928104576,
+   "fee_in": 0.127083,
+   "tp_px": 4.957200000000001e-06,
+   "vence_ts": 1793326840,
+   "p": 0.7384908381717393,
+   "spread_pct": 0.284,
+   "retraso_min": 20.7
+  }
+ ],
+ "volume": [
+  [
+   1793312440,
+   23.106
+  ]
+ ],
  "n_closed": 0,
- "last_run": "2026-10-29 17:16:34",
+ "last_run": "2026-10-29 22:20:40",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 193,
+ "runs": 194,
  "ultimo_top": [
   [
    "PEPE",
-   0.362
+   0.738
   ],
   [
-   "ENA",
-   0.202
+   "TRX",
+   0.527
   ],
   [
-   "PENGU",
-   0.124
-  ],
-  [
-   "NEAR",
-   0.116
+   "UNI",
+   0.325
   ],
   [
    "XMR",
-   0.1
+   0.271
+  ],
+  [
+   "DOT",
+   0.259
   ]
  ],
  "n_puntuados": 41
