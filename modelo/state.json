@@ -13,32 +13,32 @@
   ]
  ],
  "n_closed": 0,
- "last_run": "2026-10-30 02:20:46",
+ "last_run": "2026-10-30 09:28:04",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 195,
+ "runs": 196,
  "ultimo_top": [
   [
    "PEPE",
-   0.496
+   0.4
   ],
   [
-   "TRX",
-   0.375
+   "CRV",
+   0.369
   ],
   [
-   "FET",
-   0.272
-  ],
-  [
-   "ENA",
-   0.234
+   "NEAR",
+   0.28
   ],
   [
    "DOT",
-   0.216
+   0.242
+  ],
+  [
+   "FET",
+   0.234
   ]
  ],
  "n_puntuados": 41
