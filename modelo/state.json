@@ -13,32 +13,32 @@
   ]
  ],
  "n_closed": 0,
- "last_run": "2026-11-07 11:27:03",
+ "last_run": "2026-11-07 17:18:09",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 228,
+ "runs": 229,
  "ultimo_top": [
   [
    "TRUMP",
-   0.152
+   0.181
   ],
   [
    "NEAR",
-   0.108
+   0.12
   ],
   [
    "ENA",
-   0.106
+   0.113
   ],
   [
    "ARB",
-   0.094
+   0.072
   ],
   [
-   "BCH",
-   0.079
+   "PENGU",
+   0.051
   ]
  ],
  "n_puntuados": 41
