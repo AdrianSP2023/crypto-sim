@@ -13,32 +13,32 @@
   ]
  ],
  "n_closed": 0,
- "last_run": "2026-11-11 01:40:15",
+ "last_run": "2026-11-11 08:44:55",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 242,
+ "runs": 243,
  "ultimo_top": [
   [
    "SPX",
-   0.245
-  ],
-  [
-   "ICP",
-   0.223
+   0.231
   ],
   [
    "TON",
-   0.213
+   0.222
   ],
   [
-   "ENA",
-   0.178
+   "BCH",
+   0.184
   ],
   [
-   "RENDER",
-   0.137
+   "XRP",
+   0.177
+  ],
+  [
+   "AVAX",
+   0.16
   ]
  ],
  "n_puntuados": 41
