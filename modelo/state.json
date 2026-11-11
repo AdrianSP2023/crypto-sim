@@ -13,32 +13,32 @@
   ]
  ],
  "n_closed": 0,
- "last_run": "2026-11-11 16:50:13",
+ "last_run": "2026-11-11 23:15:48",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 244,
+ "runs": 245,
  "ultimo_top": [
   [
    "TON",
-   0.233
+   0.248
   ],
   [
-   "JUP",
-   0.218
+   "ICP",
+   0.243
   ],
   [
    "SPX",
-   0.183
+   0.172
   ],
   [
-   "XRP",
-   0.173
+   "JUP",
+   0.165
   ],
   [
-   "FET",
-   0.161
+   "PEPE",
+   0.165
   ]
  ],
  "n_puntuados": 41
