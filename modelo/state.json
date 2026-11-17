@@ -13,32 +13,32 @@
   ]
  ],
  "n_closed": 0,
- "last_run": "2026-11-16 23:13:44",
+ "last_run": "2026-11-17 06:07:14",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 263,
+ "runs": 264,
  "ultimo_top": [
   [
-   "ICP",
-   0.297
-  ],
-  [
-   "ARB",
-   0.223
-  ],
-  [
    "ENA",
+   0.239
+  ],
+  [
+   "INJ",
    0.221
   ],
   [
-   "PENGU",
-   0.171
+   "TAO",
+   0.196
   ],
   [
-   "UNI",
-   0.169
+   "NEAR",
+   0.183
+  ],
+  [
+   "ICP",
+   0.181
   ]
  ],
  "n_puntuados": 41
