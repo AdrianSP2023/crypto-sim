@@ -13,32 +13,32 @@
   ]
  ],
  "n_closed": 0,
- "last_run": "2026-11-19 03:56:31",
+ "last_run": "2026-11-19 12:24:41",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 270,
+ "runs": 271,
  "ultimo_top": [
   [
-   "TON",
-   0.19
+   "PEPE",
+   0.325
   ],
   [
-   "NEAR",
-   0.177
+   "INJ",
+   0.271
   ],
   [
-   "FIL",
-   0.154
-  ],
-  [
-   "ICP",
-   0.15
+   "JUP",
+   0.207
   ],
   [
    "ENA",
-   0.149
+   0.201
+  ],
+  [
+   "FIL",
+   0.189
   ]
  ],
  "n_puntuados": 41
