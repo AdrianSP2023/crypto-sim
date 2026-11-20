@@ -13,32 +13,32 @@
   ]
  ],
  "n_closed": 0,
- "last_run": "2026-11-19 21:08:07",
+ "last_run": "2026-11-20 02:48:23",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 272,
+ "runs": 273,
  "ultimo_top": [
   [
-   "PENGU",
-   0.178
+   "ENA",
+   0.206
   ],
   [
-   "ENA",
-   0.152
+   "CRV",
+   0.157
   ],
   [
    "PEPE",
-   0.136
+   0.144
   ],
   [
-   "JUP",
-   0.113
+   "PENGU",
+   0.141
   ],
   [
-   "ICP",
-   0.101
+   "ARB",
+   0.128
   ]
  ],
  "n_puntuados": 41
