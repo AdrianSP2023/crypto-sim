@@ -13,32 +13,32 @@
   ]
  ],
  "n_closed": 0,
- "last_run": "2026-11-20 18:56:42",
+ "last_run": "2026-11-21 00:33:45",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 275,
+ "runs": 276,
  "ultimo_top": [
   [
-   "SPX",
-   0.569
-  ],
-  [
    "INJ",
-   0.557
+   0.365
   ],
   [
-   "NEAR",
-   0.413
+   "SPX",
+   0.294
+  ],
+  [
+   "PENGU",
+   0.261
   ],
   [
    "VIRTUAL",
-   0.254
+   0.253
   ],
   [
    "TRUMP",
-   0.252
+   0.244
   ]
  ],
  "n_puntuados": 41
