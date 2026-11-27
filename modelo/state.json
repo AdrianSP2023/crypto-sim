@@ -13,32 +13,32 @@
   ]
  ],
  "n_closed": 0,
- "last_run": "2026-11-27 11:40:59",
+ "last_run": "2026-11-27 20:35:16",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 295,
+ "runs": 296,
  "ultimo_top": [
   [
+   "JUP",
+   0.217
+  ],
+  [
+   "INJ",
+   0.21
+  ],
+  [
    "XMR",
-   0.321
+   0.187
   ],
   [
    "FET",
-   0.303
+   0.184
   ],
   [
-   "JUP",
-   0.215
-  ],
-  [
-   "VIRTUAL",
-   0.214
-  ],
-  [
-   "SEI",
-   0.188
+   "RENDER",
+   0.168
   ]
  ],
  "n_puntuados": 41
