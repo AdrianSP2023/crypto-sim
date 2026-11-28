@@ -13,32 +13,32 @@
   ]
  ],
  "n_closed": 0,
- "last_run": "2026-11-28 03:02:16",
+ "last_run": "2026-11-28 11:35:17",
  "warnings": [],
  "skipped_assets": [
   "MATIC"
  ],
- "runs": 297,
+ "runs": 298,
  "ultimo_top": [
   [
    "XMR",
-   0.287
-  ],
-  [
-   "LTC",
-   0.155
+   0.34
   ],
   [
    "SEI",
-   0.139
+   0.204
   ],
   [
    "FET",
-   0.131
+   0.184
   ],
   [
-   "ENA",
-   0.113
+   "TRUMP",
+   0.18
+  ],
+  [
+   "DOGE",
+   0.148
   ]
  ],
  "n_puntuados": 41
